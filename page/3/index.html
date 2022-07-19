@@ -135,105 +135,6 @@
   
     
       <article
-id="post-9_C++11_Standards"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2022/06/04/9_C++11_Standards/">#9 C++11标准</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <h1 id="Auto关键字"><a href="#Auto关键字" class="headerlink" title="Auto关键字"></a>Auto关键字</h1><p>在强类型语言传统C和C++中，参数的类型都必须明确定义，而javaScript，Python等高级语言属于弱类型语言。</p>
-<p>优缺点比较：安全性，运行速度、友好、便利性，开发速度。</p>
-<p>传统上：<code>auto</code>、<code>register</code>关键字，变量的存储类型修饰不能被单独使用，否则编译器会给出警告。</p>
-<p>在C++11标准中，引入关键字<code>auto</code>，<code>decltype</code>，以实现类型推导特性。</p>
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2022-06-04T00:07:00.000Z" itemprop="datePublished">2022-06-04</time>
-</div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
-        </div>
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-    
-      <article
-id="post-8_Exception_handling"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2022/06/03/8_Exception_handling/">#8 异常处理</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <h1 id="异常机制"><a href="#异常机制" class="headerlink" title="异常机制"></a>异常机制</h1><p>异常指运行时出现的不正常现象，如内存耗尽、意外的非法输入、硬件故障……</p>
-<p>当程序代码检查到异常时，需要错误检测程序的干预，称之为异常处理机制：把控制权转到可处理该问题的程序，指出具体出现了什么问题，并提供一些附加信息。</p>
-<p>使用异常处理，程序各部分能够就程序执行期间出现的问题相互通信，并处理这些问题。</p>
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2022-06-03T11:34:40.000Z" itemprop="datePublished">2022-06-03</time>
-</div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
-        </div>
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-    
-      <article
 id="post-7_Input_and_Output"
 class="article article-type-post"
 >
@@ -330,10 +231,159 @@ class="article article-type-post"
 
     
   
+    
+      <article
+id="post-6_Templates_and_Generics"
+class="article article-type-post"
+>
+
+
+
+<div class="article-inner">
+    
+
+    <div class="article-body">
+    <header class="article-title">
+        <a href="/2022/06/01/6_Templates_and_Generics/">#6 模板与泛型</a>
+    </header>
+    <div class="article-entry post-inner-html">
+        
+        <h1 id="函数模板（Function-Template）"><a href="#函数模板（Function-Template）" class="headerlink" title="函数模板（Function Template）"></a>函数模板（Function Template）</h1><h2 id="模板定义"><a href="#模板定义" class="headerlink" title="模板定义"></a>模板定义</h2><p>模板是泛型编程的基础，模板是创建类或函数的蓝图或公式。</p>
+        
+    </div>
+    </div>
+
+    <div class="article-badge">
+        
+        
+    </div>
+
+</div>
+
+<footer class="article-footer">
+    <div class="article-more-info">
+    <div class="article-date">
+  <time datetime="2022-06-01T09:32:46.000Z" itemprop="datePublished">2022-06-01</time>
+</div>
+    
+    
+        <div class="article-tag">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
+        </div>
+    
+    </div>
+</footer>
+
+</article>
+
+    
+  
+    
+      <article
+id="post-5_Operator_Overloading"
+class="article article-type-post"
+>
+
+
+
+<div class="article-inner">
+    
+
+    <div class="article-body">
+    <header class="article-title">
+        <a href="/2022/05/30/5_Operator_Overloading/">#5 运算符重载</a>
+    </header>
+    <div class="article-entry post-inner-html">
+        
+        <p>C语言中操作符重载的例子：</p>
+<pre><code class="c++">int a = 3, b = 5;
+int c = a * b; //表示乘积
+int *p = &amp;a; // *表示p是一个指针
+int i = *p;  //*作用在地址上表示该地址所记录的值
+</code></pre>
+<p>一个运算符可以有多种含义，编译器会根据操作符的操作数自动判断对操作符赋予哪一种含义。</p>
+        
+    </div>
+    </div>
+
+    <div class="article-badge">
+        
+        
+    </div>
+
+</div>
+
+<footer class="article-footer">
+    <div class="article-more-info">
+    <div class="article-date">
+  <time datetime="2022-05-30T04:34:34.000Z" itemprop="datePublished">2022-05-30</time>
+</div>
+    
+    
+        <div class="article-tag">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
+        </div>
+    
+    </div>
+</footer>
+
+</article>
+
+    
+  
+    
+      <article
+id="post-4_Inheritance_and_Polymorphism"
+class="article article-type-post"
+>
+
+
+
+<div class="article-inner">
+    
+
+    <div class="article-body">
+    <header class="article-title">
+        <a href="/2022/05/20/4_Inheritance_and_Polymorphism/">#4 继承与多态</a>
+    </header>
+    <div class="article-entry post-inner-html">
+        
+        <h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><p>面向对象编程的关键思想是多态性（polymorphism），使用继承可以实现多态性。</p>
+<p>通过继承我们能够定义这样的类，它们对类型之间的关系建模，共享公共的东西，仅仅特化本质上不同的东西。</p>
+<p>派生类（derived class）能够：继承基类（base class）定义的成员，无须改变而使用那些与派生类型具体特性不相关的操作，重定义那些与派生类型相关的成员函数，将函数特化，考虑派生类型的特性。最后，除了从基类继承的成员之外，派生类还可以定义更多的成员。</p>
+        
+    </div>
+    </div>
+
+    <div class="article-badge">
+        
+        
+    </div>
+
+</div>
+
+<footer class="article-footer">
+    <div class="article-more-info">
+    <div class="article-date">
+  <time datetime="2022-05-20T06:32:24.000Z" itemprop="datePublished">2022-05-20</time>
+</div>
+    
+    
+        <div class="article-tag">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
+        </div>
+    
+    </div>
+</footer>
+
+</article>
+
+    
+  
 
   
     <nav class="pagination">
-        <a class="extend prev" rel="prev" href="/page/2/">Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/4/">Next</a>
+        <a class="extend prev" rel="prev" href="/page/2/">Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/">Next</a>
     </nav>
   
 </div>
