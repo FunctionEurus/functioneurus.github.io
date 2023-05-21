@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>#8 异常处理 | Function&#39;s Blog</title>
+
+    <meta name="description" content="&lt;h1 id=&#34;异常机制&#34;&gt;&lt;a href=&#34;#异常机制&#34; class=&#34;headerlink&#34; title=&#34;异常机制&#34;&gt;&lt;/a&gt;异常机制&lt;/h1&gt;&lt;p&gt;异常指运行时出现的不正常现象，如内存耗尽、意外的非法输入、硬件故障……&lt;/p&gt;
+&lt;p&gt;当程序代码检查到异常时，需要错误检测程序的干预，称之为异常处理机制：把控制权转到可处理该问题的程序，指出具体出现了什么问题，并提供一些附加信息。&lt;/p&gt;
+&lt;p&gt;使用异常处理，程序各部分能够就程序执行期间出现的问题相互通信，并处理这些问题。&lt;/p&gt;">
+    <meta name="keywords" content="">
+
+    
+
+    <meta property="og:locale" content="zh-CN" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content= "#8 异常处理 | Function&#39;s Blog"  />
+    <meta property="og:description" content= "&lt;h1 id=&#34;异常机制&#34;&gt;&lt;a href=&#34;#异常机制&#34; class=&#34;headerlink&#34; title=&#34;异常机制&#34;&gt;&lt;/a&gt;异常机制&lt;/h1&gt;&lt;p&gt;异常指运行时出现的不正常现象，如内存耗尽、意外的非法输入、硬件故障……&lt;/p&gt;
+&lt;p&gt;当程序代码检查到异常时，需要错误检测程序的干预，称之为异常处理机制：把控制权转到可处理该问题的程序，指出具体出现了什么问题，并提供一些附加信息。&lt;/p&gt;
+&lt;p&gt;使用异常处理，程序各部分能够就程序执行期间出现的问题相互通信，并处理这些问题。&lt;/p&gt;" />
+    <meta property="og:url" content="http://blog.functioneurus.com/2022/06/03/8_Exception_handling/index.html" />
+    <meta property="og:site_name" content="" />
+    <meta property="article:author" content="Function" />
+    <meta property="article:publisher" content="" />
+    <meta property="og:description" content="&lt;h1 id=&#34;异常机制&#34;&gt;&lt;a href=&#34;#异常机制&#34; class=&#34;headerlink&#34; title=&#34;异常机制&#34;&gt;&lt;/a&gt;异常机制&lt;/h1&gt;&lt;p&gt;异常指运行时出现的不正常现象，如内存耗尽、意外的非法输入、硬件故障……&lt;/p&gt;
+&lt;p&gt;当程序代码检查到异常时，需要错误检测程序的干预，称之为异常处理机制：把控制权转到可处理该问题的程序，指出具体出现了什么问题，并提供一些附加信息。&lt;/p&gt;
+&lt;p&gt;使用异常处理，程序各部分能够就程序执行期间出现的问题相互通信，并处理这些问题。&lt;/p&gt;" />
+    <meta name="twitter:title" content="#8 异常处理 | Function&#39;s Blog"/>
+    <meta name="twitter:description" content="&lt;h1 id=&#34;异常机制&#34;&gt;&lt;a href=&#34;#异常机制&#34; class=&#34;headerlink&#34; title=&#34;异常机制&#34;&gt;&lt;/a&gt;异常机制&lt;/h1&gt;&lt;p&gt;异常指运行时出现的不正常现象，如内存耗尽、意外的非法输入、硬件故障……&lt;/p&gt;
+&lt;p&gt;当程序代码检查到异常时，需要错误检测程序的干预，称之为异常处理机制：把控制权转到可处理该问题的程序，指出具体出现了什么问题，并提供一些附加信息。&lt;/p&gt;
+&lt;p&gt;使用异常处理，程序各部分能够就程序执行期间出现的问题相互通信，并处理这些问题。&lt;/p&gt;"/>
+    <script type="application/ld+json">
+        {
+            "description": "&lt;h1 id=&#34;异常机制&#34;&gt;&lt;a href=&#34;#异常机制&#34; class=&#34;headerlink&#34; title=&#34;异常机制&#34;&gt;&lt;/a&gt;异常机制&lt;/h1&gt;&lt;p&gt;异常指运行时出现的不正常现象，如内存耗尽、意外的非法输入、硬件故障……&lt;/p&gt;
+&lt;p&gt;当程序代码检查到异常时，需要错误检测程序的干预，称之为异常处理机制：把控制权转到可处理该问题的程序，指出具体出现了什么问题，并提供一些附加信息。&lt;/p&gt;
+&lt;p&gt;使用异常处理，程序各部分能够就程序执行期间出现的问题相互通信，并处理这些问题。&lt;/p&gt;",
+            "author": { "@type": "Person", "name": "Function" },
+            "@type": "BlogPosting",
+            "url": "http://blog.functioneurus.com/2022/06/03/8_Exception_handling/index.html",
+            "publisher": {
+            "@type": "Organization",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://blog.functioneurus.comundefined"
+            },
+            "name": "Function"
+            },
+            "headline": "#8 异常处理 | Function&#39;s Blog",
+            "datePublished": "2022-06-03T11:34:40.000Z",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "http://blog.functioneurus.com/2022/06/03/8_Exception_handling/index.html"
+            },
+            "@context": "http://schema.org"
+        }
+    </script>
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=1651727875408.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=1651727875408.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = false
+        window.aomori_search_algolia = false
+
+    </script>
+
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <a class="header-type-title" href="/">Function&#39;s Blog</a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-clhwrtjn7000yfoco6icyd9c4" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      #8 异常处理
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2022-06-03T11:34:40.000Z" itemprop="datePublished">2022-06-03</time>
+</div>
+
+            
+
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
+            </div>
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <h1 id="异常机制"><a href="#异常机制" class="headerlink" title="异常机制"></a>异常机制</h1><p>异常指运行时出现的不正常现象，如内存耗尽、意外的非法输入、硬件故障……</p>
+<p>当程序代码检查到异常时，需要错误检测程序的干预，称之为异常处理机制：把控制权转到可处理该问题的程序，指出具体出现了什么问题，并提供一些附加信息。</p>
+<p>使用异常处理，程序各部分能够就程序执行期间出现的问题相互通信，并处理这些问题。</p>
+<span id="more"></span>
+
+<h2 id="异常处理语句"><a href="#异常处理语句" class="headerlink" title="异常处理语句"></a>异常处理语句</h2><p>通常使用<code>try</code>块来处理异常。</p>
+<p><code>try</code>语句块以<code>try</code>关键字开始，并以一个或多个<code>catch</code>子句结束。在<code>try</code>块中执行的代码所抛出（<code>throw</code>）的异常， 通常会被其中一个<code>catch</code>子句处理。也称为处理代码。</p>
+<p><code>try</code>块的通用语法形式是：</p>
+<pre><code class="c++">try  &#123;
+    program - statements
+&#125; catch (exception - specifier) &#123;
+    handler - statements
+&#125; catch (exception - specifier) &#123;
+    handler - statements
+&#125;
+//...
+</code></pre>
+<h1 id="Throw"><a href="#Throw" class="headerlink" title="Throw"></a>Throw</h1><p>异常对象可以主动引发。</p>
+<p>语法：<code>throw</code>表达式，表达式包含一个对象或指针。</p>
+<p><code>exception</code>头文件定义了异常类，如<code>exception</code>类。异常类用来在<code>throw</code>和相应的处理程序之间（<code>catch</code>）之间传递信息。异常类以类似于将实参传递给函数的方式抛出和捕获。</p>
+<p>程序执行到<code>throw</code>的时候，跟在<code>throw</code>后面的语句不再执行， 控制权将从<code>throw</code>转移到匹配的<code>catch</code>语句，该<code>catch</code>可以是同一函数中局部的<code>catch</code>，也可以是在直接或间接调用该发生异常的函数的另一个函数。</p>
+<pre><code class="c++">void f2() &#123;
+    cout &lt;&lt; &quot;enter f2&quot; &lt;&lt; endl;
+    throw new exception();
+    cout &lt;&lt; &quot;exit f2&quot; &lt;&lt; endl;
+&#125;
+
+void f1() &#123;
+    cout &lt;&lt; &quot;enter f1&quot; &lt;&lt; endl;
+    f2();
+    cout &lt;&lt; &quot;exit f1&quot; &lt;&lt; endl;
+&#125;
+
+int main() &#123;
+    cout &lt;&lt; &quot;enter main&quot; &lt;&lt; endl;
+    f1();
+    cout &lt;&lt; &quot;exit main&quot; &lt;&lt; endl;
+    return 0;
+&#125;
+
+//运行结果：
+//enter main
+//enter f1
+//enter f2 
+//程序出现异常！
+//在整个程序中都未找到处理程序。
+//程序异常终止。
+</code></pre>
+<h1 id="栈展开（Stack-unwinding）"><a href="#栈展开（Stack-unwinding）" class="headerlink" title="栈展开（Stack unwinding）"></a>栈展开（Stack unwinding）</h1><p>抛出异常的时候，将暂停当前函数的执行，开始查找匹配的<code>catch</code>子句。</p>
+<p>首先检查<code>throw</code>本身是否在<code>try</code>块内部，如果是，检查与该<code>catch</code>相关的<code>catch</code>子句，看是否其中之一与抛出对象相匹配。如果找到匹配的<code>catch</code>，就处理异常；如果找不到，就退出当前函数并继续在调用函数中查找（<code>Call stack</code>）未捕获的异常终止程序。沿嵌套函数调用链继续向上，直到为异常找到一个<code>catch</code>子句。</p>
+<p>只要找到能够处理所遇异常的<code>catch</code>子句， 就进入该<code>catch</code>子句，并在该处理代码中继续执行。此过程称为栈展开<code>stack unwinding</code>。如上栈展开的过程为<code>f2-&gt;f1-&gt;main</code>。</p>
+<p>当<code>catch</code>结束的时候，在紧接在与该<code>try</code>块相关的最后一个<code>catch</code>子句之后的点继续执行。</p>
+<h2 id="内存泄漏"><a href="#内存泄漏" class="headerlink" title="内存泄漏"></a>内存泄漏</h2><p>栈展开期间，会提早退出包含<code>throw</code>的函数和调用链中可能的其他函数，这些函数已经可能已经创建了局部对象。因异常而退出函数时，编译器会保证适当地撤销局部对象，但是动态分配的内存不会被释放，因而可能会造成内存泄漏。</p>
+<pre><code class="c++">void f2() &#123;
+    cout &lt;&lt; &quot;enter f2&quot; &lt;&lt; endl;
+    int i = 3;   // 自动变量没关系
+    int *pi = new int(3);   // 动态分配
+    throw new exception();
+    cout &lt;&lt; &quot;exit f2&quot; &lt;&lt; endl;
+    delete pi;   //不会执行，内存泄漏
+&#125;
+
+void f1() &#123;
+    int j = 4;
+    int *pj = new int(4); // 动态分配
+    cout &lt;&lt; &quot;enter f1&quot; &lt;&lt; endl;
+    f2();
+    cout &lt;&lt; &quot;exit f1&quot; &lt;&lt; endl;
+    delete pj;   //不会执行，内存泄漏
+&#125;
+
+int main() &#123;
+    cout &lt;&lt; &quot;enter main&quot; &lt;&lt; endl;
+    f1();
+    cout &lt;&lt; &quot;exit main&quot; &lt;&lt; endl;
+    return 0;
+&#125;
+</code></pre>
+<h1 id="捕获异常"><a href="#捕获异常" class="headerlink" title="捕获异常"></a>捕获异常</h1><p><code>catch</code>子句中的异常说明符决定了处理代码能够捕获的异常种类。</p>
+<p>在查找匹配的<code>catch</code>期间，找到的<code>catch</code>不一定是与异常最匹配的那个<code>catch</code>，系统将选中第一个找到的可以处理该异常的<code>catch</code>。因此， 在<code>catch</code>子句列表中，最特殊的<code>catch</code>应最先出现。若带有因继承而相关的类型的多个<code>catch</code>子句，则必须从最低派生类类到最高派生类型排序。</p>
+<p>进入<code>catch</code>的时候，用异常对象初始化<code>catch</code>的形参。</p>
+<pre><code class="c++">//将f2 改写为：
+
+void f2() &#123;
+    cout &lt;&lt; &quot;enter f2&quot; &lt;&lt; endl;
+    try &#123;
+        cout &lt;&lt; &quot;enter try &quot; &lt;&lt; endl;
+        throw new exception();
+        cout &lt;&lt; &quot;exit try&quot; &lt;&lt; endl; // 这一句不会被执行
+    &#125; catch (exception *pe) &#123;
+        cout &lt;&lt; &quot;exception caught and handled&quot; &lt;&lt; endl;
+    &#125;
+    cout &lt;&lt; &quot;exit f2&quot; &lt;&lt; endl;
+&#125;
+
+//执行情况为：
+//enter main
+//enter f1
+//enter f2 
+//enter try
+//exception caught and handled
+//exit f2
+//exit f1
+//exit main
+</code></pre>
+<p>将程序稍作调整，可以更清楚看清捕获异常的过程：</p>
+<pre><code class="c++">void f2() &#123;
+    cout &lt;&lt; &quot;enter f2&quot; &lt;&lt; endl;
+    throw new exception();
+    cout &lt;&lt; &quot;exit f2&quot; &lt;&lt; endl;
+&#125;
+
+void f1() &#123;
+    cout &lt;&lt; &quot;enter f1&quot; &lt;&lt; endl;
+    try &#123;
+        cout &lt;&lt; &quot;enter try &quot; &lt;&lt; endl;
+        f2();  // 调用一个有可能抛出异常的函数
+        cout &lt;&lt; &quot;exit try&quot; &lt;&lt; endl;
+    &#125; catch (exception *pe) &#123;
+        cout &lt;&lt; &quot;exception caught and handled&quot; &lt;&lt; endl;
+    &#125;
+    cout &lt;&lt; &quot;exit f1&quot; &lt;&lt; endl;
+&#125;
+
+//异常在f2引发，而在f1处理。
+//程序在catch语句后恢复正常运行。
+</code></pre>
+<h2 id="异常信息的传递"><a href="#异常信息的传递" class="headerlink" title="异常信息的传递"></a>异常信息的传递</h2><p>异常类用来在<code>throw</code>和相应的<code>catch</code>之间传递，异常以类似于将实参传递给函数的方式抛出和捕获。</p>
+<pre><code class="c++">try &#123;
+    int i = 1; // 栈中的变量
+    throw i;
+&#125; catch (int  e) &#123; // 拷贝到此处int &amp;e也行，int* e则出错
+    e++;
+    cout &lt;&lt; e &lt;&lt; endl;
+&#125;
+
+try &#123;
+    int *pi = new int(1);
+    throw pi;
+&#125; catch (int *e) &#123;
+    (*e)++;
+    cout &lt;&lt; *e &lt;&lt; endl;
+    delete e;
+&#125;
+</code></pre>
+<h1 id="重新抛出"><a href="#重新抛出" class="headerlink" title="重新抛出"></a>重新抛出</h1><p>有可能单个<code>catch</code>不能完全处理一个异常。</p>
+<p>在进行了一些校正行动之后，<code>catch</code>可能确定该异常必须由函数调用链中更上层的函数来处理， 此时可以重新抛出异常，将其传递给函数调用链中更上层的函数。</p>
+<p>语法：<code>throw;</code></p>
+<p>使用场合：只能出现在<code>catch</code>语句内部， 或者从<code>catch</code>调用的函数中。</p>
+<h1 id="捕获所有异常"><a href="#捕获所有异常" class="headerlink" title="捕获所有异常"></a>捕获所有异常</h1><p>一般总是为特定的异常提供特定<code>catch</code>子句。</p>
+<p>有时可能不知道会抛出什么异常，使用以下语句可以捕获所有异常 ：</p>
+<pre><code class="c++">// matches any exception that might be thrown
+
+catch (...) &#123;
+    // place our code here
+&#125;
+</code></pre>
+<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+int Div(int x, int y) &#123;
+    if (y == 0)
+        throw y;
+    return x / y;
+&#125;
+
+int  main() &#123;
+    try &#123;
+        cout &lt;&lt; &quot;5/2=&quot; &lt;&lt; Div(5, 2) &lt;&lt; endl;
+        cout &lt;&lt; &quot;8/0=&quot; &lt;&lt; Div(8, 0) &lt;&lt; endl;
+        cout &lt;&lt; &quot;7/1=&quot; &lt;&lt; Div(7, 1) &lt;&lt; endl;
+    &#125; catch (int) &#123; //如改为exception，则无法捕捉。
+        cout &lt;&lt; &quot;except of deviding zero.\n&quot;;
+    &#125; catch (...) &#123;
+        cout &lt;&lt; &quot;any exception&quot; &lt;&lt; endl;
+    &#125;
+    cout &lt;&lt; &quot;after try catch&quot; &lt;&lt; endl;
+&#125;
+
+//输出为：
+//5/2=2
+//8/0=except of deviding zero.
+//after try catch
+</code></pre>
+<pre><code class="c++">class MyEx : public exception &#123;
+    public:
+        int i;
+        MyEx(int pi): exception(&quot;abc&quot;) &#123;
+            i = pi;
+        &#125;
+&#125;;
+
+int main() &#123;
+    try &#123;
+        throw  MyEx(10);
+    &#125; catch (MyEx myex) &#123;
+        cout &lt;&lt; myex.i &lt;&lt; myex.what() &lt;&lt; endl;
+    &#125;
+&#125;
+//运行的时候报错
+//[错误] no matching 函数 对于 call 到 &#39;std::exception::exception(const char [4])&#39;
+</code></pre>
+<h2 id="Noexcept"><a href="#Noexcept" class="headerlink" title="Noexcept"></a>Noexcept</h2><pre><code class="c++">void f() throw() &#123; // 表明函数内部不会发生异常
+    throw 1; // 如果发生了，编译给出警告
+&#125;
+
+//指定可能发生的异常。
+void excpt_func() throw(int, double)
+&#123; 
+    ...
+&#125;
+
+void f() noexcept &#123;
+    throw 1;
+&#125;
+//实际上后面两段我没看懂（哭
+</code></pre>
+<p><code>noexcept</code>有两种形式，一是简单地在函数声明后加上<code>noexcept</code>关键字，如<code>void excpt_func() noexcept; </code>。二是接受一个常量表达式作为参数，如<code>void excpt_func() noexcept (常量表达式); </code>。常量表达式的结果会被转换成一个<code>bool</code>类型的值。该值为<code>true</code>，表示函数不会抛出异常，反之，则有可能抛出异常。这里，不带常量表达式的<code>noexcept</code>相当于声明了<code>noexcept(true)</code>，即不会抛出异常。</p>
+<pre><code class="c++">
+#include &lt;iostream&gt;
+using namespace std;
+void Throw() &#123;
+    throw 1;
+&#125;
+
+void NoBlockThrow() &#123;
+    Throw();
+&#125;
+
+void BlockThrow() noexcept &#123;
+    Throw();
+&#125;
+
+int main() &#123;
+    try &#123;
+        Throw();
+    &#125; catch (...) &#123;
+        cout &lt;&lt; &quot;Found throw.&quot; &lt;&lt; endl;     // Found throw.
+    &#125;
+    try &#123;
+        NoBlockThrow();
+    &#125; catch (...) &#123;
+        cout &lt;&lt; &quot;Throw is not blocked.&quot; &lt;&lt; endl;    // Throw is not blocked.
+    &#125;
+    try &#123;
+        BlockThrow();   // terminate called after throwing an instance of &#39;int&#39;
+    &#125; catch (...) &#123;
+        cout &lt;&lt; &quot;Found throw 1.&quot; &lt;&lt; endl;
+    &#125;
+&#125;
+
+//输出为：
+//Found throw.
+//Throw is not blocked.
+//terminate called after throwing an instance of &#39;int&#39;
+</code></pre>
+<h3 id="C-11使用noexcept"><a href="#C-11使用noexcept" class="headerlink" title="C++11使用noexcept"></a>C++11使用<code>noexcept</code></h3><p><code>noexcept</code>表示其修饰的函数不会抛出异常。与<code>throw()</code>不同的是，在C++11中如果<code>noexcept</code>修饰的函数抛出了异常，编译器可以选择直接调用<code>std::terminate()</code>函数来终止程序的运行，这比基于异常机制的<code>throw()</code>在效率上会更高。因为异常机制会带来一些额外开销，比如函数抛出异常，会导致函数栈被依次地展开（unwind），并调用已构造的自动变量的析构函数等。</p>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2022/06/04/9_C++11_Standards/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">下一篇</div>
+      <div class="article-nav-title">
+        
+          #9 C++11标准
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/06/02/7_Input_and_Output/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">上一篇</div>
+      <div class="article-nav-title">#7 输入与输出</div>
+    </a>
+  
+</nav>
+
+
+    <section class="share">
+        <div class="share-title">分享</div>
+        <a class="share-item" target="_blank"
+            href="https://twitter.com/share?text=#8 异常处理 - Function's Blog&url=http%3A%2F%2Fblog.functioneurus.com%2F2022%2F06%2F03%2F8_Exception_handling%2F">
+            <box-icon type='logo' name='twitter'></box-icon>
+        </a>
+        <a class="share-item" target="_blank"
+            href="https://www.facebook.com/sharer.php?title=#8 异常处理 - Function's Blog&u=http%3A%2F%2Fblog.functioneurus.com%2F2022%2F06%2F03%2F8_Exception_handling%2F">
+            <box-icon name='facebook-square' type='logo' ></box-icon>
+        </a>
+        <!-- <a class="share-item" target="_blank"
+            href="https://service.weibo.com/share/share.php?title=#8 异常处理 - Function's Blog&url=http://blog.functioneurus.com/2022/06/03/8_Exception_handling/&pic=">
+            <div class="n-icon n-icon-weibo"></div>
+        </a> -->
+    </section>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
+    
+      
+
+    
+      
+  <div class="widget-wrap widget-tags">
+    <div class="widget-title"><span>Tags</span></div>
+    <div class="widget-inner">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/408/" rel="tag">408</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DB/" rel="tag">DB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Memo/" rel="tag">Memo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B9%B1%E7%BF%BB%E4%B9%A6/" rel="tag">乱翻书</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%90%8C%E4%BA%BA/" rel="tag">同人</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BA%9F%E8%AF%9D/" rel="tag">废话</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2023/05/04/broken_thoughts_in_23_MAY/">碎碎念存档_MAY</a>
+          </li>
+        
+          <li>
+            <a href="/2023/04/01/broken_thoughts_in_APR/">碎碎念存档_APR</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/26/16_Database_notes/">#16 数据库笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/01/broken_thoughts_in_MAR/">碎碎念存档_MAR</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/09/broken_thoughts_in_FEB/">碎碎念存档_FEB</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-archive">
+    <div class="widget-title"><span>Archive</span></div>
+    <div class="widget-inner">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/">2022</a></li></ul>
+    </div>
+  </div>
+
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Function&#39;s Blog &copy; 2023<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="/dist/build.js?1651727875408.js"></script>
+
+
+<script src="/dist/custom.js?1651727875408.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

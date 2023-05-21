@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>#9 C++11标准 | Function&#39;s Blog</title>
+
+    <meta name="description" content="&lt;h1 id=&#34;Auto关键字&#34;&gt;&lt;a href=&#34;#Auto关键字&#34; class=&#34;headerlink&#34; title=&#34;Auto关键字&#34;&gt;&lt;/a&gt;Auto关键字&lt;/h1&gt;&lt;p&gt;在强类型语言传统C和C++中，参数的类型都必须明确定义，而javaScript，Python等高级语言属于弱类型语言。&lt;/p&gt;
+&lt;p&gt;优缺点比较：安全性，运行速度、友好、便利性，开发速度。&lt;/p&gt;
+&lt;p&gt;传统上：&lt;code&gt;auto&lt;/code&gt;、&lt;code&gt;register&lt;/code&gt;关键字，变量的存储类型修饰不能被单独使用，否则编译器会给出警告。&lt;/p&gt;
+&lt;p&gt;在C++11标准中，引入关键字&lt;code&gt;auto&lt;/code&gt;，&lt;code&gt;decltype&lt;/code&gt;，以实现类型推导特性。&lt;/p&gt;">
+    <meta name="keywords" content="">
+
+    
+
+    <meta property="og:locale" content="zh-CN" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content= "#9 C++11标准 | Function&#39;s Blog"  />
+    <meta property="og:description" content= "&lt;h1 id=&#34;Auto关键字&#34;&gt;&lt;a href=&#34;#Auto关键字&#34; class=&#34;headerlink&#34; title=&#34;Auto关键字&#34;&gt;&lt;/a&gt;Auto关键字&lt;/h1&gt;&lt;p&gt;在强类型语言传统C和C++中，参数的类型都必须明确定义，而javaScript，Python等高级语言属于弱类型语言。&lt;/p&gt;
+&lt;p&gt;优缺点比较：安全性，运行速度、友好、便利性，开发速度。&lt;/p&gt;
+&lt;p&gt;传统上：&lt;code&gt;auto&lt;/code&gt;、&lt;code&gt;register&lt;/code&gt;关键字，变量的存储类型修饰不能被单独使用，否则编译器会给出警告。&lt;/p&gt;
+&lt;p&gt;在C++11标准中，引入关键字&lt;code&gt;auto&lt;/code&gt;，&lt;code&gt;decltype&lt;/code&gt;，以实现类型推导特性。&lt;/p&gt;" />
+    <meta property="og:url" content="http://blog.functioneurus.com/2022/06/04/9_C++11_Standards/index.html" />
+    <meta property="og:site_name" content="" />
+    <meta property="article:author" content="Function" />
+    <meta property="article:publisher" content="" />
+    <meta property="og:description" content="&lt;h1 id=&#34;Auto关键字&#34;&gt;&lt;a href=&#34;#Auto关键字&#34; class=&#34;headerlink&#34; title=&#34;Auto关键字&#34;&gt;&lt;/a&gt;Auto关键字&lt;/h1&gt;&lt;p&gt;在强类型语言传统C和C++中，参数的类型都必须明确定义，而javaScript，Python等高级语言属于弱类型语言。&lt;/p&gt;
+&lt;p&gt;优缺点比较：安全性，运行速度、友好、便利性，开发速度。&lt;/p&gt;
+&lt;p&gt;传统上：&lt;code&gt;auto&lt;/code&gt;、&lt;code&gt;register&lt;/code&gt;关键字，变量的存储类型修饰不能被单独使用，否则编译器会给出警告。&lt;/p&gt;
+&lt;p&gt;在C++11标准中，引入关键字&lt;code&gt;auto&lt;/code&gt;，&lt;code&gt;decltype&lt;/code&gt;，以实现类型推导特性。&lt;/p&gt;" />
+    <meta name="twitter:title" content="#9 C++11标准 | Function&#39;s Blog"/>
+    <meta name="twitter:description" content="&lt;h1 id=&#34;Auto关键字&#34;&gt;&lt;a href=&#34;#Auto关键字&#34; class=&#34;headerlink&#34; title=&#34;Auto关键字&#34;&gt;&lt;/a&gt;Auto关键字&lt;/h1&gt;&lt;p&gt;在强类型语言传统C和C++中，参数的类型都必须明确定义，而javaScript，Python等高级语言属于弱类型语言。&lt;/p&gt;
+&lt;p&gt;优缺点比较：安全性，运行速度、友好、便利性，开发速度。&lt;/p&gt;
+&lt;p&gt;传统上：&lt;code&gt;auto&lt;/code&gt;、&lt;code&gt;register&lt;/code&gt;关键字，变量的存储类型修饰不能被单独使用，否则编译器会给出警告。&lt;/p&gt;
+&lt;p&gt;在C++11标准中，引入关键字&lt;code&gt;auto&lt;/code&gt;，&lt;code&gt;decltype&lt;/code&gt;，以实现类型推导特性。&lt;/p&gt;"/>
+    <script type="application/ld+json">
+        {
+            "description": "&lt;h1 id=&#34;Auto关键字&#34;&gt;&lt;a href=&#34;#Auto关键字&#34; class=&#34;headerlink&#34; title=&#34;Auto关键字&#34;&gt;&lt;/a&gt;Auto关键字&lt;/h1&gt;&lt;p&gt;在强类型语言传统C和C++中，参数的类型都必须明确定义，而javaScript，Python等高级语言属于弱类型语言。&lt;/p&gt;
+&lt;p&gt;优缺点比较：安全性，运行速度、友好、便利性，开发速度。&lt;/p&gt;
+&lt;p&gt;传统上：&lt;code&gt;auto&lt;/code&gt;、&lt;code&gt;register&lt;/code&gt;关键字，变量的存储类型修饰不能被单独使用，否则编译器会给出警告。&lt;/p&gt;
+&lt;p&gt;在C++11标准中，引入关键字&lt;code&gt;auto&lt;/code&gt;，&lt;code&gt;decltype&lt;/code&gt;，以实现类型推导特性。&lt;/p&gt;",
+            "author": { "@type": "Person", "name": "Function" },
+            "@type": "BlogPosting",
+            "url": "http://blog.functioneurus.com/2022/06/04/9_C++11_Standards/index.html",
+            "publisher": {
+            "@type": "Organization",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://blog.functioneurus.comundefined"
+            },
+            "name": "Function"
+            },
+            "headline": "#9 C++11标准 | Function&#39;s Blog",
+            "datePublished": "2022-06-04T00:07:00.000Z",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "http://blog.functioneurus.com/2022/06/04/9_C++11_Standards/index.html"
+            },
+            "@context": "http://schema.org"
+        }
+    </script>
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=1651727875408.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=1651727875408.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = false
+        window.aomori_search_algolia = false
+
+    </script>
+
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <a class="header-type-title" href="/">Function&#39;s Blog</a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-clhwrtjn80012focod0uk69u3" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      #9 C++11标准
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2022-06-04T00:07:00.000Z" itemprop="datePublished">2022-06-04</time>
+</div>
+
+            
+
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
+            </div>
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <h1 id="Auto关键字"><a href="#Auto关键字" class="headerlink" title="Auto关键字"></a>Auto关键字</h1><p>在强类型语言传统C和C++中，参数的类型都必须明确定义，而javaScript，Python等高级语言属于弱类型语言。</p>
+<p>优缺点比较：安全性，运行速度、友好、便利性，开发速度。</p>
+<p>传统上：<code>auto</code>、<code>register</code>关键字，变量的存储类型修饰不能被单独使用，否则编译器会给出警告。</p>
+<p>在C++11标准中，引入关键字<code>auto</code>，<code>decltype</code>，以实现类型推导特性。</p>
+<span id="more"></span>
+
+<p><code>auto</code>新用法：使用<code>auto</code>定义变量，不再使用其它类型修饰符修饰，该变量的类型由编译器根据初始化数据或变量自动推导确定。</p>
+<pre><code class="c++">//根据赋值推断
+auto i = 0;   // i被推导为整数类型
+i++;             // 整数加法
+cout &lt;&lt; i &lt;&lt; endl;    // 输出1
+cout &lt;&lt; typeid(i).name() &lt;&lt; endl;  // 输出 int
+
+auto  j = &quot;abcde&quot;;  //  j被推导为const char *
+j++;     //执行指针的位移运算
+cout &lt;&lt; j &lt;&lt; endl;  //输出bcde
+cout &lt;&lt; typeid(j).name() &lt;&lt; endl; // 输出const char *
+
+int arr[3] &#123; 1, 2, 3 &#125;; // 数组名即指针，且地址已经分配
+int *pp = arr;   //  pp 即起始地址，pp[1],pp[2] 等均已分配
+auto pi = arr;   // pi 是int*
+cout &lt;&lt; typeid(pi).name() &lt;&lt; endl; // 输出int*
+
+//注意推导是在编译期完成的，并不影响性能。
+//指定可能发生的异常。
+</code></pre>
+<pre><code class="c++">//根据其他变量推断
+auto a = 1;
+auto pa = new auto(3); // pa 为 int *
+auto i = a;   // i 为int
+auto *pi = &amp;i; // pi 为 int *
+auto &amp;ri = i;  // ri 为 int &amp;
+auto j&#123;2&#125;;   // j为int
+auto k&#123;3&#125;, &amp; r = k;  // k 为int
+auto m&#123;4&#125;, n = 5;   // m,n 均为int
+auto s&#123;5&#125;, t&#123;0.6&#125;; // 前后类型不一致
+auto u;                   // 无法推导出类型
+auto *v;                 // 无法推导出类型
+auto arr[] &#123;7, 8, 9&#125;;     // 不能用于推导数组类型
+
+//auto 不能用于函数参数
+
+int add(auto x, auto y) &#123;
+&#125;
+</code></pre>
+<h2 id="更有用的用法"><a href="#更有用的用法" class="headerlink" title="更有用的用法"></a>更有用的用法</h2><p>常规用法：</p>
+<pre><code class="c++">vector&lt;int&gt; ivec(10, 1); // ivec内为10个1
+
+for (vector&lt;int&gt;::iterator it = ivec.begin(); it != ivec.end(); it++) &#123;
+    cout &lt;&lt; *it &lt;&lt; endl;
+&#125;
+</code></pre>
+<p>更好的用法：</p>
+<pre><code class="c++">vector&lt;int&gt; ivec(10, 1);
+
+for (auto it = ivec.begin(); it != ivec.end(); it++) &#123; // 遍历
+    cout &lt;&lt; *it &lt;&lt; endl;
+&#125;
+</code></pre>
+<h1 id="Decltype"><a href="#Decltype" class="headerlink" title="Decltype"></a>Decltype</h1><p><code>auto</code>关键字只能对变量进行类型推导，<code>decltype</code>则可对表达式进行推导，用法和<code>sizeof</code>很相似。</p>
+<pre><code class="c++">auto x = 1;
+auto y = 2;
+decltype(x + y) z; // z 是int 类型
+</code></pre>
+<h2 id="尾返回类型"><a href="#尾返回类型" class="headerlink" title="尾返回类型"></a>尾返回类型</h2><p>考虑模板函数：</p>
+<pre><code class="c++">template&lt;typename R, typename T, typename U&gt;
+
+R add(T x, U y) &#123;
+    return x + y;
+&#125;
+</code></pre>
+<p>在使用该模板函数的时候，必须明确指出返回类型。但事实上程序员并不知道<code>add()</code>这个函数会做什么样的操作，获得一个什么样的返回类型。</p>
+<p>但是也不能这样定义：</p>
+<pre><code class="c++">decltype(x + y) add(T x, U y);
+</code></pre>
+<p>因为编译器读到<code>x+y</code>时，<code>x</code>和<code>y</code>还未定义。</p>
+<p>C++11的解决方案是使用尾返回类型：</p>
+<pre><code class="c++">template&lt;typename T, typename U&gt;
+
+auto add(T x, U y) -&gt; decltype(x + y) &#123;
+    return x + y;
+&#125;
+</code></pre>
+<p>这样就可以使用该模板函数了：</p>
+<pre><code class="c++">int res = add&lt;int, int&gt;(3, 5);
+</code></pre>
+<p>在C++14中，则支持更直观的语法：</p>
+<pre><code class="c++">auto add(T x, U y) &#123;
+    return x + y;
+&#125;
+</code></pre>
+<h1 id="区间迭代"><a href="#区间迭代" class="headerlink" title="区间迭代"></a>区间迭代</h1><p>visual Basic、C#、Python等语言中<code>foreach</code>语法的使用。</p>
+<ol>
+<li>遍历数组</li>
+</ol>
+<pre><code class="c++">int arr[] = &#123;1, 2, 3, 4&#125;;   // 数组
+
+for (auto i : arr) &#123;
+    std::cout &lt;&lt; i &lt;&lt; std::endl;
+&#125;
+</code></pre>
+<ol start="2">
+<li>遍历字符串</li>
+</ol>
+<pre><code class="c++">std::string str = &quot;hello, world&quot;;  // 字符串
+
+for (auto ch : str) &#123;
+    cout &lt;&lt; ch &lt;&lt; endl ;
+&#125;
+</code></pre>
+<ol start="3">
+<li>遍历容器</li>
+</ol>
+<pre><code class="c++">vector&lt;std::string&gt; str_vec = &#123; &quot;i&quot;, &quot;like&quot;,  &quot;google&quot;&#125;;   // 容器
+
+for (auto it : str_vec) &#123;
+    cout &lt;&lt; it &lt;&lt; endl;
+&#125;
+</code></pre>
+<p>迭代变量的赋值方式： 引用或拷贝，语法大为简化。</p>
+<pre><code class="c++">int arr[] = &#123; 1, 2, 3, 4 &#125;;   // 遍历数组
+int brr[] = &#123; 1, 2, 3, 4 &#125;;   // 遍历数组
+for (auto &amp;i : arr)     // 可读可写
+    i *= 2;
+for (auto i : brr)    // 可读不可写
+    i *= 2;
+for (auto j : arr)
+    cout &lt;&lt; j &lt;&lt; endl;
+for (auto j : brr)
+    cout &lt;&lt; j &lt;&lt; endl;
+//输出结果：24681234
+</code></pre>
+<h1 id="Default"><a href="#Default" class="headerlink" title="Default"></a>Default</h1><p>在传统C++中，如果程序员没有提供，编译器会默认为对象生成默认构造函数、复制构造、赋值算符以及析构函数。</p>
+<p>另外，C++也为所有类定义了诸如<code>new</code>，<code>delete</code>这样的运算符。当程序员有需要时，可以重载这部分函数，但可能无法精确控制默认函数的生成行为。</p>
+<p><code>default</code>函数作用于类的特殊成员函数，为其自动生成默认的函数定义体，提高代码的执行效率。</p>
+<pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+class A &#123;    // 未定义构造函数，编译器生成一个默认的构造函数
+    public:
+        int get() &#123;
+            return a;
+        &#125;
+    private:
+        int a;
+&#125;;
+
+int main() &#123;
+    A A1;  //可以实例化对象，类有默认构造函数
+    cout &lt;&lt; A1.get() &lt;&lt; endl;
+    return 0;
+&#125;
+//输出：0
+</code></pre>
+<p>但当类中含有构造函数时，类不会为其生成默认构造函数：</p>
+<pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+class A &#123;
+    public:
+        A(int pa) &#123;
+            a = pa;    // 定义了一个特定的构造函数，则不生成默认构造函数
+        &#125;
+        int get() &#123;
+            return a;
+        &#125;
+    private:
+        int a;
+&#125;;
+
+int main() &#123;
+    A A1;  //类没有默认构造函数  编译失败
+    A A2(10);  // 使用特定的构造函数
+    cout &lt;&lt; A2.get() &lt;&lt; endl;
+    return 0;
+&#125;
+</code></pre>
+<p>可以让编译器自动生成特殊函数来代替手动编写的特殊成员函数。</p>
+<pre><code class="c++">class A &#123;
+    public:
+        A() &#123;&#125;; // 如果想要使用默认构造函数时，必须显示定义。
+        A(int pa) &#123;
+            a = pa;
+        &#125;
+        int get() &#123;
+            return a;
+        &#125;
+    private:
+        int a;
+&#125;;
+//此时输出10
+</code></pre>
+<p>C++11标准引入了一个新特性：<code>default</code>函数。只需在类的特殊成员函数声明后加上<code>=default;</code>，就可将该函数声明为<code>defaulted</code>函数，编译器将为显式声明的<code>default</code>函数自动生成函数体。</p>
+<pre><code class="c++">class A &#123;
+    public:
+        A() = default ; // 自动生成函数体。
+        A(int pa) &#123;
+            a = pa;
+        &#125;
+        int get() &#123;
+            return a;
+        &#125;
+    private:
+        int a;
+&#125;;
+</code></pre>
+<p><code>default</code>函数仅适用于类的特殊成员函数，且该特殊成员函数没有默认参数</p>
+<p><code>default</code>函数既可以在类内声明类外定义，也可以在类内直接定义。</p>
+<pre><code class="c++">class A &#123;
+    public:
+        A() = default;   //自动生成函数体，类内定义
+//A(double d) = default;  //错误：类型对于默认构造函数无效
+        A(int a) &#123;
+            this-&gt;a = a;
+        &#125;
+        A(const A &amp;it);
+//int get() = default;  //错误：=default只能出现在默认构造函数、析构函数、复制构造函数、赋值运算符中
+    private:
+        int a;
+&#125;;
+
+A::A(const A &amp;it) = default;  //类内声明，类外定义
+</code></pre>
+<h1 id="Delete"><a href="#Delete" class="headerlink" title="Delete"></a>Delete</h1><p>在C++11中，当我们定义一个类的成员函数时，如果后面使用<code>=delete</code>去修饰，那么就表示这个函数被定义为<code>deleted</code>，也就意味着这个成员函数不能再被调用，否则就会出错。</p>
+<pre><code class="c++">class TestClass &#123;
+    public:
+        int func(int data) = delete;
+&#125;;
+
+int main(void) &#123;
+    TestClass obj;
+    obj.func(100);  // 编译出错
+    return 0;
+&#125;
+//报错：[错误] use of deleted 函数 &#39;int TestClass::func(int)&#39;
+</code></pre>
+<p>在C++11之前，当我们希望一个类不能被拷贝，就会把构造函数定义为<code>private</code>，但是在C++11里就不需要这样做了，只需要在构造函数后面加上<code>=delete</code>来修饰下就可以了。</p>
+<p>另一个应用：</p>
+<pre><code class="c++">#include &lt;cstdio&gt;
+
+class TestClass &#123;
+    public:
+        void func(int data) &#123;
+            printf(&quot;data: %d\n&quot;, data);
+        &#125;
+&#125;;
+
+int main(void) &#123;
+    TestClass obj;
+    obj.func(100);
+    obj.func(100.0);
+    return 0;
+&#125;
+//输出：data: 100
+//data: 100
+</code></pre>
+<p>当我们把<code>100.0</code>传给<code>obj.func()</code>时，发生了隐式类型转换，由<code>double</code>转为了<code>int</code>，有时我们不希望发生这样的转换，我们就是希望传进来的参数和规定的类型一致，那么此时可以使用<code>=delete</code>来达到这个目的：</p>
+<pre><code class="c++">#include &lt;cstdio&gt;
+
+class TestClass &#123;
+    public:
+        void func(int data) &#123;
+            printf(&quot;data: %d\n&quot;, data);
+        &#125;
+        void func(double data) = delete;
+&#125;;
+
+int main(void) &#123;
+    TestClass obj;
+    obj.func(100);
+    obj.func(100.0); // 编译出错
+    return 0;
+&#125;
+//报错：[错误] use of deleted 函数 &#39;void TestClass::func(double)&#39;
+</code></pre>
+<h1 id="右值引用"><a href="#右值引用" class="headerlink" title="右值引用"></a>右值引用</h1><p>c++中引入了右值引用和移动语义，可以避免无谓的复制，提高程序性能。</p>
+<p>左值是可以放在赋值号左边可以被赋值的值，左值必须要在内存中有实体。</p>
+<p>右值是在赋值号右边取出，值赋给其他变量的值，右值可以在内存也可以在CPU寄存器。</p>
+<p>引用：变量的别名。</p>
+<p>引用的基本规则：声明引用的时候必须初始化，且一旦绑定，不可把引用绑定到其他对象；即引用必须初始化，不能对引用重定义；对引用的一切操作，就相当于对原对象的操作。</p>
+<p>C++03引用只能对左值，不能对右值。</p>
+<pre><code class="c++">int num = 10;
+int &amp;b = num; //正确
+int &amp;c = 10; //错误
+//报错：[错误] cannot bind non-const lvalue reference of type &#39;int&amp;&#39; 到 an rvalue of type &#39;int&#39;
+</code></pre>
+<p>但是常量引用，对左值右值都可以。</p>
+<pre><code class="c++">int num = 10;
+const int &amp;b = num;
+const int &amp;c = 10;
+</code></pre>
+<p>右值往往是没有名称的，因此要使用它只能借助引用的方式。</p>
+<p>C++11标准新引入了另一种引用方式，称为右值引用，用<code>&amp;&amp;</code>表示。</p>
+<p>和声明左值引用一样，右值引用也必须立即进行初始化操作，且只能使用右值进行初始化，比如：</p>
+<pre><code class="c++">int num = 10;
+int &amp;&amp;a = num;   //右值引用不能初始化为左值
+int &amp;&amp;a = 10;
+a = 20; // 可以修改
+const int &amp;&amp;b = 10;
+b = 20; // 不可以修改
+</code></pre>
+<h1 id="深拷贝与浅拷贝"><a href="#深拷贝与浅拷贝" class="headerlink" title="深拷贝与浅拷贝"></a>深拷贝与浅拷贝</h1><h2 id="浅拷贝"><a href="#浅拷贝" class="headerlink" title="浅拷贝"></a>浅拷贝</h2><pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+class Test &#123;
+    public:
+        int i;
+        Test(int pi) &#123;
+            i = pi;
+        &#125;
+&#125;;
+
+int main() &#123;
+    Test a(10);
+    Test b = a;  // 默认的拷贝构造
+    cout &lt;&lt; b.i &lt;&lt; endl;     // 10
+    a.i = 11;   // a 更新，
+    cout &lt;&lt; b.i &lt;&lt; endl;     // 10    b未更新，符合直观
+&#125;
+</code></pre>
+<p>浅拷贝有时不能反映意图：</p>
+<pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+class Test &#123;
+    public:
+        int i;
+        int *ptr;
+        Test(int pi) &#123;
+            i = pi;
+            ptr = new int(pi * 2);
+        &#125;
+&#125;;
+
+int main() &#123;
+    Test a(10);
+    Test b = a;	  // 默认的拷贝构造
+    cout &lt;&lt; *b.ptr &lt;&lt; endl;  // 20，看起来没问题，但实际上是拷贝了地址
+    // 即：b.ptr==a.ptr. 这可能非本意
+    *a.ptr = 22;   // a更新
+    cout &lt;&lt; *b.ptr &lt;&lt; endl;    // 22. b也跟着跟新！
+&#125;
+</code></pre>
+<h2 id="深拷贝"><a href="#深拷贝" class="headerlink" title="深拷贝"></a>深拷贝</h2><pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+class Test &#123;
+    public:
+        int i;
+        int *ptr;
+        Test(int pi) &#123;
+            i = pi;
+            ptr = new int(pi * 2);
+        &#125;
+        Test(const Test &amp;t) &#123;
+            i = t.i;
+            ptr = new int(*t.ptr);
+        &#125;
+&#125;;
+
+int main() &#123;
+    Test a(10);
+    Test b = a;	// 自定义的拷贝构造（深拷贝）
+    cout &lt;&lt; *b.ptr &lt;&lt; endl;   // 20.但只是*b.ptr=*a.ptr而b.ptr！=a.ptr
+    *a.ptr = 22;    // a更新了
+    cout &lt;&lt; *b.ptr &lt;&lt; endl;    //  20.b是独立于a的
+&#125;
+</code></pre>
+<p>如果成员有指针则往往需要深拷贝。</p>
+<h2 id="移动拷贝"><a href="#移动拷贝" class="headerlink" title="移动拷贝"></a>移动拷贝</h2><pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+class demo &#123;
+    public:
+        demo() : num(new int(0)) &#123;
+            cout &lt;&lt; &quot;construct!&quot; &lt;&lt; endl;
+        &#125;
+        //拷贝构造函数
+        demo(const demo &amp;d) : num(new int(*d.num)) &#123;
+            cout &lt;&lt; &quot;copy construct!&quot; &lt;&lt; endl;
+        &#125;
+        ~demo() &#123;
+            cout &lt;&lt; &quot;class destruct!&quot; &lt;&lt; endl;
+        &#125;
+    private:
+        int *num;
+&#125;;
+
+demo get_demo() &#123;
+    return demo();
+&#125;
+
+int main() &#123;
+    demo a = get_demo();
+    return 0;
+&#125;
+
+//完整的输出：
+//construct!              &lt;-- 执行 demo()
+//copy construct!         &lt;-- 执行 return demo()
+//class destruct!         &lt;-- 销毁 demo() 产生的匿名对象
+//copy construct!         &lt;-- 执行 a = get_demo()
+//class destruct!         &lt;-- 销毁 get_demo() 返回的临时对象
+//class destruct!         &lt;-- 销毁 a
+
+//编译器优化后：
+//construct!
+//class destruct!
+</code></pre>
+<p>利用拷贝构造函数实现对<code>a</code>对象的初始化，底层实际上进行了2次拷贝（而且是深拷贝）操作。</p>
+<p>对于仅申请少量堆空间的临时对象来说，深拷贝的执行效率依旧可以接受。</p>
+<p>如果临时对象中的指针成员申请了大量的堆空间，2次深拷贝操作会影响<code>a</code>对象初始化的执行效率。</p>
+<p>当类中包含指针类型的成员变量，使用其它对象来初始化同类对象时，怎样才能避免深拷贝导致的效率问题？</p>
+<p>C++11标准引入了解决方案，该标准中引入了右值引用的语法，借助它可以实现移动语义。</p>
+<h2 id="移动构造函数"><a href="#移动构造函数" class="headerlink" title="移动构造函数"></a>移动构造函数</h2><p>移动语义：以移动而非深拷贝的方式初始化含有指针成员的类对象，将其他对象（通常是临时对象）拥有的内存资源“移为已用”。</p>
+<pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+class demo &#123;
+    public:
+        demo(): num(new int(0)) &#123;
+            cout &lt;&lt; &quot;construct!&quot; &lt;&lt; endl;
+        &#125;
+        demo(const demo &amp;d): num(new int(*d.num)) &#123;
+            cout &lt;&lt; &quot;copy construct!&quot; &lt;&lt; endl;
+        &#125;
+        //添加移动构造函数
+        demo(demo &amp;&amp;d): num(d.num) &#123;
+            d.num = NULL;
+            cout &lt;&lt; &quot;move construct!&quot; &lt;&lt; endl;
+        &#125;
+        ~demo() &#123;
+            cout &lt;&lt; &quot;class destruct!&quot; &lt;&lt; endl;
+        &#125;
+    private:
+        int *num;
+&#125;;
+
+demo get_demo() &#123;
+    return demo();
+&#125;
+
+int main() &#123;
+    demo a = get_demo();
+    return 0;
+&#125;
+//执行过程：
+//construct!
+//move construct!
+//class destruct!
+//move construct!
+//class destruct!
+//class destruct!
+
+//输出：
+//construct!
+//class destruct!
+</code></pre>
+<p>函数使用右值引用形式的参数，又称为移动构造函数。</p>
+<p>在此构造函数中，<code>num</code>指针变量采用的是浅拷贝的复制方式，同时在函数内部重置了<code>d.num</code>，有效避免了“同一块对空间被释放多次”情况的发生。</p>
+<p>使用临时对象初始化<code>a</code>对象过程中产生的2次拷贝操作，都转由移动构造函数完成。</p>
+<p>非<code>const</code>右值引用只能操作右值，程序执行结果中产生的临时对象（例如函数返回值、<code>lambda</code>表达式等）既无名称也无法获取其存储地址，所以属于右值。</p>
+<p>当类中同时包含拷贝构造函数和移动构造函数时，如果使用临时对象初始化当前类的对象，编译器会优先调用移动构造函数来完成此操作。只有当类中没有合适的移动构造函数时，编译器才会退而求其次，调用拷贝构造函数。</p>
+<p>在实际开发中，通常在类中自定义移动构造函数的同时，会再为其自定义一个适当的拷贝构造函数：当利用右值初始化类对象时，会调用移动构造函数；使用左值（非右值）初始化类对象时，会调用拷贝构造函数。</p>
+<p>如果使用左值初始化同类对象，但也想调用移动构造函数完成，如何实现？</p>
+<p>默认情况下，左值初始化同类对象只能通过拷贝构造函数完成，如果想调用移动构造函数，则必须使用右值进行初始化。C++11标准中为了满足用户使用左值初始化同类对象时也通过移动构造函数完成的需求，新引入了 <code>std::move()</code>函数，它可以将左值强制转换成对应的右值，由此便可以使用移动构造函数。</p>
+<h2 id="move-arg"><a href="#move-arg" class="headerlink" title="move(arg)"></a>move(arg)</h2><p>其中，<code>arg</code>表示指定的左值对象。该函数会返回<code>arg</code>对象的右值形式。</p>
+<pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+class movedemo &#123;
+    public:
+        movedemo() : num(new int(0)) &#123;
+            cout &lt;&lt; &quot;construct!&quot; &lt;&lt; endl;
+        &#125;
+        //拷贝构造函数
+        movedemo(const movedemo &amp;d) : num(new int(*d.num)) &#123;
+            cout &lt;&lt; &quot;copy construct!&quot; &lt;&lt; endl;
+        &#125;
+        //移动构造函数
+        movedemo(movedemo &amp;&amp;d) : num(d.num) &#123;
+            d.num = NULL;
+            cout &lt;&lt; &quot;move construct!&quot; &lt;&lt; endl;
+        &#125;
+        int *num;
+&#125;;
+
+int main() &#123;
+    movedemo demo;
+    cout &lt;&lt; &quot;demo2:\n&quot;;
+    movedemo demo2 = demo;
+    cout &lt;&lt; *demo2.num &lt;&lt; endl;   //可以执行
+    cout &lt;&lt; &quot;demo3:\n&quot;;
+    movedemo demo3 = std::move(demo);
+    //此时 demo.num = NULL，因此下面代码会报运行时错误
+    //cout &lt;&lt; *demo.num &lt;&lt; endl;
+    return 0;
+&#125;
+//输出：
+//construct!
+//demo2:
+//copy construct!
+//0
+//demo3:
+//move construct!
+</code></pre>
+<p>通过观察程序的输出结果，以及对比<code>demo2</code>和<code>demo3</code>初始化操作不难得知，<code>demo</code>对象作为左值，直接用于初始化<code> demo2</code>对象，其底层调用的是拷贝构造函数；而通过调用<code>move()</code>函数可以得到<code>demo</code>对象的右值形式，用其初始化<code>demo3</code>对象，编译器会优先调用移动构造函数。</p>
+<p>注意，调用拷贝构造函数，并不影响<code>demo</code>对象，但如果调用移动构造函数，由于函数内部会重置<code>demo.num</code>指针的指向为<code>NULL</code>，所以程序中后面代码会导致程序运行时发生错误。</p>
+<h2 id="完美转发（Perfect-Forward）"><a href="#完美转发（Perfect-Forward）" class="headerlink" title="完美转发（Perfect Forward）"></a>完美转发（Perfect Forward）</h2><p>完美转发指的是函数模板可以将自己的参数“完美”地转发给内部调用的其它函数。所谓完美，即不仅能准确地转发参数的值，还能保证被转发参数的左、右值属性不变。</p>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2022/06/05/10_Lambda_Expression/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">下一篇</div>
+      <div class="article-nav-title">
+        
+          #10 Lambda表达式
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/06/03/8_Exception_handling/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">上一篇</div>
+      <div class="article-nav-title">#8 异常处理</div>
+    </a>
+  
+</nav>
+
+
+    <section class="share">
+        <div class="share-title">分享</div>
+        <a class="share-item" target="_blank"
+            href="https://twitter.com/share?text=#9 C++11标准 - Function's Blog&url=http%3A%2F%2Fblog.functioneurus.com%2F2022%2F06%2F04%2F9_C%2B%2B11_Standards%2F">
+            <box-icon type='logo' name='twitter'></box-icon>
+        </a>
+        <a class="share-item" target="_blank"
+            href="https://www.facebook.com/sharer.php?title=#9 C++11标准 - Function's Blog&u=http%3A%2F%2Fblog.functioneurus.com%2F2022%2F06%2F04%2F9_C%2B%2B11_Standards%2F">
+            <box-icon name='facebook-square' type='logo' ></box-icon>
+        </a>
+        <!-- <a class="share-item" target="_blank"
+            href="https://service.weibo.com/share/share.php?title=#9 C++11标准 - Function's Blog&url=http://blog.functioneurus.com/2022/06/04/9_C++11_Standards/&pic=">
+            <div class="n-icon n-icon-weibo"></div>
+        </a> -->
+    </section>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
+    
+      
+
+    
+      
+  <div class="widget-wrap widget-tags">
+    <div class="widget-title"><span>Tags</span></div>
+    <div class="widget-inner">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/408/" rel="tag">408</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DB/" rel="tag">DB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Memo/" rel="tag">Memo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B9%B1%E7%BF%BB%E4%B9%A6/" rel="tag">乱翻书</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%90%8C%E4%BA%BA/" rel="tag">同人</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BA%9F%E8%AF%9D/" rel="tag">废话</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2023/05/04/broken_thoughts_in_23_MAY/">碎碎念存档_MAY</a>
+          </li>
+        
+          <li>
+            <a href="/2023/04/01/broken_thoughts_in_APR/">碎碎念存档_APR</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/26/16_Database_notes/">#16 数据库笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/01/broken_thoughts_in_MAR/">碎碎念存档_MAR</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/09/broken_thoughts_in_FEB/">碎碎念存档_FEB</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-archive">
+    <div class="widget-title"><span>Archive</span></div>
+    <div class="widget-inner">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/">2022</a></li></ul>
+    </div>
+  </div>
+
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Function&#39;s Blog &copy; 2023<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="/dist/build.js?1651727875408.js"></script>
+
+
+<script src="/dist/custom.js?1651727875408.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>#12 C++多线程 | Function&#39;s Blog</title>
+
+    <meta name="description" content="&lt;h1 id=&#34;概述&#34;&gt;&lt;a href=&#34;#概述&#34; class=&#34;headerlink&#34; title=&#34;概述&#34;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;C++11之前，C++的多线程编程均需依赖系统或第三方接口实现，一定程度上影响了代码的移植性。&lt;/p&gt;
+&lt;p&gt;C++11中引入了boost库中的多线程部分内容，形成C++标准。&lt;/p&gt;
+&lt;p&gt;成为C++标准后的&lt;code&gt;boost&lt;/code&gt;多线程编程部分接口基本保持不变，方便以前使用&lt;code&gt;boost&lt;/code&gt;接口开发的使用者切换升级。&lt;/p&gt;">
+    <meta name="keywords" content="">
+
+    
+
+    <meta property="og:locale" content="zh-CN" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content= "#12 C++多线程 | Function&#39;s Blog"  />
+    <meta property="og:description" content= "&lt;h1 id=&#34;概述&#34;&gt;&lt;a href=&#34;#概述&#34; class=&#34;headerlink&#34; title=&#34;概述&#34;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;C++11之前，C++的多线程编程均需依赖系统或第三方接口实现，一定程度上影响了代码的移植性。&lt;/p&gt;
+&lt;p&gt;C++11中引入了boost库中的多线程部分内容，形成C++标准。&lt;/p&gt;
+&lt;p&gt;成为C++标准后的&lt;code&gt;boost&lt;/code&gt;多线程编程部分接口基本保持不变，方便以前使用&lt;code&gt;boost&lt;/code&gt;接口开发的使用者切换升级。&lt;/p&gt;" />
+    <meta property="og:url" content="http://blog.functioneurus.com/2022/06/06/12_C++_Multithreading/index.html" />
+    <meta property="og:site_name" content="" />
+    <meta property="article:author" content="Function" />
+    <meta property="article:publisher" content="" />
+    <meta property="og:description" content="&lt;h1 id=&#34;概述&#34;&gt;&lt;a href=&#34;#概述&#34; class=&#34;headerlink&#34; title=&#34;概述&#34;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;C++11之前，C++的多线程编程均需依赖系统或第三方接口实现，一定程度上影响了代码的移植性。&lt;/p&gt;
+&lt;p&gt;C++11中引入了boost库中的多线程部分内容，形成C++标准。&lt;/p&gt;
+&lt;p&gt;成为C++标准后的&lt;code&gt;boost&lt;/code&gt;多线程编程部分接口基本保持不变，方便以前使用&lt;code&gt;boost&lt;/code&gt;接口开发的使用者切换升级。&lt;/p&gt;" />
+    <meta name="twitter:title" content="#12 C++多线程 | Function&#39;s Blog"/>
+    <meta name="twitter:description" content="&lt;h1 id=&#34;概述&#34;&gt;&lt;a href=&#34;#概述&#34; class=&#34;headerlink&#34; title=&#34;概述&#34;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;C++11之前，C++的多线程编程均需依赖系统或第三方接口实现，一定程度上影响了代码的移植性。&lt;/p&gt;
+&lt;p&gt;C++11中引入了boost库中的多线程部分内容，形成C++标准。&lt;/p&gt;
+&lt;p&gt;成为C++标准后的&lt;code&gt;boost&lt;/code&gt;多线程编程部分接口基本保持不变，方便以前使用&lt;code&gt;boost&lt;/code&gt;接口开发的使用者切换升级。&lt;/p&gt;"/>
+    <script type="application/ld+json">
+        {
+            "description": "&lt;h1 id=&#34;概述&#34;&gt;&lt;a href=&#34;#概述&#34; class=&#34;headerlink&#34; title=&#34;概述&#34;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;C++11之前，C++的多线程编程均需依赖系统或第三方接口实现，一定程度上影响了代码的移植性。&lt;/p&gt;
+&lt;p&gt;C++11中引入了boost库中的多线程部分内容，形成C++标准。&lt;/p&gt;
+&lt;p&gt;成为C++标准后的&lt;code&gt;boost&lt;/code&gt;多线程编程部分接口基本保持不变，方便以前使用&lt;code&gt;boost&lt;/code&gt;接口开发的使用者切换升级。&lt;/p&gt;",
+            "author": { "@type": "Person", "name": "Function" },
+            "@type": "BlogPosting",
+            "url": "http://blog.functioneurus.com/2022/06/06/12_C++_Multithreading/index.html",
+            "publisher": {
+            "@type": "Organization",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://blog.functioneurus.comundefined"
+            },
+            "name": "Function"
+            },
+            "headline": "#12 C++多线程 | Function&#39;s Blog",
+            "datePublished": "2022-06-06T05:57:23.000Z",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "http://blog.functioneurus.com/2022/06/06/12_C++_Multithreading/index.html"
+            },
+            "@context": "http://schema.org"
+        }
+    </script>
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=1651727875408.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=1651727875408.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = false
+        window.aomori_search_algolia = false
+
+    </script>
+
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <a class="header-type-title" href="/">Function&#39;s Blog</a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-clhwrtjmq0004foco4siegyg7" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      #12 C++多线程
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2022-06-06T05:57:23.000Z" itemprop="datePublished">2022-06-06</time>
+</div>
+
+            
+
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
+            </div>
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>C++11之前，C++的多线程编程均需依赖系统或第三方接口实现，一定程度上影响了代码的移植性。</p>
+<p>C++11中引入了boost库中的多线程部分内容，形成C++标准。</p>
+<p>成为C++标准后的<code>boost</code>多线程编程部分接口基本保持不变，方便以前使用<code>boost</code>接口开发的使用者切换升级。</p>
+<span id="more"></span>
+
+<h2 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h2><p>C++11新标准中引入了五个头文件来支持多线程编程：</p>
+<p><code>&lt;atomic&gt;</code>：主要声明了两个类<code>atomic</code>和<code>atomic_flag</code>，还声明了一套 C 风格的原子类型和与 C 兼容的原子操作的函数。</p>
+<p><code>&lt;thread&gt;</code>：主要声明了<code>thread</code>类，<code>this_thread</code>命名空间也在该头文件中。</p>
+<p><code>&lt;mutex&gt;</code>：主要声明了与<code>mutex</code>相关的类，包括<code>mutex</code>系列类，<code>lock_guard</code>，<code>unique_lock</code>以及其他的类型和函数。</p>
+<p><code>&lt;condition_variable&gt;</code>：主要声明了与条件变量相关的类，包括<code>condition_variable</code>和<code>condition_variable_any</code>。</p>
+<p><code>&lt;future&gt;</code>：主要声明了<code>promise</code>，<code>package_task</code>两个<code>Provider</code>类，以及<code>future</code>和<code>shared_future</code>两个<code>Future</code>类，另外还有一些与之相关的类型和函数，如<code>async()</code>函数。<code>condition_variable</code>和<code>future</code>在<code>vc/clr</code>下不支持。</p>
+<h1 id="Thread类"><a href="#Thread类" class="headerlink" title="Thread类"></a>Thread类</h1><p><code>Main</code>函数创建主进程，同时具备一个主线程。任何线程都可以通过<code>Thread</code>类创建子线程。</p>
+<p><code>Thread th;</code> 默认构造函数，不与任何执行线程关联。</p>
+<p>通过给构造函数指定一个函数，线程对象关联一个执行线程，该线程执行该函数。</p>
+<pre><code class="C++">#include &lt;iostream&gt;
+#include &lt;thread&gt;
+using namespace std;
+
+int f1() &#123;
+    cout &lt;&lt; &quot;in sub thread&quot; &lt;&lt; endl;
+    return 1;
+&#125;
+
+int main() &#123;
+    cout &lt;&lt; &quot;main thread &quot; &lt;&lt; endl;
+    thread th1(f1);
+    th1.join();  // 消除异常
+    //若无该语句则输出
+    //main thread
+    //tierminate called without an active exception
+    //n sub thread
+&#125;
+</code></pre>
+<h2 id="线程id"><a href="#线程id" class="headerlink" title="线程id"></a>线程id</h2><p>每个线程都具有唯一的<code>thread::id</code>标识符。</p>
+<p>线程自身可通过<code>this_thread::get_id</code>返回其ID。</p>
+<p>调用该子线程的线程（简称调用线程）可通过<code>thread::get_id</code>返回子线程的ID。</p>
+<p><code>native_handle;</code>是由系统分配的ID，二者不同。</p>
+<pre><code class="c++">#include &lt;iostream&gt;     // std::cout
+#include &lt;thread&gt;       // std::thread
+using namespace std;
+
+int f1() &#123;
+    cout &lt;&lt; &quot;in sub thread : &quot; &lt;&lt; this_thread::get_id() &lt;&lt; endl;
+    return 1;
+&#125;
+
+int main() &#123;
+    cout &lt;&lt; &quot;main thread: &quot; &lt;&lt; this_thread::get_id() &lt;&lt; endl;
+    thread th1(f1);
+    cout &lt;&lt; &quot;sub thread id:&quot; &lt;&lt; th1.get_id() &lt;&lt; endl;
+    cout &lt;&lt; &quot;sub thread native handle&quot; &lt;&lt; th1.native_handle() &lt;&lt; endl;
+    th1.join();
+&#125;
+//可能输出
+//main thread: 50604
+//sub thread id:54168
+//sub thread native handle00000000000000B4
+//in sub thread : 54168
+</code></pre>
+<h2 id="Join与Detach"><a href="#Join与Detach" class="headerlink" title="Join与Detach"></a>Join与Detach</h2><p>子线程一旦创建，即刻分道扬镳，主线程与子线程各自独立运行。</p>
+<p>哪个线程执行的时间长，未知。但主线程终止后，进程会终止，从而强制终止所有子线程，但子线程分配的资源可能不能释放。</p>
+<p>在主线程与子线程之间定义两种关系：</p>
+<ul>
+<li>可会合的（joinable）</li>
+</ul>
+<p>主线需要显式等待子线程结束，即使子线程本来就比主线程更快结束。否则，子线程的资源不能被回收。主线程调用<code>子线程.join()</code>来等待其结束。</p>
+<ul>
+<li>分离的（detached）</li>
+</ul>
+<p>子线程与主线程彻底分家，一旦子线程结束，系统会自动释放其资源。主线程调用<code>子线程.detach()</code>来使之分离。</p>
+<p>默认的子线程都是可会和的,调用<code>detach()</code>使之分离，但反向操作不行，不能由detached变为joinable。</p>
+<p>所有的子线程，在主线程中，要么join之，要么detach之。如前例中<code>th1.detach();</code></p>
+<h2 id="线程函数参数"><a href="#线程函数参数" class="headerlink" title="线程函数参数"></a>线程函数参数</h2><p>线程关联的函数，可能有参数，在创建线程对象时需传入这些函数：</p>
+<pre><code class="c++">int f1(int i, int j)
+&#123;
+    cout &lt;&lt; i + j &lt;&lt; endl;
+    return 1;
+&#125;
+int main()
+&#123;
+    thread th1(f1, 3, 5);
+    th1.join();
+&#125;
+//输出8
+</code></pre>
+<h2 id="类成员函数"><a href="#类成员函数" class="headerlink" title="类成员函数"></a>类成员函数</h2><pre><code class="c++">class MT &#123;
+    public :
+        void f(int i) &#123; // 实例函数
+            cout &lt;&lt; i &lt;&lt; endl;
+        &#125;
+        static void sf(int j) &#123; // 静态函数
+            cout &lt;&lt; j &lt;&lt; endl;
+        &#125;
+&#125;;
+
+int main() &#123;
+    MT mt;
+    thread th1(&amp;(MT::f), &amp;mt, 3); // 以子线程加载实例函数
+    thread th2(MT::sf, 5);       // 以子线程加载静态函数
+    th1.join();  //等待会合
+    th2.join();  //等待会合
+&#125;
+//输出35
+</code></pre>
+<h2 id="在类内部处理子线程"><a href="#在类内部处理子线程" class="headerlink" title="在类内部处理子线程"></a>在类内部处理子线程</h2><pre><code class="c++">#include &lt;thread&gt;
+#include &lt;iostream&gt;
+using namespace std;
+
+class MT &#123;
+    public:
+        void g() &#123;
+            auto fun = [this](int i) &#123;
+                this-&gt;ThreadFunc(i);
+            &#125;;   // 定义一个Lambda 表达式
+            thread th(fun, 4);
+            th.join();
+            thread th2([this](int i) &#123;
+                this-&gt;ThreadFunc(i);
+            &#125;, 4); // 或者更简单地
+            th2.join();
+            thread th3 ([](int i) &#123;
+                MT::StaticThreadFun(i);
+            &#125;, 4);
+            th3.join();
+        &#125;
+&#125;;
+
+void ThreadFunc(int i) &#123;
+    cout &lt;&lt; ++i &lt;&lt; endl;
+&#125;
+
+static void StaticThreadFun(int i) &#123;
+    cout &lt;&lt; ++i &lt;&lt; endl;
+&#125;
+&#125;;
+int main() &#123;
+    MT mt;
+    mt.g();
+    return 0;
+&#125;
+
+//感觉有点问题 不过还是先当成高级操作放一边吧（
+</code></pre>
+<h2 id="this-thread名称空间"><a href="#this-thread名称空间" class="headerlink" title="this_thread名称空间"></a>this_thread名称空间</h2><p><code>std</code>名称空间下的一个子空间：</p>
+<pre><code class="c++">void f(int i) &#123;
+    cout &lt;&lt; i &lt;&lt; endl;
+    cout &lt;&lt; this_thread::get_id() &lt;&lt; endl;
+    this_thread::sleep_for()
+    this_thread::sleep_until()
+    this_thread::yield();
+&#125;
+</code></pre>
+<p><code>this_thread::yield()</code>：避免一个线程频繁与其他线程争抢CPU时间片，从而导致多线程处理性能下降。</p>
+<p>比如需要等待某个操作完成，如果直接用一个循环不断判断这个操作是否完成，会使得这个线程占满CPU时间，造成资源浪费。</p>
+<p>可以判断一次操作是否完成，如果没有完成就调用<code>yield</code>交出时间片，过一会儿再来判断是否完成，线程占用CPU时间会大大减少。</p>
+<p>举例：</p>
+<pre><code class="c++">while(!isDone());  //不好
+while(!isDone()) yield();   // 稍好
+</code></pre>
+<h2 id="线程对象的拷贝"><a href="#线程对象的拷贝" class="headerlink" title="线程对象的拷贝"></a>线程对象的拷贝</h2><pre><code class="c++">thread th1;
+thread th2 = th1; // 不允许。
+</code></pre>
+<h1 id="Mutex头文件"><a href="#Mutex头文件" class="headerlink" title="Mutex头文件"></a>Mutex头文件</h1><p><code>mutex</code>：最基本也是最常用的互斥类。</p>
+<p><code>recursive_mutex</code>：同一线程内可递归（重入）的互斥类。</p>
+<p><code>timed_mutex</code> ：除具备<code>mutex</code>功能外，还提供了带时限请求锁定的能力。</p>
+<p><code>recursive_timed_mutex</code>：同一线程内可递归（重入）的<code>timed_mutex</code>。</p>
+<h2 id="Mutex标准操作"><a href="#Mutex标准操作" class="headerlink" title="Mutex标准操作"></a>Mutex标准操作</h2><h3 id="lock"><a href="#lock" class="headerlink" title="lock"></a>lock</h3><p><code>lock</code>：锁住互斥量。调用<code>lock</code>时有三种情况:</p>
+<p>如果互斥量没有被锁住，则调用线程将该<code>mutex</code>锁住，直到调用线程调用<code>unlock</code>释放。</p>
+<p>如果<code>mutex</code>已被其它线程<code>lock</code>，则调用线程将被阻塞，直到其它线程<code>unlock</code>该<code>mutex</code>。</p>
+<p>如果当前<code>mutex</code>已经被调用者线程锁住，则<code>std::mutex</code>死锁，而<code>recursive</code>系列则成功返回。</p>
+<h3 id="try-lock"><a href="#try-lock" class="headerlink" title="try_lock"></a>try_lock</h3><p><code>try_lock</code>尝试锁住<code>mutex</code>，调用该函数同样也有三种情况：</p>
+<p>如果互斥量没有被锁住，则调用线程将该<code>mutex</code>锁住（返回<code>true</code>），直到调用线程调用<code>unlock</code>释放。</p>
+<p>如果<code>mutex</code>已被其它线程<code>lock</code>，则调用线程将失败，并返回<code>false</code>。</p>
+<p>如果当前<code>mutex</code>已经被调用者线程锁住，则<code>std::mutex</code>死锁，而<code>recursive</code>系列则成功返回<code>true</code>。</p>
+<h3 id="unlock"><a href="#unlock" class="headerlink" title="unlock"></a>unlock</h3><p><code>unlock</code>负责解锁<code>mutex</code>，释放对<code>mutex</code>的所有权。</p>
+<p>对于<code>recursive</code>系列<code>mutex</code>，<code>unlock</code>次数需要与<code>lock</code>次数相同才可以完全解锁。</p>
+<pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;thread&gt;
+using namespace std;
+
+void badinc(int loop, int *counter) &#123;
+    for (int i = 0; i &lt; loop; i++)
+        ++*counter;
+&#125;
+
+int main() &#123;
+    thread threads[5];
+    int counter = 0;
+    for (thread &amp;thr : threads)
+        thr = thread(badinc, 10000, &amp;counter);
+    for (thread &amp;thr : threads)
+        thr.join();
+    cout &lt;&lt; counter &lt;&lt; endl;
+    return 0;
+&#125;
+//每次输出各不相同 均小于5w 因线程未同步
+//出人意料的是gcc居然能直接输出5w amazing
+
+#include &lt;iostream&gt;
+#include &lt;thread&gt;
+#include &lt;mutex&gt;
+using namespace std;
+
+void goodinc(mutex *pmutex, int loop, int *counter) &#123;
+    for (int i = 0; i &lt; loop; i++) &#123;
+        pmutex-&gt;lock();
+        ++*counter;
+        pmutex-&gt;unlock();
+    &#125;
+&#125;
+
+int main() &#123;
+    thread threads[5];
+    mutex mutex;
+    int counter = 0;
+    for (thread &amp;thr : threads)
+        thr = thread(goodinc, &amp;mutex, 10000, &amp;counter);
+    for (thread &amp;thr : threads)
+        thr.join();
+    cout &lt;&lt; counter &lt;&lt; endl;
+    return 0;
+&#125;
+//同步处理后结果为5w
+</code></pre>
+<h1 id="RAII"><a href="#RAII" class="headerlink" title="RAII"></a>RAII</h1><p>RAII，Resource Acquisition is Initialization，即资源获取即初始化，由Bjarne Stroustrup提出。</p>
+<pre><code class="c++">std::mutex mutex_;
+
+void function() &#123;
+    mutex_.lock();
+    ......
+    ......
+    mutex_.unlock();
+&#125;
+</code></pre>
+<p>在互斥量<code>lock</code>和<code>unlock</code>之间的代码很可能会出现异常，或者有<code>return</code>语句，互斥量就不会正确的<code>unlock</code>，会导致线程死锁。</p>
+<p>更好的方式是使用<code>std::unique_lock</code>或者<code>std::lock_guard</code>对互斥量进行状态管理：</p>
+<pre><code class="c++">mutex mutex_;
+
+void function() &#123;
+    lock_guard&lt;mutex&gt; lock(mutex_);
+    ......
+    ......
+&#125;
+</code></pre>
+<p>在创建<code>lock_guard</code>对象的时候，会对<code>mutex</code>对象进行<code>lock</code>，当<code>std::lock_guard</code>对象在超出作用域时，会自动<code>std::mutex</code>对象进行解锁，不用担心代码异常造成线程死锁。</p>
+<h2 id="lock-guard类"><a href="#lock-guard类" class="headerlink" title="lock_guard类"></a>lock_guard类</h2><p><code>lock_gurad</code>是C++11中定义的模板类。</p>
+<pre><code class="c++">template &lt;class Mutex&gt; class lock_guard;
+</code></pre>
+<p>类<code>lock_guard</code>是互斥封装器，为在作用域块期间占有互斥提供了一种方便的RAII风格机制。</p>
+<p>创建<code>lock_guard</code>对象时，它试图接收给定互斥的所有权。控制离开创建<code>lock_guard</code>对象的作用域时，销毁<code>lock_guard</code>并释放互斥。</p>
+<p><code>lock_guard</code>类不可复制。</p>
+<p><code>lock_guard</code>对象并不负责管理<code>Mutex</code>对象的生命周期，<code>lock_guard</code>对象只是简化了<code>Mutex</code>对象的上锁和解锁操作，方便线程对互斥量上锁，即在某个<code>lock_guard</code>对象的声明周期内，它所管理的锁对象会一直保持上锁状态；而当<code>lock_guard</code>的生命周期结束之后，它所管理的锁对象会被解锁。</p>
+<p>互斥锁保证了线程间的同步，但是却将并行操作变成了串行操作，这对性能有很大的影响，所以我们要尽可能的减小锁定的区域，也就是使用细粒度锁。</p>
+<p><code>lock_guard</code>不够灵活，它只保证在析构的时候执行解锁操作，<code>lock_guard</code>本身并没有提供加锁和解锁的接口，但是有些时候会有这种需求。</p>
+<pre><code class="c++">class LogFile &#123;
+        mutex _mu;
+        ofstream f;
+    public:
+        LogFile() &#123;
+            f.open(&quot;log.txt&quot;);
+        &#125;
+        ~LogFile() &#123;
+            f.close();
+        &#125;
+        void shared_print(string msg, int id) &#123;
+            &#123;
+                std::lock_guard&lt;std::mutex&gt; guard(_mu);
+                //do something 1
+            &#125;
+            //do something 2
+            &#123;
+                std::lock_guard&lt;std::mutex&gt; guard(_mu);
+                // do something 3
+                f &lt;&lt; msg &lt;&lt; id &lt;&lt; endl;
+                cout &lt;&lt; msg &lt;&lt; id &lt;&lt; endl;
+            &#125;
+        &#125;
+&#125;;
+</code></pre>
+<p><code>Shared_print</code>函数内部有两段代码需要进行保护，这个时候使用<code>lock_guard</code>就需要创建两个局部对象来管理同一个互斥锁。当然也可以只创建一个，但是锁的力度太大，效率不高。</p>
+<p>可以代替使用<code>unique_lock</code>。它提供了<code>lock()</code>和<code>unlock()</code>函数，能记录现在处于上锁还是没上锁状态，在析构的时候，会根据当前状态来决定是否要进行解锁（<code>lock_guard</code>就一定会解锁）。</p>
+<pre><code class="c++">class LogFile &#123;
+        std::mutex _mu;
+        ofstream f;
+    public:
+        LogFile() &#123;
+            f.open(&quot;log.txt&quot;);
+        &#125;
+        ~LogFile() &#123;
+            f.close();
+        &#125;
+        void shared_print(string msg, int id) &#123;
+
+            std::unique_lock&lt;std::mutex&gt; guard(_mu);
+            //do something 1
+            guard.unlock(); //临时解锁
+
+            //do something 2
+            guard.lock(); //继续上锁
+            // do something 3
+            f &lt;&lt; msg &lt;&lt; id &lt;&lt; endl;
+            cout &lt;&lt; msg &lt;&lt; id &lt;&lt; endl;
+            // 结束时析构guard会临时解锁
+            // 这句话可要可不要，不写，析构的时候也会自动执行
+            // guard.ulock();
+        &#125;
+
+&#125;;
+//在无需加锁的操作时，可以先临时释放锁，然后需要继续保护的时候，可以继续上锁，这样就无需重复地实例化lock_guard对象，还能减少锁的区域。
+</code></pre>
+<p>可以使用<code>defer_lock</code>设置初始化<code>unique_lock</code>的时候不进行默认的上锁操作：</p>
+<pre><code class="c++">void shared_print(string msg, int id) &#123;
+    std::unique_lock&lt;std::mutex&gt; guard(_mu, std::defer_lock);
+    //do something 1
+
+    guard.lock();
+    // do something protected
+    guard.unlock(); //临时解锁
+
+    //do something 2
+
+    guard.lock(); //继续上锁
+    // do something 3
+    f &lt;&lt; msg &lt;&lt; id &lt;&lt; endl;
+    cout &lt;&lt; msg &lt;&lt; id &lt;&lt; endl;
+    // 结束时析构guard会临时解锁
+&#125;
+</code></pre>
+<h2 id="unique-lock"><a href="#unique-lock" class="headerlink" title="unique_lock"></a>unique_lock</h2><p><code>unique_lock</code>对象以独占所有权的方式（unique owership）管理<code>mutex</code>对象的上锁和解锁操作。</p>
+<p><code>unique_lock</code>对象也不负责管理<code>Mutex</code>对象的生命周期，只是简化了<code>Mutex</code>对象的上锁和解锁操作，方便线程对互斥量上锁，即在某个<code>unique_lock</code>对象的生命周期内，它所管理的锁对象会一直保持上锁状态；而<code>unique_lock</code>的生命周期结束之后，它所管理的锁对象会被解锁，这一点和<code>lock_guard</code>类似，但<code>unique_lock</code>提供了更多的自由。</p>
+<p><code>unique_lock</code>比<code>lock_guard</code>灵活。但因为它内部需要维护锁的状态，所以效率比<code>lock_guard</code>低。在不能用<code>lock_guard</code>解决问题的时候，才使用<code>unique_lock</code>。</p>
+<h1 id="条件变量"><a href="#条件变量" class="headerlink" title="条件变量"></a>条件变量</h1><p>单独使用互斥有时并不能解决全部问题。</p>
+<h2 id="生产者消费者模型"><a href="#生产者消费者模型" class="headerlink" title="生产者消费者模型"></a>生产者消费者模型</h2><p>假设想实现一个简单的消费者生产者模型：一个线程往队列中放入数据（假定生产过程比较缓慢）；一个线程往队列中取数据，须确保队列中有数据；这个队列由线程间共享；需要使用互斥锁对队列进行保护，一个线程在往队列添加数据的时候，另一个线程不能取，反之亦然。</p>
+<p>用互斥锁实现如下：</p>
+<pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;thread&gt;
+#include &lt;mutex&gt;
+#include &lt;deque&gt;
+using namespace std;
+deque&lt;int&gt; q;
+mutex mu;
+
+void produce() &#123;
+    int count = 10;  // 一共产生10个数字。
+    while (count &gt; 0) &#123;
+        unique_lock&lt;mutex&gt; locker(mu);
+        q.push_front(count);  // 从前面压入
+        locker.unlock();
+        this_thread::sleep_for(chrono::milliseconds(500));
+        // 用以模拟耗时的任务。
+        count--;
+    &#125;
+&#125;
+
+void consume() &#123;
+    int data = 0;
+    while (data != 1) &#123; // 循环读到最后一个数字
+        unique_lock&lt;mutex&gt; locker(mu);
+        if (!q.empty()) &#123;
+            data = q.back();
+            q.pop_back(); // 从后面弹出
+            locker.unlock();
+            cout &lt;&lt; &quot;comsumer got a value from producer: &quot; &lt;&lt; data &lt;&lt; std::endl;
+        &#125; else &#123;
+            locker.unlock();
+            //this_thread::sleep_for(chrono::milliseconds(500)); 添加延时
+        &#125;
+    &#125;
+&#125;
+
+int main() &#123;
+    thread t1(produce);
+    thread t2(consume);
+    t1.join();
+    t2.join();
+    return 0;
+&#125;
+//依次蹦出comsumer got a value from producer:10~1
+</code></pre>
+<p>在生产过程中，<code>this_thread::sleep_for(chrono::milliseconds(500));</code>表示延时0.5s，以模拟缓慢的生产过程。</p>
+<p>消费函数中<code>while</code>循环，直至最后一个数字才会停止，每次循环内部，先加锁，判断队列情况：如不空，就取出一个数；如空，直接解锁。在1s的生产时间内，消费者不断地<code>while</code>循环试图消费，做了很多无用功。</p>
+<p>CPU占用率高。在Surface book 2 上测试CPU占据约10%（我也不知道老师这怎么测的，我是测不出hh）</p>
+<p>解决办法之一是给消费者也加一个小延时，如果一次判断后，发现队列是空的，就延时500ms，这样可以减小CPU的占用率。</p>
+<p>然而困难之处在于，生产者的延时有时未知，甚至是随机的。消费者固定延时500ms，有可能无谓的等待，（如果生产者延时短），有可能还是不必要的占用了CPU时间（即<code>while</code>循环），如果生产者延时很长长长。</p>
+<h1 id="条件变量（Condition-Variable）"><a href="#条件变量（Condition-Variable）" class="headerlink" title="条件变量（Condition Variable）"></a>条件变量（Condition Variable）</h1><p>C++11头文件<code>&lt;condition_variable&gt;</code>，提供了<code>condition_variable</code>类。</p>
+<p><code>condition_variable</code>可与<code>mutex</code>结合一起使用，其中有两个重要的函数，</p>
+<p><code>wait()</code>：可以让线程陷入休眠状态。在消费者生产者模型中，如果消费者发现队列中没有东西，就可以让自己休眠，</p>
+<p><code>notify_one()</code>：唤醒处于<code>wait</code>中的一个条件变量（可能当时有很多条件变量都处于<code>wait</code>状态）。 当生产者往队列中放入数据之后，使用<code>notify_one()</code>的可以叫醒等待中的线程。</p>
+<pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;thread&gt;
+#include &lt;mutex&gt;
+#include &lt;deque&gt;
+#include &lt;condition_variable&gt;
+using namespace std;
+deque&lt;int&gt; q;
+mutex mu;
+condition_variable cond;
+
+void produce() &#123;
+    int count = 10;
+    while (count &gt; 0) &#123;
+        unique_lock&lt;mutex&gt; locker(mu);
+        q.push_front(count);
+        locker.unlock();      //a释放锁
+        cond.notify_one();  //b通过条件变量唤醒其他等待线程
+        this_thread::sleep_for(chrono::seconds(1));
+        count--;
+    &#125;
+&#125;
+
+void consume() &#123;
+    int data = 0;
+    while (data != 1) &#123; //循环读到最后一个数字
+        unique_lock&lt;mutex&gt; locker(mu);
+        while (q.empty())
+            cond.wait(locker); //将mutex解锁，并进入休眠，等待唤醒
+        data = q.back();  //唤醒后，立刻拥有锁
+        q.pop_back();     //读取数据后，
+        locker.unlock();   //释放锁。
+        cout &lt;&lt; &quot;comsumer got a value from producer: &quot; &lt;&lt; data &lt;&lt; std::endl;
+    &#125;
+&#125;
+
+int main() &#123;
+    thread t1(produce);
+    thread t2(consume);
+    t1.join();
+    t2.join();
+    return 0;
+&#125;
+
+//在notify_one()的时候，不需要处于互斥锁的保护范围内，所以在唤醒条件变量之前可以将锁unlock()
+//此例中a,b行可以互换
+</code></pre>
+<p>在管理互斥锁的时候，必须使用<code>unique_lock</code>而不是<code>lock_guard</code></p>
+<p><code>wait()</code>函数所做的事情：在<code>wait()</code>函数之前，使用互斥锁加锁了。<code>wait()</code>函数会先调用互斥锁的<code>unlock()</code>函数。（自己马上要睡眠，交出互斥锁，让其他线程可以工作）然后再将自己睡眠，在被唤醒后，又会继续持有锁，保护后面的队列操作。而<code>lock_guard</code>没有<code>lock</code>和<code>unlock</code>函数，所以不能使用。</p>
+<pre><code class="c++">while (q.empty())
+    cond.wait(locker); // Unlock mu and wait to be notified
+</code></pre>
+<p>在<code>consumer</code>中，在判断队列是否为空的时候，使用的是<code>while(q.empty())</code>，而不是<code>if(q.empty())</code>，这是因为<code>wait()</code>从阻塞到返回，不一定就是由于<code>notify_one()</code>函数造成的，还有可能由于系统的不确定原因唤醒（可能和条件变量的实现机制有关），这个的时机和频率都是不确定的，被称作伪唤醒，如果在错误的时候被唤醒了，执行后面的语句就会错误，所以需要再次判断队列是否为空，如果还是为空，就继续<code>wait()</code>阻塞。</p>
+<p>上一段代码还可以换一种写法：</p>
+<p><code>wait()</code>的第二个参数可以传入一个函数表示检查条件，这里使用<code>lambda</code>表达式最为简单，如果这个函数返回的是<code>true</code>，<code>wait()</code>函数不会阻塞会直接返回，如果这个函数返回的是<code>false</code>，<code>wait()</code>函数就会阻塞着等待唤醒，如果被伪唤醒，会继续判断函数返回值。</p>
+<pre><code class="c++">cond.wait(locker, []() &#123;return !q.empty(); &#125;);
+</code></pre>
+<p>除了<code>notify_one()</code>函数，C++还提供了<code>notify_all()</code>函数，可以同时唤醒所有处于<code>wait</code>状态的条件变量。</p>
+<pre><code class="c++">void consume() &#123;
+    int data = 0;
+    while ( data != 1) &#123;
+        std::unique_lock&lt;std::mutex&gt; locker(mu);
+        cond.wait(locker, []() &#123;
+            return !q.empty();
+        &#125; );  // Unlock mu and wait to be notified
+        data = q.back();
+        q.pop_back();
+        locker.unlock();
+        std::cout &lt;&lt; &quot;t2 got a value from t1: &quot; &lt;&lt; data &lt;&lt; std::endl;
+    &#125;
+</code></pre>
+<h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><h2 id="单生产者单消费者模型"><a href="#单生产者单消费者模型" class="headerlink" title="单生产者单消费者模型"></a>单生产者单消费者模型</h2><pre><code class="c++">#include &lt;cstdlib&gt;
+#include &lt;condition_variable&gt;
+#include &lt;iostream&gt;
+#include &lt;mutex&gt;
+#include &lt;thread&gt;
+using namespace std;
+
+static const int kItemRepositorySize = 10; // 库房容量
+static const int kItemsToProduce = 1000;   // 生产1000个产品.
+struct ItemRepository &#123;
+    int item_buffer[kItemRepositorySize]; // 产品缓冲区, 配合 read_position 和 write_position 模型环形队列.这里一个产品就是一个整数
+    size_t read_position; // 消费者读取产品位置.
+    size_t write_position; // 生产者写入产品位置.
+    mutex mtx; // 互斥量,保护产品缓冲区
+    condition_variable repo_not_full; // 条件变量, 指示产品缓冲区不为满.
+    condition_variable repo_not_empty; // 条件变量, 指示产品缓冲区不为空.
+&#125; gItemRepository; // 产品库全局变量, 生产者和消费者操作该变量.
+
+void ProduceItem(ItemRepository *ir, int item) &#123;
+    unique_lock&lt;mutex&gt; lock(ir-&gt;mtx);
+    while (((ir-&gt;write_position + 1) % kItemRepositorySize)
+            == ir-&gt;read_position) &#123; //读位置追上了写位置，库房满。.
+        cout &lt;&lt; &quot;生产者等待...\n&quot;;
+        (ir-&gt;repo_not_full).wait(lock); // 生产者等待&quot;产品库缓冲区不为满&quot;这一条件发生.
+    &#125;
+    (ir-&gt;item_buffer)[ir-&gt;write_position] = item; // 写入产品.
+    (ir-&gt;write_position)++; // 写入位置后移.
+    if (ir-&gt;write_position == kItemRepositorySize) // 写入位置若是在队列最后则重新设置为初始位置.
+        ir-&gt;write_position = 0;
+    (ir-&gt;repo_not_empty).notify_all(); //  A1 通知消费者产品库不为空.
+    lock.unlock(); // B1 解锁.
+    // A1,B1 两句位置可交换
+&#125;
+
+int ConsumeItem(ItemRepository *ir) &#123;
+    int data;
+    unique_lock&lt;mutex&gt; lock(ir-&gt;mtx);
+    while (ir-&gt;write_position == ir-&gt;read_position) &#123;// 库房为空
+        cout &lt;&lt; &quot;消费者等待...\n&quot;;
+        (ir-&gt;repo_not_empty).wait(lock); // 消费者等待&quot;产品库缓冲区不为空&quot;这一条件发生.
+    &#125;
+    data = (ir-&gt;item_buffer)[ir-&gt;read_position]; // 读取某一产品
+    (ir-&gt;read_position)++; // 读取位置后移
+    if (ir-&gt;read_position &gt;= kItemRepositorySize) // 读取位置若移到最后，则重新置位.
+        ir-&gt;read_position = 0;
+    (ir-&gt;repo_not_full).notify_all(); //A2 通知生产者产品库不为满.
+    lock.unlock(); //B2  解锁.
+    // A2,B2 两句位置可交换
+    return data; // 返回产品.
+&#125;
+
+void ProducerTask() &#123; // 生产者任务
+    for (int i = 1; i &lt;= kItemsToProduce; ++i) &#123;
+        cout &lt;&lt; &quot;生产第 &quot; &lt;&lt; i &lt;&lt; &quot;件产品...&quot; &lt;&lt; endl;
+        ProduceItem(&amp;gItemRepository, i); // 循环生产 kItemsToProduce 个产品.
+    &#125;
+&#125;
+
+void ConsumerTask() &#123; // 消费者任务
+    static int cnt = 0;
+    while (1) &#123;
+        int item = ConsumeItem(&amp;gItemRepository); // 消费一个产品.
+        cout &lt;&lt; &quot;消费第 &quot; &lt;&lt; item &lt;&lt; &quot;件产品&quot; &lt;&lt; endl;
+        if (++cnt == kItemsToProduce)
+            break; // 如果产品消费个数为 kItemsToProduce, 则退出.
+    &#125;
+&#125;
+
+void InitItemRepository(ItemRepository *ir) &#123;
+    ir-&gt;write_position = 0; // 初始化产品写入位置.
+    ir-&gt;read_position = 0; // 初始化产品读取位置.
+&#125;
+
+int main() &#123;
+    InitItemRepository(&amp;gItemRepository);
+    thread producer(ProducerTask); // 创建生产者线程.
+    thread consumer(ConsumerTask); // 创建消费之线程.
+    producer.join();
+    consumer.join();
+&#125;
+</code></pre>
+<h2 id="多生产者多消费者模型"><a href="#多生产者多消费者模型" class="headerlink" title="多生产者多消费者模型"></a>多生产者多消费者模型</h2><pre><code class="c++">#include &lt;cstdlib&gt;
+#include &lt;condition_variable&gt;
+#include &lt;iostream&gt;
+#include &lt;mutex&gt;
+#include &lt;thread&gt;
+using namespace std;
+static const int kItemRepositorySize = 10; // 库房容量.
+static const int kItemsToProduce = 1000;   // 产品数量.
+
+struct ItemRepository &#123;
+    int item_buffer[kItemRepositorySize]; // 环形缓冲区库房
+    size_t read_position;
+    size_t write_position;
+    size_t produced_item_counter;
+    size_t consumed_item_counter;
+    mutex mtx;
+    mutex produced_item_counter_mtx;  // 生产计数器互斥
+    mutex consumed_item_counter_mtx;  // 消费计数器互斥
+    condition_variable repo_not_full;
+    condition_variable repo_not_empty;
+&#125; gItemRepository;
+
+void ProduceItem(ItemRepository *ir, int item) &#123;
+    unique_lock&lt;mutex&gt; lock(ir-&gt;mtx);
+    while (((ir-&gt;write_position + 1) % kItemRepositorySize)
+            == ir-&gt;read_position) &#123; // 库房已满.
+        cout &lt;&lt; &quot;生产者等待...\n&quot;;
+        (ir-&gt;repo_not_full).wait(lock);
+    &#125;
+    (ir-&gt;item_buffer)[ir-&gt;write_position] = item;
+    (ir-&gt;write_position)++;
+    if (ir-&gt;write_position == kItemRepositorySize)
+        ir-&gt;write_position = 0;
+    (ir-&gt;repo_not_empty).notify_all();// A1. 唤醒所有消费者等待线程
+    lock.unlock();// B1. 解锁
+    // A1,B1 可以交换位置。
+&#125;
+
+int ConsumeItem(ItemRepository *ir) &#123;
+    int data;
+    unique_lock&lt;mutex&gt; lock(ir-&gt;mtx);
+    // 库房为空
+    while (ir-&gt;write_position == ir-&gt;read_position) &#123;
+        cout &lt;&lt; &quot;消费者等待...\n&quot;;
+        (ir-&gt;repo_not_empty).wait(lock);
+    &#125;
+    data = (ir-&gt;item_buffer)[ir-&gt;read_position];
+    (ir-&gt;read_position)++;
+    if (ir-&gt;read_position &gt;= kItemRepositorySize)
+        ir-&gt;read_position = 0;
+    (ir-&gt;repo_not_full).notify_all();// A2. 唤醒所有生产者等待线程
+    lock.unlock();  // B2. 解锁
+    // A2,B2 可以交换位置。
+    return data;
+&#125;
+
+void ProducerTask() &#123;
+    bool ready_to_exit = false;
+    while (1) &#123;
+        unique_lock&lt;mutex&gt; lock(gItemRepository.produced_item_counter_mtx);
+        // 生产数量计数器
+        if (gItemRepository.produced_item_counter &lt; kItemsToProduce) &#123;
+            ++(gItemRepository.produced_item_counter);
+            ProduceItem(&amp;gItemRepository, gItemRepository.produced_item_counter);
+            cout &lt;&lt; &quot;生产者线程 &quot; &lt;&lt; this_thread::get_id()
+                 &lt;&lt; &quot; 正在生产第 &quot; &lt;&lt; gItemRepository.produced_item_counter
+                 &lt;&lt; &quot;件产品&quot; &lt;&lt; endl;
+        &#125; else
+            ready_to_exit = true;
+        lock.unlock();
+        if (ready_to_exit == true)
+            break;
+    &#125;
+    cout &lt;&lt; &quot;生产者线程 &quot; &lt;&lt; this_thread::get_id()
+         &lt;&lt; &quot; 正退出...&quot; &lt;&lt; endl;
+&#125;
+
+void ConsumerTask() &#123;
+    bool ready_to_exit = false;
+    while (1) &#123;
+        unique_lock&lt;mutex&gt; lock(gItemRepository.consumed_item_counter_mtx);
+        // 消费数量计数器
+        if (gItemRepository.consumed_item_counter &lt; kItemsToProduce) &#123;
+            int item = ConsumeItem(&amp;gItemRepository);
+            ++(gItemRepository.consumed_item_counter);
+            cout &lt;&lt; &quot;消费者线程 &quot; &lt;&lt; this_thread::get_id()
+                 &lt;&lt; &quot; 正在消费第 &quot; &lt;&lt; item &lt;&lt; &quot;件产品&quot; &lt;&lt; endl;
+        &#125; else
+            ready_to_exit = true;
+        lock.unlock();
+        if (ready_to_exit == true)
+            break;
+    &#125;
+    cout &lt;&lt; &quot;消费者线程 &quot; &lt;&lt; this_thread::get_id()
+         &lt;&lt; &quot; 正退出...&quot; &lt;&lt; endl;
+&#125;
+
+
+void InitItemRepository(ItemRepository *ir) &#123;
+    ir-&gt;write_position = 0;
+    ir-&gt;read_position = 0;
+    ir-&gt;produced_item_counter = 0;
+    ir-&gt;consumed_item_counter = 0;
+&#125;
+
+int main() &#123;
+    InitItemRepository(&amp;gItemRepository);
+    thread producer1(ProducerTask);
+    thread producer2(ProducerTask);
+    thread producer3(ProducerTask);
+    thread producer4(ProducerTask);
+    thread consumer1(ConsumerTask);
+    thread consumer2(ConsumerTask);
+    thread consumer3(ConsumerTask);
+    thread consumer4(ConsumerTask);
+    producer1.join();
+    producer2.join();
+    producer3.join();
+    producer4.join();
+    consumer1.join();
+    consumer2.join();
+    consumer3.join();
+    consumer4.join();
+&#125;
+</code></pre>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2022/06/27/13_Note_of_Principles_of_Computer_Composition/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">下一篇</div>
+      <div class="article-nav-title">
+        
+          #13 王道408计组听课笔记
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/06/05/11_Written_at_nighteen/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">上一篇</div>
+      <div class="article-nav-title">#11 写在十九岁</div>
+    </a>
+  
+</nav>
+
+
+    <section class="share">
+        <div class="share-title">分享</div>
+        <a class="share-item" target="_blank"
+            href="https://twitter.com/share?text=#12 C++多线程 - Function's Blog&url=http%3A%2F%2Fblog.functioneurus.com%2F2022%2F06%2F06%2F12_C%2B%2B_Multithreading%2F">
+            <box-icon type='logo' name='twitter'></box-icon>
+        </a>
+        <a class="share-item" target="_blank"
+            href="https://www.facebook.com/sharer.php?title=#12 C++多线程 - Function's Blog&u=http%3A%2F%2Fblog.functioneurus.com%2F2022%2F06%2F06%2F12_C%2B%2B_Multithreading%2F">
+            <box-icon name='facebook-square' type='logo' ></box-icon>
+        </a>
+        <!-- <a class="share-item" target="_blank"
+            href="https://service.weibo.com/share/share.php?title=#12 C++多线程 - Function's Blog&url=http://blog.functioneurus.com/2022/06/06/12_C++_Multithreading/&pic=">
+            <div class="n-icon n-icon-weibo"></div>
+        </a> -->
+    </section>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
+    
+      
+
+    
+      
+  <div class="widget-wrap widget-tags">
+    <div class="widget-title"><span>Tags</span></div>
+    <div class="widget-inner">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/408/" rel="tag">408</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DB/" rel="tag">DB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Memo/" rel="tag">Memo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B9%B1%E7%BF%BB%E4%B9%A6/" rel="tag">乱翻书</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%90%8C%E4%BA%BA/" rel="tag">同人</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BA%9F%E8%AF%9D/" rel="tag">废话</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2023/05/04/broken_thoughts_in_23_MAY/">碎碎念存档_MAY</a>
+          </li>
+        
+          <li>
+            <a href="/2023/04/01/broken_thoughts_in_APR/">碎碎念存档_APR</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/26/16_Database_notes/">#16 数据库笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/01/broken_thoughts_in_MAR/">碎碎念存档_MAR</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/09/broken_thoughts_in_FEB/">碎碎念存档_FEB</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-archive">
+    <div class="widget-title"><span>Archive</span></div>
+    <div class="widget-inner">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/">2022</a></li></ul>
+    </div>
+  </div>
+
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Function&#39;s Blog &copy; 2023<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="/dist/build.js?1651727875408.js"></script>
+
+
+<script src="/dist/custom.js?1651727875408.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

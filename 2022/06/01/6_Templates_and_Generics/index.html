@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>#6 模板与泛型 | Function&#39;s Blog</title>
+
+    <meta name="description" content="&lt;h1 id=&#34;函数模板（Function-Template）&#34;&gt;&lt;a href=&#34;#函数模板（Function-Template）&#34; class=&#34;headerlink&#34; title=&#34;函数模板（Function Template）&#34;&gt;&lt;/a&gt;函数模板（Function Template）&lt;/h1&gt;&lt;h2 id=&#34;模板定义&#34;&gt;&lt;a href=&#34;#模板定义&#34; class=&#34;headerlink&#34; title=&#34;模板定义&#34;&gt;&lt;/a&gt;模板定义&lt;/h2&gt;&lt;p&gt;模板是泛型编程的基础，模板是创建类或函数的蓝图或公式。&lt;/p&gt;">
+    <meta name="keywords" content="">
+
+    
+
+    <meta property="og:locale" content="zh-CN" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content= "#6 模板与泛型 | Function&#39;s Blog"  />
+    <meta property="og:description" content= "&lt;h1 id=&#34;函数模板（Function-Template）&#34;&gt;&lt;a href=&#34;#函数模板（Function-Template）&#34; class=&#34;headerlink&#34; title=&#34;函数模板（Function Template）&#34;&gt;&lt;/a&gt;函数模板（Function Template）&lt;/h1&gt;&lt;h2 id=&#34;模板定义&#34;&gt;&lt;a href=&#34;#模板定义&#34; class=&#34;headerlink&#34; title=&#34;模板定义&#34;&gt;&lt;/a&gt;模板定义&lt;/h2&gt;&lt;p&gt;模板是泛型编程的基础，模板是创建类或函数的蓝图或公式。&lt;/p&gt;" />
+    <meta property="og:url" content="http://blog.functioneurus.com/2022/06/01/6_Templates_and_Generics/index.html" />
+    <meta property="og:site_name" content="" />
+    <meta property="article:author" content="Function" />
+    <meta property="article:publisher" content="" />
+    <meta property="og:description" content="&lt;h1 id=&#34;函数模板（Function-Template）&#34;&gt;&lt;a href=&#34;#函数模板（Function-Template）&#34; class=&#34;headerlink&#34; title=&#34;函数模板（Function Template）&#34;&gt;&lt;/a&gt;函数模板（Function Template）&lt;/h1&gt;&lt;h2 id=&#34;模板定义&#34;&gt;&lt;a href=&#34;#模板定义&#34; class=&#34;headerlink&#34; title=&#34;模板定义&#34;&gt;&lt;/a&gt;模板定义&lt;/h2&gt;&lt;p&gt;模板是泛型编程的基础，模板是创建类或函数的蓝图或公式。&lt;/p&gt;" />
+    <meta name="twitter:title" content="#6 模板与泛型 | Function&#39;s Blog"/>
+    <meta name="twitter:description" content="&lt;h1 id=&#34;函数模板（Function-Template）&#34;&gt;&lt;a href=&#34;#函数模板（Function-Template）&#34; class=&#34;headerlink&#34; title=&#34;函数模板（Function Template）&#34;&gt;&lt;/a&gt;函数模板（Function Template）&lt;/h1&gt;&lt;h2 id=&#34;模板定义&#34;&gt;&lt;a href=&#34;#模板定义&#34; class=&#34;headerlink&#34; title=&#34;模板定义&#34;&gt;&lt;/a&gt;模板定义&lt;/h2&gt;&lt;p&gt;模板是泛型编程的基础，模板是创建类或函数的蓝图或公式。&lt;/p&gt;"/>
+    <script type="application/ld+json">
+        {
+            "description": "&lt;h1 id=&#34;函数模板（Function-Template）&#34;&gt;&lt;a href=&#34;#函数模板（Function-Template）&#34; class=&#34;headerlink&#34; title=&#34;函数模板（Function Template）&#34;&gt;&lt;/a&gt;函数模板（Function Template）&lt;/h1&gt;&lt;h2 id=&#34;模板定义&#34;&gt;&lt;a href=&#34;#模板定义&#34; class=&#34;headerlink&#34; title=&#34;模板定义&#34;&gt;&lt;/a&gt;模板定义&lt;/h2&gt;&lt;p&gt;模板是泛型编程的基础，模板是创建类或函数的蓝图或公式。&lt;/p&gt;",
+            "author": { "@type": "Person", "name": "Function" },
+            "@type": "BlogPosting",
+            "url": "http://blog.functioneurus.com/2022/06/01/6_Templates_and_Generics/index.html",
+            "publisher": {
+            "@type": "Organization",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://blog.functioneurus.comundefined"
+            },
+            "name": "Function"
+            },
+            "headline": "#6 模板与泛型 | Function&#39;s Blog",
+            "datePublished": "2022-06-01T09:32:46.000Z",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "http://blog.functioneurus.com/2022/06/01/6_Templates_and_Generics/index.html"
+            },
+            "@context": "http://schema.org"
+        }
+    </script>
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=1651727875408.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=1651727875408.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = false
+        window.aomori_search_algolia = false
+
+    </script>
+
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <a class="header-type-title" href="/">Function&#39;s Blog</a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-clhwrtjn5000qfoco16g2bhcb" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      #6 模板与泛型
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2022-06-01T09:32:46.000Z" itemprop="datePublished">2022-06-01</time>
+</div>
+
+            
+
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
+            </div>
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <h1 id="函数模板（Function-Template）"><a href="#函数模板（Function-Template）" class="headerlink" title="函数模板（Function Template）"></a>函数模板（Function Template）</h1><h2 id="模板定义"><a href="#模板定义" class="headerlink" title="模板定义"></a>模板定义</h2><p>模板是泛型编程的基础，模板是创建类或函数的蓝图或公式。</p>
+<span id="more"></span>
+
+<p>假设想要编写一个函数比较两个值的大小：</p>
+<pre><code class="c++">int compare(const string &amp;v1, const string &amp;v2) &#123;
+    if (v1 &lt; v2)
+        return -1;
+    if (v2 &lt; v1)
+        return 1;
+    return 0;
+&#125;
+
+int compare(const double &amp;v1, const double &amp;v2) &#123;
+    if (v1 &lt; v2)
+        return -1;
+    if (v2 &lt; v1)
+        return 1;
+    return 0;
+&#125;
+</code></pre>
+<p>特点：这些函数几乎完全相同，它们之间唯一的区别是形参的类型，每个要比较的类型都需要重复函数的函数体，不仅麻烦而且容易出错。更重要的是， 需要事先知道可能会比较哪些类型，对于未知类型，无法处理。</p>
+<p>不必为每个类型定义一个新函数，而是只定义一个函数模板。</p>
+<p>函数模板是一个独立于类型的函数，可以产生函数的特定类型版本。</p>
+<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><pre><code class="c++">template &lt;typename T&gt; int compare(const T &amp;v1, const T &amp;v2) &#123;
+    if (v1 &lt; v2)
+        return -1;
+    if (v2 &lt; v1)
+        return 1;
+    return 0;
+&#125;
+</code></pre>
+<p>模板定义以关键字<code>template</code>开始，后接模板形参表（template parameter list），表示可以在类或函数的定义中使用的类型或值。</p>
+<p>模板形参表是用尖括号括住的一个或多个模板形参的列表，该表不能为空，形参之间以逗号分隔。</p>
+<p>类型形参（template type parameter）跟在关键字<code>class</code>或<code>typename</code>之后，意义相同。</p>
+<p>非类型形参（template nontype parameter）跟在类型说明符之后。</p>
+<h2 id="实例化"><a href="#实例化" class="headerlink" title="实例化"></a>实例化</h2><p>类型和值的替换过程被称为模板实例化（template instantiation），包括显示指定（explicitly specify）和隐式推断（template argument deduction）两种方式。</p>
+<p>一旦确定了实际的模板实参，就称实例化了函数模板的实例。</p>
+<p>实例化时需要考虑用什么类型代替每个类型形参，用什么值代替每个非类型形参。</p>
+<p>实例化后，编译器使用实参代替相应的模板形参产生编译该版本的函数。编译器承担了为每种类型而编写函数的单调工作。</p>
+<pre><code class="c++">compare&lt;int&gt;(1,2);   // 指定
+compare&lt;string&gt;(&quot;fd&quot;,&quot;fdfd&quot;);  //指定
+compare(1,2);         // 推断
+</code></pre>
+<p>关键字<code>class</code>或<code>typename</code>意义相同。</p>
+<p>模板参数名可以是任意合法的标识符。</p>
+<p>当模板被实例化时, 实际的内置或用户定义类型将替换模板的类型参数。</p>
+<h2 id="非类型参数"><a href="#非类型参数" class="headerlink" title="非类型参数"></a>非类型参数</h2><p>模板非类型参数由一个普通的参数声明构成 。模板非类型参数表示该参数名代表了一个潜在的值， 而该值代表了模板定义中的一个常量。</p>
+<pre><code class="c++">template &lt;int size&gt; void  ff() &#123;
+    int a[size];
+    size = 3;  // 不可以！
+&#125;
+</code></pre>
+<p><code>size</code>是一个模板非类型参数，表示a数组的长度。</p>
+<p> 当函数模板<code>ff()</code>被实例化时，<code>size</code>的值会被一个编译时刻已知的常量值代替。如<code>ff&lt;19&gt;();</code>。</p>
+<p>注意与普通的函数参数的不同：</p>
+<pre><code class="c++">void ff2(int size) &#123;
+    int *arr = new int[size];  // 只能如此分配。
+    int a[size];   // 不可以这样定义，模板参数才可以。
+&#125;
+</code></pre>
+<p>模板参数名在同一模板参数表中只能被使用一次 。</p>
+<pre><code class="c++">template &lt;class T,class T&gt; T f(T t1, T t2); // 重定义模板参数出错
+</code></pre>
+<p>模板参数在函数参数列表中可以多次使用：</p>
+<pre><code class="c++">template &lt;class T&gt; T f(T t1, T t2); // OK
+</code></pre>
+<p>如一个函数模板有一个以上的模板类型参数，则每个模板类型参数前面都必须有关键字<code>class</code>或<code>typename</code>。</p>
+<h2 id="重载与覆盖"><a href="#重载与覆盖" class="headerlink" title="重载与覆盖"></a>重载与覆盖</h2><h3 id="重载"><a href="#重载" class="headerlink" title="重载"></a>重载</h3><p>模板函数可以被重载。</p>
+<pre><code class="c++">template &lt;class T&gt; T f(T t1, T t2) &#123;
+&#125;
+
+template&lt;class T&gt; T f(T t) &#123;
+&#125;
+</code></pre>
+<h3 id="覆盖模板"><a href="#覆盖模板" class="headerlink" title="覆盖模板"></a>覆盖模板</h3><p>模板生成的每个函数版本包含基本相同的代码，只是类型参数不同，但是也可以对特定的参数类型做特殊处理。</p>
+<p>为此，只要定义与函数模板名同名的普通C++函数，用具体类型而不是类型参数，普通函数将覆盖函数模板，即如果传递普通函数所指的参数类型，编译器将调用这个函数而不是根据模板生成函数。</p>
+<p>比如：</p>
+<pre><code class="c++">int f(int i) &#123;
+    return i + 1;
+&#125;
+</code></pre>
+<p>将覆盖以上模板函数，<code>f(1)</code>将会调用此函数。</p>
+<h1 id="类模板"><a href="#类模板" class="headerlink" title="类模板"></a>类模板</h1><p>可以像定义函数模板一样定义类模板。</p>
+<p>以下是存放100个整数的类：</p>
+<pre><code class="c++">class IntList &#123;
+    public:
+        IntList();
+        int SetItem(int Index, const int &amp;Item);
+        int GetItem(int Index, int &amp;Item);
+    private:
+        int Buffer[100];
+&#125;;
+</code></pre>
+<p>对于问题：存储200个整数，存放100个double型的数。以上类就无能为力了。从以上类中派生新类也无济于事。</p>
+<p>我们定义如下的类模板：</p>
+<pre><code class="c++">template&lt;class T,int I&gt; class CList &#123;
+    public:
+        CList(T intVal)
+        int SetItem(int Index, const T &amp;Item);
+        int GetItem(int Index, T &amp;Item);
+    private:
+        T Buffer[I];
+&#125;;
+</code></pre>
+<p><code>T</code>是类型参数，<code>I</code>是常量参数。<code>T</code>和<code>I</code>的值在生成具体类的实例时指定。<code>&lt;&gt;</code>内可以包括任意个类型参数和常量参数。</p>
+<p>类型参数可以是任何有效类型。</p>
+<p>在类定义中，可以在任何可以使用类型指定的地方使用类型参数，在任何使用类型常量的地方使用常量参数。</p>
+<h2 id="模板类的成员函数"><a href="#模板类的成员函数" class="headerlink" title="模板类的成员函数"></a>模板类的成员函数</h2><pre><code class="c++">template&lt;class T, int I&gt; int class CList&lt;T, I&gt;::SetItem(int Index, const T &amp;Item) &#123;
+        if (Index &lt; 0 || Index &gt; I - 1)
+            return 0;
+        Buffer[Index] = Item;
+        return 1;
+&#125;
+</code></pre>
+<p>以关键字<code>template&lt;class T,int I&gt;</code>开头，类名后应接上模板参数名单<code>CList&lt;T,I&gt;</code>。</p>
+<p>根据模板类生成对象称为实例化或专门化：</p>
+<pre><code class="c++">CList&lt;int,100&gt; IntList;
+</code></pre>
+<p><code>IntList</code>是<code>CList</code>的实例。所有的<code>T</code>换成<code>int</code>，所有的<code>I</code>换成<code>100</code>。</p>
+<p>又如：</p>
+<pre><code class="c++">CList&lt;char*,150&gt; StringList;
+</code></pre>
+<p>模板类的对象也可以动态生成（存放在<code>heap</code>中）:</p>
+<pre><code class="c++">CList&lt;double,50&gt; *DoubleList = new CList&lt;double,50&gt;;
+</code></pre>
+<p>也可以给模板类加入构造函数：</p>
+<pre><code class="c++">template&lt;class T,int I&gt; CList&lt;T, I&gt;::CList(T iniVal) &#123;
+    for (int i = 0; i &lt; I, i++)
+        Buffer[i] = iniVal;
+&#125;
+</code></pre>
+<p>有了构造函数，可以在实例化的同时赋初值：</p>
+<pre><code class="c++">CList&lt;int, 100&gt; IntList(10);
+</code></pre>
+<p>类型参数可以使用自定义的类型：</p>
+<pre><code class="c++">struct Record &#123;
+    char Name[20];
+    char Phone[20];
+&#125;
+
+Record rec = &#123;&quot;Jack&quot;, &quot;1234567890&quot;&#125;;
+CList&lt;Record, 100&gt; RecordList(Rec);
+</code></pre>
+<h2 id="标准库的使用"><a href="#标准库的使用" class="headerlink" title="标准库的使用"></a>标准库的使用</h2><pre><code class="c++">#include &lt;vector&gt;
+using std::vector;
+
+vector&lt;int&gt; ivec;   // 模板类实例化
+</code></pre>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2022/06/01/broken_thoughts_in_JUNE/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">下一篇</div>
+      <div class="article-nav-title">
+        
+          碎碎念存档_JUNE
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/05/30/5_Operator_Overloading/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">上一篇</div>
+      <div class="article-nav-title">#5 运算符重载</div>
+    </a>
+  
+</nav>
+
+
+    <section class="share">
+        <div class="share-title">分享</div>
+        <a class="share-item" target="_blank"
+            href="https://twitter.com/share?text=#6 模板与泛型 - Function's Blog&url=http%3A%2F%2Fblog.functioneurus.com%2F2022%2F06%2F01%2F6_Templates_and_Generics%2F">
+            <box-icon type='logo' name='twitter'></box-icon>
+        </a>
+        <a class="share-item" target="_blank"
+            href="https://www.facebook.com/sharer.php?title=#6 模板与泛型 - Function's Blog&u=http%3A%2F%2Fblog.functioneurus.com%2F2022%2F06%2F01%2F6_Templates_and_Generics%2F">
+            <box-icon name='facebook-square' type='logo' ></box-icon>
+        </a>
+        <!-- <a class="share-item" target="_blank"
+            href="https://service.weibo.com/share/share.php?title=#6 模板与泛型 - Function's Blog&url=http://blog.functioneurus.com/2022/06/01/6_Templates_and_Generics/&pic=">
+            <div class="n-icon n-icon-weibo"></div>
+        </a> -->
+    </section>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
+    
+      
+
+    
+      
+  <div class="widget-wrap widget-tags">
+    <div class="widget-title"><span>Tags</span></div>
+    <div class="widget-inner">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/408/" rel="tag">408</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DB/" rel="tag">DB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Memo/" rel="tag">Memo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B9%B1%E7%BF%BB%E4%B9%A6/" rel="tag">乱翻书</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%90%8C%E4%BA%BA/" rel="tag">同人</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BA%9F%E8%AF%9D/" rel="tag">废话</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2023/05/04/broken_thoughts_in_23_MAY/">碎碎念存档_MAY</a>
+          </li>
+        
+          <li>
+            <a href="/2023/04/01/broken_thoughts_in_APR/">碎碎念存档_APR</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/26/16_Database_notes/">#16 数据库笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/01/broken_thoughts_in_MAR/">碎碎念存档_MAR</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/09/broken_thoughts_in_FEB/">碎碎念存档_FEB</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-archive">
+    <div class="widget-title"><span>Archive</span></div>
+    <div class="widget-inner">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/">2022</a></li></ul>
+    </div>
+  </div>
+
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Function&#39;s Blog &copy; 2023<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="/dist/build.js?1651727875408.js"></script>
+
+
+<script src="/dist/custom.js?1651727875408.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

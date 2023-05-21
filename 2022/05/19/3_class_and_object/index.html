@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>#3 类与对象 | Function&#39;s Blog</title>
+
+    <meta name="description" content="&lt;h1 id=&#34;面向对象的程序设计&#34;&gt;&lt;a href=&#34;#面向对象的程序设计&#34; class=&#34;headerlink&#34; title=&#34;面向对象的程序设计&#34;&gt;&lt;/a&gt;面向对象的程序设计&lt;/h1&gt;&lt;p&gt;面向对象的基本概念：抽象；封装；继承；多态。&lt;/p&gt;
+&lt;p&gt;优势：易于理解、沟通；易于模块、分工；易于编写、实现；易于管理、维护；易于升级、更新。&lt;/p&gt;">
+    <meta name="keywords" content="">
+
+    
+
+    <meta property="og:locale" content="zh-CN" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content= "#3 类与对象 | Function&#39;s Blog"  />
+    <meta property="og:description" content= "&lt;h1 id=&#34;面向对象的程序设计&#34;&gt;&lt;a href=&#34;#面向对象的程序设计&#34; class=&#34;headerlink&#34; title=&#34;面向对象的程序设计&#34;&gt;&lt;/a&gt;面向对象的程序设计&lt;/h1&gt;&lt;p&gt;面向对象的基本概念：抽象；封装；继承；多态。&lt;/p&gt;
+&lt;p&gt;优势：易于理解、沟通；易于模块、分工；易于编写、实现；易于管理、维护；易于升级、更新。&lt;/p&gt;" />
+    <meta property="og:url" content="http://blog.functioneurus.com/2022/05/19/3_class_and_object/index.html" />
+    <meta property="og:site_name" content="" />
+    <meta property="article:author" content="Function" />
+    <meta property="article:publisher" content="" />
+    <meta property="og:description" content="&lt;h1 id=&#34;面向对象的程序设计&#34;&gt;&lt;a href=&#34;#面向对象的程序设计&#34; class=&#34;headerlink&#34; title=&#34;面向对象的程序设计&#34;&gt;&lt;/a&gt;面向对象的程序设计&lt;/h1&gt;&lt;p&gt;面向对象的基本概念：抽象；封装；继承；多态。&lt;/p&gt;
+&lt;p&gt;优势：易于理解、沟通；易于模块、分工；易于编写、实现；易于管理、维护；易于升级、更新。&lt;/p&gt;" />
+    <meta name="twitter:title" content="#3 类与对象 | Function&#39;s Blog"/>
+    <meta name="twitter:description" content="&lt;h1 id=&#34;面向对象的程序设计&#34;&gt;&lt;a href=&#34;#面向对象的程序设计&#34; class=&#34;headerlink&#34; title=&#34;面向对象的程序设计&#34;&gt;&lt;/a&gt;面向对象的程序设计&lt;/h1&gt;&lt;p&gt;面向对象的基本概念：抽象；封装；继承；多态。&lt;/p&gt;
+&lt;p&gt;优势：易于理解、沟通；易于模块、分工；易于编写、实现；易于管理、维护；易于升级、更新。&lt;/p&gt;"/>
+    <script type="application/ld+json">
+        {
+            "description": "&lt;h1 id=&#34;面向对象的程序设计&#34;&gt;&lt;a href=&#34;#面向对象的程序设计&#34; class=&#34;headerlink&#34; title=&#34;面向对象的程序设计&#34;&gt;&lt;/a&gt;面向对象的程序设计&lt;/h1&gt;&lt;p&gt;面向对象的基本概念：抽象；封装；继承；多态。&lt;/p&gt;
+&lt;p&gt;优势：易于理解、沟通；易于模块、分工；易于编写、实现；易于管理、维护；易于升级、更新。&lt;/p&gt;",
+            "author": { "@type": "Person", "name": "Function" },
+            "@type": "BlogPosting",
+            "url": "http://blog.functioneurus.com/2022/05/19/3_class_and_object/index.html",
+            "publisher": {
+            "@type": "Organization",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://blog.functioneurus.comundefined"
+            },
+            "name": "Function"
+            },
+            "headline": "#3 类与对象 | Function&#39;s Blog",
+            "datePublished": "2022-05-19T00:29:46.000Z",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "http://blog.functioneurus.com/2022/05/19/3_class_and_object/index.html"
+            },
+            "@context": "http://schema.org"
+        }
+    </script>
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=1651727875408.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=1651727875408.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = false
+        window.aomori_search_algolia = false
+
+    </script>
+
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <a class="header-type-title" href="/">Function&#39;s Blog</a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-clhwrtjn2000kfococ71r2a69" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      #3 类与对象
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2022-05-19T00:29:46.000Z" itemprop="datePublished">2022-05-19</time>
+</div>
+
+            
+
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
+            </div>
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <h1 id="面向对象的程序设计"><a href="#面向对象的程序设计" class="headerlink" title="面向对象的程序设计"></a>面向对象的程序设计</h1><p>面向对象的基本概念：抽象；封装；继承；多态。</p>
+<p>优势：易于理解、沟通；易于模块、分工；易于编写、实现；易于管理、维护；易于升级、更新。</p>
+<span id="more"></span>
+
+<h1 id="抽象数据类型（Abstract-data-types）"><a href="#抽象数据类型（Abstract-data-types）" class="headerlink" title="抽象数据类型（Abstract data types）"></a>抽象数据类型（Abstract data types）</h1><p>使用类来定义抽象数据类型。</p>
+<p>类的基本思想是数据抽象和封装：</p>
+<p>1.数据抽象</p>
+<ul>
+<li><p>接口和实现分离。</p>
+</li>
+<li><p>设计者关心实现。</p>
+</li>
+<li><p>使用者关心使用。</p>
+</li>
+</ul>
+<p>2.封装:</p>
+<ul>
+<li><p>将低层次的元素组合起来形成新的高层次实体。</p>
+</li>
+<li><p>函数是封装：函数细节行为被封装，可以调用一个函数但不能访问其语句。</p>
+</li>
+<li><p>类也是封装：代表若干成员的集合，隐藏了该类的成员及其实现方式。</p>
+</li>
+</ul>
+<p>优点：</p>
+<ul>
+<li><p>避免出现无意的可能破坏对象状态的错误：私有的数据，公开的操作。</p>
+</li>
+<li><p>随时间推移可根据需求变化或缺陷报告来改进类的实现，而无须改变用户代码。</p>
+</li>
+</ul>
+<h2 id="具体类型-Concrete-class"><a href="#具体类型-Concrete-class" class="headerlink" title="具体类型(Concrete class)"></a>具体类型(Concrete class)</h2><p>并非所有类型都是抽象的，如标准库中的<code>pair</code>类就是一个具体类。</p>
+<ul>
+<li><p>具体类会暴露其实现细节。</p>
+</li>
+<li><p><code>pair</code>没有抽象接口,只是将两个数据成员捆绑成单个对象。</p>
+</li>
+<li><p>隐藏数据成员只会造成类型使用的复杂性，比如C中的<code>struct</code>。</p>
+</li>
+</ul>
+<h1 id="类的定义与声明"><a href="#类的定义与声明" class="headerlink" title="类的定义与声明"></a>类的定义与声明</h1><pre><code class="c++">class Animal &#123; // 关键字class 类名标识符 Animal
+//类体位于花括号里面。
+//可以包含0或多个访问控制符或访问标号：private，public，protected，是实现抽象数据的重要手段。
+    private:         
+        int age;    // 私有的数据
+        string name;
+    public:         // 公有的方法
+        void eat();
+// 每个类可以定义0个或多个类成员,成员可以是数据、函数。
+&#125;; //花括号后面必须要跟一个分号。
+</code></pre>
+<p>定义了类，也就定义了一种新的类型。类名就是该类型的名字，每一个类都定义了它自己的作用域。一个类只能被定义一次。</p>
+<p>数据和操作的名字在类的内部必须唯一，但可以重用定义在类外的名字。</p>
+<p>类本身，类的成员，都存在声明与定义。</p>
+<p>为了完成一个类的定义可以只使用一个头文件，在大括号内完成一切内容。但往往使用两个文件,头文件(.h,hpp)和实现文件(.cpp, .cxx等)</p>
+<p>一般来说，头文件中对成员进行声明，实现文件中对成员进行定义。类定义在头文件中，可保证每个使用类文件可以访问此类。</p>
+<p>有时，把头文件中类的大括号内称为类的内部。cpp文件称为外部。</p>
+<p>使用头文件保护符（header guard），来保证即使头文件在同一文件中被包含多次，类定义也只出现一次。</p>
+<pre><code class="c++">#ifndef   a     // 一个独特的字符
+#define  a
+类定义
+#endif
+//或
+#pragma once
+类定义
+</code></pre>
+<p>可以前向声明（forward declaration）一个类而不定义它：</p>
+<pre><code class="c+">class Animal;  // declaration of the Animal class
+</code></pre>
+<p>在声明之后、定义之前，类<code>Animal</code>是一个不完全类型（Incompete type），即已知<code>Animal</code>是一个类型，但不知道包含哪些成员。</p>
+<p>不完全类型只能以有限方式使用：不能定义该类型的对象，只能用于定义指向该类型的指针及引用，或者用于声明（而不是定义）使用该类型作为形参类型或返回类型的函数。</p>
+<p>例子：两个类之间的互相引用：</p>
+<pre><code class="c++">//A.h
+#pragma once
+#include &quot;B.h&quot;
+class B;
+
+class A &#123;
+    public:
+        A();
+        ~A();
+        B *pb;
+&#125;;
+//B.h
+#pragma once
+#include &quot;A.h&quot;
+class A;
+
+class B &#123;
+    public:
+        B();
+        ~B();
+        A *pa;
+&#125;;
+</code></pre>
+<p>因为只有当类定义体完成后才能定义类，因此类不能具有自身类型的数据成员。</p>
+<p>然而，只要类名一出现就可以认为该类已声明。因此，类的数据成员可以是指向自身类型的指针或引用：</p>
+<pre><code class="c++">class Animal &#123;
+    private:
+        int age;
+        string name;
+        Animal *parent;   //*不能去掉
+    public:
+&#125;;
+</code></pre>
+<h1 id="类成员"><a href="#类成员" class="headerlink" title="类成员"></a>类成员</h1><p>成员变量定义在类内部完成。而成员函数在类内部，必须声明所有成员函数，也可以对成员函数予以定义。在内部定义的函数默认为<code>inline</code>，在外部(cpp文件)定义的成员函数须指明是在类的作用域中。</p>
+<p>成员函数可被重载（overload）。</p>
+<h2 id="关键字Const"><a href="#关键字Const" class="headerlink" title="关键字Const"></a>关键字Const</h2><p>加在成员函数形参表之后，将成员函数声明为常量：</p>
+<pre><code class="c++">double foo () const;
+</code></pre>
+<p><code>const</code>必须同时出现在声明和定义中。</p>
+<p><code>const</code>成员函数不能改变类的数据成员。</p>
+<h2 id="Inline成员函数"><a href="#Inline成员函数" class="headerlink" title="Inline成员函数"></a>Inline成员函数</h2><p>类内部定义的默认为<code>inline</code>(即无需<code>inline</code>关键字)</p>
+<p>可以显式指定<code>inline</code>成员函数，也可以在类定义外部的函数定义上指定<code>inline</code>。</p>
+<h1 id="类的实例化"><a href="#类的实例化" class="headerlink" title="类的实例化"></a>类的实例化</h1><p>类的定义以分号结束，在类定义之后可以接一个对象定义列表。</p>
+<pre><code class="c++">class Animal &#123; 
+    /* ... */
+&#125;;
+Animal a；
+//或：
+class Animal &#123; 
+    /* ... */
+&#125; a, b;
+</code></pre>
+<p>定义了一个新的类型时，没有进行存储分配。</p>
+<p>当定义一个对象<code>Animal a</code>时：编译器分配了足以容纳一个<code>Animal</code>对象的存储空间，<code>a</code>指向那个存储空间。</p>
+<p>每个对象具有自己的类数据成员的副本，修改<code>a</code>的数据成员不会改变任何其他<code>Animal</code>对象的数据成员。</p>
+<h2 id="两种存储方式的实例化"><a href="#两种存储方式的实例化" class="headerlink" title="两种存储方式的实例化"></a>两种存储方式的实例化</h2><pre><code class="c++">Animal a；  // 栈中
+Animal *pa = new Animal; // 堆中
+</code></pre>
+<h1 id="隐含的This指针"><a href="#隐含的This指针" class="headerlink" title="隐含的This指针"></a>隐含的This指针</h1><p>成员函数具有一个附加的隐含形参，即指向该类对象的一个指针。这个隐含形参命名为<code>this</code>。</p>
+<p>在成员函数内部显式引用<code>this</code>通常不必要。但有时必须这样做：当需要将一个对象作为整体引用时。</p>
+<p>以下是<code>Animal</code>类的几个成员函数:</p>
+<pre><code class="c++">Animal &amp;getMyself() &#123;
+    return *this;
+&#125;;
+
+Animal *getMyself2() &#123;
+    return this;
+&#125;;
+
+void suicide() &#123;
+    delete this;
+&#125;;
+</code></pre>
+<h1 id="类作用域"><a href="#类作用域" class="headerlink" title="类作用域"></a>类作用域</h1><p>每个类都定义了自己的新作用域和唯一的类型。</p>
+<p>每个类的成员不同于任何其他类（或其他作用域）的成员。</p>
+<p>不同的类具有不同的作用域，即使两个类具有完全相同的成员列表，它们也是不同的类型。</p>
+<p>在类作用域之外，成员只能通过对象或指针分别使用成员访问操作符<code>.</code>或<code>-&gt;</code>来访问类的成员。</p>
+<p>成员可以在类的定义体之外使用<code>::</code>定义。</p>
+<h1 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h1><p>创建一个类的对象时，编译器会自动调用一个构造函数来初始化该对象。</p>
+<p>构造函数是一个特殊的、与类同名的成员函数，用于给每个数据成员设置适当的初始值。</p>
+<p>构造函数不能声明为<code>const</code>，不能为虚函数。构造函数自动执行，无返回值，可以定义在类的内部或外部。</p>
+<pre><code class="c++">…
+public: 
+    Animal(int i);    // 构造函数
+</code></pre>
+<h2 id="构造函数可以被重载"><a href="#构造函数可以被重载" class="headerlink" title="构造函数可以被重载"></a>构造函数可以被重载</h2><p>一个类的构造函数的重载数量没有限制，只要每个构造函数的形参表是唯一的即可（即区分重载）。</p>
+<p>不同的构造函数允许用户指定不同的方式来初始化数据成员。</p>
+<p>实参决定了使用哪个构造函数。</p>
+<p>只要创建该类型的一个对象，编译器就运行一个构造函数，不管是在堆中，还是栈中。</p>
+<pre><code class="c++">public: 
+    Animal(int i) ; 
+    Animal(string s);//Overload
+</code></pre>
+<h2 id="构造函数初始化式（Constructor-initializer）"><a href="#构造函数初始化式（Constructor-initializer）" class="headerlink" title="构造函数初始化式（Constructor initializer）"></a>构造函数初始化式（Constructor initializer）</h2><p>构造函数初始化列表语法：以一个冒号开始，然后是一个以逗号分隔的数据成员列表，每个数据成员后面跟一个放在圆括号中的初始化式。</p>
+<pre><code class="c++">Student::Student(char *name, int age, float score): m_name(name), m_age(age), m_score(score) &#123;
+    //TODO:
+&#125;;
+</code></pre>
+<p>构造函数初始化只在构造函数的定义中而不是声明中指定。</p>
+<p>构造函数分两个阶段执行：初始化阶段和计算阶段，计算阶段由构造函数函数体中的所有语句组成。</p>
+<p>有些成员必须在构造函数初始化列表中进行初始化，如<code>const</code>成员和引用类型的成员。这些成员，在构造函数函数体中对它们赋值不起作用。</p>
+<pre><code class="c++">class Animal &#123;
+    private:
+        int age = 3;  // 私有的数据
+        string name;
+        const int ci;
+        Animal &amp;parent;
+    public:          // 公有的方法
+        void eat() &#123;&#125;;
+        Animal(int i, Animal &amp;p) : ci(i), parent(p)
+    // 必须用指针或引用的方式定义Animal参数
+        &#123;
+            //ci = i; 不允许
+            age = i;
+        &#125;
+&#125;;
+</code></pre>
+<h2 id="带默认实参的构造函数"><a href="#带默认实参的构造函数" class="headerlink" title="带默认实参的构造函数"></a>带默认实参的构造函数</h2><pre><code class="c++">std::string name;
+
+Animal(string pname = &quot;&quot;): name(pname) &#123;
+&#125;;
+</code></pre>
+<h2 id="默认构造函数（Default-construction）"><a href="#默认构造函数（Default-construction）" class="headerlink" title="默认构造函数（Default construction）"></a>默认构造函数（Default construction）</h2><p>当一个类没有定义构造函数时，编译器会自动生成一个默认构造函数：没有显示提供初始化式时调用的构造函数，不带参数的构造函数或者所有的形参都提供默认实参。</p>
+<p>默认构造函数中成员被初始化为默认值。</p>
+<p>如果定义了其他构造函数，一般也应该提供一个默认构造函数。</p>
+<h1 id="复制构造函数"><a href="#复制构造函数" class="headerlink" title="复制构造函数"></a>复制构造函数</h1><p>复制构造函数只有单个形参，而且该形参是对本类类型对象的引用，且常用<code>const</code>修饰。</p>
+<p>复制构造函数可用于： 根据另一个同类型的对象初始化一个对象；复制一个对象，将它作为实参传给一个函数；从函数返回时复制一个对象；初始化顺序容器中的元素；根据元素初始化式列表初始化数组元素。</p>
+<p>如未定义复制构造函数，编译器会自动合成一个复制构造函数 。一般都需要定义自己的复制构造函数。</p>
+<pre><code class="c++">class Foo &#123;
+    public:
+        Foo(); //默认构造函数
+        Foo(const Foo &amp;); //复制构造函数
+        ...
+&#125;;
+</code></pre>
+<h2 id="构造函数的调用"><a href="#构造函数的调用" class="headerlink" title="构造函数的调用"></a>构造函数的调用</h2><p>在实例化时调用构造函数：</p>
+<pre><code class="c++">//在堆中：
+Animal *pa1 = new Animal(); //默认构造
+Animal *pa2 = new Animal(3); //特定构造
+Animal *pa3 = new Animal(*pa2); //拷贝构造
+//在栈中：
+Animal a0();                //声明一个函数
+Animal a1 = Animal(); 		// 默认构造
+Animal a2(4);              //特定构造
+Animal a3(a2);            //拷贝构造
+</code></pre>
+<h1 id="析构函数"><a href="#析构函数" class="headerlink" title="析构函数"></a>析构函数</h1><pre><code class="c++">class Animal &#123;
+    private:
+        int age = 3;    // 私有的数据
+        string name;
+        const int ci;
+        Animal &amp;parent;
+    public:          // 公有的方法
+        void eat() &#123;&#125;;
+        Animal(int i, Animal &amp;p) : ci(i), parent(p)
+        // 必须用指针或引用的方式定义Animal参数
+        &#123;
+            //ci = i; 不允许
+            age = i;
+        &#125;
+        ~Animal() &#123;
+        &#125;
+&#125;;
+</code></pre>
+<p>析构函数并不仅限于用来释放资源。 析构函数可以执行任意希望在该类对象的使用完毕之后执行的操作。</p>
+<p>合成析构函数：编译器总是会为我们合成一个析构函数，合成析构函数按对象创建时的逆序释放每个非<code>static</code>成员，合成析构函数并不删除指针成员所指向的对象。</p>
+<p>何时编写显式析构函数：许多类不需要显式析构函数，仅在有些工作需要析构函数完成时，才需要析构函数。析构函数通常用于释放在构造函数或在对象生命期内获取的资源。</p>
+<p>析构函数往往是虚函数。</p>
+<h1 id="嵌套类（Nested-class）"><a href="#嵌套类（Nested-class）" class="headerlink" title="嵌套类（Nested class）"></a>嵌套类（Nested class）</h1><p>一个类可以在另一个类中定义, 被称为嵌套类。嵌套类是其外围类的一个成员.</p>
+<p>嵌套类的定义可以出现在其外围类的公有私有或保护区中</p>
+<p>嵌套类的名字在其外围类域中是可见的， 但是在其他类域或名字空间中是不可见的。 这意味着嵌套类的名字不会与外围域中声明的相同名字冲突 。</p>
+<pre><code class="c++">class Animal &#123;
+    private:
+        ...
+    public:          // 公有的方法
+        Animal(int i, Animal &amp;p) : ci(i), parent(p)
+        // 必须用指针或引用的方式定义Animal参数
+        &#123; &#125;;
+        ~Animal()
+        &#123; &#125;;
+        class A &#123; 
+            // 嵌套类
+        &#125;;
+&#125;;
+</code></pre>
+<h1 id="Static类成员"><a href="#Static类成员" class="headerlink" title="Static类成员"></a>Static类成员</h1><p>对于特定类类型的全体对象而言，有时会访问一个全局变量：需要统计已创建的该类型对象的数量；可能是指向类的错误处理程序的一个指针；可能是其他类型的变量或指针。</p>
+<p>然而，全局变量会破坏封装性，对象需要支持特定类抽象的实现。可定义类静态成员，而不是定义一个可普遍访问的全局变量。</p>
+<p>使用<code>static</code>成员而不是全局变量的优点：<code>static</code>成员的名字是在类的作用域中，可以避免与其他类的成员或全局对象名字冲突。可以实施封装。<code>static</code>成员可以是私有成员。通过阅读程序容易看出<code>static</code>成员是与特定类关联的，以清晰地显示程序员的意图。</p>
+<h2 id="定义Static成员"><a href="#定义Static成员" class="headerlink" title="定义Static成员"></a>定义Static成员</h2><p>在成员声明前加上关键字<code>static</code>以将成员设为<code>static</code>。<code>static</code>成员遵循正常的公有／私有访问规则。</p>
+<pre><code class="c++">class Animal &#123;
+    private:
+        int age = 3;    // 私有的数据
+        string name;
+        const int ci;
+        Animal &amp;parent;
+        static string Area;
+    public:          // 公有的方法
+        void eat() &#123;&#125;;
+        static void changeArea() &#123;&#125;;
+        Animal(int i, Animal &amp;p) : ci(i), parent(p) &#123;
+            age = i;
+        &#125;;
+&#125;;
+</code></pre>
+<h2 id="使用类的Static成员"><a href="#使用类的Static成员" class="headerlink" title="使用类的Static成员"></a>使用类的Static成员</h2><p><code>static</code>成员的访问方法：通过作用域操作符从类直接调用 static 成员，或者通过对象、引用或指向该类类型对象的指针间接调用。</p>
+<p><code>static</code>函数没有<code>this</code>指针，因为<code>static</code>成员不是任何对象的组成部分，所以<code>static</code>成员函数不能被声明为 <code>const</code>。</p>
+<p><code>static</code>成员函数也不能被声明为虚函数。</p>
+<h2 id="Static数据成员"><a href="#Static数据成员" class="headerlink" title="Static数据成员"></a>Static数据成员</h2><p><code>static</code>数据成员必须在类定义体的外部定义。</p>
+<p><code>static</code>成员不是通过类构造函数进行初始化，而是应该在定义时进行初始化。</p>
+<p><code>static</code>成员不是类对象的组成部分。</p>
+<pre><code class="c++">class A &#123;
+    public:
+        A();
+        ~A();
+        B *pb;
+        static int i;
+&#125;;
+//在cpp文件中 int A::i = 1;
+</code></pre>
+<h2 id="类与对象的内存结构"><a href="#类与对象的内存结构" class="headerlink" title="类与对象的内存结构"></a>类与对象的内存结构</h2><p>C++编译器对于数据成员和函数成员的处理：</p>
+<p>1.数据成员：</p>
+<ul>
+<li><p>静态的：定义了类,就会给静态数据分配内存.为所有的对象所共享。</p>
+</li>
+<li><p>非静态的：new了实例，每个实例都为之分配。</p>
+</li>
+</ul>
+<p>2.函数成员:</p>
+<ul>
+<li><p>定义了类，实现了该函数后，即产生该函数的可执行代码，存放在代码区，代码只会有一份拷贝，其起始地址即该函数的入口指针，所有的调用均通过此指针进行。</p>
+</li>
+<li><p>新new的实例调用函数并不产生新的代码，不同的实例都是调用同一个函数。 每次调用均会产生自身的运行时环境，环境中如果有共享的部分，比如静态或全局的变量， 可能存在重入性和并发性的安全问题。</p>
+</li>
+<li><p>如果是非静态的成员函数，则每一个实例调用它时，会传入一个指向实例本身的指针<code>this</code>。实例借此可以访问其他的成员（变量或函数）。</p>
+</li>
+<li><p>如果是静态的成员函数，则在调用时无<code>this</code>指针，因此不能访问类的非静态的成员（变量或者函数）。</p>
+</li>
+<li><p>如果是虚函数，则会为此类建立一个虚表，每个表项是一个指针，指向此函数的实现。这是额外的开销（见后文）虚函数不能是静态的。</p>
+</li>
+<li><p>对于构造函数和析构函数的继承关系——让我们想想鞋子袜子。</p>
+</li>
+</ul>
+<h1 id="友元"><a href="#友元" class="headerlink" title="友元"></a>友元</h1><p>友元机制允许一个类将对其非公有成员的访问权授予指定的函数或类。</p>
+<p>友元的声明以关键字<code>friend</code>开始，可以出现在类定义的内部的任何地方。通常，将友元声明成组地放在类定义的开始或结尾。</p>
+<pre><code class="c++">class Animal &#123;
+    private:
+        int age;
+        friend class Food;    // 友元类
+&#125;;
+
+//Food类的某成员函数：
+void f_food () &#123;
+    Animal a;
+    a.age = 3;
+&#125;
+</code></pre>
+<pre><code class="c++">class myClass &#123;
+    private:
+        int value;
+    public:
+        void setValue( int v)   &#123;
+            value = v;
+        &#125;
+        // setValue是成员函数,含有隐含的this指针: this-&gt;value=v,
+        friend void setV(myClass &amp;ob, int v);
+        friend class yourClass; //友元类
+&#125;;
+
+void setV(myClass &amp;ob, int v) &#123; //全局函数
+    ob.value = v;
+&#125;
+//setV是非成员函数,没有this指针,它需要一个对象作为其参数 ob.value=v
+//友元类yourClass的所有成员函数都是myClass的友元函数
+</code></pre>
+<p>友元函数只是一个普通的函数，只不过在类中说明，可以访问类的对象的私有成员。</p>
+<p>友元也可以指定为某类的某特定成员函数。</p>
+<p>友元不具备反身性、传递性。</p>
+<p>友元的实现是对封装性的破坏。</p>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2022/05/20/4_Inheritance_and_Polymorphism/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">下一篇</div>
+      <div class="article-nav-title">
+        
+          #4 继承与多态
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/05/16/2_from_C_to_C++/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">上一篇</div>
+      <div class="article-nav-title">#2 从C到C++</div>
+    </a>
+  
+</nav>
+
+
+    <section class="share">
+        <div class="share-title">分享</div>
+        <a class="share-item" target="_blank"
+            href="https://twitter.com/share?text=#3 类与对象 - Function's Blog&url=http%3A%2F%2Fblog.functioneurus.com%2F2022%2F05%2F19%2F3_class_and_object%2F">
+            <box-icon type='logo' name='twitter'></box-icon>
+        </a>
+        <a class="share-item" target="_blank"
+            href="https://www.facebook.com/sharer.php?title=#3 类与对象 - Function's Blog&u=http%3A%2F%2Fblog.functioneurus.com%2F2022%2F05%2F19%2F3_class_and_object%2F">
+            <box-icon name='facebook-square' type='logo' ></box-icon>
+        </a>
+        <!-- <a class="share-item" target="_blank"
+            href="https://service.weibo.com/share/share.php?title=#3 类与对象 - Function's Blog&url=http://blog.functioneurus.com/2022/05/19/3_class_and_object/&pic=">
+            <div class="n-icon n-icon-weibo"></div>
+        </a> -->
+    </section>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
+    
+      
+
+    
+      
+  <div class="widget-wrap widget-tags">
+    <div class="widget-title"><span>Tags</span></div>
+    <div class="widget-inner">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/408/" rel="tag">408</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DB/" rel="tag">DB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Memo/" rel="tag">Memo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B9%B1%E7%BF%BB%E4%B9%A6/" rel="tag">乱翻书</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%90%8C%E4%BA%BA/" rel="tag">同人</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BA%9F%E8%AF%9D/" rel="tag">废话</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2023/05/04/broken_thoughts_in_23_MAY/">碎碎念存档_MAY</a>
+          </li>
+        
+          <li>
+            <a href="/2023/04/01/broken_thoughts_in_APR/">碎碎念存档_APR</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/26/16_Database_notes/">#16 数据库笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/01/broken_thoughts_in_MAR/">碎碎念存档_MAR</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/09/broken_thoughts_in_FEB/">碎碎念存档_FEB</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-archive">
+    <div class="widget-title"><span>Archive</span></div>
+    <div class="widget-inner">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/">2022</a></li></ul>
+    </div>
+  </div>
+
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Function&#39;s Blog &copy; 2023<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="/dist/build.js?1651727875408.js"></script>
+
+
+<script src="/dist/custom.js?1651727875408.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

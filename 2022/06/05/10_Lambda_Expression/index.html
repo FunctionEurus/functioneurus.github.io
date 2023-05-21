@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>#10 Lambda表达式 | Function&#39;s Blog</title>
+
+    <meta name="description" content="&lt;h1 id=&#34;Lambda表达式&#34;&gt;&lt;a href=&#34;#Lambda表达式&#34; class=&#34;headerlink&#34; title=&#34;Lambda表达式&#34;&gt;&lt;/a&gt;Lambda表达式&lt;/h1&gt;&lt;h2 id=&#34;基本语法&#34;&gt;&lt;a href=&#34;#基本语法&#34; class=&#34;headerlink&#34; title=&#34;基本语法&#34;&gt;&lt;/a&gt;基本语法&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;c++&#34;&gt;[捕获列表](参数列表) mutable(可选) 异常属性 -&amp;gt; 返回类型 &amp;#123;
+    // 函数体
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;">
+    <meta name="keywords" content="">
+
+    
+
+    <meta property="og:locale" content="zh-CN" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content= "#10 Lambda表达式 | Function&#39;s Blog"  />
+    <meta property="og:description" content= "&lt;h1 id=&#34;Lambda表达式&#34;&gt;&lt;a href=&#34;#Lambda表达式&#34; class=&#34;headerlink&#34; title=&#34;Lambda表达式&#34;&gt;&lt;/a&gt;Lambda表达式&lt;/h1&gt;&lt;h2 id=&#34;基本语法&#34;&gt;&lt;a href=&#34;#基本语法&#34; class=&#34;headerlink&#34; title=&#34;基本语法&#34;&gt;&lt;/a&gt;基本语法&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;c++&#34;&gt;[捕获列表](参数列表) mutable(可选) 异常属性 -&amp;gt; 返回类型 &amp;#123;
+    // 函数体
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;" />
+    <meta property="og:url" content="http://blog.functioneurus.com/2022/06/05/10_Lambda_Expression/index.html" />
+    <meta property="og:site_name" content="" />
+    <meta property="article:author" content="Function" />
+    <meta property="article:publisher" content="" />
+    <meta property="og:description" content="&lt;h1 id=&#34;Lambda表达式&#34;&gt;&lt;a href=&#34;#Lambda表达式&#34; class=&#34;headerlink&#34; title=&#34;Lambda表达式&#34;&gt;&lt;/a&gt;Lambda表达式&lt;/h1&gt;&lt;h2 id=&#34;基本语法&#34;&gt;&lt;a href=&#34;#基本语法&#34; class=&#34;headerlink&#34; title=&#34;基本语法&#34;&gt;&lt;/a&gt;基本语法&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;c++&#34;&gt;[捕获列表](参数列表) mutable(可选) 异常属性 -&amp;gt; 返回类型 &amp;#123;
+    // 函数体
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;" />
+    <meta name="twitter:title" content="#10 Lambda表达式 | Function&#39;s Blog"/>
+    <meta name="twitter:description" content="&lt;h1 id=&#34;Lambda表达式&#34;&gt;&lt;a href=&#34;#Lambda表达式&#34; class=&#34;headerlink&#34; title=&#34;Lambda表达式&#34;&gt;&lt;/a&gt;Lambda表达式&lt;/h1&gt;&lt;h2 id=&#34;基本语法&#34;&gt;&lt;a href=&#34;#基本语法&#34; class=&#34;headerlink&#34; title=&#34;基本语法&#34;&gt;&lt;/a&gt;基本语法&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;c++&#34;&gt;[捕获列表](参数列表) mutable(可选) 异常属性 -&amp;gt; 返回类型 &amp;#123;
+    // 函数体
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;"/>
+    <script type="application/ld+json">
+        {
+            "description": "&lt;h1 id=&#34;Lambda表达式&#34;&gt;&lt;a href=&#34;#Lambda表达式&#34; class=&#34;headerlink&#34; title=&#34;Lambda表达式&#34;&gt;&lt;/a&gt;Lambda表达式&lt;/h1&gt;&lt;h2 id=&#34;基本语法&#34;&gt;&lt;a href=&#34;#基本语法&#34; class=&#34;headerlink&#34; title=&#34;基本语法&#34;&gt;&lt;/a&gt;基本语法&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;c++&#34;&gt;[捕获列表](参数列表) mutable(可选) 异常属性 -&amp;gt; 返回类型 &amp;#123;
+    // 函数体
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;",
+            "author": { "@type": "Person", "name": "Function" },
+            "@type": "BlogPosting",
+            "url": "http://blog.functioneurus.com/2022/06/05/10_Lambda_Expression/index.html",
+            "publisher": {
+            "@type": "Organization",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://blog.functioneurus.comundefined"
+            },
+            "name": "Function"
+            },
+            "headline": "#10 Lambda表达式 | Function&#39;s Blog",
+            "datePublished": "2022-06-04T23:08:36.000Z",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "http://blog.functioneurus.com/2022/06/05/10_Lambda_Expression/index.html"
+            },
+            "@context": "http://schema.org"
+        }
+    </script>
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=1651727875408.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=1651727875408.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = false
+        window.aomori_search_algolia = false
+
+    </script>
+
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <a class="header-type-title" href="/">Function&#39;s Blog</a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-clhwrtjmp0003foco0sww6qds" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      #10 Lambda表达式
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2022-06-04T23:08:36.000Z" itemprop="datePublished">2022-06-05</time>
+</div>
+
+            
+
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
+            </div>
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <h1 id="Lambda表达式"><a href="#Lambda表达式" class="headerlink" title="Lambda表达式"></a>Lambda表达式</h1><h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><pre><code class="c++">[捕获列表](参数列表) mutable(可选) 异常属性 -&gt; 返回类型 &#123;
+    // 函数体
+&#125;
+</code></pre>
+<span id="more"></span>
+
+<h2 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h2><pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+int main() &#123;
+    [ ] &#123;
+        cout &lt;&lt; &quot;Hello,World&quot; &lt;&lt; endl;
+    &#125;;
+&#125;
+//主函数内定义了一个匿名函数表达式。
+
+int main() &#123;
+    [ ] &#123;
+        cout &lt;&lt; &quot;Hello,World&quot; &lt;&lt; endl;
+    &#125; ();
+&#125;
+//主函数内定义并调用了一个匿名函数表达式。
+//输出&quot;Hello,World&quot;
+</code></pre>
+<p>匿名函数还可以有参数：</p>
+<pre><code class="C++">int main() &#123;
+    [] (int i) &#123;
+        cout &lt;&lt; i &lt;&lt; endl;
+    &#125;;
+&#125;
+</code></pre>
+<p>以带参数的方式调用该匿名函数：</p>
+<pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+int main() &#123;
+    [] (int i) &#123;
+        cout &lt;&lt; i &lt;&lt; endl;
+    &#125;
+    (3);
+&#125;
+//输出3
+</code></pre>
+<pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+int main() &#123;
+    int i = 3;
+    auto func = [](int i) &#123;
+        cout &lt;&lt; i;
+    &#125;;
+    func(i);
+&#125;
+</code></pre>
+<p>自动变量<code>func</code>即此<code>lambda</code>表达式。</p>
+<h1 id="x3D-拷贝"><a href="#x3D-拷贝" class="headerlink" title="[&#x3D;]拷贝"></a>[&#x3D;]拷贝</h1><pre><code class="c++">int i = 3;
+auto func = [] &#123;
+    cout &lt;&lt; &quot;hello&quot; &lt;&lt; endl;
+&#125;;
+func();
+// 以上当然没有问题
+//然而：
+int i = 3;
+auto func = [] &#123;
+    cout &lt;&lt; i &lt;&lt; endl;
+&#125;;
+func();
+//编译出错，无法捕捉i
+
+int i = 3;
+auto func = [ = ] &#123;
+    cout &lt;&lt; i &lt;&lt; endl;
+&#125;;
+func();//正确
+</code></pre>
+<p> <code>[=]</code>表明将外部的所有变量拷贝一份到该函数内部。</p>
+<pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+int main() &#123;
+    int i = 3;
+    auto fun1 = [ = ] &#123;
+        cout &lt;&lt; i;  // fun1 内可以访问i
+        int j = 0;
+        auto fun2 = [ = ] //此处必须使用[=]，否则i，j均无法访问
+        &#123;
+            cout &lt;&lt; i &lt;&lt; j;
+        &#125;;
+        fun2();
+    &#125;;
+    fun1();
+&#125;
+//输出330
+</code></pre>
+<h1 id="amp-引用"><a href="#amp-引用" class="headerlink" title="[&amp;]引用"></a>[&amp;]引用</h1><pre><code class="c++">int i = 3;
+auto func = [ = ] &#123;
+    i++;    // 因为是以拷贝方式捕获，不能写。
+    cout &lt;&lt; i;
+&#125;;
+func();
+
+//改为以引用的方式捕获：
+int i = 3;
+auto func = [&amp;] &#123;
+    i++;
+&#125;;
+func();
+cout &lt;&lt; i &lt;&lt; endl;  // 输出4
+</code></pre>
+<h1 id="x3D-amp-拷贝与引用混合"><a href="#x3D-amp-拷贝与引用混合" class="headerlink" title="[&#x3D;,&amp;]拷贝与引用混合"></a>[&#x3D;,&amp;]拷贝与引用混合</h1><pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+int main() &#123;
+    int i = 1024, j = 2048;
+    cout &lt;&lt; &quot;i:&quot; &lt;&lt; &amp;i &lt;&lt; endl;
+    cout &lt;&lt; &quot;j:&quot; &lt;&lt; &amp;j &lt;&lt; endl;
+    auto fun1 = [ =, &amp;i] &#123; // 默认拷贝外部所有变量，但引用变量i
+        cout &lt;&lt; &quot;i:&quot; &lt;&lt; &amp;i &lt;&lt; endl;
+        cout &lt;&lt; &quot;j:&quot; &lt;&lt; &amp;j &lt;&lt; endl;
+    &#125;;
+    fun1();
+    return 0;
+&#125;
+//输出：
+//i:0x79febc
+//j:0x79feb8
+//i:0x79febc
+//j:0x79feb4
+</code></pre>
+<h1 id="this-捕获this"><a href="#this-捕获this" class="headerlink" title="[this]捕获this"></a>[this]捕获this</h1><pre><code class="c++">#include &lt;iostream&gt;
+using namespace std;
+
+class test &#123;
+    public:
+        void hello() &#123;
+            cout &lt;&lt; &quot;test hello&quot;;
+        &#125;;
+        void lambda() &#123;
+            auto fun = [this] &#123; // 捕获了 this 指针
+                this-&gt;hello();
+            &#125;;
+            fun();
+        &#125;
+&#125;;
+
+int main() &#123;
+    test t;
+    t.lambda();
+&#125;
+//输出：test hello
+</code></pre>
+<h2 id="捕获列表"><a href="#捕获列表" class="headerlink" title="[捕获列表]"></a>[捕获列表]</h2><p>只能使用那些到定义<code>Lambda</code>为止时<code>Lambda</code>所在作用范围内可见的局部变量（包括<code>Lambda</code>所在类的<code>this</code>）：</p>
+<p>空，没有任何捕获；</p>
+<p><code>=</code>函数体内可以使用所有局部变量，以值传递方式，即拷贝；</p>
+<p><code>&amp;</code>函数体内可以使用所有局部变量，引用传递；</p>
+<p><code>this</code>函数体内可以使用 Lambda 所在类中的成员变量；</p>
+<p><code>a</code>将<code>a</code>按值进行传递。函数体内不能修改传递进来的<code>a</code>的拷贝，如要修改传递进来的拷贝，可添加<code>mutable</code>修饰符。注意是修改拷贝，而不是原变量本身；</p>
+<p><code>&amp;a</code>将<code>a</code>按引用进行传递；</p>
+<p><code>a，&amp;b</code>将<code>a</code>按值传递，<code>b</code>按引用进行传递；</p>
+<p><code>=，&amp;a，&amp;b</code>除<code>a</code>和<code>b</code>按引用进行传递外，其他参数都按值进行传递；</p>
+<p><code>&amp;，a，b</code>除<code>a</code>和<code>b</code>按值进行传递外，其他参数都按引用进行传递。</p>
+<h2 id="（操作符重载函数参数）"><a href="#（操作符重载函数参数）" class="headerlink" title="（操作符重载函数参数）"></a>（操作符重载函数参数）</h2><p>标识重载的<code>()</code>操作符的参数，没有参数时，这部分可以省略。参数可以通过按值（如<code>(a, b)</code>）和按引用 (如<code>(&amp;a, &amp;b)</code>) 两种 方式进行传递。</p>
+<h2 id="Mutable或Exception声明"><a href="#Mutable或Exception声明" class="headerlink" title="Mutable或Exception声明"></a>Mutable或Exception声明</h2><p>这部分可以省略。按值传递函数对象参数时，加上<code>mutable</code>修饰符后，可以修改传递进来的拷贝（注意是能修改拷贝，而不是 值本身）。<code>exception</code>声明用于指定函数抛出的异常，如抛出整数类型的异常，可以使用 <code>throw(int)</code>。</p>
+<h2 id="gt-返回值类型"><a href="#gt-返回值类型" class="headerlink" title="-&gt;返回值类型"></a>-&gt;返回值类型</h2><p>标识函数返回值的类型，当返回值为<code>void</code>，或者函数体中只有一处<code>return</code>的地方（此时编译器可以自动推断出返回值类型） 时，这部分可以省略。</p>
+<h2 id="函数体"><a href="#函数体" class="headerlink" title="{函数体}"></a>{函数体}</h2><p>函数体用于标识函数的实现，这部分不能省略，但可以为空。</p>
+<h1 id="Function和Bind"><a href="#Function和Bind" class="headerlink" title="Function和Bind"></a>Function和Bind</h1><p><code>function</code>模板类和<code>bind</code>模板函数，使用它们可以实现类似函数指针的功能，但却比函数指针更加灵活，特别是函数指向类的非静态成员函数时。</p>
+<p><code>std::function</code>可以绑定到全局函数&#x2F;类静态成员函数(类静态成员函数与全局函数没有区别),如果要绑定到类的非静态成员函数，则需要使用<code>std::bind</code>。<code>std::function</code>是一个函数对象的包装器，<code>std::function</code>的实例可以存储，复制和调用任何可调用的目标，包括：函数；<code>lamada</code>表达式；绑定表达式或其他函数对象；指向成员函数和指向数据成员的指针。</p>
+<p>标准库函数<code>bind()</code>和<code>function()</code>定义于头文件<code>&lt;functional&gt;</code>中（该头文件还包括许多其他函数对象），用于处理函数及函数参数。</p>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2022/06/05/11_Written_at_nighteen/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">下一篇</div>
+      <div class="article-nav-title">
+        
+          #11 写在十九岁
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/06/04/9_C++11_Standards/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">上一篇</div>
+      <div class="article-nav-title">#9 C++11标准</div>
+    </a>
+  
+</nav>
+
+
+    <section class="share">
+        <div class="share-title">分享</div>
+        <a class="share-item" target="_blank"
+            href="https://twitter.com/share?text=#10 Lambda表达式 - Function's Blog&url=http%3A%2F%2Fblog.functioneurus.com%2F2022%2F06%2F05%2F10_Lambda_Expression%2F">
+            <box-icon type='logo' name='twitter'></box-icon>
+        </a>
+        <a class="share-item" target="_blank"
+            href="https://www.facebook.com/sharer.php?title=#10 Lambda表达式 - Function's Blog&u=http%3A%2F%2Fblog.functioneurus.com%2F2022%2F06%2F05%2F10_Lambda_Expression%2F">
+            <box-icon name='facebook-square' type='logo' ></box-icon>
+        </a>
+        <!-- <a class="share-item" target="_blank"
+            href="https://service.weibo.com/share/share.php?title=#10 Lambda表达式 - Function's Blog&url=http://blog.functioneurus.com/2022/06/05/10_Lambda_Expression/&pic=">
+            <div class="n-icon n-icon-weibo"></div>
+        </a> -->
+    </section>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
+    
+      
+
+    
+      
+  <div class="widget-wrap widget-tags">
+    <div class="widget-title"><span>Tags</span></div>
+    <div class="widget-inner">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/408/" rel="tag">408</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DB/" rel="tag">DB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Memo/" rel="tag">Memo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B9%B1%E7%BF%BB%E4%B9%A6/" rel="tag">乱翻书</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%90%8C%E4%BA%BA/" rel="tag">同人</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BA%9F%E8%AF%9D/" rel="tag">废话</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2023/05/04/broken_thoughts_in_23_MAY/">碎碎念存档_MAY</a>
+          </li>
+        
+          <li>
+            <a href="/2023/04/01/broken_thoughts_in_APR/">碎碎念存档_APR</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/26/16_Database_notes/">#16 数据库笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2023/03/01/broken_thoughts_in_MAR/">碎碎念存档_MAR</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/09/broken_thoughts_in_FEB/">碎碎念存档_FEB</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-archive">
+    <div class="widget-title"><span>Archive</span></div>
+    <div class="widget-inner">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/">2022</a></li></ul>
+    </div>
+  </div>
+
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Function&#39;s Blog &copy; 2023<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="/dist/build.js?1651727875408.js"></script>
+
+
+<script src="/dist/custom.js?1651727875408.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
