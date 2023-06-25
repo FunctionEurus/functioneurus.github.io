@@ -8,9 +8,9 @@
     
     <title>#8 异常处理 | Function&#39;s Blog</title>
 
-    <meta name="description" content="&lt;h1 id=&#34;异常机制&#34;&gt;&lt;a href=&#34;#异常机制&#34; class=&#34;headerlink&#34; title=&#34;异常机制&#34;&gt;&lt;/a&gt;异常机制&lt;/h1&gt;&lt;p&gt;异常指运行时出现的不正常现象，如内存耗尽、意外的非法输入、硬件故障……&lt;/p&gt;
-&lt;p&gt;当程序代码检查到异常时，需要错误检测程序的干预，称之为异常处理机制：把控制权转到可处理该问题的程序，指出具体出现了什么问题，并提供一些附加信息。&lt;/p&gt;
-&lt;p&gt;使用异常处理，程序各部分能够就程序执行期间出现的问题相互通信，并处理这些问题。&lt;/p&gt;">
+    <meta name="description" content="&lt;h1 id=&#34;&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&#34;&gt;&lt;a href=&#34;#&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&#34;&gt;&lt;/a&gt;&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&lt;/h1&gt;&lt;p&gt;&amp;#x5F02;&amp;#x5E38;&amp;#x6307;&amp;#x8FD0;&amp;#x884C;&amp;#x65F6;&amp;#x51FA;&amp;#x73B0;&amp;#x7684;&amp;#x4E0D;&amp;#x6B63;&amp;#x5E38;&amp;#x73B0;&amp;#x8C61;&amp;#xFF0C;&amp;#x5982;&amp;#x5185;&amp;#x5B58;&amp;#x8017;&amp;#x5C3D;&amp;#x3001;&amp;#x610F;&amp;#x5916;&amp;#x7684;&amp;#x975E;&amp;#x6CD5;&amp;#x8F93;&amp;#x5165;&amp;#x3001;&amp;#x786C;&amp;#x4EF6;&amp;#x6545;&amp;#x969C;&amp;#x2026;&amp;#x2026;&lt;/p&gt;
+&lt;p&gt;&amp;#x5F53;&amp;#x7A0B;&amp;#x5E8F;&amp;#x4EE3;&amp;#x7801;&amp;#x68C0;&amp;#x67E5;&amp;#x5230;&amp;#x5F02;&amp;#x5E38;&amp;#x65F6;&amp;#xFF0C;&amp;#x9700;&amp;#x8981;&amp;#x9519;&amp;#x8BEF;&amp;#x68C0;&amp;#x6D4B;&amp;#x7A0B;&amp;#x5E8F;&amp;#x7684;&amp;#x5E72;&amp;#x9884;&amp;#xFF0C;&amp;#x79F0;&amp;#x4E4B;&amp;#x4E3A;&amp;#x5F02;&amp;#x5E38;&amp;#x5904;&amp;#x7406;&amp;#x673A;&amp;#x5236;&amp;#xFF1A;&amp;#x628A;&amp;#x63A7;&amp;#x5236;&amp;#x6743;&amp;#x8F6C;&amp;#x5230;&amp;#x53EF;&amp;#x5904;&amp;#x7406;&amp;#x8BE5;&amp;#x95EE;&amp;#x9898;&amp;#x7684;&amp;#x7A0B;&amp;#x5E8F;&amp;#xFF0C;&amp;#x6307;&amp;#x51FA;&amp;#x5177;&amp;#x4F53;&amp;#x51FA;&amp;#x73B0;&amp;#x4E86;&amp;#x4EC0;&amp;#x4E48;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x5E76;&amp;#x63D0;&amp;#x4F9B;&amp;#x4E00;&amp;#x4E9B;&amp;#x9644;&amp;#x52A0;&amp;#x4FE1;&amp;#x606F;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4F7F;&amp;#x7528;&amp;#x5F02;&amp;#x5E38;&amp;#x5904;&amp;#x7406;&amp;#xFF0C;&amp;#x7A0B;&amp;#x5E8F;&amp;#x5404;&amp;#x90E8;&amp;#x5206;&amp;#x80FD;&amp;#x591F;&amp;#x5C31;&amp;#x7A0B;&amp;#x5E8F;&amp;#x6267;&amp;#x884C;&amp;#x671F;&amp;#x95F4;&amp;#x51FA;&amp;#x73B0;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#x76F8;&amp;#x4E92;&amp;#x901A;&amp;#x4FE1;&amp;#xFF0C;&amp;#x5E76;&amp;#x5904;&amp;#x7406;&amp;#x8FD9;&amp;#x4E9B;&amp;#x95EE;&amp;#x9898;&amp;#x3002;&lt;/p&gt;">
     <meta name="keywords" content="">
 
     
@@ -18,25 +18,25 @@
     <meta property="og:locale" content="zh-CN" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content= "#8 异常处理 | Function&#39;s Blog"  />
-    <meta property="og:description" content= "&lt;h1 id=&#34;异常机制&#34;&gt;&lt;a href=&#34;#异常机制&#34; class=&#34;headerlink&#34; title=&#34;异常机制&#34;&gt;&lt;/a&gt;异常机制&lt;/h1&gt;&lt;p&gt;异常指运行时出现的不正常现象，如内存耗尽、意外的非法输入、硬件故障……&lt;/p&gt;
-&lt;p&gt;当程序代码检查到异常时，需要错误检测程序的干预，称之为异常处理机制：把控制权转到可处理该问题的程序，指出具体出现了什么问题，并提供一些附加信息。&lt;/p&gt;
-&lt;p&gt;使用异常处理，程序各部分能够就程序执行期间出现的问题相互通信，并处理这些问题。&lt;/p&gt;" />
+    <meta property="og:description" content= "&lt;h1 id=&#34;&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&#34;&gt;&lt;a href=&#34;#&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&#34;&gt;&lt;/a&gt;&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&lt;/h1&gt;&lt;p&gt;&amp;#x5F02;&amp;#x5E38;&amp;#x6307;&amp;#x8FD0;&amp;#x884C;&amp;#x65F6;&amp;#x51FA;&amp;#x73B0;&amp;#x7684;&amp;#x4E0D;&amp;#x6B63;&amp;#x5E38;&amp;#x73B0;&amp;#x8C61;&amp;#xFF0C;&amp;#x5982;&amp;#x5185;&amp;#x5B58;&amp;#x8017;&amp;#x5C3D;&amp;#x3001;&amp;#x610F;&amp;#x5916;&amp;#x7684;&amp;#x975E;&amp;#x6CD5;&amp;#x8F93;&amp;#x5165;&amp;#x3001;&amp;#x786C;&amp;#x4EF6;&amp;#x6545;&amp;#x969C;&amp;#x2026;&amp;#x2026;&lt;/p&gt;
+&lt;p&gt;&amp;#x5F53;&amp;#x7A0B;&amp;#x5E8F;&amp;#x4EE3;&amp;#x7801;&amp;#x68C0;&amp;#x67E5;&amp;#x5230;&amp;#x5F02;&amp;#x5E38;&amp;#x65F6;&amp;#xFF0C;&amp;#x9700;&amp;#x8981;&amp;#x9519;&amp;#x8BEF;&amp;#x68C0;&amp;#x6D4B;&amp;#x7A0B;&amp;#x5E8F;&amp;#x7684;&amp;#x5E72;&amp;#x9884;&amp;#xFF0C;&amp;#x79F0;&amp;#x4E4B;&amp;#x4E3A;&amp;#x5F02;&amp;#x5E38;&amp;#x5904;&amp;#x7406;&amp;#x673A;&amp;#x5236;&amp;#xFF1A;&amp;#x628A;&amp;#x63A7;&amp;#x5236;&amp;#x6743;&amp;#x8F6C;&amp;#x5230;&amp;#x53EF;&amp;#x5904;&amp;#x7406;&amp;#x8BE5;&amp;#x95EE;&amp;#x9898;&amp;#x7684;&amp;#x7A0B;&amp;#x5E8F;&amp;#xFF0C;&amp;#x6307;&amp;#x51FA;&amp;#x5177;&amp;#x4F53;&amp;#x51FA;&amp;#x73B0;&amp;#x4E86;&amp;#x4EC0;&amp;#x4E48;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x5E76;&amp;#x63D0;&amp;#x4F9B;&amp;#x4E00;&amp;#x4E9B;&amp;#x9644;&amp;#x52A0;&amp;#x4FE1;&amp;#x606F;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4F7F;&amp;#x7528;&amp;#x5F02;&amp;#x5E38;&amp;#x5904;&amp;#x7406;&amp;#xFF0C;&amp;#x7A0B;&amp;#x5E8F;&amp;#x5404;&amp;#x90E8;&amp;#x5206;&amp;#x80FD;&amp;#x591F;&amp;#x5C31;&amp;#x7A0B;&amp;#x5E8F;&amp;#x6267;&amp;#x884C;&amp;#x671F;&amp;#x95F4;&amp;#x51FA;&amp;#x73B0;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#x76F8;&amp;#x4E92;&amp;#x901A;&amp;#x4FE1;&amp;#xFF0C;&amp;#x5E76;&amp;#x5904;&amp;#x7406;&amp;#x8FD9;&amp;#x4E9B;&amp;#x95EE;&amp;#x9898;&amp;#x3002;&lt;/p&gt;" />
     <meta property="og:url" content="http://blog.functioneurus.com/2022/06/03/8_Exception_handling/index.html" />
     <meta property="og:site_name" content="" />
     <meta property="article:author" content="Function" />
     <meta property="article:publisher" content="" />
-    <meta property="og:description" content="&lt;h1 id=&#34;异常机制&#34;&gt;&lt;a href=&#34;#异常机制&#34; class=&#34;headerlink&#34; title=&#34;异常机制&#34;&gt;&lt;/a&gt;异常机制&lt;/h1&gt;&lt;p&gt;异常指运行时出现的不正常现象，如内存耗尽、意外的非法输入、硬件故障……&lt;/p&gt;
-&lt;p&gt;当程序代码检查到异常时，需要错误检测程序的干预，称之为异常处理机制：把控制权转到可处理该问题的程序，指出具体出现了什么问题，并提供一些附加信息。&lt;/p&gt;
-&lt;p&gt;使用异常处理，程序各部分能够就程序执行期间出现的问题相互通信，并处理这些问题。&lt;/p&gt;" />
+    <meta property="og:description" content="&lt;h1 id=&#34;&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&#34;&gt;&lt;a href=&#34;#&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&#34;&gt;&lt;/a&gt;&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&lt;/h1&gt;&lt;p&gt;&amp;#x5F02;&amp;#x5E38;&amp;#x6307;&amp;#x8FD0;&amp;#x884C;&amp;#x65F6;&amp;#x51FA;&amp;#x73B0;&amp;#x7684;&amp;#x4E0D;&amp;#x6B63;&amp;#x5E38;&amp;#x73B0;&amp;#x8C61;&amp;#xFF0C;&amp;#x5982;&amp;#x5185;&amp;#x5B58;&amp;#x8017;&amp;#x5C3D;&amp;#x3001;&amp;#x610F;&amp;#x5916;&amp;#x7684;&amp;#x975E;&amp;#x6CD5;&amp;#x8F93;&amp;#x5165;&amp;#x3001;&amp;#x786C;&amp;#x4EF6;&amp;#x6545;&amp;#x969C;&amp;#x2026;&amp;#x2026;&lt;/p&gt;
+&lt;p&gt;&amp;#x5F53;&amp;#x7A0B;&amp;#x5E8F;&amp;#x4EE3;&amp;#x7801;&amp;#x68C0;&amp;#x67E5;&amp;#x5230;&amp;#x5F02;&amp;#x5E38;&amp;#x65F6;&amp;#xFF0C;&amp;#x9700;&amp;#x8981;&amp;#x9519;&amp;#x8BEF;&amp;#x68C0;&amp;#x6D4B;&amp;#x7A0B;&amp;#x5E8F;&amp;#x7684;&amp;#x5E72;&amp;#x9884;&amp;#xFF0C;&amp;#x79F0;&amp;#x4E4B;&amp;#x4E3A;&amp;#x5F02;&amp;#x5E38;&amp;#x5904;&amp;#x7406;&amp;#x673A;&amp;#x5236;&amp;#xFF1A;&amp;#x628A;&amp;#x63A7;&amp;#x5236;&amp;#x6743;&amp;#x8F6C;&amp;#x5230;&amp;#x53EF;&amp;#x5904;&amp;#x7406;&amp;#x8BE5;&amp;#x95EE;&amp;#x9898;&amp;#x7684;&amp;#x7A0B;&amp;#x5E8F;&amp;#xFF0C;&amp;#x6307;&amp;#x51FA;&amp;#x5177;&amp;#x4F53;&amp;#x51FA;&amp;#x73B0;&amp;#x4E86;&amp;#x4EC0;&amp;#x4E48;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x5E76;&amp;#x63D0;&amp;#x4F9B;&amp;#x4E00;&amp;#x4E9B;&amp;#x9644;&amp;#x52A0;&amp;#x4FE1;&amp;#x606F;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4F7F;&amp;#x7528;&amp;#x5F02;&amp;#x5E38;&amp;#x5904;&amp;#x7406;&amp;#xFF0C;&amp;#x7A0B;&amp;#x5E8F;&amp;#x5404;&amp;#x90E8;&amp;#x5206;&amp;#x80FD;&amp;#x591F;&amp;#x5C31;&amp;#x7A0B;&amp;#x5E8F;&amp;#x6267;&amp;#x884C;&amp;#x671F;&amp;#x95F4;&amp;#x51FA;&amp;#x73B0;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#x76F8;&amp;#x4E92;&amp;#x901A;&amp;#x4FE1;&amp;#xFF0C;&amp;#x5E76;&amp;#x5904;&amp;#x7406;&amp;#x8FD9;&amp;#x4E9B;&amp;#x95EE;&amp;#x9898;&amp;#x3002;&lt;/p&gt;" />
     <meta name="twitter:title" content="#8 异常处理 | Function&#39;s Blog"/>
-    <meta name="twitter:description" content="&lt;h1 id=&#34;异常机制&#34;&gt;&lt;a href=&#34;#异常机制&#34; class=&#34;headerlink&#34; title=&#34;异常机制&#34;&gt;&lt;/a&gt;异常机制&lt;/h1&gt;&lt;p&gt;异常指运行时出现的不正常现象，如内存耗尽、意外的非法输入、硬件故障……&lt;/p&gt;
-&lt;p&gt;当程序代码检查到异常时，需要错误检测程序的干预，称之为异常处理机制：把控制权转到可处理该问题的程序，指出具体出现了什么问题，并提供一些附加信息。&lt;/p&gt;
-&lt;p&gt;使用异常处理，程序各部分能够就程序执行期间出现的问题相互通信，并处理这些问题。&lt;/p&gt;"/>
+    <meta name="twitter:description" content="&lt;h1 id=&#34;&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&#34;&gt;&lt;a href=&#34;#&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&#34;&gt;&lt;/a&gt;&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&lt;/h1&gt;&lt;p&gt;&amp;#x5F02;&amp;#x5E38;&amp;#x6307;&amp;#x8FD0;&amp;#x884C;&amp;#x65F6;&amp;#x51FA;&amp;#x73B0;&amp;#x7684;&amp;#x4E0D;&amp;#x6B63;&amp;#x5E38;&amp;#x73B0;&amp;#x8C61;&amp;#xFF0C;&amp;#x5982;&amp;#x5185;&amp;#x5B58;&amp;#x8017;&amp;#x5C3D;&amp;#x3001;&amp;#x610F;&amp;#x5916;&amp;#x7684;&amp;#x975E;&amp;#x6CD5;&amp;#x8F93;&amp;#x5165;&amp;#x3001;&amp;#x786C;&amp;#x4EF6;&amp;#x6545;&amp;#x969C;&amp;#x2026;&amp;#x2026;&lt;/p&gt;
+&lt;p&gt;&amp;#x5F53;&amp;#x7A0B;&amp;#x5E8F;&amp;#x4EE3;&amp;#x7801;&amp;#x68C0;&amp;#x67E5;&amp;#x5230;&amp;#x5F02;&amp;#x5E38;&amp;#x65F6;&amp;#xFF0C;&amp;#x9700;&amp;#x8981;&amp;#x9519;&amp;#x8BEF;&amp;#x68C0;&amp;#x6D4B;&amp;#x7A0B;&amp;#x5E8F;&amp;#x7684;&amp;#x5E72;&amp;#x9884;&amp;#xFF0C;&amp;#x79F0;&amp;#x4E4B;&amp;#x4E3A;&amp;#x5F02;&amp;#x5E38;&amp;#x5904;&amp;#x7406;&amp;#x673A;&amp;#x5236;&amp;#xFF1A;&amp;#x628A;&amp;#x63A7;&amp;#x5236;&amp;#x6743;&amp;#x8F6C;&amp;#x5230;&amp;#x53EF;&amp;#x5904;&amp;#x7406;&amp;#x8BE5;&amp;#x95EE;&amp;#x9898;&amp;#x7684;&amp;#x7A0B;&amp;#x5E8F;&amp;#xFF0C;&amp;#x6307;&amp;#x51FA;&amp;#x5177;&amp;#x4F53;&amp;#x51FA;&amp;#x73B0;&amp;#x4E86;&amp;#x4EC0;&amp;#x4E48;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x5E76;&amp;#x63D0;&amp;#x4F9B;&amp;#x4E00;&amp;#x4E9B;&amp;#x9644;&amp;#x52A0;&amp;#x4FE1;&amp;#x606F;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4F7F;&amp;#x7528;&amp;#x5F02;&amp;#x5E38;&amp;#x5904;&amp;#x7406;&amp;#xFF0C;&amp;#x7A0B;&amp;#x5E8F;&amp;#x5404;&amp;#x90E8;&amp;#x5206;&amp;#x80FD;&amp;#x591F;&amp;#x5C31;&amp;#x7A0B;&amp;#x5E8F;&amp;#x6267;&amp;#x884C;&amp;#x671F;&amp;#x95F4;&amp;#x51FA;&amp;#x73B0;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#x76F8;&amp;#x4E92;&amp;#x901A;&amp;#x4FE1;&amp;#xFF0C;&amp;#x5E76;&amp;#x5904;&amp;#x7406;&amp;#x8FD9;&amp;#x4E9B;&amp;#x95EE;&amp;#x9898;&amp;#x3002;&lt;/p&gt;"/>
     <script type="application/ld+json">
         {
-            "description": "&lt;h1 id=&#34;异常机制&#34;&gt;&lt;a href=&#34;#异常机制&#34; class=&#34;headerlink&#34; title=&#34;异常机制&#34;&gt;&lt;/a&gt;异常机制&lt;/h1&gt;&lt;p&gt;异常指运行时出现的不正常现象，如内存耗尽、意外的非法输入、硬件故障……&lt;/p&gt;
-&lt;p&gt;当程序代码检查到异常时，需要错误检测程序的干预，称之为异常处理机制：把控制权转到可处理该问题的程序，指出具体出现了什么问题，并提供一些附加信息。&lt;/p&gt;
-&lt;p&gt;使用异常处理，程序各部分能够就程序执行期间出现的问题相互通信，并处理这些问题。&lt;/p&gt;",
+            "description": "&lt;h1 id=&#34;&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&#34;&gt;&lt;a href=&#34;#&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&#34;&gt;&lt;/a&gt;&amp;#x5F02;&amp;#x5E38;&amp;#x673A;&amp;#x5236;&lt;/h1&gt;&lt;p&gt;&amp;#x5F02;&amp;#x5E38;&amp;#x6307;&amp;#x8FD0;&amp;#x884C;&amp;#x65F6;&amp;#x51FA;&amp;#x73B0;&amp;#x7684;&amp;#x4E0D;&amp;#x6B63;&amp;#x5E38;&amp;#x73B0;&amp;#x8C61;&amp;#xFF0C;&amp;#x5982;&amp;#x5185;&amp;#x5B58;&amp;#x8017;&amp;#x5C3D;&amp;#x3001;&amp;#x610F;&amp;#x5916;&amp;#x7684;&amp;#x975E;&amp;#x6CD5;&amp;#x8F93;&amp;#x5165;&amp;#x3001;&amp;#x786C;&amp;#x4EF6;&amp;#x6545;&amp;#x969C;&amp;#x2026;&amp;#x2026;&lt;/p&gt;
+&lt;p&gt;&amp;#x5F53;&amp;#x7A0B;&amp;#x5E8F;&amp;#x4EE3;&amp;#x7801;&amp;#x68C0;&amp;#x67E5;&amp;#x5230;&amp;#x5F02;&amp;#x5E38;&amp;#x65F6;&amp;#xFF0C;&amp;#x9700;&amp;#x8981;&amp;#x9519;&amp;#x8BEF;&amp;#x68C0;&amp;#x6D4B;&amp;#x7A0B;&amp;#x5E8F;&amp;#x7684;&amp;#x5E72;&amp;#x9884;&amp;#xFF0C;&amp;#x79F0;&amp;#x4E4B;&amp;#x4E3A;&amp;#x5F02;&amp;#x5E38;&amp;#x5904;&amp;#x7406;&amp;#x673A;&amp;#x5236;&amp;#xFF1A;&amp;#x628A;&amp;#x63A7;&amp;#x5236;&amp;#x6743;&amp;#x8F6C;&amp;#x5230;&amp;#x53EF;&amp;#x5904;&amp;#x7406;&amp;#x8BE5;&amp;#x95EE;&amp;#x9898;&amp;#x7684;&amp;#x7A0B;&amp;#x5E8F;&amp;#xFF0C;&amp;#x6307;&amp;#x51FA;&amp;#x5177;&amp;#x4F53;&amp;#x51FA;&amp;#x73B0;&amp;#x4E86;&amp;#x4EC0;&amp;#x4E48;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x5E76;&amp;#x63D0;&amp;#x4F9B;&amp;#x4E00;&amp;#x4E9B;&amp;#x9644;&amp;#x52A0;&amp;#x4FE1;&amp;#x606F;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4F7F;&amp;#x7528;&amp;#x5F02;&amp;#x5E38;&amp;#x5904;&amp;#x7406;&amp;#xFF0C;&amp;#x7A0B;&amp;#x5E8F;&amp;#x5404;&amp;#x90E8;&amp;#x5206;&amp;#x80FD;&amp;#x591F;&amp;#x5C31;&amp;#x7A0B;&amp;#x5E8F;&amp;#x6267;&amp;#x884C;&amp;#x671F;&amp;#x95F4;&amp;#x51FA;&amp;#x73B0;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#x76F8;&amp;#x4E92;&amp;#x901A;&amp;#x4FE1;&amp;#xFF0C;&amp;#x5E76;&amp;#x5904;&amp;#x7406;&amp;#x8FD9;&amp;#x4E9B;&amp;#x95EE;&amp;#x9898;&amp;#x3002;&lt;/p&gt;",
             "author": { "@type": "Person", "name": "Function" },
             "@type": "BlogPosting",
             "url": "http://blog.functioneurus.com/2022/06/03/8_Exception_handling/index.html",
@@ -156,7 +156,7 @@
             <section class="inner">
                 <section class="inner-main">
                     <div class="post">
-    <article id="post-cljba4hy2000ua4cob7o26y9x" class="article article-type-post" itemscope
+    <article id="post-cljbah3a0000wgoco9y9wdzfd" class="article article-type-post" itemscope
     itemprop="blogPost">
 
     <div class="article-inner">
@@ -198,102 +198,102 @@
         </div>
 
         <div class="article-entry post-inner-html hairline" itemprop="articleBody">
-            <h1 id="异常机制"><a href="#异常机制" class="headerlink" title="异常机制"></a>异常机制</h1><p>异常指运行时出现的不正常现象，如内存耗尽、意外的非法输入、硬件故障……</p>
-<p>当程序代码检查到异常时，需要错误检测程序的干预，称之为异常处理机制：把控制权转到可处理该问题的程序，指出具体出现了什么问题，并提供一些附加信息。</p>
-<p>使用异常处理，程序各部分能够就程序执行期间出现的问题相互通信，并处理这些问题。</p>
+            <h1 id="&#x5F02;&#x5E38;&#x673A;&#x5236;"><a href="#&#x5F02;&#x5E38;&#x673A;&#x5236;" class="headerlink" title="&#x5F02;&#x5E38;&#x673A;&#x5236;"></a>&#x5F02;&#x5E38;&#x673A;&#x5236;</h1><p>&#x5F02;&#x5E38;&#x6307;&#x8FD0;&#x884C;&#x65F6;&#x51FA;&#x73B0;&#x7684;&#x4E0D;&#x6B63;&#x5E38;&#x73B0;&#x8C61;&#xFF0C;&#x5982;&#x5185;&#x5B58;&#x8017;&#x5C3D;&#x3001;&#x610F;&#x5916;&#x7684;&#x975E;&#x6CD5;&#x8F93;&#x5165;&#x3001;&#x786C;&#x4EF6;&#x6545;&#x969C;&#x2026;&#x2026;</p>
+<p>&#x5F53;&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#x68C0;&#x67E5;&#x5230;&#x5F02;&#x5E38;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x9519;&#x8BEF;&#x68C0;&#x6D4B;&#x7A0B;&#x5E8F;&#x7684;&#x5E72;&#x9884;&#xFF0C;&#x79F0;&#x4E4B;&#x4E3A;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x673A;&#x5236;&#xFF1A;&#x628A;&#x63A7;&#x5236;&#x6743;&#x8F6C;&#x5230;&#x53EF;&#x5904;&#x7406;&#x8BE5;&#x95EE;&#x9898;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x6307;&#x51FA;&#x5177;&#x4F53;&#x51FA;&#x73B0;&#x4E86;&#x4EC0;&#x4E48;&#x95EE;&#x9898;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x4E00;&#x4E9B;&#x9644;&#x52A0;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x5F02;&#x5E38;&#x5904;&#x7406;&#xFF0C;&#x7A0B;&#x5E8F;&#x5404;&#x90E8;&#x5206;&#x80FD;&#x591F;&#x5C31;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x671F;&#x95F4;&#x51FA;&#x73B0;&#x7684;&#x95EE;&#x9898;&#x76F8;&#x4E92;&#x901A;&#x4FE1;&#xFF0C;&#x5E76;&#x5904;&#x7406;&#x8FD9;&#x4E9B;&#x95EE;&#x9898;&#x3002;</p>
 <span id="more"></span>
 
-<h2 id="异常处理语句"><a href="#异常处理语句" class="headerlink" title="异常处理语句"></a>异常处理语句</h2><p>通常使用<code>try</code>块来处理异常。</p>
-<p><code>try</code>语句块以<code>try</code>关键字开始，并以一个或多个<code>catch</code>子句结束。在<code>try</code>块中执行的代码所抛出（<code>throw</code>）的异常， 通常会被其中一个<code>catch</code>子句处理。也称为处理代码。</p>
-<p><code>try</code>块的通用语法形式是：</p>
-<pre><code class="c++">try  &#123;
+<h2 id="&#x5F02;&#x5E38;&#x5904;&#x7406;&#x8BED;&#x53E5;"><a href="#&#x5F02;&#x5E38;&#x5904;&#x7406;&#x8BED;&#x53E5;" class="headerlink" title="&#x5F02;&#x5E38;&#x5904;&#x7406;&#x8BED;&#x53E5;"></a>&#x5F02;&#x5E38;&#x5904;&#x7406;&#x8BED;&#x53E5;</h2><p>&#x901A;&#x5E38;&#x4F7F;&#x7528;<code>try</code>&#x5757;&#x6765;&#x5904;&#x7406;&#x5F02;&#x5E38;&#x3002;</p>
+<p><code>try</code>&#x8BED;&#x53E5;&#x5757;&#x4EE5;<code>try</code>&#x5173;&#x952E;&#x5B57;&#x5F00;&#x59CB;&#xFF0C;&#x5E76;&#x4EE5;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;<code>catch</code>&#x5B50;&#x53E5;&#x7ED3;&#x675F;&#x3002;&#x5728;<code>try</code>&#x5757;&#x4E2D;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;&#x6240;&#x629B;&#x51FA;&#xFF08;<code>throw</code>&#xFF09;&#x7684;&#x5F02;&#x5E38;&#xFF0C; &#x901A;&#x5E38;&#x4F1A;&#x88AB;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;<code>catch</code>&#x5B50;&#x53E5;&#x5904;&#x7406;&#x3002;&#x4E5F;&#x79F0;&#x4E3A;&#x5904;&#x7406;&#x4EE3;&#x7801;&#x3002;</p>
+<p><code>try</code>&#x5757;&#x7684;&#x901A;&#x7528;&#x8BED;&#x6CD5;&#x5F62;&#x5F0F;&#x662F;&#xFF1A;</p>
+<pre><code class="c++">try  {
     program - statements
-&#125; catch (exception - specifier) &#123;
+} catch (exception - specifier) {
     handler - statements
-&#125; catch (exception - specifier) &#123;
+} catch (exception - specifier) {
     handler - statements
-&#125;
+}
 //...
 </code></pre>
-<h1 id="Throw"><a href="#Throw" class="headerlink" title="Throw"></a>Throw</h1><p>异常对象可以主动引发。</p>
-<p>语法：<code>throw</code>表达式，表达式包含一个对象或指针。</p>
-<p><code>exception</code>头文件定义了异常类，如<code>exception</code>类。异常类用来在<code>throw</code>和相应的处理程序之间（<code>catch</code>）之间传递信息。异常类以类似于将实参传递给函数的方式抛出和捕获。</p>
-<p>程序执行到<code>throw</code>的时候，跟在<code>throw</code>后面的语句不再执行， 控制权将从<code>throw</code>转移到匹配的<code>catch</code>语句，该<code>catch</code>可以是同一函数中局部的<code>catch</code>，也可以是在直接或间接调用该发生异常的函数的另一个函数。</p>
-<pre><code class="c++">void f2() &#123;
+<h1 id="Throw"><a href="#Throw" class="headerlink" title="Throw"></a>Throw</h1><p>&#x5F02;&#x5E38;&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x4E3B;&#x52A8;&#x5F15;&#x53D1;&#x3002;</p>
+<p>&#x8BED;&#x6CD5;&#xFF1A;<code>throw</code>&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x6216;&#x6307;&#x9488;&#x3002;</p>
+<p><code>exception</code>&#x5934;&#x6587;&#x4EF6;&#x5B9A;&#x4E49;&#x4E86;&#x5F02;&#x5E38;&#x7C7B;&#xFF0C;&#x5982;<code>exception</code>&#x7C7B;&#x3002;&#x5F02;&#x5E38;&#x7C7B;&#x7528;&#x6765;&#x5728;<code>throw</code>&#x548C;&#x76F8;&#x5E94;&#x7684;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x4E4B;&#x95F4;&#xFF08;<code>catch</code>&#xFF09;&#x4E4B;&#x95F4;&#x4F20;&#x9012;&#x4FE1;&#x606F;&#x3002;&#x5F02;&#x5E38;&#x7C7B;&#x4EE5;&#x7C7B;&#x4F3C;&#x4E8E;&#x5C06;&#x5B9E;&#x53C2;&#x4F20;&#x9012;&#x7ED9;&#x51FD;&#x6570;&#x7684;&#x65B9;&#x5F0F;&#x629B;&#x51FA;&#x548C;&#x6355;&#x83B7;&#x3002;</p>
+<p>&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x5230;<code>throw</code>&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8DDF;&#x5728;<code>throw</code>&#x540E;&#x9762;&#x7684;&#x8BED;&#x53E5;&#x4E0D;&#x518D;&#x6267;&#x884C;&#xFF0C; &#x63A7;&#x5236;&#x6743;&#x5C06;&#x4ECE;<code>throw</code>&#x8F6C;&#x79FB;&#x5230;&#x5339;&#x914D;&#x7684;<code>catch</code>&#x8BED;&#x53E5;&#xFF0C;&#x8BE5;<code>catch</code>&#x53EF;&#x4EE5;&#x662F;&#x540C;&#x4E00;&#x51FD;&#x6570;&#x4E2D;&#x5C40;&#x90E8;&#x7684;<code>catch</code>&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x5728;&#x76F4;&#x63A5;&#x6216;&#x95F4;&#x63A5;&#x8C03;&#x7528;&#x8BE5;&#x53D1;&#x751F;&#x5F02;&#x5E38;&#x7684;&#x51FD;&#x6570;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="c++">void f2() {
     cout &lt;&lt; &quot;enter f2&quot; &lt;&lt; endl;
     throw new exception();
     cout &lt;&lt; &quot;exit f2&quot; &lt;&lt; endl;
-&#125;
+}
 
-void f1() &#123;
+void f1() {
     cout &lt;&lt; &quot;enter f1&quot; &lt;&lt; endl;
     f2();
     cout &lt;&lt; &quot;exit f1&quot; &lt;&lt; endl;
-&#125;
+}
 
-int main() &#123;
+int main() {
     cout &lt;&lt; &quot;enter main&quot; &lt;&lt; endl;
     f1();
     cout &lt;&lt; &quot;exit main&quot; &lt;&lt; endl;
     return 0;
-&#125;
+}
 
-//运行结果：
+//&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#xFF1A;
 //enter main
 //enter f1
 //enter f2 
-//程序出现异常！
-//在整个程序中都未找到处理程序。
-//程序异常终止。
+//&#x7A0B;&#x5E8F;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#xFF01;
+//&#x5728;&#x6574;&#x4E2A;&#x7A0B;&#x5E8F;&#x4E2D;&#x90FD;&#x672A;&#x627E;&#x5230;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x3002;
+//&#x7A0B;&#x5E8F;&#x5F02;&#x5E38;&#x7EC8;&#x6B62;&#x3002;
 </code></pre>
-<h1 id="栈展开（Stack-unwinding）"><a href="#栈展开（Stack-unwinding）" class="headerlink" title="栈展开（Stack unwinding）"></a>栈展开（Stack unwinding）</h1><p>抛出异常的时候，将暂停当前函数的执行，开始查找匹配的<code>catch</code>子句。</p>
-<p>首先检查<code>throw</code>本身是否在<code>try</code>块内部，如果是，检查与该<code>catch</code>相关的<code>catch</code>子句，看是否其中之一与抛出对象相匹配。如果找到匹配的<code>catch</code>，就处理异常；如果找不到，就退出当前函数并继续在调用函数中查找（<code>Call stack</code>）未捕获的异常终止程序。沿嵌套函数调用链继续向上，直到为异常找到一个<code>catch</code>子句。</p>
-<p>只要找到能够处理所遇异常的<code>catch</code>子句， 就进入该<code>catch</code>子句，并在该处理代码中继续执行。此过程称为栈展开<code>stack unwinding</code>。如上栈展开的过程为<code>f2-&gt;f1-&gt;main</code>。</p>
-<p>当<code>catch</code>结束的时候，在紧接在与该<code>try</code>块相关的最后一个<code>catch</code>子句之后的点继续执行。</p>
-<h2 id="内存泄漏"><a href="#内存泄漏" class="headerlink" title="内存泄漏"></a>内存泄漏</h2><p>栈展开期间，会提早退出包含<code>throw</code>的函数和调用链中可能的其他函数，这些函数已经可能已经创建了局部对象。因异常而退出函数时，编译器会保证适当地撤销局部对象，但是动态分配的内存不会被释放，因而可能会造成内存泄漏。</p>
-<pre><code class="c++">void f2() &#123;
+<h1 id="&#x6808;&#x5C55;&#x5F00;&#xFF08;Stack-unwinding&#xFF09;"><a href="#&#x6808;&#x5C55;&#x5F00;&#xFF08;Stack-unwinding&#xFF09;" class="headerlink" title="&#x6808;&#x5C55;&#x5F00;&#xFF08;Stack unwinding&#xFF09;"></a>&#x6808;&#x5C55;&#x5F00;&#xFF08;Stack unwinding&#xFF09;</h1><p>&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C06;&#x6682;&#x505C;&#x5F53;&#x524D;&#x51FD;&#x6570;&#x7684;&#x6267;&#x884C;&#xFF0C;&#x5F00;&#x59CB;&#x67E5;&#x627E;&#x5339;&#x914D;&#x7684;<code>catch</code>&#x5B50;&#x53E5;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x68C0;&#x67E5;<code>throw</code>&#x672C;&#x8EAB;&#x662F;&#x5426;&#x5728;<code>try</code>&#x5757;&#x5185;&#x90E8;&#xFF0C;&#x5982;&#x679C;&#x662F;&#xFF0C;&#x68C0;&#x67E5;&#x4E0E;&#x8BE5;<code>catch</code>&#x76F8;&#x5173;&#x7684;<code>catch</code>&#x5B50;&#x53E5;&#xFF0C;&#x770B;&#x662F;&#x5426;&#x5176;&#x4E2D;&#x4E4B;&#x4E00;&#x4E0E;&#x629B;&#x51FA;&#x5BF9;&#x8C61;&#x76F8;&#x5339;&#x914D;&#x3002;&#x5982;&#x679C;&#x627E;&#x5230;&#x5339;&#x914D;&#x7684;<code>catch</code>&#xFF0C;&#x5C31;&#x5904;&#x7406;&#x5F02;&#x5E38;&#xFF1B;&#x5982;&#x679C;&#x627E;&#x4E0D;&#x5230;&#xFF0C;&#x5C31;&#x9000;&#x51FA;&#x5F53;&#x524D;&#x51FD;&#x6570;&#x5E76;&#x7EE7;&#x7EED;&#x5728;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x4E2D;&#x67E5;&#x627E;&#xFF08;<code>Call stack</code>&#xFF09;&#x672A;&#x6355;&#x83B7;&#x7684;&#x5F02;&#x5E38;&#x7EC8;&#x6B62;&#x7A0B;&#x5E8F;&#x3002;&#x6CBF;&#x5D4C;&#x5957;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x94FE;&#x7EE7;&#x7EED;&#x5411;&#x4E0A;&#xFF0C;&#x76F4;&#x5230;&#x4E3A;&#x5F02;&#x5E38;&#x627E;&#x5230;&#x4E00;&#x4E2A;<code>catch</code>&#x5B50;&#x53E5;&#x3002;</p>
+<p>&#x53EA;&#x8981;&#x627E;&#x5230;&#x80FD;&#x591F;&#x5904;&#x7406;&#x6240;&#x9047;&#x5F02;&#x5E38;&#x7684;<code>catch</code>&#x5B50;&#x53E5;&#xFF0C; &#x5C31;&#x8FDB;&#x5165;&#x8BE5;<code>catch</code>&#x5B50;&#x53E5;&#xFF0C;&#x5E76;&#x5728;&#x8BE5;&#x5904;&#x7406;&#x4EE3;&#x7801;&#x4E2D;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x3002;&#x6B64;&#x8FC7;&#x7A0B;&#x79F0;&#x4E3A;&#x6808;&#x5C55;&#x5F00;<code>stack unwinding</code>&#x3002;&#x5982;&#x4E0A;&#x6808;&#x5C55;&#x5F00;&#x7684;&#x8FC7;&#x7A0B;&#x4E3A;<code>f2-&gt;f1-&gt;main</code>&#x3002;</p>
+<p>&#x5F53;<code>catch</code>&#x7ED3;&#x675F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5728;&#x7D27;&#x63A5;&#x5728;&#x4E0E;&#x8BE5;<code>try</code>&#x5757;&#x76F8;&#x5173;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;<code>catch</code>&#x5B50;&#x53E5;&#x4E4B;&#x540E;&#x7684;&#x70B9;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x3002;</p>
+<h2 id="&#x5185;&#x5B58;&#x6CC4;&#x6F0F;"><a href="#&#x5185;&#x5B58;&#x6CC4;&#x6F0F;" class="headerlink" title="&#x5185;&#x5B58;&#x6CC4;&#x6F0F;"></a>&#x5185;&#x5B58;&#x6CC4;&#x6F0F;</h2><p>&#x6808;&#x5C55;&#x5F00;&#x671F;&#x95F4;&#xFF0C;&#x4F1A;&#x63D0;&#x65E9;&#x9000;&#x51FA;&#x5305;&#x542B;<code>throw</code>&#x7684;&#x51FD;&#x6570;&#x548C;&#x8C03;&#x7528;&#x94FE;&#x4E2D;&#x53EF;&#x80FD;&#x7684;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x5DF2;&#x7ECF;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#x4E86;&#x5C40;&#x90E8;&#x5BF9;&#x8C61;&#x3002;&#x56E0;&#x5F02;&#x5E38;&#x800C;&#x9000;&#x51FA;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x4FDD;&#x8BC1;&#x9002;&#x5F53;&#x5730;&#x64A4;&#x9500;&#x5C40;&#x90E8;&#x5BF9;&#x8C61;&#xFF0C;&#x4F46;&#x662F;&#x52A8;&#x6001;&#x5206;&#x914D;&#x7684;&#x5185;&#x5B58;&#x4E0D;&#x4F1A;&#x88AB;&#x91CA;&#x653E;&#xFF0C;&#x56E0;&#x800C;&#x53EF;&#x80FD;&#x4F1A;&#x9020;&#x6210;&#x5185;&#x5B58;&#x6CC4;&#x6F0F;&#x3002;</p>
+<pre><code class="c++">void f2() {
     cout &lt;&lt; &quot;enter f2&quot; &lt;&lt; endl;
-    int i = 3;   // 自动变量没关系
-    int *pi = new int(3);   // 动态分配
+    int i = 3;   // &#x81EA;&#x52A8;&#x53D8;&#x91CF;&#x6CA1;&#x5173;&#x7CFB;
+    int *pi = new int(3);   // &#x52A8;&#x6001;&#x5206;&#x914D;
     throw new exception();
     cout &lt;&lt; &quot;exit f2&quot; &lt;&lt; endl;
-    delete pi;   //不会执行，内存泄漏
-&#125;
+    delete pi;   //&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#xFF0C;&#x5185;&#x5B58;&#x6CC4;&#x6F0F;
+}
 
-void f1() &#123;
+void f1() {
     int j = 4;
-    int *pj = new int(4); // 动态分配
+    int *pj = new int(4); // &#x52A8;&#x6001;&#x5206;&#x914D;
     cout &lt;&lt; &quot;enter f1&quot; &lt;&lt; endl;
     f2();
     cout &lt;&lt; &quot;exit f1&quot; &lt;&lt; endl;
-    delete pj;   //不会执行，内存泄漏
-&#125;
+    delete pj;   //&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#xFF0C;&#x5185;&#x5B58;&#x6CC4;&#x6F0F;
+}
 
-int main() &#123;
+int main() {
     cout &lt;&lt; &quot;enter main&quot; &lt;&lt; endl;
     f1();
     cout &lt;&lt; &quot;exit main&quot; &lt;&lt; endl;
     return 0;
-&#125;
+}
 </code></pre>
-<h1 id="捕获异常"><a href="#捕获异常" class="headerlink" title="捕获异常"></a>捕获异常</h1><p><code>catch</code>子句中的异常说明符决定了处理代码能够捕获的异常种类。</p>
-<p>在查找匹配的<code>catch</code>期间，找到的<code>catch</code>不一定是与异常最匹配的那个<code>catch</code>，系统将选中第一个找到的可以处理该异常的<code>catch</code>。因此， 在<code>catch</code>子句列表中，最特殊的<code>catch</code>应最先出现。若带有因继承而相关的类型的多个<code>catch</code>子句，则必须从最低派生类类到最高派生类型排序。</p>
-<p>进入<code>catch</code>的时候，用异常对象初始化<code>catch</code>的形参。</p>
-<pre><code class="c++">//将f2 改写为：
+<h1 id="&#x6355;&#x83B7;&#x5F02;&#x5E38;"><a href="#&#x6355;&#x83B7;&#x5F02;&#x5E38;" class="headerlink" title="&#x6355;&#x83B7;&#x5F02;&#x5E38;"></a>&#x6355;&#x83B7;&#x5F02;&#x5E38;</h1><p><code>catch</code>&#x5B50;&#x53E5;&#x4E2D;&#x7684;&#x5F02;&#x5E38;&#x8BF4;&#x660E;&#x7B26;&#x51B3;&#x5B9A;&#x4E86;&#x5904;&#x7406;&#x4EE3;&#x7801;&#x80FD;&#x591F;&#x6355;&#x83B7;&#x7684;&#x5F02;&#x5E38;&#x79CD;&#x7C7B;&#x3002;</p>
+<p>&#x5728;&#x67E5;&#x627E;&#x5339;&#x914D;&#x7684;<code>catch</code>&#x671F;&#x95F4;&#xFF0C;&#x627E;&#x5230;&#x7684;<code>catch</code>&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x4E0E;&#x5F02;&#x5E38;&#x6700;&#x5339;&#x914D;&#x7684;&#x90A3;&#x4E2A;<code>catch</code>&#xFF0C;&#x7CFB;&#x7EDF;&#x5C06;&#x9009;&#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;&#x627E;&#x5230;&#x7684;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x8BE5;&#x5F02;&#x5E38;&#x7684;<code>catch</code>&#x3002;&#x56E0;&#x6B64;&#xFF0C; &#x5728;<code>catch</code>&#x5B50;&#x53E5;&#x5217;&#x8868;&#x4E2D;&#xFF0C;&#x6700;&#x7279;&#x6B8A;&#x7684;<code>catch</code>&#x5E94;&#x6700;&#x5148;&#x51FA;&#x73B0;&#x3002;&#x82E5;&#x5E26;&#x6709;&#x56E0;&#x7EE7;&#x627F;&#x800C;&#x76F8;&#x5173;&#x7684;&#x7C7B;&#x578B;&#x7684;&#x591A;&#x4E2A;<code>catch</code>&#x5B50;&#x53E5;&#xFF0C;&#x5219;&#x5FC5;&#x987B;&#x4ECE;&#x6700;&#x4F4E;&#x6D3E;&#x751F;&#x7C7B;&#x7C7B;&#x5230;&#x6700;&#x9AD8;&#x6D3E;&#x751F;&#x7C7B;&#x578B;&#x6392;&#x5E8F;&#x3002;</p>
+<p>&#x8FDB;&#x5165;<code>catch</code>&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7528;&#x5F02;&#x5E38;&#x5BF9;&#x8C61;&#x521D;&#x59CB;&#x5316;<code>catch</code>&#x7684;&#x5F62;&#x53C2;&#x3002;</p>
+<pre><code class="c++">//&#x5C06;f2 &#x6539;&#x5199;&#x4E3A;&#xFF1A;
 
-void f2() &#123;
+void f2() {
     cout &lt;&lt; &quot;enter f2&quot; &lt;&lt; endl;
-    try &#123;
+    try {
         cout &lt;&lt; &quot;enter try &quot; &lt;&lt; endl;
         throw new exception();
-        cout &lt;&lt; &quot;exit try&quot; &lt;&lt; endl; // 这一句不会被执行
-    &#125; catch (exception *pe) &#123;
+        cout &lt;&lt; &quot;exit try&quot; &lt;&lt; endl; // &#x8FD9;&#x4E00;&#x53E5;&#x4E0D;&#x4F1A;&#x88AB;&#x6267;&#x884C;
+    } catch (exception *pe) {
         cout &lt;&lt; &quot;exception caught and handled&quot; &lt;&lt; endl;
-    &#125;
+    }
     cout &lt;&lt; &quot;exit f2&quot; &lt;&lt; endl;
-&#125;
+}
 
-//执行情况为：
+//&#x6267;&#x884C;&#x60C5;&#x51B5;&#x4E3A;&#xFF1A;
 //enter main
 //enter f1
 //enter f2 
@@ -303,158 +303,158 @@ void f2() &#123;
 //exit f1
 //exit main
 </code></pre>
-<p>将程序稍作调整，可以更清楚看清捕获异常的过程：</p>
-<pre><code class="c++">void f2() &#123;
+<p>&#x5C06;&#x7A0B;&#x5E8F;&#x7A0D;&#x4F5C;&#x8C03;&#x6574;&#xFF0C;&#x53EF;&#x4EE5;&#x66F4;&#x6E05;&#x695A;&#x770B;&#x6E05;&#x6355;&#x83B7;&#x5F02;&#x5E38;&#x7684;&#x8FC7;&#x7A0B;&#xFF1A;</p>
+<pre><code class="c++">void f2() {
     cout &lt;&lt; &quot;enter f2&quot; &lt;&lt; endl;
     throw new exception();
     cout &lt;&lt; &quot;exit f2&quot; &lt;&lt; endl;
-&#125;
+}
 
-void f1() &#123;
+void f1() {
     cout &lt;&lt; &quot;enter f1&quot; &lt;&lt; endl;
-    try &#123;
+    try {
         cout &lt;&lt; &quot;enter try &quot; &lt;&lt; endl;
-        f2();  // 调用一个有可能抛出异常的函数
+        f2();  // &#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x6709;&#x53EF;&#x80FD;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x7684;&#x51FD;&#x6570;
         cout &lt;&lt; &quot;exit try&quot; &lt;&lt; endl;
-    &#125; catch (exception *pe) &#123;
+    } catch (exception *pe) {
         cout &lt;&lt; &quot;exception caught and handled&quot; &lt;&lt; endl;
-    &#125;
+    }
     cout &lt;&lt; &quot;exit f1&quot; &lt;&lt; endl;
-&#125;
+}
 
-//异常在f2引发，而在f1处理。
-//程序在catch语句后恢复正常运行。
+//&#x5F02;&#x5E38;&#x5728;f2&#x5F15;&#x53D1;&#xFF0C;&#x800C;&#x5728;f1&#x5904;&#x7406;&#x3002;
+//&#x7A0B;&#x5E8F;&#x5728;catch&#x8BED;&#x53E5;&#x540E;&#x6062;&#x590D;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x3002;
 </code></pre>
-<h2 id="异常信息的传递"><a href="#异常信息的传递" class="headerlink" title="异常信息的传递"></a>异常信息的传递</h2><p>异常类用来在<code>throw</code>和相应的<code>catch</code>之间传递，异常以类似于将实参传递给函数的方式抛出和捕获。</p>
-<pre><code class="c++">try &#123;
-    int i = 1; // 栈中的变量
+<h2 id="&#x5F02;&#x5E38;&#x4FE1;&#x606F;&#x7684;&#x4F20;&#x9012;"><a href="#&#x5F02;&#x5E38;&#x4FE1;&#x606F;&#x7684;&#x4F20;&#x9012;" class="headerlink" title="&#x5F02;&#x5E38;&#x4FE1;&#x606F;&#x7684;&#x4F20;&#x9012;"></a>&#x5F02;&#x5E38;&#x4FE1;&#x606F;&#x7684;&#x4F20;&#x9012;</h2><p>&#x5F02;&#x5E38;&#x7C7B;&#x7528;&#x6765;&#x5728;<code>throw</code>&#x548C;&#x76F8;&#x5E94;&#x7684;<code>catch</code>&#x4E4B;&#x95F4;&#x4F20;&#x9012;&#xFF0C;&#x5F02;&#x5E38;&#x4EE5;&#x7C7B;&#x4F3C;&#x4E8E;&#x5C06;&#x5B9E;&#x53C2;&#x4F20;&#x9012;&#x7ED9;&#x51FD;&#x6570;&#x7684;&#x65B9;&#x5F0F;&#x629B;&#x51FA;&#x548C;&#x6355;&#x83B7;&#x3002;</p>
+<pre><code class="c++">try {
+    int i = 1; // &#x6808;&#x4E2D;&#x7684;&#x53D8;&#x91CF;
     throw i;
-&#125; catch (int  e) &#123; // 拷贝到此处int &amp;e也行，int* e则出错
+} catch (int  e) { // &#x62F7;&#x8D1D;&#x5230;&#x6B64;&#x5904;int &amp;e&#x4E5F;&#x884C;&#xFF0C;int* e&#x5219;&#x51FA;&#x9519;
     e++;
     cout &lt;&lt; e &lt;&lt; endl;
-&#125;
+}
 
-try &#123;
+try {
     int *pi = new int(1);
     throw pi;
-&#125; catch (int *e) &#123;
+} catch (int *e) {
     (*e)++;
     cout &lt;&lt; *e &lt;&lt; endl;
     delete e;
-&#125;
+}
 </code></pre>
-<h1 id="重新抛出"><a href="#重新抛出" class="headerlink" title="重新抛出"></a>重新抛出</h1><p>有可能单个<code>catch</code>不能完全处理一个异常。</p>
-<p>在进行了一些校正行动之后，<code>catch</code>可能确定该异常必须由函数调用链中更上层的函数来处理， 此时可以重新抛出异常，将其传递给函数调用链中更上层的函数。</p>
-<p>语法：<code>throw;</code></p>
-<p>使用场合：只能出现在<code>catch</code>语句内部， 或者从<code>catch</code>调用的函数中。</p>
-<h1 id="捕获所有异常"><a href="#捕获所有异常" class="headerlink" title="捕获所有异常"></a>捕获所有异常</h1><p>一般总是为特定的异常提供特定<code>catch</code>子句。</p>
-<p>有时可能不知道会抛出什么异常，使用以下语句可以捕获所有异常 ：</p>
+<h1 id="&#x91CD;&#x65B0;&#x629B;&#x51FA;"><a href="#&#x91CD;&#x65B0;&#x629B;&#x51FA;" class="headerlink" title="&#x91CD;&#x65B0;&#x629B;&#x51FA;"></a>&#x91CD;&#x65B0;&#x629B;&#x51FA;</h1><p>&#x6709;&#x53EF;&#x80FD;&#x5355;&#x4E2A;<code>catch</code>&#x4E0D;&#x80FD;&#x5B8C;&#x5168;&#x5904;&#x7406;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x5728;&#x8FDB;&#x884C;&#x4E86;&#x4E00;&#x4E9B;&#x6821;&#x6B63;&#x884C;&#x52A8;&#x4E4B;&#x540E;&#xFF0C;<code>catch</code>&#x53EF;&#x80FD;&#x786E;&#x5B9A;&#x8BE5;&#x5F02;&#x5E38;&#x5FC5;&#x987B;&#x7531;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x94FE;&#x4E2D;&#x66F4;&#x4E0A;&#x5C42;&#x7684;&#x51FD;&#x6570;&#x6765;&#x5904;&#x7406;&#xFF0C; &#x6B64;&#x65F6;&#x53EF;&#x4EE5;&#x91CD;&#x65B0;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF0C;&#x5C06;&#x5176;&#x4F20;&#x9012;&#x7ED9;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x94FE;&#x4E2D;&#x66F4;&#x4E0A;&#x5C42;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x8BED;&#x6CD5;&#xFF1A;<code>throw;</code></p>
+<p>&#x4F7F;&#x7528;&#x573A;&#x5408;&#xFF1A;&#x53EA;&#x80FD;&#x51FA;&#x73B0;&#x5728;<code>catch</code>&#x8BED;&#x53E5;&#x5185;&#x90E8;&#xFF0C; &#x6216;&#x8005;&#x4ECE;<code>catch</code>&#x8C03;&#x7528;&#x7684;&#x51FD;&#x6570;&#x4E2D;&#x3002;</p>
+<h1 id="&#x6355;&#x83B7;&#x6240;&#x6709;&#x5F02;&#x5E38;"><a href="#&#x6355;&#x83B7;&#x6240;&#x6709;&#x5F02;&#x5E38;" class="headerlink" title="&#x6355;&#x83B7;&#x6240;&#x6709;&#x5F02;&#x5E38;"></a>&#x6355;&#x83B7;&#x6240;&#x6709;&#x5F02;&#x5E38;</h1><p>&#x4E00;&#x822C;&#x603B;&#x662F;&#x4E3A;&#x7279;&#x5B9A;&#x7684;&#x5F02;&#x5E38;&#x63D0;&#x4F9B;&#x7279;&#x5B9A;<code>catch</code>&#x5B50;&#x53E5;&#x3002;</p>
+<p>&#x6709;&#x65F6;&#x53EF;&#x80FD;&#x4E0D;&#x77E5;&#x9053;&#x4F1A;&#x629B;&#x51FA;&#x4EC0;&#x4E48;&#x5F02;&#x5E38;&#xFF0C;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x8BED;&#x53E5;&#x53EF;&#x4EE5;&#x6355;&#x83B7;&#x6240;&#x6709;&#x5F02;&#x5E38; &#xFF1A;</p>
 <pre><code class="c++">// matches any exception that might be thrown
 
-catch (...) &#123;
+catch (...) {
     // place our code here
-&#125;
+}
 </code></pre>
-<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><pre><code class="c++">#include &lt;iostream&gt;
+<h1 id="&#x4F8B;&#x5B50;"><a href="#&#x4F8B;&#x5B50;" class="headerlink" title="&#x4F8B;&#x5B50;"></a>&#x4F8B;&#x5B50;</h1><pre><code class="c++">#include &lt;iostream&gt;
 using namespace std;
 
-int Div(int x, int y) &#123;
+int Div(int x, int y) {
     if (y == 0)
         throw y;
     return x / y;
-&#125;
+}
 
-int  main() &#123;
-    try &#123;
+int  main() {
+    try {
         cout &lt;&lt; &quot;5/2=&quot; &lt;&lt; Div(5, 2) &lt;&lt; endl;
         cout &lt;&lt; &quot;8/0=&quot; &lt;&lt; Div(8, 0) &lt;&lt; endl;
         cout &lt;&lt; &quot;7/1=&quot; &lt;&lt; Div(7, 1) &lt;&lt; endl;
-    &#125; catch (int) &#123; //如改为exception，则无法捕捉。
+    } catch (int) { //&#x5982;&#x6539;&#x4E3A;exception&#xFF0C;&#x5219;&#x65E0;&#x6CD5;&#x6355;&#x6349;&#x3002;
         cout &lt;&lt; &quot;except of deviding zero.\n&quot;;
-    &#125; catch (...) &#123;
+    } catch (...) {
         cout &lt;&lt; &quot;any exception&quot; &lt;&lt; endl;
-    &#125;
+    }
     cout &lt;&lt; &quot;after try catch&quot; &lt;&lt; endl;
-&#125;
+}
 
-//输出为：
+//&#x8F93;&#x51FA;&#x4E3A;&#xFF1A;
 //5/2=2
 //8/0=except of deviding zero.
 //after try catch
 </code></pre>
-<pre><code class="c++">class MyEx : public exception &#123;
+<pre><code class="c++">class MyEx : public exception {
     public:
         int i;
-        MyEx(int pi): exception(&quot;abc&quot;) &#123;
+        MyEx(int pi): exception(&quot;abc&quot;) {
             i = pi;
-        &#125;
-&#125;;
+        }
+};
 
-int main() &#123;
-    try &#123;
+int main() {
+    try {
         throw  MyEx(10);
-    &#125; catch (MyEx myex) &#123;
+    } catch (MyEx myex) {
         cout &lt;&lt; myex.i &lt;&lt; myex.what() &lt;&lt; endl;
-    &#125;
-&#125;
-//运行的时候报错
-//[错误] no matching 函数 对于 call 到 &#39;std::exception::exception(const char [4])&#39;
+    }
+}
+//&#x8FD0;&#x884C;&#x7684;&#x65F6;&#x5019;&#x62A5;&#x9519;
+//[&#x9519;&#x8BEF;] no matching &#x51FD;&#x6570; &#x5BF9;&#x4E8E; call &#x5230; &apos;std::exception::exception(const char [4])&apos;
 </code></pre>
-<h2 id="Noexcept"><a href="#Noexcept" class="headerlink" title="Noexcept"></a>Noexcept</h2><pre><code class="c++">void f() throw() &#123; // 表明函数内部不会发生异常
-    throw 1; // 如果发生了，编译给出警告
-&#125;
+<h2 id="Noexcept"><a href="#Noexcept" class="headerlink" title="Noexcept"></a>Noexcept</h2><pre><code class="c++">void f() throw() { // &#x8868;&#x660E;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x4E0D;&#x4F1A;&#x53D1;&#x751F;&#x5F02;&#x5E38;
+    throw 1; // &#x5982;&#x679C;&#x53D1;&#x751F;&#x4E86;&#xFF0C;&#x7F16;&#x8BD1;&#x7ED9;&#x51FA;&#x8B66;&#x544A;
+}
 
-//指定可能发生的异常。
+//&#x6307;&#x5B9A;&#x53EF;&#x80FD;&#x53D1;&#x751F;&#x7684;&#x5F02;&#x5E38;&#x3002;
 void excpt_func() throw(int, double)
-&#123; 
+{ 
     ...
-&#125;
+}
 
-void f() noexcept &#123;
+void f() noexcept {
     throw 1;
-&#125;
-//实际上后面两段我没看懂（哭
+}
+//&#x5B9E;&#x9645;&#x4E0A;&#x540E;&#x9762;&#x4E24;&#x6BB5;&#x6211;&#x6CA1;&#x770B;&#x61C2;&#xFF08;&#x54ED;
 </code></pre>
-<p><code>noexcept</code>有两种形式，一是简单地在函数声明后加上<code>noexcept</code>关键字，如<code>void excpt_func() noexcept; </code>。二是接受一个常量表达式作为参数，如<code>void excpt_func() noexcept (常量表达式); </code>。常量表达式的结果会被转换成一个<code>bool</code>类型的值。该值为<code>true</code>，表示函数不会抛出异常，反之，则有可能抛出异常。这里，不带常量表达式的<code>noexcept</code>相当于声明了<code>noexcept(true)</code>，即不会抛出异常。</p>
+<p><code>noexcept</code>&#x6709;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;&#xFF0C;&#x4E00;&#x662F;&#x7B80;&#x5355;&#x5730;&#x5728;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x540E;&#x52A0;&#x4E0A;<code>noexcept</code>&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x5982;<code>void excpt_func() noexcept; </code>&#x3002;&#x4E8C;&#x662F;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x5E38;&#x91CF;&#x8868;&#x8FBE;&#x5F0F;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x5982;<code>void excpt_func() noexcept (&#x5E38;&#x91CF;&#x8868;&#x8FBE;&#x5F0F;); </code>&#x3002;&#x5E38;&#x91CF;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#x4F1A;&#x88AB;&#x8F6C;&#x6362;&#x6210;&#x4E00;&#x4E2A;<code>bool</code>&#x7C7B;&#x578B;&#x7684;&#x503C;&#x3002;&#x8BE5;&#x503C;&#x4E3A;<code>true</code>&#xFF0C;&#x8868;&#x793A;&#x51FD;&#x6570;&#x4E0D;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF0C;&#x53CD;&#x4E4B;&#xFF0C;&#x5219;&#x6709;&#x53EF;&#x80FD;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;&#x8FD9;&#x91CC;&#xFF0C;&#x4E0D;&#x5E26;&#x5E38;&#x91CF;&#x8868;&#x8FBE;&#x5F0F;&#x7684;<code>noexcept</code>&#x76F8;&#x5F53;&#x4E8E;&#x58F0;&#x660E;&#x4E86;<code>noexcept(true)</code>&#xFF0C;&#x5373;&#x4E0D;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;</p>
 <pre><code class="c++">
 #include &lt;iostream&gt;
 using namespace std;
-void Throw() &#123;
+void Throw() {
     throw 1;
-&#125;
+}
 
-void NoBlockThrow() &#123;
+void NoBlockThrow() {
     Throw();
-&#125;
+}
 
-void BlockThrow() noexcept &#123;
+void BlockThrow() noexcept {
     Throw();
-&#125;
+}
 
-int main() &#123;
-    try &#123;
+int main() {
+    try {
         Throw();
-    &#125; catch (...) &#123;
+    } catch (...) {
         cout &lt;&lt; &quot;Found throw.&quot; &lt;&lt; endl;     // Found throw.
-    &#125;
-    try &#123;
+    }
+    try {
         NoBlockThrow();
-    &#125; catch (...) &#123;
+    } catch (...) {
         cout &lt;&lt; &quot;Throw is not blocked.&quot; &lt;&lt; endl;    // Throw is not blocked.
-    &#125;
-    try &#123;
-        BlockThrow();   // terminate called after throwing an instance of &#39;int&#39;
-    &#125; catch (...) &#123;
+    }
+    try {
+        BlockThrow();   // terminate called after throwing an instance of &apos;int&apos;
+    } catch (...) {
         cout &lt;&lt; &quot;Found throw 1.&quot; &lt;&lt; endl;
-    &#125;
-&#125;
+    }
+}
 
-//输出为：
+//&#x8F93;&#x51FA;&#x4E3A;&#xFF1A;
 //Found throw.
 //Throw is not blocked.
-//terminate called after throwing an instance of &#39;int&#39;
+//terminate called after throwing an instance of &apos;int&apos;
 </code></pre>
-<h3 id="C-11使用noexcept"><a href="#C-11使用noexcept" class="headerlink" title="C++11使用noexcept"></a>C++11使用<code>noexcept</code></h3><p><code>noexcept</code>表示其修饰的函数不会抛出异常。与<code>throw()</code>不同的是，在C++11中如果<code>noexcept</code>修饰的函数抛出了异常，编译器可以选择直接调用<code>std::terminate()</code>函数来终止程序的运行，这比基于异常机制的<code>throw()</code>在效率上会更高。因为异常机制会带来一些额外开销，比如函数抛出异常，会导致函数栈被依次地展开（unwind），并调用已构造的自动变量的析构函数等。</p>
+<h3 id="C-11&#x4F7F;&#x7528;noexcept"><a href="#C-11&#x4F7F;&#x7528;noexcept" class="headerlink" title="C++11&#x4F7F;&#x7528;noexcept"></a>C++11&#x4F7F;&#x7528;<code>noexcept</code></h3><p><code>noexcept</code>&#x8868;&#x793A;&#x5176;&#x4FEE;&#x9970;&#x7684;&#x51FD;&#x6570;&#x4E0D;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;&#x4E0E;<code>throw()</code>&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;&#x5728;C++11&#x4E2D;&#x5982;&#x679C;<code>noexcept</code>&#x4FEE;&#x9970;&#x7684;&#x51FD;&#x6570;&#x629B;&#x51FA;&#x4E86;&#x5F02;&#x5E38;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x76F4;&#x63A5;&#x8C03;&#x7528;<code>std::terminate()</code>&#x51FD;&#x6570;&#x6765;&#x7EC8;&#x6B62;&#x7A0B;&#x5E8F;&#x7684;&#x8FD0;&#x884C;&#xFF0C;&#x8FD9;&#x6BD4;&#x57FA;&#x4E8E;&#x5F02;&#x5E38;&#x673A;&#x5236;&#x7684;<code>throw()</code>&#x5728;&#x6548;&#x7387;&#x4E0A;&#x4F1A;&#x66F4;&#x9AD8;&#x3002;&#x56E0;&#x4E3A;&#x5F02;&#x5E38;&#x673A;&#x5236;&#x4F1A;&#x5E26;&#x6765;&#x4E00;&#x4E9B;&#x989D;&#x5916;&#x5F00;&#x9500;&#xFF0C;&#x6BD4;&#x5982;&#x51FD;&#x6570;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF0C;&#x4F1A;&#x5BFC;&#x81F4;&#x51FD;&#x6570;&#x6808;&#x88AB;&#x4F9D;&#x6B21;&#x5730;&#x5C55;&#x5F00;&#xFF08;unwind&#xFF09;&#xFF0C;&#x5E76;&#x8C03;&#x7528;&#x5DF2;&#x6784;&#x9020;&#x7684;&#x81EA;&#x52A8;&#x53D8;&#x91CF;&#x7684;&#x6790;&#x6784;&#x51FD;&#x6570;&#x7B49;&#x3002;</p>
 
         </div>
 

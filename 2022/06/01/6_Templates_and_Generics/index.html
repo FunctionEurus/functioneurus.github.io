@@ -8,7 +8,7 @@
     
     <title>#6 模板与泛型 | Function&#39;s Blog</title>
 
-    <meta name="description" content="&lt;h1 id=&#34;函数模板（Function-Template）&#34;&gt;&lt;a href=&#34;#函数模板（Function-Template）&#34; class=&#34;headerlink&#34; title=&#34;函数模板（Function Template）&#34;&gt;&lt;/a&gt;函数模板（Function Template）&lt;/h1&gt;&lt;h2 id=&#34;模板定义&#34;&gt;&lt;a href=&#34;#模板定义&#34; class=&#34;headerlink&#34; title=&#34;模板定义&#34;&gt;&lt;/a&gt;模板定义&lt;/h2&gt;&lt;p&gt;模板是泛型编程的基础，模板是创建类或函数的蓝图或公式。&lt;/p&gt;">
+    <meta name="description" content="&lt;h1 id=&#34;&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function-Template&amp;#xFF09;&#34;&gt;&lt;a href=&#34;#&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function-Template&amp;#xFF09;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function Template&amp;#xFF09;&#34;&gt;&lt;/a&gt;&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function Template&amp;#xFF09;&lt;/h1&gt;&lt;h2 id=&#34;&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&#34;&gt;&lt;a href=&#34;#&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&#34;&gt;&lt;/a&gt;&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&lt;/h2&gt;&lt;p&gt;&amp;#x6A21;&amp;#x677F;&amp;#x662F;&amp;#x6CDB;&amp;#x578B;&amp;#x7F16;&amp;#x7A0B;&amp;#x7684;&amp;#x57FA;&amp;#x7840;&amp;#xFF0C;&amp;#x6A21;&amp;#x677F;&amp;#x662F;&amp;#x521B;&amp;#x5EFA;&amp;#x7C7B;&amp;#x6216;&amp;#x51FD;&amp;#x6570;&amp;#x7684;&amp;#x84DD;&amp;#x56FE;&amp;#x6216;&amp;#x516C;&amp;#x5F0F;&amp;#x3002;&lt;/p&gt;">
     <meta name="keywords" content="">
 
     
@@ -16,17 +16,17 @@
     <meta property="og:locale" content="zh-CN" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content= "#6 模板与泛型 | Function&#39;s Blog"  />
-    <meta property="og:description" content= "&lt;h1 id=&#34;函数模板（Function-Template）&#34;&gt;&lt;a href=&#34;#函数模板（Function-Template）&#34; class=&#34;headerlink&#34; title=&#34;函数模板（Function Template）&#34;&gt;&lt;/a&gt;函数模板（Function Template）&lt;/h1&gt;&lt;h2 id=&#34;模板定义&#34;&gt;&lt;a href=&#34;#模板定义&#34; class=&#34;headerlink&#34; title=&#34;模板定义&#34;&gt;&lt;/a&gt;模板定义&lt;/h2&gt;&lt;p&gt;模板是泛型编程的基础，模板是创建类或函数的蓝图或公式。&lt;/p&gt;" />
+    <meta property="og:description" content= "&lt;h1 id=&#34;&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function-Template&amp;#xFF09;&#34;&gt;&lt;a href=&#34;#&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function-Template&amp;#xFF09;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function Template&amp;#xFF09;&#34;&gt;&lt;/a&gt;&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function Template&amp;#xFF09;&lt;/h1&gt;&lt;h2 id=&#34;&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&#34;&gt;&lt;a href=&#34;#&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&#34;&gt;&lt;/a&gt;&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&lt;/h2&gt;&lt;p&gt;&amp;#x6A21;&amp;#x677F;&amp;#x662F;&amp;#x6CDB;&amp;#x578B;&amp;#x7F16;&amp;#x7A0B;&amp;#x7684;&amp;#x57FA;&amp;#x7840;&amp;#xFF0C;&amp;#x6A21;&amp;#x677F;&amp;#x662F;&amp;#x521B;&amp;#x5EFA;&amp;#x7C7B;&amp;#x6216;&amp;#x51FD;&amp;#x6570;&amp;#x7684;&amp;#x84DD;&amp;#x56FE;&amp;#x6216;&amp;#x516C;&amp;#x5F0F;&amp;#x3002;&lt;/p&gt;" />
     <meta property="og:url" content="http://blog.functioneurus.com/2022/06/01/6_Templates_and_Generics/index.html" />
     <meta property="og:site_name" content="" />
     <meta property="article:author" content="Function" />
     <meta property="article:publisher" content="" />
-    <meta property="og:description" content="&lt;h1 id=&#34;函数模板（Function-Template）&#34;&gt;&lt;a href=&#34;#函数模板（Function-Template）&#34; class=&#34;headerlink&#34; title=&#34;函数模板（Function Template）&#34;&gt;&lt;/a&gt;函数模板（Function Template）&lt;/h1&gt;&lt;h2 id=&#34;模板定义&#34;&gt;&lt;a href=&#34;#模板定义&#34; class=&#34;headerlink&#34; title=&#34;模板定义&#34;&gt;&lt;/a&gt;模板定义&lt;/h2&gt;&lt;p&gt;模板是泛型编程的基础，模板是创建类或函数的蓝图或公式。&lt;/p&gt;" />
+    <meta property="og:description" content="&lt;h1 id=&#34;&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function-Template&amp;#xFF09;&#34;&gt;&lt;a href=&#34;#&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function-Template&amp;#xFF09;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function Template&amp;#xFF09;&#34;&gt;&lt;/a&gt;&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function Template&amp;#xFF09;&lt;/h1&gt;&lt;h2 id=&#34;&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&#34;&gt;&lt;a href=&#34;#&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&#34;&gt;&lt;/a&gt;&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&lt;/h2&gt;&lt;p&gt;&amp;#x6A21;&amp;#x677F;&amp;#x662F;&amp;#x6CDB;&amp;#x578B;&amp;#x7F16;&amp;#x7A0B;&amp;#x7684;&amp;#x57FA;&amp;#x7840;&amp;#xFF0C;&amp;#x6A21;&amp;#x677F;&amp;#x662F;&amp;#x521B;&amp;#x5EFA;&amp;#x7C7B;&amp;#x6216;&amp;#x51FD;&amp;#x6570;&amp;#x7684;&amp;#x84DD;&amp;#x56FE;&amp;#x6216;&amp;#x516C;&amp;#x5F0F;&amp;#x3002;&lt;/p&gt;" />
     <meta name="twitter:title" content="#6 模板与泛型 | Function&#39;s Blog"/>
-    <meta name="twitter:description" content="&lt;h1 id=&#34;函数模板（Function-Template）&#34;&gt;&lt;a href=&#34;#函数模板（Function-Template）&#34; class=&#34;headerlink&#34; title=&#34;函数模板（Function Template）&#34;&gt;&lt;/a&gt;函数模板（Function Template）&lt;/h1&gt;&lt;h2 id=&#34;模板定义&#34;&gt;&lt;a href=&#34;#模板定义&#34; class=&#34;headerlink&#34; title=&#34;模板定义&#34;&gt;&lt;/a&gt;模板定义&lt;/h2&gt;&lt;p&gt;模板是泛型编程的基础，模板是创建类或函数的蓝图或公式。&lt;/p&gt;"/>
+    <meta name="twitter:description" content="&lt;h1 id=&#34;&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function-Template&amp;#xFF09;&#34;&gt;&lt;a href=&#34;#&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function-Template&amp;#xFF09;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function Template&amp;#xFF09;&#34;&gt;&lt;/a&gt;&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function Template&amp;#xFF09;&lt;/h1&gt;&lt;h2 id=&#34;&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&#34;&gt;&lt;a href=&#34;#&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&#34;&gt;&lt;/a&gt;&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&lt;/h2&gt;&lt;p&gt;&amp;#x6A21;&amp;#x677F;&amp;#x662F;&amp;#x6CDB;&amp;#x578B;&amp;#x7F16;&amp;#x7A0B;&amp;#x7684;&amp;#x57FA;&amp;#x7840;&amp;#xFF0C;&amp;#x6A21;&amp;#x677F;&amp;#x662F;&amp;#x521B;&amp;#x5EFA;&amp;#x7C7B;&amp;#x6216;&amp;#x51FD;&amp;#x6570;&amp;#x7684;&amp;#x84DD;&amp;#x56FE;&amp;#x6216;&amp;#x516C;&amp;#x5F0F;&amp;#x3002;&lt;/p&gt;"/>
     <script type="application/ld+json">
         {
-            "description": "&lt;h1 id=&#34;函数模板（Function-Template）&#34;&gt;&lt;a href=&#34;#函数模板（Function-Template）&#34; class=&#34;headerlink&#34; title=&#34;函数模板（Function Template）&#34;&gt;&lt;/a&gt;函数模板（Function Template）&lt;/h1&gt;&lt;h2 id=&#34;模板定义&#34;&gt;&lt;a href=&#34;#模板定义&#34; class=&#34;headerlink&#34; title=&#34;模板定义&#34;&gt;&lt;/a&gt;模板定义&lt;/h2&gt;&lt;p&gt;模板是泛型编程的基础，模板是创建类或函数的蓝图或公式。&lt;/p&gt;",
+            "description": "&lt;h1 id=&#34;&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function-Template&amp;#xFF09;&#34;&gt;&lt;a href=&#34;#&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function-Template&amp;#xFF09;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function Template&amp;#xFF09;&#34;&gt;&lt;/a&gt;&amp;#x51FD;&amp;#x6570;&amp;#x6A21;&amp;#x677F;&amp;#xFF08;Function Template&amp;#xFF09;&lt;/h1&gt;&lt;h2 id=&#34;&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&#34;&gt;&lt;a href=&#34;#&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&#34;&gt;&lt;/a&gt;&amp;#x6A21;&amp;#x677F;&amp;#x5B9A;&amp;#x4E49;&lt;/h2&gt;&lt;p&gt;&amp;#x6A21;&amp;#x677F;&amp;#x662F;&amp;#x6CDB;&amp;#x578B;&amp;#x7F16;&amp;#x7A0B;&amp;#x7684;&amp;#x57FA;&amp;#x7840;&amp;#xFF0C;&amp;#x6A21;&amp;#x677F;&amp;#x662F;&amp;#x521B;&amp;#x5EFA;&amp;#x7C7B;&amp;#x6216;&amp;#x51FD;&amp;#x6570;&amp;#x7684;&amp;#x84DD;&amp;#x56FE;&amp;#x6216;&amp;#x516C;&amp;#x5F0F;&amp;#x3002;&lt;/p&gt;",
             "author": { "@type": "Person", "name": "Function" },
             "@type": "BlogPosting",
             "url": "http://blog.functioneurus.com/2022/06/01/6_Templates_and_Generics/index.html",
@@ -146,7 +146,7 @@
             <section class="inner">
                 <section class="inner-main">
                     <div class="post">
-    <article id="post-cljba4hy1000ra4co49x884ec" class="article article-type-post" itemscope
+    <article id="post-cljbah39x000mgoco6vmq3104" class="article article-type-post" itemscope
     itemprop="blogPost">
 
     <div class="article-inner">
@@ -188,153 +188,153 @@
         </div>
 
         <div class="article-entry post-inner-html hairline" itemprop="articleBody">
-            <h1 id="函数模板（Function-Template）"><a href="#函数模板（Function-Template）" class="headerlink" title="函数模板（Function Template）"></a>函数模板（Function Template）</h1><h2 id="模板定义"><a href="#模板定义" class="headerlink" title="模板定义"></a>模板定义</h2><p>模板是泛型编程的基础，模板是创建类或函数的蓝图或公式。</p>
+            <h1 id="&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF08;Function-Template&#xFF09;"><a href="#&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF08;Function-Template&#xFF09;" class="headerlink" title="&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF08;Function Template&#xFF09;"></a>&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF08;Function Template&#xFF09;</h1><h2 id="&#x6A21;&#x677F;&#x5B9A;&#x4E49;"><a href="#&#x6A21;&#x677F;&#x5B9A;&#x4E49;" class="headerlink" title="&#x6A21;&#x677F;&#x5B9A;&#x4E49;"></a>&#x6A21;&#x677F;&#x5B9A;&#x4E49;</h2><p>&#x6A21;&#x677F;&#x662F;&#x6CDB;&#x578B;&#x7F16;&#x7A0B;&#x7684;&#x57FA;&#x7840;&#xFF0C;&#x6A21;&#x677F;&#x662F;&#x521B;&#x5EFA;&#x7C7B;&#x6216;&#x51FD;&#x6570;&#x7684;&#x84DD;&#x56FE;&#x6216;&#x516C;&#x5F0F;&#x3002;</p>
 <span id="more"></span>
 
-<p>假设想要编写一个函数比较两个值的大小：</p>
-<pre><code class="c++">int compare(const string &amp;v1, const string &amp;v2) &#123;
+<p>&#x5047;&#x8BBE;&#x60F3;&#x8981;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x503C;&#x7684;&#x5927;&#x5C0F;&#xFF1A;</p>
+<pre><code class="c++">int compare(const string &amp;v1, const string &amp;v2) {
     if (v1 &lt; v2)
         return -1;
     if (v2 &lt; v1)
         return 1;
     return 0;
-&#125;
+}
 
-int compare(const double &amp;v1, const double &amp;v2) &#123;
+int compare(const double &amp;v1, const double &amp;v2) {
     if (v1 &lt; v2)
         return -1;
     if (v2 &lt; v1)
         return 1;
     return 0;
-&#125;
+}
 </code></pre>
-<p>特点：这些函数几乎完全相同，它们之间唯一的区别是形参的类型，每个要比较的类型都需要重复函数的函数体，不仅麻烦而且容易出错。更重要的是， 需要事先知道可能会比较哪些类型，对于未知类型，无法处理。</p>
-<p>不必为每个类型定义一个新函数，而是只定义一个函数模板。</p>
-<p>函数模板是一个独立于类型的函数，可以产生函数的特定类型版本。</p>
-<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><pre><code class="c++">template &lt;typename T&gt; int compare(const T &amp;v1, const T &amp;v2) &#123;
+<p>&#x7279;&#x70B9;&#xFF1A;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x51E0;&#x4E4E;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#xFF0C;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x552F;&#x4E00;&#x7684;&#x533A;&#x522B;&#x662F;&#x5F62;&#x53C2;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x6BCF;&#x4E2A;&#x8981;&#x6BD4;&#x8F83;&#x7684;&#x7C7B;&#x578B;&#x90FD;&#x9700;&#x8981;&#x91CD;&#x590D;&#x51FD;&#x6570;&#x7684;&#x51FD;&#x6570;&#x4F53;&#xFF0C;&#x4E0D;&#x4EC5;&#x9EBB;&#x70E6;&#x800C;&#x4E14;&#x5BB9;&#x6613;&#x51FA;&#x9519;&#x3002;&#x66F4;&#x91CD;&#x8981;&#x7684;&#x662F;&#xFF0C; &#x9700;&#x8981;&#x4E8B;&#x5148;&#x77E5;&#x9053;&#x53EF;&#x80FD;&#x4F1A;&#x6BD4;&#x8F83;&#x54EA;&#x4E9B;&#x7C7B;&#x578B;&#xFF0C;&#x5BF9;&#x4E8E;&#x672A;&#x77E5;&#x7C7B;&#x578B;&#xFF0C;&#x65E0;&#x6CD5;&#x5904;&#x7406;&#x3002;</p>
+<p>&#x4E0D;&#x5FC5;&#x4E3A;&#x6BCF;&#x4E2A;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x65B0;&#x51FD;&#x6570;&#xFF0C;&#x800C;&#x662F;&#x53EA;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x3002;</p>
+<p>&#x51FD;&#x6570;&#x6A21;&#x677F;&#x662F;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x4E8E;&#x7C7B;&#x578B;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x4EA7;&#x751F;&#x51FD;&#x6570;&#x7684;&#x7279;&#x5B9A;&#x7C7B;&#x578B;&#x7248;&#x672C;&#x3002;</p>
+<h2 id="&#x7279;&#x70B9;"><a href="#&#x7279;&#x70B9;" class="headerlink" title="&#x7279;&#x70B9;"></a>&#x7279;&#x70B9;</h2><pre><code class="c++">template &lt;typename T&gt; int compare(const T &amp;v1, const T &amp;v2) {
     if (v1 &lt; v2)
         return -1;
     if (v2 &lt; v1)
         return 1;
     return 0;
-&#125;
+}
 </code></pre>
-<p>模板定义以关键字<code>template</code>开始，后接模板形参表（template parameter list），表示可以在类或函数的定义中使用的类型或值。</p>
-<p>模板形参表是用尖括号括住的一个或多个模板形参的列表，该表不能为空，形参之间以逗号分隔。</p>
-<p>类型形参（template type parameter）跟在关键字<code>class</code>或<code>typename</code>之后，意义相同。</p>
-<p>非类型形参（template nontype parameter）跟在类型说明符之后。</p>
-<h2 id="实例化"><a href="#实例化" class="headerlink" title="实例化"></a>实例化</h2><p>类型和值的替换过程被称为模板实例化（template instantiation），包括显示指定（explicitly specify）和隐式推断（template argument deduction）两种方式。</p>
-<p>一旦确定了实际的模板实参，就称实例化了函数模板的实例。</p>
-<p>实例化时需要考虑用什么类型代替每个类型形参，用什么值代替每个非类型形参。</p>
-<p>实例化后，编译器使用实参代替相应的模板形参产生编译该版本的函数。编译器承担了为每种类型而编写函数的单调工作。</p>
-<pre><code class="c++">compare&lt;int&gt;(1,2);   // 指定
-compare&lt;string&gt;(&quot;fd&quot;,&quot;fdfd&quot;);  //指定
-compare(1,2);         // 推断
+<p>&#x6A21;&#x677F;&#x5B9A;&#x4E49;&#x4EE5;&#x5173;&#x952E;&#x5B57;<code>template</code>&#x5F00;&#x59CB;&#xFF0C;&#x540E;&#x63A5;&#x6A21;&#x677F;&#x5F62;&#x53C2;&#x8868;&#xFF08;template parameter list&#xFF09;&#xFF0C;&#x8868;&#x793A;&#x53EF;&#x4EE5;&#x5728;&#x7C7B;&#x6216;&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x7C7B;&#x578B;&#x6216;&#x503C;&#x3002;</p>
+<p>&#x6A21;&#x677F;&#x5F62;&#x53C2;&#x8868;&#x662F;&#x7528;&#x5C16;&#x62EC;&#x53F7;&#x62EC;&#x4F4F;&#x7684;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6A21;&#x677F;&#x5F62;&#x53C2;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x8BE5;&#x8868;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#xFF0C;&#x5F62;&#x53C2;&#x4E4B;&#x95F4;&#x4EE5;&#x9017;&#x53F7;&#x5206;&#x9694;&#x3002;</p>
+<p>&#x7C7B;&#x578B;&#x5F62;&#x53C2;&#xFF08;template type parameter&#xFF09;&#x8DDF;&#x5728;&#x5173;&#x952E;&#x5B57;<code>class</code>&#x6216;<code>typename</code>&#x4E4B;&#x540E;&#xFF0C;&#x610F;&#x4E49;&#x76F8;&#x540C;&#x3002;</p>
+<p>&#x975E;&#x7C7B;&#x578B;&#x5F62;&#x53C2;&#xFF08;template nontype parameter&#xFF09;&#x8DDF;&#x5728;&#x7C7B;&#x578B;&#x8BF4;&#x660E;&#x7B26;&#x4E4B;&#x540E;&#x3002;</p>
+<h2 id="&#x5B9E;&#x4F8B;&#x5316;"><a href="#&#x5B9E;&#x4F8B;&#x5316;" class="headerlink" title="&#x5B9E;&#x4F8B;&#x5316;"></a>&#x5B9E;&#x4F8B;&#x5316;</h2><p>&#x7C7B;&#x578B;&#x548C;&#x503C;&#x7684;&#x66FF;&#x6362;&#x8FC7;&#x7A0B;&#x88AB;&#x79F0;&#x4E3A;&#x6A21;&#x677F;&#x5B9E;&#x4F8B;&#x5316;&#xFF08;template instantiation&#xFF09;&#xFF0C;&#x5305;&#x62EC;&#x663E;&#x793A;&#x6307;&#x5B9A;&#xFF08;explicitly specify&#xFF09;&#x548C;&#x9690;&#x5F0F;&#x63A8;&#x65AD;&#xFF08;template argument deduction&#xFF09;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x4E00;&#x65E6;&#x786E;&#x5B9A;&#x4E86;&#x5B9E;&#x9645;&#x7684;&#x6A21;&#x677F;&#x5B9E;&#x53C2;&#xFF0C;&#x5C31;&#x79F0;&#x5B9E;&#x4F8B;&#x5316;&#x4E86;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x7684;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#x5B9E;&#x4F8B;&#x5316;&#x65F6;&#x9700;&#x8981;&#x8003;&#x8651;&#x7528;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x4EE3;&#x66FF;&#x6BCF;&#x4E2A;&#x7C7B;&#x578B;&#x5F62;&#x53C2;&#xFF0C;&#x7528;&#x4EC0;&#x4E48;&#x503C;&#x4EE3;&#x66FF;&#x6BCF;&#x4E2A;&#x975E;&#x7C7B;&#x578B;&#x5F62;&#x53C2;&#x3002;</p>
+<p>&#x5B9E;&#x4F8B;&#x5316;&#x540E;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F7F;&#x7528;&#x5B9E;&#x53C2;&#x4EE3;&#x66FF;&#x76F8;&#x5E94;&#x7684;&#x6A21;&#x677F;&#x5F62;&#x53C2;&#x4EA7;&#x751F;&#x7F16;&#x8BD1;&#x8BE5;&#x7248;&#x672C;&#x7684;&#x51FD;&#x6570;&#x3002;&#x7F16;&#x8BD1;&#x5668;&#x627F;&#x62C5;&#x4E86;&#x4E3A;&#x6BCF;&#x79CD;&#x7C7B;&#x578B;&#x800C;&#x7F16;&#x5199;&#x51FD;&#x6570;&#x7684;&#x5355;&#x8C03;&#x5DE5;&#x4F5C;&#x3002;</p>
+<pre><code class="c++">compare&lt;int&gt;(1,2);   // &#x6307;&#x5B9A;
+compare&lt;string&gt;(&quot;fd&quot;,&quot;fdfd&quot;);  //&#x6307;&#x5B9A;
+compare(1,2);         // &#x63A8;&#x65AD;
 </code></pre>
-<p>关键字<code>class</code>或<code>typename</code>意义相同。</p>
-<p>模板参数名可以是任意合法的标识符。</p>
-<p>当模板被实例化时, 实际的内置或用户定义类型将替换模板的类型参数。</p>
-<h2 id="非类型参数"><a href="#非类型参数" class="headerlink" title="非类型参数"></a>非类型参数</h2><p>模板非类型参数由一个普通的参数声明构成 。模板非类型参数表示该参数名代表了一个潜在的值， 而该值代表了模板定义中的一个常量。</p>
-<pre><code class="c++">template &lt;int size&gt; void  ff() &#123;
+<p>&#x5173;&#x952E;&#x5B57;<code>class</code>&#x6216;<code>typename</code>&#x610F;&#x4E49;&#x76F8;&#x540C;&#x3002;</p>
+<p>&#x6A21;&#x677F;&#x53C2;&#x6570;&#x540D;&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x610F;&#x5408;&#x6CD5;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
+<p>&#x5F53;&#x6A21;&#x677F;&#x88AB;&#x5B9E;&#x4F8B;&#x5316;&#x65F6;, &#x5B9E;&#x9645;&#x7684;&#x5185;&#x7F6E;&#x6216;&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;&#x5C06;&#x66FF;&#x6362;&#x6A21;&#x677F;&#x7684;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x3002;</p>
+<h2 id="&#x975E;&#x7C7B;&#x578B;&#x53C2;&#x6570;"><a href="#&#x975E;&#x7C7B;&#x578B;&#x53C2;&#x6570;" class="headerlink" title="&#x975E;&#x7C7B;&#x578B;&#x53C2;&#x6570;"></a>&#x975E;&#x7C7B;&#x578B;&#x53C2;&#x6570;</h2><p>&#x6A21;&#x677F;&#x975E;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x7531;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;&#x53C2;&#x6570;&#x58F0;&#x660E;&#x6784;&#x6210; &#x3002;&#x6A21;&#x677F;&#x975E;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x8868;&#x793A;&#x8BE5;&#x53C2;&#x6570;&#x540D;&#x4EE3;&#x8868;&#x4E86;&#x4E00;&#x4E2A;&#x6F5C;&#x5728;&#x7684;&#x503C;&#xFF0C; &#x800C;&#x8BE5;&#x503C;&#x4EE3;&#x8868;&#x4E86;&#x6A21;&#x677F;&#x5B9A;&#x4E49;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5E38;&#x91CF;&#x3002;</p>
+<pre><code class="c++">template &lt;int size&gt; void  ff() {
     int a[size];
-    size = 3;  // 不可以！
-&#125;
+    size = 3;  // &#x4E0D;&#x53EF;&#x4EE5;&#xFF01;
+}
 </code></pre>
-<p><code>size</code>是一个模板非类型参数，表示a数组的长度。</p>
-<p> 当函数模板<code>ff()</code>被实例化时，<code>size</code>的值会被一个编译时刻已知的常量值代替。如<code>ff&lt;19&gt;();</code>。</p>
-<p>注意与普通的函数参数的不同：</p>
-<pre><code class="c++">void ff2(int size) &#123;
-    int *arr = new int[size];  // 只能如此分配。
-    int a[size];   // 不可以这样定义，模板参数才可以。
-&#125;
+<p><code>size</code>&#x662F;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#x975E;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF0C;&#x8868;&#x793A;a&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#x3002;</p>
+<p> &#x5F53;&#x51FD;&#x6570;&#x6A21;&#x677F;<code>ff()</code>&#x88AB;&#x5B9E;&#x4F8B;&#x5316;&#x65F6;&#xFF0C;<code>size</code>&#x7684;&#x503C;&#x4F1A;&#x88AB;&#x4E00;&#x4E2A;&#x7F16;&#x8BD1;&#x65F6;&#x523B;&#x5DF2;&#x77E5;&#x7684;&#x5E38;&#x91CF;&#x503C;&#x4EE3;&#x66FF;&#x3002;&#x5982;<code>ff&lt;19&gt;();</code>&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#x4E0E;&#x666E;&#x901A;&#x7684;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x7684;&#x4E0D;&#x540C;&#xFF1A;</p>
+<pre><code class="c++">void ff2(int size) {
+    int *arr = new int[size];  // &#x53EA;&#x80FD;&#x5982;&#x6B64;&#x5206;&#x914D;&#x3002;
+    int a[size];   // &#x4E0D;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x5B9A;&#x4E49;&#xFF0C;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x624D;&#x53EF;&#x4EE5;&#x3002;
+}
 </code></pre>
-<p>模板参数名在同一模板参数表中只能被使用一次 。</p>
-<pre><code class="c++">template &lt;class T,class T&gt; T f(T t1, T t2); // 重定义模板参数出错
+<p>&#x6A21;&#x677F;&#x53C2;&#x6570;&#x540D;&#x5728;&#x540C;&#x4E00;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x8868;&#x4E2D;&#x53EA;&#x80FD;&#x88AB;&#x4F7F;&#x7528;&#x4E00;&#x6B21; &#x3002;</p>
+<pre><code class="c++">template &lt;class T,class T&gt; T f(T t1, T t2); // &#x91CD;&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x51FA;&#x9519;
 </code></pre>
-<p>模板参数在函数参数列表中可以多次使用：</p>
+<p>&#x6A21;&#x677F;&#x53C2;&#x6570;&#x5728;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E2D;&#x53EF;&#x4EE5;&#x591A;&#x6B21;&#x4F7F;&#x7528;&#xFF1A;</p>
 <pre><code class="c++">template &lt;class T&gt; T f(T t1, T t2); // OK
 </code></pre>
-<p>如一个函数模板有一个以上的模板类型参数，则每个模板类型参数前面都必须有关键字<code>class</code>或<code>typename</code>。</p>
-<h2 id="重载与覆盖"><a href="#重载与覆盖" class="headerlink" title="重载与覆盖"></a>重载与覆盖</h2><h3 id="重载"><a href="#重载" class="headerlink" title="重载"></a>重载</h3><p>模板函数可以被重载。</p>
-<pre><code class="c++">template &lt;class T&gt; T f(T t1, T t2) &#123;
-&#125;
+<p>&#x5982;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x6709;&#x4E00;&#x4E2A;&#x4EE5;&#x4E0A;&#x7684;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF0C;&#x5219;&#x6BCF;&#x4E2A;&#x6A21;&#x677F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x524D;&#x9762;&#x90FD;&#x5FC5;&#x987B;&#x6709;&#x5173;&#x952E;&#x5B57;<code>class</code>&#x6216;<code>typename</code>&#x3002;</p>
+<h2 id="&#x91CD;&#x8F7D;&#x4E0E;&#x8986;&#x76D6;"><a href="#&#x91CD;&#x8F7D;&#x4E0E;&#x8986;&#x76D6;" class="headerlink" title="&#x91CD;&#x8F7D;&#x4E0E;&#x8986;&#x76D6;"></a>&#x91CD;&#x8F7D;&#x4E0E;&#x8986;&#x76D6;</h2><h3 id="&#x91CD;&#x8F7D;"><a href="#&#x91CD;&#x8F7D;" class="headerlink" title="&#x91CD;&#x8F7D;"></a>&#x91CD;&#x8F7D;</h3><p>&#x6A21;&#x677F;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x88AB;&#x91CD;&#x8F7D;&#x3002;</p>
+<pre><code class="c++">template &lt;class T&gt; T f(T t1, T t2) {
+}
 
-template&lt;class T&gt; T f(T t) &#123;
-&#125;
+template&lt;class T&gt; T f(T t) {
+}
 </code></pre>
-<h3 id="覆盖模板"><a href="#覆盖模板" class="headerlink" title="覆盖模板"></a>覆盖模板</h3><p>模板生成的每个函数版本包含基本相同的代码，只是类型参数不同，但是也可以对特定的参数类型做特殊处理。</p>
-<p>为此，只要定义与函数模板名同名的普通C++函数，用具体类型而不是类型参数，普通函数将覆盖函数模板，即如果传递普通函数所指的参数类型，编译器将调用这个函数而不是根据模板生成函数。</p>
-<p>比如：</p>
-<pre><code class="c++">int f(int i) &#123;
+<h3 id="&#x8986;&#x76D6;&#x6A21;&#x677F;"><a href="#&#x8986;&#x76D6;&#x6A21;&#x677F;" class="headerlink" title="&#x8986;&#x76D6;&#x6A21;&#x677F;"></a>&#x8986;&#x76D6;&#x6A21;&#x677F;</h3><p>&#x6A21;&#x677F;&#x751F;&#x6210;&#x7684;&#x6BCF;&#x4E2A;&#x51FD;&#x6570;&#x7248;&#x672C;&#x5305;&#x542B;&#x57FA;&#x672C;&#x76F8;&#x540C;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x53EA;&#x662F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x4E0D;&#x540C;&#xFF0C;&#x4F46;&#x662F;&#x4E5F;&#x53EF;&#x4EE5;&#x5BF9;&#x7279;&#x5B9A;&#x7684;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x505A;&#x7279;&#x6B8A;&#x5904;&#x7406;&#x3002;</p>
+<p>&#x4E3A;&#x6B64;&#xFF0C;&#x53EA;&#x8981;&#x5B9A;&#x4E49;&#x4E0E;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x540D;&#x540C;&#x540D;&#x7684;&#x666E;&#x901A;C++&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x5177;&#x4F53;&#x7C7B;&#x578B;&#x800C;&#x4E0D;&#x662F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF0C;&#x666E;&#x901A;&#x51FD;&#x6570;&#x5C06;&#x8986;&#x76D6;&#x51FD;&#x6570;&#x6A21;&#x677F;&#xFF0C;&#x5373;&#x5982;&#x679C;&#x4F20;&#x9012;&#x666E;&#x901A;&#x51FD;&#x6570;&#x6240;&#x6307;&#x7684;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x5C06;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x800C;&#x4E0D;&#x662F;&#x6839;&#x636E;&#x6A21;&#x677F;&#x751F;&#x6210;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="c++">int f(int i) {
     return i + 1;
-&#125;
+}
 </code></pre>
-<p>将覆盖以上模板函数，<code>f(1)</code>将会调用此函数。</p>
-<h1 id="类模板"><a href="#类模板" class="headerlink" title="类模板"></a>类模板</h1><p>可以像定义函数模板一样定义类模板。</p>
-<p>以下是存放100个整数的类：</p>
-<pre><code class="c++">class IntList &#123;
+<p>&#x5C06;&#x8986;&#x76D6;&#x4EE5;&#x4E0A;&#x6A21;&#x677F;&#x51FD;&#x6570;&#xFF0C;<code>f(1)</code>&#x5C06;&#x4F1A;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x3002;</p>
+<h1 id="&#x7C7B;&#x6A21;&#x677F;"><a href="#&#x7C7B;&#x6A21;&#x677F;" class="headerlink" title="&#x7C7B;&#x6A21;&#x677F;"></a>&#x7C7B;&#x6A21;&#x677F;</h1><p>&#x53EF;&#x4EE5;&#x50CF;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x4E00;&#x6837;&#x5B9A;&#x4E49;&#x7C7B;&#x6A21;&#x677F;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x5B58;&#x653E;100&#x4E2A;&#x6574;&#x6570;&#x7684;&#x7C7B;&#xFF1A;</p>
+<pre><code class="c++">class IntList {
     public:
         IntList();
         int SetItem(int Index, const int &amp;Item);
         int GetItem(int Index, int &amp;Item);
     private:
         int Buffer[100];
-&#125;;
+};
 </code></pre>
-<p>对于问题：存储200个整数，存放100个double型的数。以上类就无能为力了。从以上类中派生新类也无济于事。</p>
-<p>我们定义如下的类模板：</p>
-<pre><code class="c++">template&lt;class T,int I&gt; class CList &#123;
+<p>&#x5BF9;&#x4E8E;&#x95EE;&#x9898;&#xFF1A;&#x5B58;&#x50A8;200&#x4E2A;&#x6574;&#x6570;&#xFF0C;&#x5B58;&#x653E;100&#x4E2A;double&#x578B;&#x7684;&#x6570;&#x3002;&#x4EE5;&#x4E0A;&#x7C7B;&#x5C31;&#x65E0;&#x80FD;&#x4E3A;&#x529B;&#x4E86;&#x3002;&#x4ECE;&#x4EE5;&#x4E0A;&#x7C7B;&#x4E2D;&#x6D3E;&#x751F;&#x65B0;&#x7C7B;&#x4E5F;&#x65E0;&#x6D4E;&#x4E8E;&#x4E8B;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#x7684;&#x7C7B;&#x6A21;&#x677F;&#xFF1A;</p>
+<pre><code class="c++">template&lt;class T,int I&gt; class CList {
     public:
         CList(T intVal)
         int SetItem(int Index, const T &amp;Item);
         int GetItem(int Index, T &amp;Item);
     private:
         T Buffer[I];
-&#125;;
+};
 </code></pre>
-<p><code>T</code>是类型参数，<code>I</code>是常量参数。<code>T</code>和<code>I</code>的值在生成具体类的实例时指定。<code>&lt;&gt;</code>内可以包括任意个类型参数和常量参数。</p>
-<p>类型参数可以是任何有效类型。</p>
-<p>在类定义中，可以在任何可以使用类型指定的地方使用类型参数，在任何使用类型常量的地方使用常量参数。</p>
-<h2 id="模板类的成员函数"><a href="#模板类的成员函数" class="headerlink" title="模板类的成员函数"></a>模板类的成员函数</h2><pre><code class="c++">template&lt;class T, int I&gt; int class CList&lt;T, I&gt;::SetItem(int Index, const T &amp;Item) &#123;
+<p><code>T</code>&#x662F;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF0C;<code>I</code>&#x662F;&#x5E38;&#x91CF;&#x53C2;&#x6570;&#x3002;<code>T</code>&#x548C;<code>I</code>&#x7684;&#x503C;&#x5728;&#x751F;&#x6210;&#x5177;&#x4F53;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x65F6;&#x6307;&#x5B9A;&#x3002;<code>&lt;&gt;</code>&#x5185;&#x53EF;&#x4EE5;&#x5305;&#x62EC;&#x4EFB;&#x610F;&#x4E2A;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x548C;&#x5E38;&#x91CF;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x4F55;&#x6709;&#x6548;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x5728;&#x7C7B;&#x5B9A;&#x4E49;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x4EFB;&#x4F55;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7C7B;&#x578B;&#x6307;&#x5B9A;&#x7684;&#x5730;&#x65B9;&#x4F7F;&#x7528;&#x7C7B;&#x578B;&#x53C2;&#x6570;&#xFF0C;&#x5728;&#x4EFB;&#x4F55;&#x4F7F;&#x7528;&#x7C7B;&#x578B;&#x5E38;&#x91CF;&#x7684;&#x5730;&#x65B9;&#x4F7F;&#x7528;&#x5E38;&#x91CF;&#x53C2;&#x6570;&#x3002;</p>
+<h2 id="&#x6A21;&#x677F;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;"><a href="#&#x6A21;&#x677F;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;" class="headerlink" title="&#x6A21;&#x677F;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;"></a>&#x6A21;&#x677F;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;</h2><pre><code class="c++">template&lt;class T, int I&gt; int class CList&lt;T, I&gt;::SetItem(int Index, const T &amp;Item) {
         if (Index &lt; 0 || Index &gt; I - 1)
             return 0;
         Buffer[Index] = Item;
         return 1;
-&#125;
+}
 </code></pre>
-<p>以关键字<code>template&lt;class T,int I&gt;</code>开头，类名后应接上模板参数名单<code>CList&lt;T,I&gt;</code>。</p>
-<p>根据模板类生成对象称为实例化或专门化：</p>
+<p>&#x4EE5;&#x5173;&#x952E;&#x5B57;<code>template&lt;class T,int I&gt;</code>&#x5F00;&#x5934;&#xFF0C;&#x7C7B;&#x540D;&#x540E;&#x5E94;&#x63A5;&#x4E0A;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x540D;&#x5355;<code>CList&lt;T,I&gt;</code>&#x3002;</p>
+<p>&#x6839;&#x636E;&#x6A21;&#x677F;&#x7C7B;&#x751F;&#x6210;&#x5BF9;&#x8C61;&#x79F0;&#x4E3A;&#x5B9E;&#x4F8B;&#x5316;&#x6216;&#x4E13;&#x95E8;&#x5316;&#xFF1A;</p>
 <pre><code class="c++">CList&lt;int,100&gt; IntList;
 </code></pre>
-<p><code>IntList</code>是<code>CList</code>的实例。所有的<code>T</code>换成<code>int</code>，所有的<code>I</code>换成<code>100</code>。</p>
-<p>又如：</p>
+<p><code>IntList</code>&#x662F;<code>CList</code>&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x6240;&#x6709;&#x7684;<code>T</code>&#x6362;&#x6210;<code>int</code>&#xFF0C;&#x6240;&#x6709;&#x7684;<code>I</code>&#x6362;&#x6210;<code>100</code>&#x3002;</p>
+<p>&#x53C8;&#x5982;&#xFF1A;</p>
 <pre><code class="c++">CList&lt;char*,150&gt; StringList;
 </code></pre>
-<p>模板类的对象也可以动态生成（存放在<code>heap</code>中）:</p>
+<p>&#x6A21;&#x677F;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x4E5F;&#x53EF;&#x4EE5;&#x52A8;&#x6001;&#x751F;&#x6210;&#xFF08;&#x5B58;&#x653E;&#x5728;<code>heap</code>&#x4E2D;&#xFF09;:</p>
 <pre><code class="c++">CList&lt;double,50&gt; *DoubleList = new CList&lt;double,50&gt;;
 </code></pre>
-<p>也可以给模板类加入构造函数：</p>
-<pre><code class="c++">template&lt;class T,int I&gt; CList&lt;T, I&gt;::CList(T iniVal) &#123;
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x7ED9;&#x6A21;&#x677F;&#x7C7B;&#x52A0;&#x5165;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="c++">template&lt;class T,int I&gt; CList&lt;T, I&gt;::CList(T iniVal) {
     for (int i = 0; i &lt; I, i++)
         Buffer[i] = iniVal;
-&#125;
+}
 </code></pre>
-<p>有了构造函数，可以在实例化的同时赋初值：</p>
+<p>&#x6709;&#x4E86;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x540C;&#x65F6;&#x8D4B;&#x521D;&#x503C;&#xFF1A;</p>
 <pre><code class="c++">CList&lt;int, 100&gt; IntList(10);
 </code></pre>
-<p>类型参数可以使用自定义的类型：</p>
-<pre><code class="c++">struct Record &#123;
+<p>&#x7C7B;&#x578B;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x578B;&#xFF1A;</p>
+<pre><code class="c++">struct Record {
     char Name[20];
     char Phone[20];
-&#125;
+}
 
-Record rec = &#123;&quot;Jack&quot;, &quot;1234567890&quot;&#125;;
+Record rec = {&quot;Jack&quot;, &quot;1234567890&quot;};
 CList&lt;Record, 100&gt; RecordList(Rec);
 </code></pre>
-<h2 id="标准库的使用"><a href="#标准库的使用" class="headerlink" title="标准库的使用"></a>标准库的使用</h2><pre><code class="c++">#include &lt;vector&gt;
+<h2 id="&#x6807;&#x51C6;&#x5E93;&#x7684;&#x4F7F;&#x7528;"><a href="#&#x6807;&#x51C6;&#x5E93;&#x7684;&#x4F7F;&#x7528;" class="headerlink" title="&#x6807;&#x51C6;&#x5E93;&#x7684;&#x4F7F;&#x7528;"></a>&#x6807;&#x51C6;&#x5E93;&#x7684;&#x4F7F;&#x7528;</h2><pre><code class="c++">#include &lt;vector&gt;
 using std::vector;
 
-vector&lt;int&gt; ivec;   // 模板类实例化
+vector&lt;int&gt; ivec;   // &#x6A21;&#x677F;&#x7C7B;&#x5B9E;&#x4F8B;&#x5316;
 </code></pre>
 
         </div>

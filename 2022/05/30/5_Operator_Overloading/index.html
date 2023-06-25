@@ -8,13 +8,13 @@
     
     <title>#5 运算符重载 | Function&#39;s Blog</title>
 
-    <meta name="description" content="&lt;p&gt;C语言中操作符重载的例子：&lt;/p&gt;
+    <meta name="description" content="&lt;p&gt;C&amp;#x8BED;&amp;#x8A00;&amp;#x4E2D;&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x91CD;&amp;#x8F7D;&amp;#x7684;&amp;#x4F8B;&amp;#x5B50;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;c++&#34;&gt;int a = 3, b = 5;
-int c = a * b; //表示乘积
-int *p = &amp;amp;a; // *表示p是一个指针
-int i = *p;  //*作用在地址上表示该地址所记录的值
+int c = a * b; //&amp;#x8868;&amp;#x793A;&amp;#x4E58;&amp;#x79EF;
+int *p = &amp;amp;a; // *&amp;#x8868;&amp;#x793A;p&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x6307;&amp;#x9488;
+int i = *p;  //*&amp;#x4F5C;&amp;#x7528;&amp;#x5728;&amp;#x5730;&amp;#x5740;&amp;#x4E0A;&amp;#x8868;&amp;#x793A;&amp;#x8BE5;&amp;#x5730;&amp;#x5740;&amp;#x6240;&amp;#x8BB0;&amp;#x5F55;&amp;#x7684;&amp;#x503C;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;一个运算符可以有多种含义，编译器会根据操作符的操作数自动判断对操作符赋予哪一种含义。&lt;/p&gt;">
+&lt;p&gt;&amp;#x4E00;&amp;#x4E2A;&amp;#x8FD0;&amp;#x7B97;&amp;#x7B26;&amp;#x53EF;&amp;#x4EE5;&amp;#x6709;&amp;#x591A;&amp;#x79CD;&amp;#x542B;&amp;#x4E49;&amp;#xFF0C;&amp;#x7F16;&amp;#x8BD1;&amp;#x5668;&amp;#x4F1A;&amp;#x6839;&amp;#x636E;&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x7684;&amp;#x64CD;&amp;#x4F5C;&amp;#x6570;&amp;#x81EA;&amp;#x52A8;&amp;#x5224;&amp;#x65AD;&amp;#x5BF9;&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x8D4B;&amp;#x4E88;&amp;#x54EA;&amp;#x4E00;&amp;#x79CD;&amp;#x542B;&amp;#x4E49;&amp;#x3002;&lt;/p&gt;">
     <meta name="keywords" content="">
 
     
@@ -22,41 +22,41 @@ int i = *p;  //*作用在地址上表示该地址所记录的值
     <meta property="og:locale" content="zh-CN" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content= "#5 运算符重载 | Function&#39;s Blog"  />
-    <meta property="og:description" content= "&lt;p&gt;C语言中操作符重载的例子：&lt;/p&gt;
+    <meta property="og:description" content= "&lt;p&gt;C&amp;#x8BED;&amp;#x8A00;&amp;#x4E2D;&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x91CD;&amp;#x8F7D;&amp;#x7684;&amp;#x4F8B;&amp;#x5B50;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;c++&#34;&gt;int a = 3, b = 5;
-int c = a * b; //表示乘积
-int *p = &amp;amp;a; // *表示p是一个指针
-int i = *p;  //*作用在地址上表示该地址所记录的值
+int c = a * b; //&amp;#x8868;&amp;#x793A;&amp;#x4E58;&amp;#x79EF;
+int *p = &amp;amp;a; // *&amp;#x8868;&amp;#x793A;p&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x6307;&amp;#x9488;
+int i = *p;  //*&amp;#x4F5C;&amp;#x7528;&amp;#x5728;&amp;#x5730;&amp;#x5740;&amp;#x4E0A;&amp;#x8868;&amp;#x793A;&amp;#x8BE5;&amp;#x5730;&amp;#x5740;&amp;#x6240;&amp;#x8BB0;&amp;#x5F55;&amp;#x7684;&amp;#x503C;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;一个运算符可以有多种含义，编译器会根据操作符的操作数自动判断对操作符赋予哪一种含义。&lt;/p&gt;" />
+&lt;p&gt;&amp;#x4E00;&amp;#x4E2A;&amp;#x8FD0;&amp;#x7B97;&amp;#x7B26;&amp;#x53EF;&amp;#x4EE5;&amp;#x6709;&amp;#x591A;&amp;#x79CD;&amp;#x542B;&amp;#x4E49;&amp;#xFF0C;&amp;#x7F16;&amp;#x8BD1;&amp;#x5668;&amp;#x4F1A;&amp;#x6839;&amp;#x636E;&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x7684;&amp;#x64CD;&amp;#x4F5C;&amp;#x6570;&amp;#x81EA;&amp;#x52A8;&amp;#x5224;&amp;#x65AD;&amp;#x5BF9;&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x8D4B;&amp;#x4E88;&amp;#x54EA;&amp;#x4E00;&amp;#x79CD;&amp;#x542B;&amp;#x4E49;&amp;#x3002;&lt;/p&gt;" />
     <meta property="og:url" content="http://blog.functioneurus.com/2022/05/30/5_Operator_Overloading/index.html" />
     <meta property="og:site_name" content="" />
     <meta property="article:author" content="Function" />
     <meta property="article:publisher" content="" />
-    <meta property="og:description" content="&lt;p&gt;C语言中操作符重载的例子：&lt;/p&gt;
+    <meta property="og:description" content="&lt;p&gt;C&amp;#x8BED;&amp;#x8A00;&amp;#x4E2D;&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x91CD;&amp;#x8F7D;&amp;#x7684;&amp;#x4F8B;&amp;#x5B50;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;c++&#34;&gt;int a = 3, b = 5;
-int c = a * b; //表示乘积
-int *p = &amp;amp;a; // *表示p是一个指针
-int i = *p;  //*作用在地址上表示该地址所记录的值
+int c = a * b; //&amp;#x8868;&amp;#x793A;&amp;#x4E58;&amp;#x79EF;
+int *p = &amp;amp;a; // *&amp;#x8868;&amp;#x793A;p&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x6307;&amp;#x9488;
+int i = *p;  //*&amp;#x4F5C;&amp;#x7528;&amp;#x5728;&amp;#x5730;&amp;#x5740;&amp;#x4E0A;&amp;#x8868;&amp;#x793A;&amp;#x8BE5;&amp;#x5730;&amp;#x5740;&amp;#x6240;&amp;#x8BB0;&amp;#x5F55;&amp;#x7684;&amp;#x503C;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;一个运算符可以有多种含义，编译器会根据操作符的操作数自动判断对操作符赋予哪一种含义。&lt;/p&gt;" />
+&lt;p&gt;&amp;#x4E00;&amp;#x4E2A;&amp;#x8FD0;&amp;#x7B97;&amp;#x7B26;&amp;#x53EF;&amp;#x4EE5;&amp;#x6709;&amp;#x591A;&amp;#x79CD;&amp;#x542B;&amp;#x4E49;&amp;#xFF0C;&amp;#x7F16;&amp;#x8BD1;&amp;#x5668;&amp;#x4F1A;&amp;#x6839;&amp;#x636E;&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x7684;&amp;#x64CD;&amp;#x4F5C;&amp;#x6570;&amp;#x81EA;&amp;#x52A8;&amp;#x5224;&amp;#x65AD;&amp;#x5BF9;&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x8D4B;&amp;#x4E88;&amp;#x54EA;&amp;#x4E00;&amp;#x79CD;&amp;#x542B;&amp;#x4E49;&amp;#x3002;&lt;/p&gt;" />
     <meta name="twitter:title" content="#5 运算符重载 | Function&#39;s Blog"/>
-    <meta name="twitter:description" content="&lt;p&gt;C语言中操作符重载的例子：&lt;/p&gt;
+    <meta name="twitter:description" content="&lt;p&gt;C&amp;#x8BED;&amp;#x8A00;&amp;#x4E2D;&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x91CD;&amp;#x8F7D;&amp;#x7684;&amp;#x4F8B;&amp;#x5B50;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;c++&#34;&gt;int a = 3, b = 5;
-int c = a * b; //表示乘积
-int *p = &amp;amp;a; // *表示p是一个指针
-int i = *p;  //*作用在地址上表示该地址所记录的值
+int c = a * b; //&amp;#x8868;&amp;#x793A;&amp;#x4E58;&amp;#x79EF;
+int *p = &amp;amp;a; // *&amp;#x8868;&amp;#x793A;p&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x6307;&amp;#x9488;
+int i = *p;  //*&amp;#x4F5C;&amp;#x7528;&amp;#x5728;&amp;#x5730;&amp;#x5740;&amp;#x4E0A;&amp;#x8868;&amp;#x793A;&amp;#x8BE5;&amp;#x5730;&amp;#x5740;&amp;#x6240;&amp;#x8BB0;&amp;#x5F55;&amp;#x7684;&amp;#x503C;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;一个运算符可以有多种含义，编译器会根据操作符的操作数自动判断对操作符赋予哪一种含义。&lt;/p&gt;"/>
+&lt;p&gt;&amp;#x4E00;&amp;#x4E2A;&amp;#x8FD0;&amp;#x7B97;&amp;#x7B26;&amp;#x53EF;&amp;#x4EE5;&amp;#x6709;&amp;#x591A;&amp;#x79CD;&amp;#x542B;&amp;#x4E49;&amp;#xFF0C;&amp;#x7F16;&amp;#x8BD1;&amp;#x5668;&amp;#x4F1A;&amp;#x6839;&amp;#x636E;&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x7684;&amp;#x64CD;&amp;#x4F5C;&amp;#x6570;&amp;#x81EA;&amp;#x52A8;&amp;#x5224;&amp;#x65AD;&amp;#x5BF9;&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x8D4B;&amp;#x4E88;&amp;#x54EA;&amp;#x4E00;&amp;#x79CD;&amp;#x542B;&amp;#x4E49;&amp;#x3002;&lt;/p&gt;"/>
     <script type="application/ld+json">
         {
-            "description": "&lt;p&gt;C语言中操作符重载的例子：&lt;/p&gt;
+            "description": "&lt;p&gt;C&amp;#x8BED;&amp;#x8A00;&amp;#x4E2D;&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x91CD;&amp;#x8F7D;&amp;#x7684;&amp;#x4F8B;&amp;#x5B50;&amp;#xFF1A;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;c++&#34;&gt;int a = 3, b = 5;
-int c = a * b; //表示乘积
-int *p = &amp;amp;a; // *表示p是一个指针
-int i = *p;  //*作用在地址上表示该地址所记录的值
+int c = a * b; //&amp;#x8868;&amp;#x793A;&amp;#x4E58;&amp;#x79EF;
+int *p = &amp;amp;a; // *&amp;#x8868;&amp;#x793A;p&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x6307;&amp;#x9488;
+int i = *p;  //*&amp;#x4F5C;&amp;#x7528;&amp;#x5728;&amp;#x5730;&amp;#x5740;&amp;#x4E0A;&amp;#x8868;&amp;#x793A;&amp;#x8BE5;&amp;#x5730;&amp;#x5740;&amp;#x6240;&amp;#x8BB0;&amp;#x5F55;&amp;#x7684;&amp;#x503C;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;一个运算符可以有多种含义，编译器会根据操作符的操作数自动判断对操作符赋予哪一种含义。&lt;/p&gt;",
+&lt;p&gt;&amp;#x4E00;&amp;#x4E2A;&amp;#x8FD0;&amp;#x7B97;&amp;#x7B26;&amp;#x53EF;&amp;#x4EE5;&amp;#x6709;&amp;#x591A;&amp;#x79CD;&amp;#x542B;&amp;#x4E49;&amp;#xFF0C;&amp;#x7F16;&amp;#x8BD1;&amp;#x5668;&amp;#x4F1A;&amp;#x6839;&amp;#x636E;&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x7684;&amp;#x64CD;&amp;#x4F5C;&amp;#x6570;&amp;#x81EA;&amp;#x52A8;&amp;#x5224;&amp;#x65AD;&amp;#x5BF9;&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x8D4B;&amp;#x4E88;&amp;#x54EA;&amp;#x4E00;&amp;#x79CD;&amp;#x542B;&amp;#x4E49;&amp;#x3002;&lt;/p&gt;",
             "author": { "@type": "Person", "name": "Function" },
             "@type": "BlogPosting",
             "url": "http://blog.functioneurus.com/2022/05/30/5_Operator_Overloading/index.html",
@@ -176,7 +176,7 @@ int i = *p;  //*作用在地址上表示该地址所记录的值
             <section class="inner">
                 <section class="inner-main">
                     <div class="post">
-    <article id="post-cljba4hxz000ka4coezif1dut" class="article article-type-post" itemscope
+    <article id="post-cljbah39y000pgocoeru17dno" class="article article-type-post" itemscope
     itemprop="blogPost">
 
     <div class="article-inner">
@@ -218,209 +218,209 @@ int i = *p;  //*作用在地址上表示该地址所记录的值
         </div>
 
         <div class="article-entry post-inner-html hairline" itemprop="articleBody">
-            <p>C语言中操作符重载的例子：</p>
+            <p>C&#x8BED;&#x8A00;&#x4E2D;&#x64CD;&#x4F5C;&#x7B26;&#x91CD;&#x8F7D;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre><code class="c++">int a = 3, b = 5;
-int c = a * b; //表示乘积
-int *p = &amp;a; // *表示p是一个指针
-int i = *p;  //*作用在地址上表示该地址所记录的值
+int c = a * b; //&#x8868;&#x793A;&#x4E58;&#x79EF;
+int *p = &amp;a; // *&#x8868;&#x793A;p&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x9488;
+int i = *p;  //*&#x4F5C;&#x7528;&#x5728;&#x5730;&#x5740;&#x4E0A;&#x8868;&#x793A;&#x8BE5;&#x5730;&#x5740;&#x6240;&#x8BB0;&#x5F55;&#x7684;&#x503C;
 </code></pre>
-<p>一个运算符可以有多种含义，编译器会根据操作符的操作数自动判断对操作符赋予哪一种含义。</p>
+<p>&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x7B26;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x79CD;&#x542B;&#x4E49;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x6839;&#x636E;&#x64CD;&#x4F5C;&#x7B26;&#x7684;&#x64CD;&#x4F5C;&#x6570;&#x81EA;&#x52A8;&#x5224;&#x65AD;&#x5BF9;&#x64CD;&#x4F5C;&#x7B26;&#x8D4B;&#x4E88;&#x54EA;&#x4E00;&#x79CD;&#x542B;&#x4E49;&#x3002;</p>
 <span id="more"></span>
 
-<p>C++编译器把运算符看成一个函数：</p>
-<pre><code class="c++">c = a * b //解释为  c = operator*(a,b);
-i = *p   //解释为 i = operator*(p);
+<p>C++&#x7F16;&#x8BD1;&#x5668;&#x628A;&#x8FD0;&#x7B97;&#x7B26;&#x770B;&#x6210;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="c++">c = a * b //&#x89E3;&#x91CA;&#x4E3A;  c = operator*(a,b);
+i = *p   //&#x89E3;&#x91CA;&#x4E3A; i = operator*(p);
 </code></pre>
-<p><code>operator*()</code>，称为运算符函数，这个函数被重载。</p>
-<p><code>C++</code>允许对操作符函数进行重载，简称为操作符重载。</p>
-<pre><code class="c++">class Complex  &#123;
+<p><code>operator*()</code>&#xFF0C;&#x79F0;&#x4E3A;&#x8FD0;&#x7B97;&#x7B26;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x88AB;&#x91CD;&#x8F7D;&#x3002;</p>
+<p><code>C++</code>&#x5141;&#x8BB8;&#x5BF9;&#x64CD;&#x4F5C;&#x7B26;&#x51FD;&#x6570;&#x8FDB;&#x884C;&#x91CD;&#x8F7D;&#xFF0C;&#x7B80;&#x79F0;&#x4E3A;&#x64CD;&#x4F5C;&#x7B26;&#x91CD;&#x8F7D;&#x3002;</p>
+<pre><code class="c++">class Complex  {
     public:
-        double real;//实部
-        double imag;//虚部
-        Complex(double r = 0, double i = 0) &#123;
+        double real;//&#x5B9E;&#x90E8;
+        double imag;//&#x865A;&#x90E8;
+        Complex(double r = 0, double i = 0) {
             real = r;
             imag = i;
-        &#125;
-        void show() &#123;
+        }
+        void show() {
             cout &lt;&lt; &quot;real= &quot; &lt;&lt; real &lt;&lt; &quot; &quot; &lt;&lt; &quot;imag= &quot; &lt;&lt; imag &lt;&lt; endl;
-        &#125;
-&#125;;
+        }
+};
 
-//以下重载运算符函数operator+,此函数的参数为两个Complex,且在计算过程中不会被改变,返回值也是一个Complex:
+//&#x4EE5;&#x4E0B;&#x91CD;&#x8F7D;&#x8FD0;&#x7B97;&#x7B26;&#x51FD;&#x6570;operator+,&#x6B64;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x4E3A;&#x4E24;&#x4E2A;Complex,&#x4E14;&#x5728;&#x8BA1;&#x7B97;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E0D;&#x4F1A;&#x88AB;&#x6539;&#x53D8;,&#x8FD4;&#x56DE;&#x503C;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;Complex:
 
-Complex operator+(const Complex &amp;op1, const Complex &amp;op2) &#123;
+Complex operator+(const Complex &amp;op1, const Complex &amp;op2) {
     Complex t;
-    t.real = op1.real + op2.real ; //读取,设置了Complex的公有的数据成员
+    t.real = op1.real + op2.real ; //&#x8BFB;&#x53D6;,&#x8BBE;&#x7F6E;&#x4E86;Complex&#x7684;&#x516C;&#x6709;&#x7684;&#x6570;&#x636E;&#x6210;&#x5458;
     t.imag = op1.imag + op2.imag ;
     return t;
 
-&#125;  // 注意：这里使用了默认的拷贝构造函数。
-int main() &#123;
+}  // &#x6CE8;&#x610F;&#xFF1A;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x4E86;&#x9ED8;&#x8BA4;&#x7684;&#x62F7;&#x8D1D;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;
+int main() {
     Complex ob1(2, 3);
     Complex ob2(0.5, 0.6);
     Complex sum;
-    sum = ob1 + ob2; //使用运算符函数sum=operator+(ob1,ob2);
+    sum = ob1 + ob2; //&#x4F7F;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#x51FD;&#x6570;sum=operator+(ob1,ob2);
     sum.show ();
-&#125;
+}
 </code></pre>
-<p>以上代码对<code>+</code>进行了重载，使之可以进行<code>Complex</code>类的运算，但它与<code>Complex</code>并没有直接的联系，故只能访问<code>Complex</code>的公共成员。<code>Complex</code>的两个数据成员都是公共的，但是这不符合<code>OOP</code>的封装原则，存在安全隐患。</p>
-<p>一般说来，<code> Complex</code>的两个数据成员都应该是私有的，但此时<code>+</code>就不能访问它了。为此，有两种解决方法：</p>
-<p>把<code>operaor+()</code>运算符函数作为类的成员函数，以使得其可以访问私有的成员，称为成员操作符函数；把<code>operaor+()</code>运算符函数作为类的友元函数，称为友元操作符函数。</p>
-<pre><code class="c++">class Complex &#123;
-    private:  //注意这里的数据成员是私有的
-        double real;//实部
-        double imag;//虚部
+<p>&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#x5BF9;<code>+</code>&#x8FDB;&#x884C;&#x4E86;&#x91CD;&#x8F7D;&#xFF0C;&#x4F7F;&#x4E4B;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;<code>Complex</code>&#x7C7B;&#x7684;&#x8FD0;&#x7B97;&#xFF0C;&#x4F46;&#x5B83;&#x4E0E;<code>Complex</code>&#x5E76;&#x6CA1;&#x6709;&#x76F4;&#x63A5;&#x7684;&#x8054;&#x7CFB;&#xFF0C;&#x6545;&#x53EA;&#x80FD;&#x8BBF;&#x95EE;<code>Complex</code>&#x7684;&#x516C;&#x5171;&#x6210;&#x5458;&#x3002;<code>Complex</code>&#x7684;&#x4E24;&#x4E2A;&#x6570;&#x636E;&#x6210;&#x5458;&#x90FD;&#x662F;&#x516C;&#x5171;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E0D;&#x7B26;&#x5408;<code>OOP</code>&#x7684;&#x5C01;&#x88C5;&#x539F;&#x5219;&#xFF0C;&#x5B58;&#x5728;&#x5B89;&#x5168;&#x9690;&#x60A3;&#x3002;</p>
+<p>&#x4E00;&#x822C;&#x8BF4;&#x6765;&#xFF0C;<code> Complex</code>&#x7684;&#x4E24;&#x4E2A;&#x6570;&#x636E;&#x6210;&#x5458;&#x90FD;&#x5E94;&#x8BE5;&#x662F;&#x79C1;&#x6709;&#x7684;&#xFF0C;&#x4F46;&#x6B64;&#x65F6;<code>+</code>&#x5C31;&#x4E0D;&#x80FD;&#x8BBF;&#x95EE;&#x5B83;&#x4E86;&#x3002;&#x4E3A;&#x6B64;&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<p>&#x628A;<code>operaor+()</code>&#x8FD0;&#x7B97;&#x7B26;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x4EE5;&#x4F7F;&#x5F97;&#x5176;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x79C1;&#x6709;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x79F0;&#x4E3A;&#x6210;&#x5458;&#x64CD;&#x4F5C;&#x7B26;&#x51FD;&#x6570;&#xFF1B;&#x628A;<code>operaor+()</code>&#x8FD0;&#x7B97;&#x7B26;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x7C7B;&#x7684;&#x53CB;&#x5143;&#x51FD;&#x6570;&#xFF0C;&#x79F0;&#x4E3A;&#x53CB;&#x5143;&#x64CD;&#x4F5C;&#x7B26;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="c++">class Complex {
+    private:  //&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x7684;&#x6570;&#x636E;&#x6210;&#x5458;&#x662F;&#x79C1;&#x6709;&#x7684;
+        double real;//&#x5B9E;&#x90E8;
+        double imag;//&#x865A;&#x90E8;
     public:
-        Complex(double r = 0, double i = 0) &#123;
+        Complex(double r = 0, double i = 0) {
             real = r;
             imag = i;
-        &#125;
-        void show() &#123;
+        }
+        void show() {
             cout &lt;&lt; &quot;real= &quot; &lt;&lt; real &lt;&lt; &quot; &quot; &lt;&lt; &quot;imag= &quot; &lt;&lt; imag &lt;&lt; endl;
-        &#125;
-        Complex operator+(const Complex &amp;op); //成员操作符函数声明
-&#125;;
+        }
+        Complex operator+(const Complex &amp;op); //&#x6210;&#x5458;&#x64CD;&#x4F5C;&#x7B26;&#x51FD;&#x6570;&#x58F0;&#x660E;
+};
 
-//重载了成员操作符函数,注意参数只有一个!
-Complex Complex::operator +(const Complex &amp;op) &#123; // 定义
+//&#x91CD;&#x8F7D;&#x4E86;&#x6210;&#x5458;&#x64CD;&#x4F5C;&#x7B26;&#x51FD;&#x6570;,&#x6CE8;&#x610F;&#x53C2;&#x6570;&#x53EA;&#x6709;&#x4E00;&#x4E2A;!
+Complex Complex::operator +(const Complex &amp;op) { // &#x5B9A;&#x4E49;
     Complex t;
-    t.real = real + op.real ; // 即t.real= this-&gt;real+op.real
+    t.real = real + op.real ; // &#x5373;t.real= this-&gt;real+op.real
     t.imag = imag + op.imag ;
     return t;
-&#125;
+}
 
-int main() &#123;
+int main() {
     Complex ob1(2, 3);
     Complex ob2(0.5, 0.6);
     Complex sum;
-    sum = ob1 + ob2; //使用成员运算符函数: sum=ob1.operator+(ob2)
+    sum = ob1 + ob2; //&#x4F7F;&#x7528;&#x6210;&#x5458;&#x8FD0;&#x7B97;&#x7B26;&#x51FD;&#x6570;: sum=ob1.operator+(ob2)
     sum.show ();
-&#125;
+}
 </code></pre>
-<h1 id="使用友元操作符函数重载"><a href="#使用友元操作符函数重载" class="headerlink" title="使用友元操作符函数重载"></a>使用友元操作符函数重载</h1><p>在类定义中加上：</p>
+<h1 id="&#x4F7F;&#x7528;&#x53CB;&#x5143;&#x64CD;&#x4F5C;&#x7B26;&#x51FD;&#x6570;&#x91CD;&#x8F7D;"><a href="#&#x4F7F;&#x7528;&#x53CB;&#x5143;&#x64CD;&#x4F5C;&#x7B26;&#x51FD;&#x6570;&#x91CD;&#x8F7D;" class="headerlink" title="&#x4F7F;&#x7528;&#x53CB;&#x5143;&#x64CD;&#x4F5C;&#x7B26;&#x51FD;&#x6570;&#x91CD;&#x8F7D;"></a>&#x4F7F;&#x7528;&#x53CB;&#x5143;&#x64CD;&#x4F5C;&#x7B26;&#x51FD;&#x6570;&#x91CD;&#x8F7D;</h1><p>&#x5728;&#x7C7B;&#x5B9A;&#x4E49;&#x4E2D;&#x52A0;&#x4E0A;&#xFF1A;</p>
 <pre><code class="c++">friend Complex operator +(int i, Complex &amp;op );
 </code></pre>
-<p>具体实现：</p>
-<pre><code class="c++">Complex operator +(int i, Complex &amp;op ) &#123; // 也没有this指针
+<p>&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#xFF1A;</p>
+<pre><code class="c++">Complex operator +(int i, Complex &amp;op ) { // &#x4E5F;&#x6CA1;&#x6709;this&#x6307;&#x9488;
     Complex t;
     t.real = op.real + i ;
     t.imag = op.imag + i;
-    // 为了展示用法,这里的加法为整数与复数相加，且实现部分为对实部和虚部同时加上一个整数. 其他正常意义上的加法需要重新实现。
+    // &#x4E3A;&#x4E86;&#x5C55;&#x793A;&#x7528;&#x6CD5;,&#x8FD9;&#x91CC;&#x7684;&#x52A0;&#x6CD5;&#x4E3A;&#x6574;&#x6570;&#x4E0E;&#x590D;&#x6570;&#x76F8;&#x52A0;&#xFF0C;&#x4E14;&#x5B9E;&#x73B0;&#x90E8;&#x5206;&#x4E3A;&#x5BF9;&#x5B9E;&#x90E8;&#x548C;&#x865A;&#x90E8;&#x540C;&#x65F6;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;&#x6574;&#x6570;. &#x5176;&#x4ED6;&#x6B63;&#x5E38;&#x610F;&#x4E49;&#x4E0A;&#x7684;&#x52A0;&#x6CD5;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x5B9E;&#x73B0;&#x3002;
     return t;
-&#125;;
-//调用时：
+};
+//&#x8C03;&#x7528;&#x65F6;&#xFF1A;
 Complex ob1(2, 3);
 sum = 3 + ob1;
-//sum将为(5,6).
+//sum&#x5C06;&#x4E3A;(5,6).
 </code></pre>
-<h1 id="及–运算符"><a href="#及–运算符" class="headerlink" title="++及–运算符"></a>++及–运算符</h1><pre><code class="c++">//前缀形式：
-Complex &amp;operator++() &#123;
+<h1 id="&#x53CA;&#x2013;&#x8FD0;&#x7B97;&#x7B26;"><a href="#&#x53CA;&#x2013;&#x8FD0;&#x7B97;&#x7B26;" class="headerlink" title="++&#x53CA;&#x2013;&#x8FD0;&#x7B97;&#x7B26;"></a>++&#x53CA;&#x2013;&#x8FD0;&#x7B97;&#x7B26;</h1><pre><code class="c++">//&#x524D;&#x7F00;&#x5F62;&#x5F0F;&#xFF1A;
+Complex &amp;operator++() {
     this-&gt;real++;
     this-&gt;imag++;
     return *this;
-&#125;
+}
 
-//调用：
+//&#x8C03;&#x7528;&#xFF1A;
 Complex c(2, 3);
 ++c;
 
-//后缀形式,稍显生硬
-Complex &amp;operator++(int ) &#123; // 此处并不需要给出参数名 且此额外参数必须为int 类型
+//&#x540E;&#x7F00;&#x5F62;&#x5F0F;,&#x7A0D;&#x663E;&#x751F;&#x786C;
+Complex &amp;operator++(int ) { // &#x6B64;&#x5904;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x7ED9;&#x51FA;&#x53C2;&#x6570;&#x540D; &#x4E14;&#x6B64;&#x989D;&#x5916;&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x4E3A;int &#x7C7B;&#x578B;
     this-&gt;real++;
     this-&gt;imag++;
     return *this;
-&#125;
-//调用：
+}
+//&#x8C03;&#x7528;&#xFF1A;
 Complex c(2, 3);
 c++;
 </code></pre>
-<h1 id="lt-lt-及-gt-gt-运算符"><a href="#lt-lt-及-gt-gt-运算符" class="headerlink" title="&lt;&lt;及&gt;&gt;运算符"></a>&lt;&lt;及&gt;&gt;运算符</h1><p>在C++中，左移运算符<code>&lt;&lt;</code>可以和<code>cout</code>一起用于输出，因此也常被称为“流插入运算符”或者“输出运算符”。实际上，<code>&lt;&lt;</code>本来没有这样的功能，之所以能和<code>cout</code>一起使用，是因为被重载了。</p>
-<p><code>cout</code>是<code>ostream</code>类的对象。<code>ostream</code>类和<code>cout</code>都是在头文件<code>&lt;iostream&gt;</code>中声明的。</p>
-<p><code>ostream</code>类将<code>&lt;&lt;</code>重载为成员函数，而且重载了多次。为了使<code>cout&lt;&lt;&quot;Star War&quot;</code>能够成立，<code>ostream</code>类需要将<code>&lt;&lt;</code>进行如下重载：</p>
-<pre><code class="c++">ostream &amp;ostream::operator &lt;&lt; (const char *s) &#123;
-    //输出s的功能代码
+<h1 id="lt-lt-&#x53CA;-gt-gt-&#x8FD0;&#x7B97;&#x7B26;"><a href="#lt-lt-&#x53CA;-gt-gt-&#x8FD0;&#x7B97;&#x7B26;" class="headerlink" title="&lt;&lt;&#x53CA;&gt;&gt;&#x8FD0;&#x7B97;&#x7B26;"></a>&lt;&lt;&#x53CA;&gt;&gt;&#x8FD0;&#x7B97;&#x7B26;</h1><p>&#x5728;C++&#x4E2D;&#xFF0C;&#x5DE6;&#x79FB;&#x8FD0;&#x7B97;&#x7B26;<code>&lt;&lt;</code>&#x53EF;&#x4EE5;&#x548C;<code>cout</code>&#x4E00;&#x8D77;&#x7528;&#x4E8E;&#x8F93;&#x51FA;&#xFF0C;&#x56E0;&#x6B64;&#x4E5F;&#x5E38;&#x88AB;&#x79F0;&#x4E3A;&#x201C;&#x6D41;&#x63D2;&#x5165;&#x8FD0;&#x7B97;&#x7B26;&#x201D;&#x6216;&#x8005;&#x201C;&#x8F93;&#x51FA;&#x8FD0;&#x7B97;&#x7B26;&#x201D;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;<code>&lt;&lt;</code>&#x672C;&#x6765;&#x6CA1;&#x6709;&#x8FD9;&#x6837;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4E4B;&#x6240;&#x4EE5;&#x80FD;&#x548C;<code>cout</code>&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x88AB;&#x91CD;&#x8F7D;&#x4E86;&#x3002;</p>
+<p><code>cout</code>&#x662F;<code>ostream</code>&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x3002;<code>ostream</code>&#x7C7B;&#x548C;<code>cout</code>&#x90FD;&#x662F;&#x5728;&#x5934;&#x6587;&#x4EF6;<code>&lt;iostream&gt;</code>&#x4E2D;&#x58F0;&#x660E;&#x7684;&#x3002;</p>
+<p><code>ostream</code>&#x7C7B;&#x5C06;<code>&lt;&lt;</code>&#x91CD;&#x8F7D;&#x4E3A;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x800C;&#x4E14;&#x91CD;&#x8F7D;&#x4E86;&#x591A;&#x6B21;&#x3002;&#x4E3A;&#x4E86;&#x4F7F;<code>cout&lt;&lt;&quot;Star War&quot;</code>&#x80FD;&#x591F;&#x6210;&#x7ACB;&#xFF0C;<code>ostream</code>&#x7C7B;&#x9700;&#x8981;&#x5C06;<code>&lt;&lt;</code>&#x8FDB;&#x884C;&#x5982;&#x4E0B;&#x91CD;&#x8F7D;&#xFF1A;</p>
+<pre><code class="c++">ostream &amp;ostream::operator &lt;&lt; (const char *s) {
+    //&#x8F93;&#x51FA;s&#x7684;&#x529F;&#x80FD;&#x4EE3;&#x7801;
     return * this;
-&#125;
+}
 </code></pre>
-<p>为了使<code>cout&lt;&lt;5;</code>能够成立，<code>ostream</code>类还需要将<code>&lt;&lt;</code>进行如下重载：</p>
-<pre><code class="c++">ostream &amp;ostream::operator &lt;&lt; (int n) &#123;
-    //输出n的代码
+<p>&#x4E3A;&#x4E86;&#x4F7F;<code>cout&lt;&lt;5;</code>&#x80FD;&#x591F;&#x6210;&#x7ACB;&#xFF0C;<code>ostream</code>&#x7C7B;&#x8FD8;&#x9700;&#x8981;&#x5C06;<code>&lt;&lt;</code>&#x8FDB;&#x884C;&#x5982;&#x4E0B;&#x91CD;&#x8F7D;&#xFF1A;</p>
+<pre><code class="c++">ostream &amp;ostream::operator &lt;&lt; (int n) {
+    //&#x8F93;&#x51FA;n&#x7684;&#x4EE3;&#x7801;
     return *this;
-&#125;
+}
 </code></pre>
-<p>重载函数的返回值类型为<code>ostream</code>的引用，并且函数返回<code>*this</code>，就使得<code>cout&lt;&lt;&quot;Star War&quot;&lt;&lt;5;</code>能够成立。</p>
-<p>有了上面的重载，<code>cout&lt;&lt;&quot;Star War&quot;&lt;&lt;5;</code>就等价于：</p>
+<p>&#x91CD;&#x8F7D;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B;&#x4E3A;<code>ostream</code>&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x5E76;&#x4E14;&#x51FD;&#x6570;&#x8FD4;&#x56DE;<code>*this</code>&#xFF0C;&#x5C31;&#x4F7F;&#x5F97;<code>cout&lt;&lt;&quot;Star War&quot;&lt;&lt;5;</code>&#x80FD;&#x591F;&#x6210;&#x7ACB;&#x3002;</p>
+<p>&#x6709;&#x4E86;&#x4E0A;&#x9762;&#x7684;&#x91CD;&#x8F7D;&#xFF0C;<code>cout&lt;&lt;&quot;Star War&quot;&lt;&lt;5;</code>&#x5C31;&#x7B49;&#x4EF7;&#x4E8E;&#xFF1A;</p>
 <pre><code class="c++">cout.operator &lt;&lt; (&quot;Star War&quot;) ).operator &lt;&lt; (5);
 </code></pre>
-<h1 id="对Complex的输出"><a href="#对Complex的输出" class="headerlink" title="对Complex的输出"></a>对Complex的输出</h1><p>我们希望对<code>Complex</code>的输出和其他的如字符串、整数等统一的方式进行。</p>
-<p>但不能通过修改<code>ostream</code>类和<code>istream</code>类以达到该目的（标准库的类）。</p>
-<p>也不能将<code>&lt;&lt;</code>和<code>&gt;&gt;</code>重载为<code>Complex</code>类的成员运算符函数，应与<code>cout</code>的其他用法保持一致。<code>&lt;&lt;</code>是<code>ostream</code>类的成员。</p>
-<p>故只能将<code>&lt;&lt;</code>和<code>&gt;&gt;</code>重载为全局运算符函数。由于这两个函数需要访问<code>Complex</code>类的私有成员，因此在<code>Complex</code>类定义中将它们声明为友元。</p>
-<pre><code class="c++">friend ostream &amp;operator&lt;&lt; (ostream &amp;os, const Complex &amp;c) &#123;
+<h1 id="&#x5BF9;Complex&#x7684;&#x8F93;&#x51FA;"><a href="#&#x5BF9;Complex&#x7684;&#x8F93;&#x51FA;" class="headerlink" title="&#x5BF9;Complex&#x7684;&#x8F93;&#x51FA;"></a>&#x5BF9;Complex&#x7684;&#x8F93;&#x51FA;</h1><p>&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5BF9;<code>Complex</code>&#x7684;&#x8F93;&#x51FA;&#x548C;&#x5176;&#x4ED6;&#x7684;&#x5982;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x6574;&#x6570;&#x7B49;&#x7EDF;&#x4E00;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x3002;</p>
+<p>&#x4F46;&#x4E0D;&#x80FD;&#x901A;&#x8FC7;&#x4FEE;&#x6539;<code>ostream</code>&#x7C7B;&#x548C;<code>istream</code>&#x7C7B;&#x4EE5;&#x8FBE;&#x5230;&#x8BE5;&#x76EE;&#x7684;&#xFF08;&#x6807;&#x51C6;&#x5E93;&#x7684;&#x7C7B;&#xFF09;&#x3002;</p>
+<p>&#x4E5F;&#x4E0D;&#x80FD;&#x5C06;<code>&lt;&lt;</code>&#x548C;<code>&gt;&gt;</code>&#x91CD;&#x8F7D;&#x4E3A;<code>Complex</code>&#x7C7B;&#x7684;&#x6210;&#x5458;&#x8FD0;&#x7B97;&#x7B26;&#x51FD;&#x6570;&#xFF0C;&#x5E94;&#x4E0E;<code>cout</code>&#x7684;&#x5176;&#x4ED6;&#x7528;&#x6CD5;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x3002;<code>&lt;&lt;</code>&#x662F;<code>ostream</code>&#x7C7B;&#x7684;&#x6210;&#x5458;&#x3002;</p>
+<p>&#x6545;&#x53EA;&#x80FD;&#x5C06;<code>&lt;&lt;</code>&#x548C;<code>&gt;&gt;</code>&#x91CD;&#x8F7D;&#x4E3A;&#x5168;&#x5C40;&#x8FD0;&#x7B97;&#x7B26;&#x51FD;&#x6570;&#x3002;&#x7531;&#x4E8E;&#x8FD9;&#x4E24;&#x4E2A;&#x51FD;&#x6570;&#x9700;&#x8981;&#x8BBF;&#x95EE;<code>Complex</code>&#x7C7B;&#x7684;&#x79C1;&#x6709;&#x6210;&#x5458;&#xFF0C;&#x56E0;&#x6B64;&#x5728;<code>Complex</code>&#x7C7B;&#x5B9A;&#x4E49;&#x4E2D;&#x5C06;&#x5B83;&#x4EEC;&#x58F0;&#x660E;&#x4E3A;&#x53CB;&#x5143;&#x3002;</p>
+<pre><code class="c++">friend ostream &amp;operator&lt;&lt; (ostream &amp;os, const Complex &amp;c) {
     os &lt;&lt; &quot;real is &quot; &lt;&lt; c.real &lt;&lt; &quot; imag is &quot; &lt;&lt; c.imag &lt;&lt; endl;
     return os;
-&#125;
-//使用方法：
+}
+//&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF1A;
 Complex c(2, 3);
 cout &lt;&lt; c &lt;&lt; endl;
 
-//输入也是一样：
+//&#x8F93;&#x5165;&#x4E5F;&#x662F;&#x4E00;&#x6837;&#xFF1A;
 friend istream &amp;operator&gt;&gt;(istream &amp;is, Complex &amp;c);
 </code></pre>
-<h1 id="对-运算符的重载"><a href="#对-运算符的重载" class="headerlink" title="对[]运算符的重载"></a>对[]运算符的重载</h1><p>使用<code>[]</code>可以方便访问数组的元素。对于某些集合类，对<code>[]</code>重载可以方便访问其内部成员。</p>
+<h1 id="&#x5BF9;-&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x91CD;&#x8F7D;"><a href="#&#x5BF9;-&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x91CD;&#x8F7D;" class="headerlink" title="&#x5BF9;[]&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x91CD;&#x8F7D;"></a>&#x5BF9;[]&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x91CD;&#x8F7D;</h1><p>&#x4F7F;&#x7528;<code>[]</code>&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x8BBF;&#x95EE;&#x6570;&#x7EC4;&#x7684;&#x5143;&#x7D20;&#x3002;&#x5BF9;&#x4E8E;&#x67D0;&#x4E9B;&#x96C6;&#x5408;&#x7C7B;&#xFF0C;&#x5BF9;<code>[]</code>&#x91CD;&#x8F7D;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x8BBF;&#x95EE;&#x5176;&#x5185;&#x90E8;&#x6210;&#x5458;&#x3002;</p>
 <pre><code class="c++">#include &lt;iostream&gt;
 #include &lt;string&gt;
 using namespace std;
 
-class FootballTeam &#123;
-        string players[11];  // 私有的集合类成员
+class FootballTeam {
+        string players[11];  // &#x79C1;&#x6709;&#x7684;&#x96C6;&#x5408;&#x7C7B;&#x6210;&#x5458;
     public:
-        FootballTeam() &#123;
+        FootballTeam() {
             for (int i = 0; i &lt; 11; i++)
                 players[i] = &quot;player&quot; + to_string(i);
-        &#125;
-        string operator[ ] (int idx) &#123; // 重载下标运算符
+        }
+        string operator[ ] (int idx) { // &#x91CD;&#x8F7D;&#x4E0B;&#x6807;&#x8FD0;&#x7B97;&#x7B26;
             return players[idx];
-        &#125;
-&#125;;
+        }
+};
 
-int main() &#123;
+int main() {
     FootballTeam ft;
-    cout &lt;&lt; ft[3] &lt;&lt; endl;	 // 使用更直观
+    cout &lt;&lt; ft[3] &lt;&lt; endl;	 // &#x4F7F;&#x7528;&#x66F4;&#x76F4;&#x89C2;
     return 0;
-&#125;
-//输出player3\n
+}
+//&#x8F93;&#x51FA;player3\n
 </code></pre>
-<h1 id="对-的重载"><a href="#对-的重载" class="headerlink" title="对!的重载"></a>对!的重载</h1><pre><code class="c++">class Foo &#123;
-        int number&#123; 0 &#125;;
+<h1 id="&#x5BF9;-&#x7684;&#x91CD;&#x8F7D;"><a href="#&#x5BF9;-&#x7684;&#x91CD;&#x8F7D;" class="headerlink" title="&#x5BF9;!&#x7684;&#x91CD;&#x8F7D;"></a>&#x5BF9;!&#x7684;&#x91CD;&#x8F7D;</h1><pre><code class="c++">class Foo {
+        int number{ 0 };
     public:
-        Foo(int c) &#123;
+        Foo(int c) {
             number = c;
-        &#125;
+        }
         Foo() = default;
-        Foo &amp;operator !() &#123;  // 重载取反运算符
+        Foo &amp;operator !() {  // &#x91CD;&#x8F7D;&#x53D6;&#x53CD;&#x8FD0;&#x7B97;&#x7B26;
             number = -number;
             return (*this);
-        &#125;
-        std::string toString() &#123;
+        }
+        std::string toString() {
             return (&quot;the number is &quot; + std::to_string(number) + &quot;\n&quot;);
-        &#125;
-&#125;;
+        }
+};
 </code></pre>
-<h1 id="调用运算符"><a href="#调用运算符" class="headerlink" title="调用运算符()"></a>调用运算符()</h1><p>可以为类类型的对象重载函数调用操作符<code>()</code>，一般为表示操作的类重载调用操作符。例如，可以定义名为<code>absInt</code>的结构，该结构封装将<code>int</code>类型的值转换为绝对值的操作：</p>
-<pre><code class="c++">struct absInt &#123;
-    int operator() (int val) &#123;
+<h1 id="&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;"><a href="#&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;" class="headerlink" title="&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;()"></a>&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;()</h1><p>&#x53EF;&#x4EE5;&#x4E3A;&#x7C7B;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#x91CD;&#x8F7D;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x64CD;&#x4F5C;&#x7B26;<code>()</code>&#xFF0C;&#x4E00;&#x822C;&#x4E3A;&#x8868;&#x793A;&#x64CD;&#x4F5C;&#x7684;&#x7C7B;&#x91CD;&#x8F7D;&#x8C03;&#x7528;&#x64CD;&#x4F5C;&#x7B26;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x540D;&#x4E3A;<code>absInt</code>&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x8BE5;&#x7ED3;&#x6784;&#x5C01;&#x88C5;&#x5C06;<code>int</code>&#x7C7B;&#x578B;&#x7684;&#x503C;&#x8F6C;&#x6362;&#x4E3A;&#x7EDD;&#x5BF9;&#x503C;&#x7684;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<pre><code class="c++">struct absInt {
+    int operator() (int val) {
         return val &lt; 0 ? -val : val;
-    &#125;
+    }
 
     int i = -42;
     absInt absObj; // object that defines function call operator
     unsigned int ui = absObj(i); // calls absInt::operator(int)
 </code></pre>
-<p>调用运算符函数的使用，看起来像是函数调用。</p>
-<p><code>absObj</code>是一个对象而不是函数，但是仍然可以“调用”之。</p>
-<p>函数调用操作符必须声明为成员函数，且可以重载之。</p>
-<h1 id="函数对象"><a href="#函数对象" class="headerlink" title="函数对象"></a>函数对象</h1><p>定义了调用操作符的类，其对象常称为函数对象（function object），即它们是行为类似函数的对象，又称为仿函数。</p>
+<p>&#x8C03;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#x51FD;&#x6570;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x662F;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x3002;</p>
+<p><code>absObj</code>&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x800C;&#x4E0D;&#x662F;&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x201C;&#x8C03;&#x7528;&#x201D;&#x4E4B;&#x3002;</p>
+<p>&#x51FD;&#x6570;&#x8C03;&#x7528;&#x64CD;&#x4F5C;&#x7B26;&#x5FC5;&#x987B;&#x58F0;&#x660E;&#x4E3A;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x4E14;&#x53EF;&#x4EE5;&#x91CD;&#x8F7D;&#x4E4B;&#x3002;</p>
+<h1 id="&#x51FD;&#x6570;&#x5BF9;&#x8C61;"><a href="#&#x51FD;&#x6570;&#x5BF9;&#x8C61;" class="headerlink" title="&#x51FD;&#x6570;&#x5BF9;&#x8C61;"></a>&#x51FD;&#x6570;&#x5BF9;&#x8C61;</h1><p>&#x5B9A;&#x4E49;&#x4E86;&#x8C03;&#x7528;&#x64CD;&#x4F5C;&#x7B26;&#x7684;&#x7C7B;&#xFF0C;&#x5176;&#x5BF9;&#x8C61;&#x5E38;&#x79F0;&#x4E3A;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF08;function object&#xFF09;&#xFF0C;&#x5373;&#x5B83;&#x4EEC;&#x662F;&#x884C;&#x4E3A;&#x7C7B;&#x4F3C;&#x51FD;&#x6570;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x53C8;&#x79F0;&#x4E3A;&#x4EFF;&#x51FD;&#x6570;&#x3002;</p>
 
         </div>
 

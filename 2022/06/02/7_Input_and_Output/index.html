@@ -8,7 +8,7 @@
     
     <title>#7 输入与输出 | Function&#39;s Blog</title>
 
-    <meta name="description" content="&lt;h1 id=&#34;输入输出流&#34;&gt;&lt;a href=&#34;#输入输出流&#34; class=&#34;headerlink&#34; title=&#34;输入输出流&#34;&gt;&lt;/a&gt;输入输出流&lt;/h1&gt;&lt;p&gt;C++的输入输出设施由&lt;code&gt;iostream&lt;/code&gt;库提供，它是一个面向对象类层次结构，作为C++标准库的一个组件，为内置数据类型的输入输出提供支持，通过扩展&lt;code&gt;iostream&lt;/code&gt;库来读写新的类类型，支持对终端、文件、内存的输入输出。&lt;/p&gt;">
+    <meta name="description" content="&lt;h1 id=&#34;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&#34;&gt;&lt;a href=&#34;#&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&#34;&gt;&lt;/a&gt;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&lt;/h1&gt;&lt;p&gt;C++&amp;#x7684;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x8BBE;&amp;#x65BD;&amp;#x7531;&lt;code&gt;iostream&lt;/code&gt;&amp;#x5E93;&amp;#x63D0;&amp;#x4F9B;&amp;#xFF0C;&amp;#x5B83;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x9762;&amp;#x5411;&amp;#x5BF9;&amp;#x8C61;&amp;#x7C7B;&amp;#x5C42;&amp;#x6B21;&amp;#x7ED3;&amp;#x6784;&amp;#xFF0C;&amp;#x4F5C;&amp;#x4E3A;C++&amp;#x6807;&amp;#x51C6;&amp;#x5E93;&amp;#x7684;&amp;#x4E00;&amp;#x4E2A;&amp;#x7EC4;&amp;#x4EF6;&amp;#xFF0C;&amp;#x4E3A;&amp;#x5185;&amp;#x7F6E;&amp;#x6570;&amp;#x636E;&amp;#x7C7B;&amp;#x578B;&amp;#x7684;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x63D0;&amp;#x4F9B;&amp;#x652F;&amp;#x6301;&amp;#xFF0C;&amp;#x901A;&amp;#x8FC7;&amp;#x6269;&amp;#x5C55;&lt;code&gt;iostream&lt;/code&gt;&amp;#x5E93;&amp;#x6765;&amp;#x8BFB;&amp;#x5199;&amp;#x65B0;&amp;#x7684;&amp;#x7C7B;&amp;#x7C7B;&amp;#x578B;&amp;#xFF0C;&amp;#x652F;&amp;#x6301;&amp;#x5BF9;&amp;#x7EC8;&amp;#x7AEF;&amp;#x3001;&amp;#x6587;&amp;#x4EF6;&amp;#x3001;&amp;#x5185;&amp;#x5B58;&amp;#x7684;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x3002;&lt;/p&gt;">
     <meta name="keywords" content="">
 
     
@@ -16,17 +16,17 @@
     <meta property="og:locale" content="zh-CN" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content= "#7 输入与输出 | Function&#39;s Blog"  />
-    <meta property="og:description" content= "&lt;h1 id=&#34;输入输出流&#34;&gt;&lt;a href=&#34;#输入输出流&#34; class=&#34;headerlink&#34; title=&#34;输入输出流&#34;&gt;&lt;/a&gt;输入输出流&lt;/h1&gt;&lt;p&gt;C++的输入输出设施由&lt;code&gt;iostream&lt;/code&gt;库提供，它是一个面向对象类层次结构，作为C++标准库的一个组件，为内置数据类型的输入输出提供支持，通过扩展&lt;code&gt;iostream&lt;/code&gt;库来读写新的类类型，支持对终端、文件、内存的输入输出。&lt;/p&gt;" />
+    <meta property="og:description" content= "&lt;h1 id=&#34;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&#34;&gt;&lt;a href=&#34;#&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&#34;&gt;&lt;/a&gt;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&lt;/h1&gt;&lt;p&gt;C++&amp;#x7684;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x8BBE;&amp;#x65BD;&amp;#x7531;&lt;code&gt;iostream&lt;/code&gt;&amp;#x5E93;&amp;#x63D0;&amp;#x4F9B;&amp;#xFF0C;&amp;#x5B83;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x9762;&amp;#x5411;&amp;#x5BF9;&amp;#x8C61;&amp;#x7C7B;&amp;#x5C42;&amp;#x6B21;&amp;#x7ED3;&amp;#x6784;&amp;#xFF0C;&amp;#x4F5C;&amp;#x4E3A;C++&amp;#x6807;&amp;#x51C6;&amp;#x5E93;&amp;#x7684;&amp;#x4E00;&amp;#x4E2A;&amp;#x7EC4;&amp;#x4EF6;&amp;#xFF0C;&amp;#x4E3A;&amp;#x5185;&amp;#x7F6E;&amp;#x6570;&amp;#x636E;&amp;#x7C7B;&amp;#x578B;&amp;#x7684;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x63D0;&amp;#x4F9B;&amp;#x652F;&amp;#x6301;&amp;#xFF0C;&amp;#x901A;&amp;#x8FC7;&amp;#x6269;&amp;#x5C55;&lt;code&gt;iostream&lt;/code&gt;&amp;#x5E93;&amp;#x6765;&amp;#x8BFB;&amp;#x5199;&amp;#x65B0;&amp;#x7684;&amp;#x7C7B;&amp;#x7C7B;&amp;#x578B;&amp;#xFF0C;&amp;#x652F;&amp;#x6301;&amp;#x5BF9;&amp;#x7EC8;&amp;#x7AEF;&amp;#x3001;&amp;#x6587;&amp;#x4EF6;&amp;#x3001;&amp;#x5185;&amp;#x5B58;&amp;#x7684;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x3002;&lt;/p&gt;" />
     <meta property="og:url" content="http://blog.functioneurus.com/2022/06/02/7_Input_and_Output/index.html" />
     <meta property="og:site_name" content="" />
     <meta property="article:author" content="Function" />
     <meta property="article:publisher" content="" />
-    <meta property="og:description" content="&lt;h1 id=&#34;输入输出流&#34;&gt;&lt;a href=&#34;#输入输出流&#34; class=&#34;headerlink&#34; title=&#34;输入输出流&#34;&gt;&lt;/a&gt;输入输出流&lt;/h1&gt;&lt;p&gt;C++的输入输出设施由&lt;code&gt;iostream&lt;/code&gt;库提供，它是一个面向对象类层次结构，作为C++标准库的一个组件，为内置数据类型的输入输出提供支持，通过扩展&lt;code&gt;iostream&lt;/code&gt;库来读写新的类类型，支持对终端、文件、内存的输入输出。&lt;/p&gt;" />
+    <meta property="og:description" content="&lt;h1 id=&#34;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&#34;&gt;&lt;a href=&#34;#&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&#34;&gt;&lt;/a&gt;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&lt;/h1&gt;&lt;p&gt;C++&amp;#x7684;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x8BBE;&amp;#x65BD;&amp;#x7531;&lt;code&gt;iostream&lt;/code&gt;&amp;#x5E93;&amp;#x63D0;&amp;#x4F9B;&amp;#xFF0C;&amp;#x5B83;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x9762;&amp;#x5411;&amp;#x5BF9;&amp;#x8C61;&amp;#x7C7B;&amp;#x5C42;&amp;#x6B21;&amp;#x7ED3;&amp;#x6784;&amp;#xFF0C;&amp;#x4F5C;&amp;#x4E3A;C++&amp;#x6807;&amp;#x51C6;&amp;#x5E93;&amp;#x7684;&amp;#x4E00;&amp;#x4E2A;&amp;#x7EC4;&amp;#x4EF6;&amp;#xFF0C;&amp;#x4E3A;&amp;#x5185;&amp;#x7F6E;&amp;#x6570;&amp;#x636E;&amp;#x7C7B;&amp;#x578B;&amp;#x7684;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x63D0;&amp;#x4F9B;&amp;#x652F;&amp;#x6301;&amp;#xFF0C;&amp;#x901A;&amp;#x8FC7;&amp;#x6269;&amp;#x5C55;&lt;code&gt;iostream&lt;/code&gt;&amp;#x5E93;&amp;#x6765;&amp;#x8BFB;&amp;#x5199;&amp;#x65B0;&amp;#x7684;&amp;#x7C7B;&amp;#x7C7B;&amp;#x578B;&amp;#xFF0C;&amp;#x652F;&amp;#x6301;&amp;#x5BF9;&amp;#x7EC8;&amp;#x7AEF;&amp;#x3001;&amp;#x6587;&amp;#x4EF6;&amp;#x3001;&amp;#x5185;&amp;#x5B58;&amp;#x7684;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x3002;&lt;/p&gt;" />
     <meta name="twitter:title" content="#7 输入与输出 | Function&#39;s Blog"/>
-    <meta name="twitter:description" content="&lt;h1 id=&#34;输入输出流&#34;&gt;&lt;a href=&#34;#输入输出流&#34; class=&#34;headerlink&#34; title=&#34;输入输出流&#34;&gt;&lt;/a&gt;输入输出流&lt;/h1&gt;&lt;p&gt;C++的输入输出设施由&lt;code&gt;iostream&lt;/code&gt;库提供，它是一个面向对象类层次结构，作为C++标准库的一个组件，为内置数据类型的输入输出提供支持，通过扩展&lt;code&gt;iostream&lt;/code&gt;库来读写新的类类型，支持对终端、文件、内存的输入输出。&lt;/p&gt;"/>
+    <meta name="twitter:description" content="&lt;h1 id=&#34;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&#34;&gt;&lt;a href=&#34;#&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&#34;&gt;&lt;/a&gt;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&lt;/h1&gt;&lt;p&gt;C++&amp;#x7684;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x8BBE;&amp;#x65BD;&amp;#x7531;&lt;code&gt;iostream&lt;/code&gt;&amp;#x5E93;&amp;#x63D0;&amp;#x4F9B;&amp;#xFF0C;&amp;#x5B83;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x9762;&amp;#x5411;&amp;#x5BF9;&amp;#x8C61;&amp;#x7C7B;&amp;#x5C42;&amp;#x6B21;&amp;#x7ED3;&amp;#x6784;&amp;#xFF0C;&amp;#x4F5C;&amp;#x4E3A;C++&amp;#x6807;&amp;#x51C6;&amp;#x5E93;&amp;#x7684;&amp;#x4E00;&amp;#x4E2A;&amp;#x7EC4;&amp;#x4EF6;&amp;#xFF0C;&amp;#x4E3A;&amp;#x5185;&amp;#x7F6E;&amp;#x6570;&amp;#x636E;&amp;#x7C7B;&amp;#x578B;&amp;#x7684;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x63D0;&amp;#x4F9B;&amp;#x652F;&amp;#x6301;&amp;#xFF0C;&amp;#x901A;&amp;#x8FC7;&amp;#x6269;&amp;#x5C55;&lt;code&gt;iostream&lt;/code&gt;&amp;#x5E93;&amp;#x6765;&amp;#x8BFB;&amp;#x5199;&amp;#x65B0;&amp;#x7684;&amp;#x7C7B;&amp;#x7C7B;&amp;#x578B;&amp;#xFF0C;&amp;#x652F;&amp;#x6301;&amp;#x5BF9;&amp;#x7EC8;&amp;#x7AEF;&amp;#x3001;&amp;#x6587;&amp;#x4EF6;&amp;#x3001;&amp;#x5185;&amp;#x5B58;&amp;#x7684;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x3002;&lt;/p&gt;"/>
     <script type="application/ld+json">
         {
-            "description": "&lt;h1 id=&#34;输入输出流&#34;&gt;&lt;a href=&#34;#输入输出流&#34; class=&#34;headerlink&#34; title=&#34;输入输出流&#34;&gt;&lt;/a&gt;输入输出流&lt;/h1&gt;&lt;p&gt;C++的输入输出设施由&lt;code&gt;iostream&lt;/code&gt;库提供，它是一个面向对象类层次结构，作为C++标准库的一个组件，为内置数据类型的输入输出提供支持，通过扩展&lt;code&gt;iostream&lt;/code&gt;库来读写新的类类型，支持对终端、文件、内存的输入输出。&lt;/p&gt;",
+            "description": "&lt;h1 id=&#34;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&#34;&gt;&lt;a href=&#34;#&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&#34;&gt;&lt;/a&gt;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x6D41;&lt;/h1&gt;&lt;p&gt;C++&amp;#x7684;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x8BBE;&amp;#x65BD;&amp;#x7531;&lt;code&gt;iostream&lt;/code&gt;&amp;#x5E93;&amp;#x63D0;&amp;#x4F9B;&amp;#xFF0C;&amp;#x5B83;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x9762;&amp;#x5411;&amp;#x5BF9;&amp;#x8C61;&amp;#x7C7B;&amp;#x5C42;&amp;#x6B21;&amp;#x7ED3;&amp;#x6784;&amp;#xFF0C;&amp;#x4F5C;&amp;#x4E3A;C++&amp;#x6807;&amp;#x51C6;&amp;#x5E93;&amp;#x7684;&amp;#x4E00;&amp;#x4E2A;&amp;#x7EC4;&amp;#x4EF6;&amp;#xFF0C;&amp;#x4E3A;&amp;#x5185;&amp;#x7F6E;&amp;#x6570;&amp;#x636E;&amp;#x7C7B;&amp;#x578B;&amp;#x7684;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x63D0;&amp;#x4F9B;&amp;#x652F;&amp;#x6301;&amp;#xFF0C;&amp;#x901A;&amp;#x8FC7;&amp;#x6269;&amp;#x5C55;&lt;code&gt;iostream&lt;/code&gt;&amp;#x5E93;&amp;#x6765;&amp;#x8BFB;&amp;#x5199;&amp;#x65B0;&amp;#x7684;&amp;#x7C7B;&amp;#x7C7B;&amp;#x578B;&amp;#xFF0C;&amp;#x652F;&amp;#x6301;&amp;#x5BF9;&amp;#x7EC8;&amp;#x7AEF;&amp;#x3001;&amp;#x6587;&amp;#x4EF6;&amp;#x3001;&amp;#x5185;&amp;#x5B58;&amp;#x7684;&amp;#x8F93;&amp;#x5165;&amp;#x8F93;&amp;#x51FA;&amp;#x3002;&lt;/p&gt;",
             "author": { "@type": "Person", "name": "Function" },
             "@type": "BlogPosting",
             "url": "http://blog.functioneurus.com/2022/06/02/7_Input_and_Output/index.html",
@@ -146,7 +146,7 @@
             <section class="inner">
                 <section class="inner-main">
                     <div class="post">
-    <article id="post-cljba4hy0000pa4co2csa64ul" class="article article-type-post" itemscope
+    <article id="post-cljbah39y000rgoco15oad0iu" class="article article-type-post" itemscope
     itemprop="blogPost">
 
     <div class="article-inner">
@@ -188,184 +188,184 @@
         </div>
 
         <div class="article-entry post-inner-html hairline" itemprop="articleBody">
-            <h1 id="输入输出流"><a href="#输入输出流" class="headerlink" title="输入输出流"></a>输入输出流</h1><p>C++的输入输出设施由<code>iostream</code>库提供，它是一个面向对象类层次结构，作为C++标准库的一个组件，为内置数据类型的输入输出提供支持，通过扩展<code>iostream</code>库来读写新的类类型，支持对终端、文件、内存的输入输出。</p>
+            <h1 id="&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6D41;"><a href="#&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6D41;" class="headerlink" title="&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6D41;"></a>&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6D41;</h1><p>C++&#x7684;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x8BBE;&#x65BD;&#x7531;<code>iostream</code>&#x5E93;&#x63D0;&#x4F9B;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7C7B;&#x5C42;&#x6B21;&#x7ED3;&#x6784;&#xFF0C;&#x4F5C;&#x4E3A;C++&#x6807;&#x51C6;&#x5E93;&#x7684;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#xFF0C;&#x4E3A;&#x5185;&#x7F6E;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x63D0;&#x4F9B;&#x652F;&#x6301;&#xFF0C;&#x901A;&#x8FC7;&#x6269;&#x5C55;<code>iostream</code>&#x5E93;&#x6765;&#x8BFB;&#x5199;&#x65B0;&#x7684;&#x7C7B;&#x7C7B;&#x578B;&#xFF0C;&#x652F;&#x6301;&#x5BF9;&#x7EC8;&#x7AEF;&#x3001;&#x6587;&#x4EF6;&#x3001;&#x5185;&#x5B58;&#x7684;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x3002;</p>
 <span id="more"></span>
 
-<p>输入输出操作由如下对象来完成：<code>istream</code>输入流 ，<code>ostream</code>输出流 ，<code>iostream</code>（同时从<code>istream</code>和<code>ostream</code>派生） 输入输出流。</p>
-<p>标准库定义了下列三个标准流对象：<code>cin</code>代表标准输入的<code>istream</code>对象， 从用户终端读入数据；<code>cout</code>代表标准输出的&#96;&#96;ostream<code>对象， 向用户终端写数据；</code>cerr<code>代表标准错误的</code>ostream&#96;对象，一般也是终端。</p>
-<p>下列三种类类型提供了对文件读写支持：<code>ifstream</code>从<code>istream</code>派生， 绑定一个文件用来输入；<code>ofstream</code>从<code>ostream</code>派生， 绑定一个文件用来输出；<code>fstream</code>从<code>iostream</code>派生， 绑定一个文件绑用来输入和输出。</p>
-<p>内存输入输出 ：当流被绑定在一个字符串上时，可用<code>iostream</code>的输入和输出操作符来对它进行读写：<code>istringstream</code>从<code>istream</code>派生， 从一个字符串中读取；<code>ostringstream</code>从<code>ostream</code>派生， 写入到字符串中；<code>stringstream</code>从<code>iostream</code>派生， 从读取或者写入到字符串。</p>
-<h1 id="输出操作符-lt-lt"><a href="#输出操作符-lt-lt" class="headerlink" title="输出操作符 &lt;&lt;"></a>输出操作符 &lt;&lt;</h1><p>输出流的运算符：</p>
+<p>&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x7531;&#x5982;&#x4E0B;&#x5BF9;&#x8C61;&#x6765;&#x5B8C;&#x6210;&#xFF1A;<code>istream</code>&#x8F93;&#x5165;&#x6D41; &#xFF0C;<code>ostream</code>&#x8F93;&#x51FA;&#x6D41; &#xFF0C;<code>iostream</code>&#xFF08;&#x540C;&#x65F6;&#x4ECE;<code>istream</code>&#x548C;<code>ostream</code>&#x6D3E;&#x751F;&#xFF09; &#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6D41;&#x3002;</p>
+<p>&#x6807;&#x51C6;&#x5E93;&#x5B9A;&#x4E49;&#x4E86;&#x4E0B;&#x5217;&#x4E09;&#x4E2A;&#x6807;&#x51C6;&#x6D41;&#x5BF9;&#x8C61;&#xFF1A;<code>cin</code>&#x4EE3;&#x8868;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x7684;<code>istream</code>&#x5BF9;&#x8C61;&#xFF0C; &#x4ECE;&#x7528;&#x6237;&#x7EC8;&#x7AEF;&#x8BFB;&#x5165;&#x6570;&#x636E;&#xFF1B;<code>cout</code>&#x4EE3;&#x8868;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x7684;``ostream<code>&#x5BF9;&#x8C61;&#xFF0C; &#x5411;&#x7528;&#x6237;&#x7EC8;&#x7AEF;&#x5199;&#x6570;&#x636E;&#xFF1B;</code>cerr<code>&#x4EE3;&#x8868;&#x6807;&#x51C6;&#x9519;&#x8BEF;&#x7684;</code>ostream`&#x5BF9;&#x8C61;&#xFF0C;&#x4E00;&#x822C;&#x4E5F;&#x662F;&#x7EC8;&#x7AEF;&#x3002;</p>
+<p>&#x4E0B;&#x5217;&#x4E09;&#x79CD;&#x7C7B;&#x7C7B;&#x578B;&#x63D0;&#x4F9B;&#x4E86;&#x5BF9;&#x6587;&#x4EF6;&#x8BFB;&#x5199;&#x652F;&#x6301;&#xFF1A;<code>ifstream</code>&#x4ECE;<code>istream</code>&#x6D3E;&#x751F;&#xFF0C; &#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7528;&#x6765;&#x8F93;&#x5165;&#xFF1B;<code>ofstream</code>&#x4ECE;<code>ostream</code>&#x6D3E;&#x751F;&#xFF0C; &#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7528;&#x6765;&#x8F93;&#x51FA;&#xFF1B;<code>fstream</code>&#x4ECE;<code>iostream</code>&#x6D3E;&#x751F;&#xFF0C; &#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7ED1;&#x7528;&#x6765;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x3002;</p>
+<p>&#x5185;&#x5B58;&#x8F93;&#x5165;&#x8F93;&#x51FA; &#xFF1A;&#x5F53;&#x6D41;&#x88AB;&#x7ED1;&#x5B9A;&#x5728;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4E0A;&#x65F6;&#xFF0C;&#x53EF;&#x7528;<code>iostream</code>&#x7684;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x7B26;&#x6765;&#x5BF9;&#x5B83;&#x8FDB;&#x884C;&#x8BFB;&#x5199;&#xFF1A;<code>istringstream</code>&#x4ECE;<code>istream</code>&#x6D3E;&#x751F;&#xFF0C; &#x4ECE;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x8BFB;&#x53D6;&#xFF1B;<code>ostringstream</code>&#x4ECE;<code>ostream</code>&#x6D3E;&#x751F;&#xFF0C; &#x5199;&#x5165;&#x5230;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#xFF1B;<code>stringstream</code>&#x4ECE;<code>iostream</code>&#x6D3E;&#x751F;&#xFF0C; &#x4ECE;&#x8BFB;&#x53D6;&#x6216;&#x8005;&#x5199;&#x5165;&#x5230;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<h1 id="&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x7B26;-lt-lt"><a href="#&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x7B26;-lt-lt" class="headerlink" title="&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x7B26; &lt;&lt;"></a>&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x7B26; &lt;&lt;</h1><p>&#x8F93;&#x51FA;&#x6D41;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;</p>
 <pre><code class="c++">cout &lt;&lt; &quot;Hello world!\n&quot;;
 </code></pre>
-<p>输出操作符参数可包括任何内置数据类型的实参， 包括<code>const char*</code>以及标准库<code>string</code>和<code>complex</code>类类型，任何表达式以及任何函数调用，只要其结果是一个能被输出操作符接受的数据类型。 </p>
-<p>如： </p>
+<p>&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x7B26;&#x53C2;&#x6570;&#x53EF;&#x5305;&#x62EC;&#x4EFB;&#x4F55;&#x5185;&#x7F6E;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x5B9E;&#x53C2;&#xFF0C; &#x5305;&#x62EC;<code>const char*</code>&#x4EE5;&#x53CA;&#x6807;&#x51C6;&#x5E93;<code>string</code>&#x548C;<code>complex</code>&#x7C7B;&#x7C7B;&#x578B;&#xFF0C;&#x4EFB;&#x4F55;&#x8868;&#x8FBE;&#x5F0F;&#x4EE5;&#x53CA;&#x4EFB;&#x4F55;&#x51FD;&#x6570;&#x8C03;&#x7528;&#xFF0C;&#x53EA;&#x8981;&#x5176;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x80FD;&#x88AB;&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x7B26;&#x63A5;&#x53D7;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002; </p>
+<p>&#x5982;&#xFF1A; </p>
 <pre><code class="c++">cout &lt;&lt; &quot;The length of &quot;ulysses&quot; is:\t&quot;;
 cout &lt;&lt; strlen( &quot;ulysses&quot; );
-cout &lt;&lt; &#39;\n&#39;;
+cout &lt;&lt; &apos;\n&apos;;
 cout &lt;&lt; endl;
-//endl是一个ostream操纵符（manipulator）换行。
+//endl&#x662F;&#x4E00;&#x4E2A;ostream&#x64CD;&#x7EB5;&#x7B26;&#xFF08;manipulator&#xFF09;&#x6362;&#x884C;&#x3002;
 </code></pre>
-<p>输出操作符可连接成一条语句：</p>
-<pre><code class="c++">cout  &lt;&lt; &quot;The length of &quot;ulysses&quot; is:\t&quot; &lt;&lt; strlen( &quot;ulysses&quot; ) &lt;&lt; &#39;\n&#39; &lt;&lt;endl;
+<p>&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x7B26;&#x53EF;&#x8FDE;&#x63A5;&#x6210;&#x4E00;&#x6761;&#x8BED;&#x53E5;&#xFF1A;</p>
+<pre><code class="c++">cout  &lt;&lt; &quot;The length of &quot;ulysses&quot; is:\t&quot; &lt;&lt; strlen( &quot;ulysses&quot; ) &lt;&lt; &apos;\n&apos; &lt;&lt;endl;
 </code></pre>
-<p>对于自定义类型的输出，参见操作符重载。</p>
-<h2 id="格式化输出"><a href="#格式化输出" class="headerlink" title="格式化输出"></a>格式化输出</h2><pre><code class="c++">//杨辉三角
+<p>&#x5BF9;&#x4E8E;&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;&#x7684;&#x8F93;&#x51FA;&#xFF0C;&#x53C2;&#x89C1;&#x64CD;&#x4F5C;&#x7B26;&#x91CD;&#x8F7D;&#x3002;</p>
+<h2 id="&#x683C;&#x5F0F;&#x5316;&#x8F93;&#x51FA;"><a href="#&#x683C;&#x5F0F;&#x5316;&#x8F93;&#x51FA;" class="headerlink" title="&#x683C;&#x5F0F;&#x5316;&#x8F93;&#x51FA;"></a>&#x683C;&#x5F0F;&#x5316;&#x8F93;&#x51FA;</h2><pre><code class="c++">//&#x6768;&#x8F89;&#x4E09;&#x89D2;
 #include &lt;iostream&gt;
 using namespace std;
-int fun(int i, int j) &#123;
+int fun(int i, int j) {
     if (j == 0 || j == i)
         return 1;
     else
         return fun(i - 1, j - 1) + fun(i - 1, j);
-&#125;
+}
 
-int main() &#123;
+int main() {
     int n = 10;
-    for (int i = 0; i &lt; n; i++) &#123;
+    for (int i = 0; i &lt; n; i++) {
         for (int k = 0; k &lt; n - i - 1; k++)
-            cout &lt;&lt; &quot; &quot;;  //输出空格
+            cout &lt;&lt; &quot; &quot;;  //&#x8F93;&#x51FA;&#x7A7A;&#x683C;
         for (int j = 0; j &lt;= i; j++)
             cout &lt;&lt; fun(i, j) &lt;&lt; &quot; &quot;;
         cout &lt;&lt; endl;
-    &#125;
+    }
     return 0;
-&#125;
+}
 </code></pre>
 <pre><code class="c++">#include &lt;iostream&gt;
 using namespace std;
 
-int main() &#123;
+int main() {
     bool flag = true;
     cout &lt;&lt; &quot;Default : &quot; &lt;&lt; flag &lt;&lt; endl;
-    cout &lt;&lt; &quot;Boolalpha : &quot; &lt;&lt; boolalpha &lt;&lt; flag &lt;&lt; endl;//boolalpha使得bool值输出true/false
-    cout &lt;&lt; &quot;Noboolalpha : &quot; &lt;&lt; noboolalpha &lt;&lt; flag &lt;&lt; endl;//noboolalpha使得bool值输出1/0
+    cout &lt;&lt; &quot;Boolalpha : &quot; &lt;&lt; boolalpha &lt;&lt; flag &lt;&lt; endl;//boolalpha&#x4F7F;&#x5F97;bool&#x503C;&#x8F93;&#x51FA;true/false
+    cout &lt;&lt; &quot;Noboolalpha : &quot; &lt;&lt; noboolalpha &lt;&lt; flag &lt;&lt; endl;//noboolalpha&#x4F7F;&#x5F97;bool&#x503C;&#x8F93;&#x51FA;1/0
     return 0;
-&#125;
-//结果为：
+}
+//&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;
 //Default : 1
 //Boolalpha : true
 //Noboolalpha : 1
 </code></pre>
-<p>更多的格式输出控制在头文件 <code>&lt;iomanip&gt;</code>。</p>
+<p>&#x66F4;&#x591A;&#x7684;&#x683C;&#x5F0F;&#x8F93;&#x51FA;&#x63A7;&#x5236;&#x5728;&#x5934;&#x6587;&#x4EF6; <code>&lt;iomanip&gt;</code>&#x3002;</p>
 <pre><code class="c++">#include &lt;iostream&gt;
 #include &lt;iomanip&gt;
 using namespace std;
-int main() &#123;
+int main() {
     int a = 100;
     double pi = 22.0 / 7.0;
     const char *pt = &quot;China&quot;;
-    cout &lt;&lt; &quot;dec:&quot; &lt;&lt; dec &lt;&lt; a &lt;&lt; endl;  //以十进制形式输出整数
-    cout &lt;&lt; &quot;hex:&quot; &lt;&lt; hex &lt;&lt; a &lt;&lt; endl;  //以十六进制形式输出整数a
-    cout &lt;&lt; &quot;oct:&quot; &lt;&lt; setbase(8) &lt;&lt; a &lt;&lt; endl;  //以八进制形式输出整数a
-    cout &lt;&lt; setw(10) &lt;&lt; pt &lt;&lt; endl;  //指定域宽为10,输出字符串
-    cout &lt;&lt; setfill(&#39;*&#39;) &lt;&lt; setw(10) &lt;&lt; pt &lt;&lt; endl;  //指定域宽,输出字符串,空白处以&#39;*&#39;填充
-    cout &lt;&lt; &quot;pi=&quot; &lt;&lt; pi &lt;&lt; endl;  //输出pi值
-    cout &lt;&lt; setiosflags(ios::scientific) &lt;&lt; setprecision(8);//按指数形式输出,8位小数
-    cout &lt;&lt; &quot;pi=&quot; &lt;&lt; setprecision(4) &lt;&lt; pi &lt;&lt; endl;  //改为4位小数
-    cout &lt;&lt; &quot;pi=&quot; &lt;&lt; setiosflags(ios::fixed) &lt;&lt; pi &lt;&lt; endl;  //改为小数形式输出
+    cout &lt;&lt; &quot;dec:&quot; &lt;&lt; dec &lt;&lt; a &lt;&lt; endl;  //&#x4EE5;&#x5341;&#x8FDB;&#x5236;&#x5F62;&#x5F0F;&#x8F93;&#x51FA;&#x6574;&#x6570;
+    cout &lt;&lt; &quot;hex:&quot; &lt;&lt; hex &lt;&lt; a &lt;&lt; endl;  //&#x4EE5;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x5F62;&#x5F0F;&#x8F93;&#x51FA;&#x6574;&#x6570;a
+    cout &lt;&lt; &quot;oct:&quot; &lt;&lt; setbase(8) &lt;&lt; a &lt;&lt; endl;  //&#x4EE5;&#x516B;&#x8FDB;&#x5236;&#x5F62;&#x5F0F;&#x8F93;&#x51FA;&#x6574;&#x6570;a
+    cout &lt;&lt; setw(10) &lt;&lt; pt &lt;&lt; endl;  //&#x6307;&#x5B9A;&#x57DF;&#x5BBD;&#x4E3A;10,&#x8F93;&#x51FA;&#x5B57;&#x7B26;&#x4E32;
+    cout &lt;&lt; setfill(&apos;*&apos;) &lt;&lt; setw(10) &lt;&lt; pt &lt;&lt; endl;  //&#x6307;&#x5B9A;&#x57DF;&#x5BBD;,&#x8F93;&#x51FA;&#x5B57;&#x7B26;&#x4E32;,&#x7A7A;&#x767D;&#x5904;&#x4EE5;&apos;*&apos;&#x586B;&#x5145;
+    cout &lt;&lt; &quot;pi=&quot; &lt;&lt; pi &lt;&lt; endl;  //&#x8F93;&#x51FA;pi&#x503C;
+    cout &lt;&lt; setiosflags(ios::scientific) &lt;&lt; setprecision(8);//&#x6309;&#x6307;&#x6570;&#x5F62;&#x5F0F;&#x8F93;&#x51FA;,8&#x4F4D;&#x5C0F;&#x6570;
+    cout &lt;&lt; &quot;pi=&quot; &lt;&lt; setprecision(4) &lt;&lt; pi &lt;&lt; endl;  //&#x6539;&#x4E3A;4&#x4F4D;&#x5C0F;&#x6570;
+    cout &lt;&lt; &quot;pi=&quot; &lt;&lt; setiosflags(ios::fixed) &lt;&lt; pi &lt;&lt; endl;  //&#x6539;&#x4E3A;&#x5C0F;&#x6570;&#x5F62;&#x5F0F;&#x8F93;&#x51FA;
     return 0;
-&#125;
+}
 </code></pre>
-<h1 id="输入操作符-lt-lt"><a href="#输入操作符-lt-lt" class="headerlink" title="输入操作符 &lt;&lt;"></a>输入操作符 &lt;&lt;</h1><p>例子：从标准输入读入<code>int</code>型的值序列，并放在一个<code>vector</code>容器中：</p>
+<h1 id="&#x8F93;&#x5165;&#x64CD;&#x4F5C;&#x7B26;-lt-lt"><a href="#&#x8F93;&#x5165;&#x64CD;&#x4F5C;&#x7B26;-lt-lt" class="headerlink" title="&#x8F93;&#x5165;&#x64CD;&#x4F5C;&#x7B26; &lt;&lt;"></a>&#x8F93;&#x5165;&#x64CD;&#x4F5C;&#x7B26; &lt;&lt;</h1><p>&#x4F8B;&#x5B50;&#xFF1A;&#x4ECE;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x8BFB;&#x5165;<code>int</code>&#x578B;&#x7684;&#x503C;&#x5E8F;&#x5217;&#xFF0C;&#x5E76;&#x653E;&#x5728;&#x4E00;&#x4E2A;<code>vector</code>&#x5BB9;&#x5668;&#x4E2D;&#xFF1A;</p>
 <pre><code class="c++">vector&lt;int&gt; ivec;
 int ival;
 while ( cin &gt;&gt; ival )
-//从标准输入读入一个整数值,如果成功,则把该值拷贝到ival中,这个子表达式的结果是左边的 istream 对象。
+//&#x4ECE;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x8BFB;&#x5165;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#x503C;,&#x5982;&#x679C;&#x6210;&#x529F;,&#x5219;&#x628A;&#x8BE5;&#x503C;&#x62F7;&#x8D1D;&#x5230;ival&#x4E2D;,&#x8FD9;&#x4E2A;&#x5B50;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x5DE6;&#x8FB9;&#x7684; istream &#x5BF9;&#x8C61;&#x3002;
     ivec.push_back( ival );
 </code></pre>
-<p>两种情况会使一个<code>istream</code>对象被计算为<code>false</code>：读到文件结尾，此时已正确地读完文件中所有的值；遇到一个无效的值，比如3.14或其他非整数的字符串。</p>
-<h1 id="其他输入输出操作"><a href="#其他输入输出操作" class="headerlink" title="其他输入输出操作"></a>其他输入输出操作</h1><h2 id="istream"><a href="#istream" class="headerlink" title="istream"></a>istream</h2><p><code>get()</code>：一次读入一个字节。</p>
-<p>重载1：<code>get(char&amp; ch)</code>，从输入流中提取一个字符，并存储在<code>ch</code>中，返回<code>istream</code>对象。</p>
+<p>&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x4F1A;&#x4F7F;&#x4E00;&#x4E2A;<code>istream</code>&#x5BF9;&#x8C61;&#x88AB;&#x8BA1;&#x7B97;&#x4E3A;<code>false</code>&#xFF1A;&#x8BFB;&#x5230;&#x6587;&#x4EF6;&#x7ED3;&#x5C3E;&#xFF0C;&#x6B64;&#x65F6;&#x5DF2;&#x6B63;&#x786E;&#x5730;&#x8BFB;&#x5B8C;&#x6587;&#x4EF6;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x503C;&#xFF1B;&#x9047;&#x5230;&#x4E00;&#x4E2A;&#x65E0;&#x6548;&#x7684;&#x503C;&#xFF0C;&#x6BD4;&#x5982;3.14&#x6216;&#x5176;&#x4ED6;&#x975E;&#x6574;&#x6570;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<h1 id="&#x5176;&#x4ED6;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x64CD;&#x4F5C;"><a href="#&#x5176;&#x4ED6;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x64CD;&#x4F5C;" class="headerlink" title="&#x5176;&#x4ED6;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x64CD;&#x4F5C;"></a>&#x5176;&#x4ED6;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x64CD;&#x4F5C;</h1><h2 id="istream"><a href="#istream" class="headerlink" title="istream"></a>istream</h2><p><code>get()</code>&#xFF1A;&#x4E00;&#x6B21;&#x8BFB;&#x5165;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x3002;</p>
+<p>&#x91CD;&#x8F7D;1&#xFF1A;<code>get(char&amp; ch)</code>&#xFF0C;&#x4ECE;&#x8F93;&#x5165;&#x6D41;&#x4E2D;&#x63D0;&#x53D6;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x5E76;&#x5B58;&#x50A8;&#x5728;<code>ch</code>&#x4E2D;&#xFF0C;&#x8FD4;&#x56DE;<code>istream</code>&#x5BF9;&#x8C61;&#x3002;</p>
 <pre><code class="c++">char ch;
 while ( cin.get( ch ))
     cout.put( ch );
 </code></pre>
-<p>重载2：<code>get()</code>从输入流读入一个字符，但返回该字符值。</p>
+<p>&#x91CD;&#x8F7D;2&#xFF1A;<code>get()</code>&#x4ECE;&#x8F93;&#x5165;&#x6D41;&#x8BFB;&#x5165;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x4F46;&#x8FD4;&#x56DE;&#x8BE5;&#x5B57;&#x7B26;&#x503C;&#x3002;</p>
 <pre><code class="c++">int ch;
 while (( ch = cin.get()) != EOF )//EOF:end of file
     cout.put(ch);
 </code></pre>
-<p><code>istream</code>的其他成员：<code>ignore</code>，<code>getline</code>。</p>
-<h2 id="ostream"><a href="#ostream" class="headerlink" title="ostream"></a>ostream</h2><p>包括成员<code>put()</code>和<code>write（）</code>。</p>
-<p><code>put()</code>将字符输出到输出流中，参数为<code>char</code>，返回被调用的<code>ostream</code>类对象。</p>
-<h1 id="文件的输入和输出"><a href="#文件的输入和输出" class="headerlink" title="文件的输入和输出"></a>文件的输入和输出</h1><p><code>&lt;fstream&gt;</code>中的<code>fstream</code>类可对文件进行输入输出操作。</p>
-<p><code>fstream</code>的成员函数：</p>
+<p><code>istream</code>&#x7684;&#x5176;&#x4ED6;&#x6210;&#x5458;&#xFF1A;<code>ignore</code>&#xFF0C;<code>getline</code>&#x3002;</p>
+<h2 id="ostream"><a href="#ostream" class="headerlink" title="ostream"></a>ostream</h2><p>&#x5305;&#x62EC;&#x6210;&#x5458;<code>put()</code>&#x548C;<code>write&#xFF08;&#xFF09;</code>&#x3002;</p>
+<p><code>put()</code>&#x5C06;&#x5B57;&#x7B26;&#x8F93;&#x51FA;&#x5230;&#x8F93;&#x51FA;&#x6D41;&#x4E2D;&#xFF0C;&#x53C2;&#x6570;&#x4E3A;<code>char</code>&#xFF0C;&#x8FD4;&#x56DE;&#x88AB;&#x8C03;&#x7528;&#x7684;<code>ostream</code>&#x7C7B;&#x5BF9;&#x8C61;&#x3002;</p>
+<h1 id="&#x6587;&#x4EF6;&#x7684;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;"><a href="#&#x6587;&#x4EF6;&#x7684;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;" class="headerlink" title="&#x6587;&#x4EF6;&#x7684;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;"></a>&#x6587;&#x4EF6;&#x7684;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;</h1><p><code>&lt;fstream&gt;</code>&#x4E2D;&#x7684;<code>fstream</code>&#x7C7B;&#x53EF;&#x5BF9;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x64CD;&#x4F5C;&#x3002;</p>
+<p><code>fstream</code>&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF1A;</p>
 <pre><code class="c++">void  open(const char *filename,int mode,int access);
-//参数：  
-//filename：　　  //打开的文件名  
-//mode：　　　    //打开文件的方式  
-//ios::app：　   //以追加的方式打开文件 
-//ios::ate：　　 //文件打开后定位到文件尾，ios:app就包含有此属性
-//ios::binary： //以二进制方式打开文件，缺省的方式是文本方式。
-//ios::in：　　  //文件以输入方式打开（文件数据输入到内存） 
-//ios::out：　　 //文件以输出方式打开（内存数据输出到文件）
-//ios::nocreate：//不建立文件，所以文件不存在时打开失败 
-//ios::noreplace：//不覆盖文件，所以打开文件时如果文件存在失败 
-//ios::trunc：　  //如果文件存在，把文件长度设为0
-//打开文件的方式在ios类(所有流式I/O类的基类)中定义
-//可以用“或”把以上属性连接起来，如ios::out|ios::binary
-//access：打开文件的属性  
-//0：普通文件  
-//1：只读文件  
-//2：隐含文件  
-//4：系统文件 
-//可以用“或”或者“+”把以上属性连接起来，如3或1|2就是以只读和隐含属性打开文件。  
+//&#x53C2;&#x6570;&#xFF1A;&#xA0;&#xA0;
+//filename&#xFF1A;&#x3000;&#x3000;  //&#x6253;&#x5F00;&#x7684;&#x6587;&#x4EF6;&#x540D;&#xA0;&#xA0;
+//mode&#xFF1A;&#x3000;&#x3000;&#x3000;    //&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#xA0;&#xA0;
+//ios::app&#xFF1A;&#x3000;   //&#x4EE5;&#x8FFD;&#x52A0;&#x7684;&#x65B9;&#x5F0F;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#xA0;
+//ios::ate&#xFF1A;&#x3000;&#x3000; //&#x6587;&#x4EF6;&#x6253;&#x5F00;&#x540E;&#x5B9A;&#x4F4D;&#x5230;&#x6587;&#x4EF6;&#x5C3E;&#xFF0C;ios:app&#x5C31;&#x5305;&#x542B;&#x6709;&#x6B64;&#x5C5E;&#x6027;
+//ios::binary&#xFF1A; //&#x4EE5;&#x4E8C;&#x8FDB;&#x5236;&#x65B9;&#x5F0F;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#xFF0C;&#x7F3A;&#x7701;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x6587;&#x672C;&#x65B9;&#x5F0F;&#x3002;
+//ios::in&#xFF1A;&#x3000;&#x3000;  //&#x6587;&#x4EF6;&#x4EE5;&#x8F93;&#x5165;&#x65B9;&#x5F0F;&#x6253;&#x5F00;&#xFF08;&#x6587;&#x4EF6;&#x6570;&#x636E;&#x8F93;&#x5165;&#x5230;&#x5185;&#x5B58;&#xFF09;&#xA0;
+//ios::out&#xFF1A;&#x3000;&#x3000; //&#x6587;&#x4EF6;&#x4EE5;&#x8F93;&#x51FA;&#x65B9;&#x5F0F;&#x6253;&#x5F00;&#xFF08;&#x5185;&#x5B58;&#x6570;&#x636E;&#x8F93;&#x51FA;&#x5230;&#x6587;&#x4EF6;&#xFF09;
+//ios::nocreate&#xFF1A;//&#x4E0D;&#x5EFA;&#x7ACB;&#x6587;&#x4EF6;&#xFF0C;&#x6240;&#x4EE5;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#x65F6;&#x6253;&#x5F00;&#x5931;&#x8D25;&#xA0;
+//ios::noreplace&#xFF1A;//&#x4E0D;&#x8986;&#x76D6;&#x6587;&#x4EF6;&#xFF0C;&#x6240;&#x4EE5;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x65F6;&#x5982;&#x679C;&#x6587;&#x4EF6;&#x5B58;&#x5728;&#x5931;&#x8D25;&#xA0;
+//ios::trunc&#xFF1A;&#x3000;  //&#x5982;&#x679C;&#x6587;&#x4EF6;&#x5B58;&#x5728;&#xFF0C;&#x628A;&#x6587;&#x4EF6;&#x957F;&#x5EA6;&#x8BBE;&#x4E3A;0
+//&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#x5728;ios&#x7C7B;(&#x6240;&#x6709;&#x6D41;&#x5F0F;I/O&#x7C7B;&#x7684;&#x57FA;&#x7C7B;)&#x4E2D;&#x5B9A;&#x4E49;
+//&#x53EF;&#x4EE5;&#x7528;&#x201C;&#x6216;&#x201D;&#x628A;&#x4EE5;&#x4E0A;&#x5C5E;&#x6027;&#x8FDE;&#x63A5;&#x8D77;&#x6765;&#xFF0C;&#x5982;ios::out|ios::binary
+//access&#xFF1A;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x7684;&#x5C5E;&#x6027;&#xA0;&#xA0;
+//0&#xFF1A;&#x666E;&#x901A;&#x6587;&#x4EF6;&#xA0;&#xA0;
+//1&#xFF1A;&#x53EA;&#x8BFB;&#x6587;&#x4EF6;&#xA0;&#xA0;
+//2&#xFF1A;&#x9690;&#x542B;&#x6587;&#x4EF6;&#xA0;&#xA0;
+//4&#xFF1A;&#x7CFB;&#x7EDF;&#x6587;&#x4EF6;&#xA0;
+//&#x53EF;&#x4EE5;&#x7528;&#x201C;&#x6216;&#x201D;&#x6216;&#x8005;&#x201C;+&#x201D;&#x628A;&#x4EE5;&#x4E0A;&#x5C5E;&#x6027;&#x8FDE;&#x63A5;&#x8D77;&#x6765;&#xFF0C;&#x5982;3&#x6216;1|2&#x5C31;&#x662F;&#x4EE5;&#x53EA;&#x8BFB;&#x548C;&#x9690;&#x542B;&#x5C5E;&#x6027;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x3002;&#xA0;&#xA0;
 </code></pre>
-<p>例如：以二进制输入方式打开文件<code>c:\config.sys</code>：</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;&#x4EE5;&#x4E8C;&#x8FDB;&#x5236;&#x8F93;&#x5165;&#x65B9;&#x5F0F;&#x6253;&#x5F00;&#x6587;&#x4EF6;<code>c:\config.sys</code>&#xFF1A;</p>
 <pre><code class="c++">fstream file1;
 file1.open(&quot;c:\\config.sys&quot;, ios::binary | ios::in, 0);
 </code></pre>
-<p>若只有文件名一个参数，则是以读&#x2F;写普通文件打开，即：</p>
+<p>&#x82E5;&#x53EA;&#x6709;&#x6587;&#x4EF6;&#x540D;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5219;&#x662F;&#x4EE5;&#x8BFB;/&#x5199;&#x666E;&#x901A;&#x6587;&#x4EF6;&#x6253;&#x5F00;&#xFF0C;&#x5373;&#xFF1A;</p>
 <pre><code class="c++">file1.open(&quot;c:\\config.sys&quot;);
-//等价于
+//&#x7B49;&#x4EF7;&#x4E8E;
 file1.open(&quot;c:\\config.sys&quot;, ios::in | ios::out, 0);
 </code></pre>
-<p><code>fstream</code>有和<code>open()</code>函数参数一样的构造函数重载，对于上例，在定义的时侯就可以打开文件：</p>
+<p><code>fstream</code>&#x6709;&#x548C;<code>open()</code>&#x51FD;&#x6570;&#x53C2;&#x6570;&#x4E00;&#x6837;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x91CD;&#x8F7D;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E0A;&#x4F8B;&#xFF0C;&#x5728;&#x5B9A;&#x4E49;&#x7684;&#x65F6;&#x4FAF;&#x5C31;&#x53EF;&#x4EE5;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#xFF1A;</p>
 <pre><code class="c++">fstream file1(&quot;c:\\config.sys&quot;);
 </code></pre>
-<p><code>fstream</code>的两个子类中，<code>ifstream</code>以输入方式打开文件，而<code>ofstream</code>以输出方式打开文件。</p>
-<p>因此：以输入方式打开，用<code>ifstream</code>来定义；以输出方式打开，用<code>ofstream</code>来定义；以输入&#x2F;输出方式来打开，则用<code>fstream</code>来定义。</p>
-<p>打开的文件使用完成后要使用函数<code>close()</code>关闭。</p>
-<p>下面程序读取了一个文件，并将内容写到标准输出上：</p>
+<p><code>fstream</code>&#x7684;&#x4E24;&#x4E2A;&#x5B50;&#x7C7B;&#x4E2D;&#xFF0C;<code>ifstream</code>&#x4EE5;&#x8F93;&#x5165;&#x65B9;&#x5F0F;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#xFF0C;&#x800C;<code>ofstream</code>&#x4EE5;&#x8F93;&#x51FA;&#x65B9;&#x5F0F;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#xFF1A;&#x4EE5;&#x8F93;&#x5165;&#x65B9;&#x5F0F;&#x6253;&#x5F00;&#xFF0C;&#x7528;<code>ifstream</code>&#x6765;&#x5B9A;&#x4E49;&#xFF1B;&#x4EE5;&#x8F93;&#x51FA;&#x65B9;&#x5F0F;&#x6253;&#x5F00;&#xFF0C;&#x7528;<code>ofstream</code>&#x6765;&#x5B9A;&#x4E49;&#xFF1B;&#x4EE5;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#x65B9;&#x5F0F;&#x6765;&#x6253;&#x5F00;&#xFF0C;&#x5219;&#x7528;<code>fstream</code>&#x6765;&#x5B9A;&#x4E49;&#x3002;</p>
+<p>&#x6253;&#x5F00;&#x7684;&#x6587;&#x4EF6;&#x4F7F;&#x7528;&#x5B8C;&#x6210;&#x540E;&#x8981;&#x4F7F;&#x7528;&#x51FD;&#x6570;<code>close()</code>&#x5173;&#x95ED;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x7A0B;&#x5E8F;&#x8BFB;&#x53D6;&#x4E86;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x5C06;&#x5185;&#x5BB9;&#x5199;&#x5230;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x4E0A;&#xFF1A;</p>
 <pre><code class="c++">#include &lt;fstream&gt;
 
-int main() &#123;
+int main() {
     cout &lt;&lt; &quot;filename: &quot;;
     string file_name;
     cin &gt;&gt; file_name;
-    ifstream inFile( file_name.c_str() ); // 打开文件 copy.out 用于输入
-    if ( !inFile ) &#123;
+    ifstream inFile( file_name.c_str() ); // &#x6253;&#x5F00;&#x6587;&#x4EF6; copy.out &#x7528;&#x4E8E;&#x8F93;&#x5165;
+    if ( !inFile ) {
         cerr &lt;&lt; &quot;unable to open input file: &quot;  &lt;&lt; file_name &lt;&lt; &quot; -- bailing out!\n&quot;;
         return -1;
-    &#125;
+    }
     char ch;
     while ( inFile.get( ch ))
         cout.put( ch );
-&#125;
+}
 </code></pre>
-<h1 id="文件的读写"><a href="#文件的读写" class="headerlink" title="文件的读写"></a>文件的读写</h1><p>读取一个文件的内容，写入另一个文件：</p>
+<h1 id="&#x6587;&#x4EF6;&#x7684;&#x8BFB;&#x5199;"><a href="#&#x6587;&#x4EF6;&#x7684;&#x8BFB;&#x5199;" class="headerlink" title="&#x6587;&#x4EF6;&#x7684;&#x8BFB;&#x5199;"></a>&#x6587;&#x4EF6;&#x7684;&#x8BFB;&#x5199;</h1><p>&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5199;&#x5165;&#x53E6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF1A;</p>
 <pre><code class="c++">ifstream fr;
 ofstream fw;
 char word[200], line[200];
 fw.open(&quot;write.txt&quot;);
 fr.open(&quot;read.txt&quot;);
-fr  &gt;&gt; word;    //读取文件，一个单词
-fr.getline (line, 100);        //读取一行内容
-fw &lt;&lt; &quot;write file test&quot; &lt;&lt; endl;      // 写入
+fr  &gt;&gt; word;    //&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#xFF0C;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;
+fr.getline (line, 100);        //&#x8BFB;&#x53D6;&#x4E00;&#x884C;&#x5185;&#x5BB9;
+fw &lt;&lt; &quot;write file test&quot; &lt;&lt; endl;      // &#x5199;&#x5165;
 fw.close();
 fr.close();
 return 0;
 </code></pre>
-<p>C++I&#x2F;O系统管理两个与一个文件相联系的指针：一个是读指针，它说明输入操作在文件中的位置；另一个是写指针，它下次写操作的位置。每次执行输入或输出时，相应的指针自动变化。</p>
-<p><code>ofstream</code>的<code>put_point</code>简称<code>p</code>，即写指针，<code>ifstream</code>的<code>get_point</code>简称<code>g</code>，即读指针，<code>fstream</code>的<code>put_point</code>和<code>get_point</code>，简称同为<code>p</code>和<code>g</code>。</p>
-<p>获取流指针位置：<code>tellg()</code>：返回输入流指针的位置（返回类型<code>long</code>），<code>tellp()</code>：返回输出流指针的位置（返回类型<code>long</code>）。</p>
-<p>设置指针位置：<code>seekg(long position)</code>：设置输入流指针位置，<code>seekp(long position)</code>：设置输出流指针位置。</p>
-<p>如<code>seekg</code>函数对输入文件定位：第一个参数是偏移量，正数表示向后偏移，负数表示向前偏移。第二个参数是基地址，表示输入流的某个起始位置，<code>ios：：beg</code>为开始位置，<code>ios：：cur</code>为当前位置，<code>ios：：end</code>为结束位置。</p>
-<h2 id="判断文件状态"><a href="#判断文件状态" class="headerlink" title="判断文件状态"></a>判断文件状态</h2><p><code>is_open()</code>：文件是否正常打开。</p>
-<p><code>bad()</code>：读写过程中是否出错（如操作对象是否打开，写入的设备有没有空间）</p>
-<p><code>fail()</code>：读写过程中是否出错（操作对象是否打开，写入的设备有没有空间，格式错误如读入类型不匹配等）</p>
-<p><code>eof()</code>：读文件到达文件末尾则返回<code>true</code>，否则返回<code>false</code>。</p>
+<p>C++I/O&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x4E24;&#x4E2A;&#x4E0E;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x76F8;&#x8054;&#x7CFB;&#x7684;&#x6307;&#x9488;&#xFF1A;&#x4E00;&#x4E2A;&#x662F;&#x8BFB;&#x6307;&#x9488;&#xFF0C;&#x5B83;&#x8BF4;&#x660E;&#x8F93;&#x5165;&#x64CD;&#x4F5C;&#x5728;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#xFF1B;&#x53E6;&#x4E00;&#x4E2A;&#x662F;&#x5199;&#x6307;&#x9488;&#xFF0C;&#x5B83;&#x4E0B;&#x6B21;&#x5199;&#x64CD;&#x4F5C;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x6BCF;&#x6B21;&#x6267;&#x884C;&#x8F93;&#x5165;&#x6216;&#x8F93;&#x51FA;&#x65F6;&#xFF0C;&#x76F8;&#x5E94;&#x7684;&#x6307;&#x9488;&#x81EA;&#x52A8;&#x53D8;&#x5316;&#x3002;</p>
+<p><code>ofstream</code>&#x7684;<code>put_point</code>&#x7B80;&#x79F0;<code>p</code>&#xFF0C;&#x5373;&#x5199;&#x6307;&#x9488;&#xFF0C;<code>ifstream</code>&#x7684;<code>get_point</code>&#x7B80;&#x79F0;<code>g</code>&#xFF0C;&#x5373;&#x8BFB;&#x6307;&#x9488;&#xFF0C;<code>fstream</code>&#x7684;<code>put_point</code>&#x548C;<code>get_point</code>&#xFF0C;&#x7B80;&#x79F0;&#x540C;&#x4E3A;<code>p</code>&#x548C;<code>g</code>&#x3002;</p>
+<p>&#x83B7;&#x53D6;&#x6D41;&#x6307;&#x9488;&#x4F4D;&#x7F6E;&#xFF1A;<code>tellg()</code>&#xFF1A;&#x8FD4;&#x56DE;&#x8F93;&#x5165;&#x6D41;&#x6307;&#x9488;&#x7684;&#x4F4D;&#x7F6E;&#xFF08;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;<code>long</code>&#xFF09;&#xFF0C;<code>tellp()</code>&#xFF1A;&#x8FD4;&#x56DE;&#x8F93;&#x51FA;&#x6D41;&#x6307;&#x9488;&#x7684;&#x4F4D;&#x7F6E;&#xFF08;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;<code>long</code>&#xFF09;&#x3002;</p>
+<p>&#x8BBE;&#x7F6E;&#x6307;&#x9488;&#x4F4D;&#x7F6E;&#xFF1A;<code>seekg(long position)</code>&#xFF1A;&#x8BBE;&#x7F6E;&#x8F93;&#x5165;&#x6D41;&#x6307;&#x9488;&#x4F4D;&#x7F6E;&#xFF0C;<code>seekp(long position)</code>&#xFF1A;&#x8BBE;&#x7F6E;&#x8F93;&#x51FA;&#x6D41;&#x6307;&#x9488;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#x5982;<code>seekg</code>&#x51FD;&#x6570;&#x5BF9;&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x5B9A;&#x4F4D;&#xFF1A;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x504F;&#x79FB;&#x91CF;&#xFF0C;&#x6B63;&#x6570;&#x8868;&#x793A;&#x5411;&#x540E;&#x504F;&#x79FB;&#xFF0C;&#x8D1F;&#x6570;&#x8868;&#x793A;&#x5411;&#x524D;&#x504F;&#x79FB;&#x3002;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x57FA;&#x5730;&#x5740;&#xFF0C;&#x8868;&#x793A;&#x8F93;&#x5165;&#x6D41;&#x7684;&#x67D0;&#x4E2A;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#xFF0C;<code>ios&#xFF1A;&#xFF1A;beg</code>&#x4E3A;&#x5F00;&#x59CB;&#x4F4D;&#x7F6E;&#xFF0C;<code>ios&#xFF1A;&#xFF1A;cur</code>&#x4E3A;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#xFF0C;<code>ios&#xFF1A;&#xFF1A;end</code>&#x4E3A;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#x3002;</p>
+<h2 id="&#x5224;&#x65AD;&#x6587;&#x4EF6;&#x72B6;&#x6001;"><a href="#&#x5224;&#x65AD;&#x6587;&#x4EF6;&#x72B6;&#x6001;" class="headerlink" title="&#x5224;&#x65AD;&#x6587;&#x4EF6;&#x72B6;&#x6001;"></a>&#x5224;&#x65AD;&#x6587;&#x4EF6;&#x72B6;&#x6001;</h2><p><code>is_open()</code>&#xFF1A;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x6B63;&#x5E38;&#x6253;&#x5F00;&#x3002;</p>
+<p><code>bad()</code>&#xFF1A;&#x8BFB;&#x5199;&#x8FC7;&#x7A0B;&#x4E2D;&#x662F;&#x5426;&#x51FA;&#x9519;&#xFF08;&#x5982;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x6253;&#x5F00;&#xFF0C;&#x5199;&#x5165;&#x7684;&#x8BBE;&#x5907;&#x6709;&#x6CA1;&#x6709;&#x7A7A;&#x95F4;&#xFF09;</p>
+<p><code>fail()</code>&#xFF1A;&#x8BFB;&#x5199;&#x8FC7;&#x7A0B;&#x4E2D;&#x662F;&#x5426;&#x51FA;&#x9519;&#xFF08;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x6253;&#x5F00;&#xFF0C;&#x5199;&#x5165;&#x7684;&#x8BBE;&#x5907;&#x6709;&#x6CA1;&#x6709;&#x7A7A;&#x95F4;&#xFF0C;&#x683C;&#x5F0F;&#x9519;&#x8BEF;&#x5982;&#x8BFB;&#x5165;&#x7C7B;&#x578B;&#x4E0D;&#x5339;&#x914D;&#x7B49;&#xFF09;</p>
+<p><code>eof()</code>&#xFF1A;&#x8BFB;&#x6587;&#x4EF6;&#x5230;&#x8FBE;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x5219;&#x8FD4;&#x56DE;<code>true</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p>
 
         </div>
 

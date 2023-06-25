@@ -8,10 +8,10 @@
     
     <title>#9 C++11标准 | Function&#39;s Blog</title>
 
-    <meta name="description" content="&lt;h1 id=&#34;Auto关键字&#34;&gt;&lt;a href=&#34;#Auto关键字&#34; class=&#34;headerlink&#34; title=&#34;Auto关键字&#34;&gt;&lt;/a&gt;Auto关键字&lt;/h1&gt;&lt;p&gt;在强类型语言传统C和C++中，参数的类型都必须明确定义，而javaScript，Python等高级语言属于弱类型语言。&lt;/p&gt;
-&lt;p&gt;优缺点比较：安全性，运行速度、友好、便利性，开发速度。&lt;/p&gt;
-&lt;p&gt;传统上：&lt;code&gt;auto&lt;/code&gt;、&lt;code&gt;register&lt;/code&gt;关键字，变量的存储类型修饰不能被单独使用，否则编译器会给出警告。&lt;/p&gt;
-&lt;p&gt;在C++11标准中，引入关键字&lt;code&gt;auto&lt;/code&gt;，&lt;code&gt;decltype&lt;/code&gt;，以实现类型推导特性。&lt;/p&gt;">
+    <meta name="description" content="&lt;h1 id=&#34;Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&#34;&gt;&lt;a href=&#34;#Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&#34; class=&#34;headerlink&#34; title=&#34;Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&#34;&gt;&lt;/a&gt;Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&lt;/h1&gt;&lt;p&gt;&amp;#x5728;&amp;#x5F3A;&amp;#x7C7B;&amp;#x578B;&amp;#x8BED;&amp;#x8A00;&amp;#x4F20;&amp;#x7EDF;C&amp;#x548C;C++&amp;#x4E2D;&amp;#xFF0C;&amp;#x53C2;&amp;#x6570;&amp;#x7684;&amp;#x7C7B;&amp;#x578B;&amp;#x90FD;&amp;#x5FC5;&amp;#x987B;&amp;#x660E;&amp;#x786E;&amp;#x5B9A;&amp;#x4E49;&amp;#xFF0C;&amp;#x800C;javaScript&amp;#xFF0C;Python&amp;#x7B49;&amp;#x9AD8;&amp;#x7EA7;&amp;#x8BED;&amp;#x8A00;&amp;#x5C5E;&amp;#x4E8E;&amp;#x5F31;&amp;#x7C7B;&amp;#x578B;&amp;#x8BED;&amp;#x8A00;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4F18;&amp;#x7F3A;&amp;#x70B9;&amp;#x6BD4;&amp;#x8F83;&amp;#xFF1A;&amp;#x5B89;&amp;#x5168;&amp;#x6027;&amp;#xFF0C;&amp;#x8FD0;&amp;#x884C;&amp;#x901F;&amp;#x5EA6;&amp;#x3001;&amp;#x53CB;&amp;#x597D;&amp;#x3001;&amp;#x4FBF;&amp;#x5229;&amp;#x6027;&amp;#xFF0C;&amp;#x5F00;&amp;#x53D1;&amp;#x901F;&amp;#x5EA6;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4F20;&amp;#x7EDF;&amp;#x4E0A;&amp;#xFF1A;&lt;code&gt;auto&lt;/code&gt;&amp;#x3001;&lt;code&gt;register&lt;/code&gt;&amp;#x5173;&amp;#x952E;&amp;#x5B57;&amp;#xFF0C;&amp;#x53D8;&amp;#x91CF;&amp;#x7684;&amp;#x5B58;&amp;#x50A8;&amp;#x7C7B;&amp;#x578B;&amp;#x4FEE;&amp;#x9970;&amp;#x4E0D;&amp;#x80FD;&amp;#x88AB;&amp;#x5355;&amp;#x72EC;&amp;#x4F7F;&amp;#x7528;&amp;#xFF0C;&amp;#x5426;&amp;#x5219;&amp;#x7F16;&amp;#x8BD1;&amp;#x5668;&amp;#x4F1A;&amp;#x7ED9;&amp;#x51FA;&amp;#x8B66;&amp;#x544A;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x5728;C++11&amp;#x6807;&amp;#x51C6;&amp;#x4E2D;&amp;#xFF0C;&amp;#x5F15;&amp;#x5165;&amp;#x5173;&amp;#x952E;&amp;#x5B57;&lt;code&gt;auto&lt;/code&gt;&amp;#xFF0C;&lt;code&gt;decltype&lt;/code&gt;&amp;#xFF0C;&amp;#x4EE5;&amp;#x5B9E;&amp;#x73B0;&amp;#x7C7B;&amp;#x578B;&amp;#x63A8;&amp;#x5BFC;&amp;#x7279;&amp;#x6027;&amp;#x3002;&lt;/p&gt;">
     <meta name="keywords" content="">
 
     
@@ -19,29 +19,29 @@
     <meta property="og:locale" content="zh-CN" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content= "#9 C++11标准 | Function&#39;s Blog"  />
-    <meta property="og:description" content= "&lt;h1 id=&#34;Auto关键字&#34;&gt;&lt;a href=&#34;#Auto关键字&#34; class=&#34;headerlink&#34; title=&#34;Auto关键字&#34;&gt;&lt;/a&gt;Auto关键字&lt;/h1&gt;&lt;p&gt;在强类型语言传统C和C++中，参数的类型都必须明确定义，而javaScript，Python等高级语言属于弱类型语言。&lt;/p&gt;
-&lt;p&gt;优缺点比较：安全性，运行速度、友好、便利性，开发速度。&lt;/p&gt;
-&lt;p&gt;传统上：&lt;code&gt;auto&lt;/code&gt;、&lt;code&gt;register&lt;/code&gt;关键字，变量的存储类型修饰不能被单独使用，否则编译器会给出警告。&lt;/p&gt;
-&lt;p&gt;在C++11标准中，引入关键字&lt;code&gt;auto&lt;/code&gt;，&lt;code&gt;decltype&lt;/code&gt;，以实现类型推导特性。&lt;/p&gt;" />
+    <meta property="og:description" content= "&lt;h1 id=&#34;Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&#34;&gt;&lt;a href=&#34;#Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&#34; class=&#34;headerlink&#34; title=&#34;Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&#34;&gt;&lt;/a&gt;Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&lt;/h1&gt;&lt;p&gt;&amp;#x5728;&amp;#x5F3A;&amp;#x7C7B;&amp;#x578B;&amp;#x8BED;&amp;#x8A00;&amp;#x4F20;&amp;#x7EDF;C&amp;#x548C;C++&amp;#x4E2D;&amp;#xFF0C;&amp;#x53C2;&amp;#x6570;&amp;#x7684;&amp;#x7C7B;&amp;#x578B;&amp;#x90FD;&amp;#x5FC5;&amp;#x987B;&amp;#x660E;&amp;#x786E;&amp;#x5B9A;&amp;#x4E49;&amp;#xFF0C;&amp;#x800C;javaScript&amp;#xFF0C;Python&amp;#x7B49;&amp;#x9AD8;&amp;#x7EA7;&amp;#x8BED;&amp;#x8A00;&amp;#x5C5E;&amp;#x4E8E;&amp;#x5F31;&amp;#x7C7B;&amp;#x578B;&amp;#x8BED;&amp;#x8A00;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4F18;&amp;#x7F3A;&amp;#x70B9;&amp;#x6BD4;&amp;#x8F83;&amp;#xFF1A;&amp;#x5B89;&amp;#x5168;&amp;#x6027;&amp;#xFF0C;&amp;#x8FD0;&amp;#x884C;&amp;#x901F;&amp;#x5EA6;&amp;#x3001;&amp;#x53CB;&amp;#x597D;&amp;#x3001;&amp;#x4FBF;&amp;#x5229;&amp;#x6027;&amp;#xFF0C;&amp;#x5F00;&amp;#x53D1;&amp;#x901F;&amp;#x5EA6;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4F20;&amp;#x7EDF;&amp;#x4E0A;&amp;#xFF1A;&lt;code&gt;auto&lt;/code&gt;&amp;#x3001;&lt;code&gt;register&lt;/code&gt;&amp;#x5173;&amp;#x952E;&amp;#x5B57;&amp;#xFF0C;&amp;#x53D8;&amp;#x91CF;&amp;#x7684;&amp;#x5B58;&amp;#x50A8;&amp;#x7C7B;&amp;#x578B;&amp;#x4FEE;&amp;#x9970;&amp;#x4E0D;&amp;#x80FD;&amp;#x88AB;&amp;#x5355;&amp;#x72EC;&amp;#x4F7F;&amp;#x7528;&amp;#xFF0C;&amp;#x5426;&amp;#x5219;&amp;#x7F16;&amp;#x8BD1;&amp;#x5668;&amp;#x4F1A;&amp;#x7ED9;&amp;#x51FA;&amp;#x8B66;&amp;#x544A;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x5728;C++11&amp;#x6807;&amp;#x51C6;&amp;#x4E2D;&amp;#xFF0C;&amp;#x5F15;&amp;#x5165;&amp;#x5173;&amp;#x952E;&amp;#x5B57;&lt;code&gt;auto&lt;/code&gt;&amp;#xFF0C;&lt;code&gt;decltype&lt;/code&gt;&amp;#xFF0C;&amp;#x4EE5;&amp;#x5B9E;&amp;#x73B0;&amp;#x7C7B;&amp;#x578B;&amp;#x63A8;&amp;#x5BFC;&amp;#x7279;&amp;#x6027;&amp;#x3002;&lt;/p&gt;" />
     <meta property="og:url" content="http://blog.functioneurus.com/2022/06/04/9_C++11_Standards/index.html" />
     <meta property="og:site_name" content="" />
     <meta property="article:author" content="Function" />
     <meta property="article:publisher" content="" />
-    <meta property="og:description" content="&lt;h1 id=&#34;Auto关键字&#34;&gt;&lt;a href=&#34;#Auto关键字&#34; class=&#34;headerlink&#34; title=&#34;Auto关键字&#34;&gt;&lt;/a&gt;Auto关键字&lt;/h1&gt;&lt;p&gt;在强类型语言传统C和C++中，参数的类型都必须明确定义，而javaScript，Python等高级语言属于弱类型语言。&lt;/p&gt;
-&lt;p&gt;优缺点比较：安全性，运行速度、友好、便利性，开发速度。&lt;/p&gt;
-&lt;p&gt;传统上：&lt;code&gt;auto&lt;/code&gt;、&lt;code&gt;register&lt;/code&gt;关键字，变量的存储类型修饰不能被单独使用，否则编译器会给出警告。&lt;/p&gt;
-&lt;p&gt;在C++11标准中，引入关键字&lt;code&gt;auto&lt;/code&gt;，&lt;code&gt;decltype&lt;/code&gt;，以实现类型推导特性。&lt;/p&gt;" />
+    <meta property="og:description" content="&lt;h1 id=&#34;Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&#34;&gt;&lt;a href=&#34;#Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&#34; class=&#34;headerlink&#34; title=&#34;Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&#34;&gt;&lt;/a&gt;Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&lt;/h1&gt;&lt;p&gt;&amp;#x5728;&amp;#x5F3A;&amp;#x7C7B;&amp;#x578B;&amp;#x8BED;&amp;#x8A00;&amp;#x4F20;&amp;#x7EDF;C&amp;#x548C;C++&amp;#x4E2D;&amp;#xFF0C;&amp;#x53C2;&amp;#x6570;&amp;#x7684;&amp;#x7C7B;&amp;#x578B;&amp;#x90FD;&amp;#x5FC5;&amp;#x987B;&amp;#x660E;&amp;#x786E;&amp;#x5B9A;&amp;#x4E49;&amp;#xFF0C;&amp;#x800C;javaScript&amp;#xFF0C;Python&amp;#x7B49;&amp;#x9AD8;&amp;#x7EA7;&amp;#x8BED;&amp;#x8A00;&amp;#x5C5E;&amp;#x4E8E;&amp;#x5F31;&amp;#x7C7B;&amp;#x578B;&amp;#x8BED;&amp;#x8A00;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4F18;&amp;#x7F3A;&amp;#x70B9;&amp;#x6BD4;&amp;#x8F83;&amp;#xFF1A;&amp;#x5B89;&amp;#x5168;&amp;#x6027;&amp;#xFF0C;&amp;#x8FD0;&amp;#x884C;&amp;#x901F;&amp;#x5EA6;&amp;#x3001;&amp;#x53CB;&amp;#x597D;&amp;#x3001;&amp;#x4FBF;&amp;#x5229;&amp;#x6027;&amp;#xFF0C;&amp;#x5F00;&amp;#x53D1;&amp;#x901F;&amp;#x5EA6;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4F20;&amp;#x7EDF;&amp;#x4E0A;&amp;#xFF1A;&lt;code&gt;auto&lt;/code&gt;&amp;#x3001;&lt;code&gt;register&lt;/code&gt;&amp;#x5173;&amp;#x952E;&amp;#x5B57;&amp;#xFF0C;&amp;#x53D8;&amp;#x91CF;&amp;#x7684;&amp;#x5B58;&amp;#x50A8;&amp;#x7C7B;&amp;#x578B;&amp;#x4FEE;&amp;#x9970;&amp;#x4E0D;&amp;#x80FD;&amp;#x88AB;&amp;#x5355;&amp;#x72EC;&amp;#x4F7F;&amp;#x7528;&amp;#xFF0C;&amp;#x5426;&amp;#x5219;&amp;#x7F16;&amp;#x8BD1;&amp;#x5668;&amp;#x4F1A;&amp;#x7ED9;&amp;#x51FA;&amp;#x8B66;&amp;#x544A;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x5728;C++11&amp;#x6807;&amp;#x51C6;&amp;#x4E2D;&amp;#xFF0C;&amp;#x5F15;&amp;#x5165;&amp;#x5173;&amp;#x952E;&amp;#x5B57;&lt;code&gt;auto&lt;/code&gt;&amp;#xFF0C;&lt;code&gt;decltype&lt;/code&gt;&amp;#xFF0C;&amp;#x4EE5;&amp;#x5B9E;&amp;#x73B0;&amp;#x7C7B;&amp;#x578B;&amp;#x63A8;&amp;#x5BFC;&amp;#x7279;&amp;#x6027;&amp;#x3002;&lt;/p&gt;" />
     <meta name="twitter:title" content="#9 C++11标准 | Function&#39;s Blog"/>
-    <meta name="twitter:description" content="&lt;h1 id=&#34;Auto关键字&#34;&gt;&lt;a href=&#34;#Auto关键字&#34; class=&#34;headerlink&#34; title=&#34;Auto关键字&#34;&gt;&lt;/a&gt;Auto关键字&lt;/h1&gt;&lt;p&gt;在强类型语言传统C和C++中，参数的类型都必须明确定义，而javaScript，Python等高级语言属于弱类型语言。&lt;/p&gt;
-&lt;p&gt;优缺点比较：安全性，运行速度、友好、便利性，开发速度。&lt;/p&gt;
-&lt;p&gt;传统上：&lt;code&gt;auto&lt;/code&gt;、&lt;code&gt;register&lt;/code&gt;关键字，变量的存储类型修饰不能被单独使用，否则编译器会给出警告。&lt;/p&gt;
-&lt;p&gt;在C++11标准中，引入关键字&lt;code&gt;auto&lt;/code&gt;，&lt;code&gt;decltype&lt;/code&gt;，以实现类型推导特性。&lt;/p&gt;"/>
+    <meta name="twitter:description" content="&lt;h1 id=&#34;Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&#34;&gt;&lt;a href=&#34;#Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&#34; class=&#34;headerlink&#34; title=&#34;Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&#34;&gt;&lt;/a&gt;Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&lt;/h1&gt;&lt;p&gt;&amp;#x5728;&amp;#x5F3A;&amp;#x7C7B;&amp;#x578B;&amp;#x8BED;&amp;#x8A00;&amp;#x4F20;&amp;#x7EDF;C&amp;#x548C;C++&amp;#x4E2D;&amp;#xFF0C;&amp;#x53C2;&amp;#x6570;&amp;#x7684;&amp;#x7C7B;&amp;#x578B;&amp;#x90FD;&amp;#x5FC5;&amp;#x987B;&amp;#x660E;&amp;#x786E;&amp;#x5B9A;&amp;#x4E49;&amp;#xFF0C;&amp;#x800C;javaScript&amp;#xFF0C;Python&amp;#x7B49;&amp;#x9AD8;&amp;#x7EA7;&amp;#x8BED;&amp;#x8A00;&amp;#x5C5E;&amp;#x4E8E;&amp;#x5F31;&amp;#x7C7B;&amp;#x578B;&amp;#x8BED;&amp;#x8A00;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4F18;&amp;#x7F3A;&amp;#x70B9;&amp;#x6BD4;&amp;#x8F83;&amp;#xFF1A;&amp;#x5B89;&amp;#x5168;&amp;#x6027;&amp;#xFF0C;&amp;#x8FD0;&amp;#x884C;&amp;#x901F;&amp;#x5EA6;&amp;#x3001;&amp;#x53CB;&amp;#x597D;&amp;#x3001;&amp;#x4FBF;&amp;#x5229;&amp;#x6027;&amp;#xFF0C;&amp;#x5F00;&amp;#x53D1;&amp;#x901F;&amp;#x5EA6;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4F20;&amp;#x7EDF;&amp;#x4E0A;&amp;#xFF1A;&lt;code&gt;auto&lt;/code&gt;&amp;#x3001;&lt;code&gt;register&lt;/code&gt;&amp;#x5173;&amp;#x952E;&amp;#x5B57;&amp;#xFF0C;&amp;#x53D8;&amp;#x91CF;&amp;#x7684;&amp;#x5B58;&amp;#x50A8;&amp;#x7C7B;&amp;#x578B;&amp;#x4FEE;&amp;#x9970;&amp;#x4E0D;&amp;#x80FD;&amp;#x88AB;&amp;#x5355;&amp;#x72EC;&amp;#x4F7F;&amp;#x7528;&amp;#xFF0C;&amp;#x5426;&amp;#x5219;&amp;#x7F16;&amp;#x8BD1;&amp;#x5668;&amp;#x4F1A;&amp;#x7ED9;&amp;#x51FA;&amp;#x8B66;&amp;#x544A;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x5728;C++11&amp;#x6807;&amp;#x51C6;&amp;#x4E2D;&amp;#xFF0C;&amp;#x5F15;&amp;#x5165;&amp;#x5173;&amp;#x952E;&amp;#x5B57;&lt;code&gt;auto&lt;/code&gt;&amp;#xFF0C;&lt;code&gt;decltype&lt;/code&gt;&amp;#xFF0C;&amp;#x4EE5;&amp;#x5B9E;&amp;#x73B0;&amp;#x7C7B;&amp;#x578B;&amp;#x63A8;&amp;#x5BFC;&amp;#x7279;&amp;#x6027;&amp;#x3002;&lt;/p&gt;"/>
     <script type="application/ld+json">
         {
-            "description": "&lt;h1 id=&#34;Auto关键字&#34;&gt;&lt;a href=&#34;#Auto关键字&#34; class=&#34;headerlink&#34; title=&#34;Auto关键字&#34;&gt;&lt;/a&gt;Auto关键字&lt;/h1&gt;&lt;p&gt;在强类型语言传统C和C++中，参数的类型都必须明确定义，而javaScript，Python等高级语言属于弱类型语言。&lt;/p&gt;
-&lt;p&gt;优缺点比较：安全性，运行速度、友好、便利性，开发速度。&lt;/p&gt;
-&lt;p&gt;传统上：&lt;code&gt;auto&lt;/code&gt;、&lt;code&gt;register&lt;/code&gt;关键字，变量的存储类型修饰不能被单独使用，否则编译器会给出警告。&lt;/p&gt;
-&lt;p&gt;在C++11标准中，引入关键字&lt;code&gt;auto&lt;/code&gt;，&lt;code&gt;decltype&lt;/code&gt;，以实现类型推导特性。&lt;/p&gt;",
+            "description": "&lt;h1 id=&#34;Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&#34;&gt;&lt;a href=&#34;#Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&#34; class=&#34;headerlink&#34; title=&#34;Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&#34;&gt;&lt;/a&gt;Auto&amp;#x5173;&amp;#x952E;&amp;#x5B57;&lt;/h1&gt;&lt;p&gt;&amp;#x5728;&amp;#x5F3A;&amp;#x7C7B;&amp;#x578B;&amp;#x8BED;&amp;#x8A00;&amp;#x4F20;&amp;#x7EDF;C&amp;#x548C;C++&amp;#x4E2D;&amp;#xFF0C;&amp;#x53C2;&amp;#x6570;&amp;#x7684;&amp;#x7C7B;&amp;#x578B;&amp;#x90FD;&amp;#x5FC5;&amp;#x987B;&amp;#x660E;&amp;#x786E;&amp;#x5B9A;&amp;#x4E49;&amp;#xFF0C;&amp;#x800C;javaScript&amp;#xFF0C;Python&amp;#x7B49;&amp;#x9AD8;&amp;#x7EA7;&amp;#x8BED;&amp;#x8A00;&amp;#x5C5E;&amp;#x4E8E;&amp;#x5F31;&amp;#x7C7B;&amp;#x578B;&amp;#x8BED;&amp;#x8A00;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4F18;&amp;#x7F3A;&amp;#x70B9;&amp;#x6BD4;&amp;#x8F83;&amp;#xFF1A;&amp;#x5B89;&amp;#x5168;&amp;#x6027;&amp;#xFF0C;&amp;#x8FD0;&amp;#x884C;&amp;#x901F;&amp;#x5EA6;&amp;#x3001;&amp;#x53CB;&amp;#x597D;&amp;#x3001;&amp;#x4FBF;&amp;#x5229;&amp;#x6027;&amp;#xFF0C;&amp;#x5F00;&amp;#x53D1;&amp;#x901F;&amp;#x5EA6;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x4F20;&amp;#x7EDF;&amp;#x4E0A;&amp;#xFF1A;&lt;code&gt;auto&lt;/code&gt;&amp;#x3001;&lt;code&gt;register&lt;/code&gt;&amp;#x5173;&amp;#x952E;&amp;#x5B57;&amp;#xFF0C;&amp;#x53D8;&amp;#x91CF;&amp;#x7684;&amp;#x5B58;&amp;#x50A8;&amp;#x7C7B;&amp;#x578B;&amp;#x4FEE;&amp;#x9970;&amp;#x4E0D;&amp;#x80FD;&amp;#x88AB;&amp;#x5355;&amp;#x72EC;&amp;#x4F7F;&amp;#x7528;&amp;#xFF0C;&amp;#x5426;&amp;#x5219;&amp;#x7F16;&amp;#x8BD1;&amp;#x5668;&amp;#x4F1A;&amp;#x7ED9;&amp;#x51FA;&amp;#x8B66;&amp;#x544A;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x5728;C++11&amp;#x6807;&amp;#x51C6;&amp;#x4E2D;&amp;#xFF0C;&amp;#x5F15;&amp;#x5165;&amp;#x5173;&amp;#x952E;&amp;#x5B57;&lt;code&gt;auto&lt;/code&gt;&amp;#xFF0C;&lt;code&gt;decltype&lt;/code&gt;&amp;#xFF0C;&amp;#x4EE5;&amp;#x5B9E;&amp;#x73B0;&amp;#x7C7B;&amp;#x578B;&amp;#x63A8;&amp;#x5BFC;&amp;#x7279;&amp;#x6027;&amp;#x3002;&lt;/p&gt;",
             "author": { "@type": "Person", "name": "Function" },
             "@type": "BlogPosting",
             "url": "http://blog.functioneurus.com/2022/06/04/9_C++11_Standards/index.html",
@@ -161,7 +161,7 @@
             <section class="inner">
                 <section class="inner-main">
                     <div class="post">
-    <article id="post-cljba4hy2000wa4co5kbfgetn" class="article article-type-post" itemscope
+    <article id="post-cljbah39z000ugocobmhz2ckv" class="article article-type-post" itemscope
     itemprop="blogPost">
 
     <div class="article-inner">
@@ -203,453 +203,453 @@
         </div>
 
         <div class="article-entry post-inner-html hairline" itemprop="articleBody">
-            <h1 id="Auto关键字"><a href="#Auto关键字" class="headerlink" title="Auto关键字"></a>Auto关键字</h1><p>在强类型语言传统C和C++中，参数的类型都必须明确定义，而javaScript，Python等高级语言属于弱类型语言。</p>
-<p>优缺点比较：安全性，运行速度、友好、便利性，开发速度。</p>
-<p>传统上：<code>auto</code>、<code>register</code>关键字，变量的存储类型修饰不能被单独使用，否则编译器会给出警告。</p>
-<p>在C++11标准中，引入关键字<code>auto</code>，<code>decltype</code>，以实现类型推导特性。</p>
+            <h1 id="Auto&#x5173;&#x952E;&#x5B57;"><a href="#Auto&#x5173;&#x952E;&#x5B57;" class="headerlink" title="Auto&#x5173;&#x952E;&#x5B57;"></a>Auto&#x5173;&#x952E;&#x5B57;</h1><p>&#x5728;&#x5F3A;&#x7C7B;&#x578B;&#x8BED;&#x8A00;&#x4F20;&#x7EDF;C&#x548C;C++&#x4E2D;&#xFF0C;&#x53C2;&#x6570;&#x7684;&#x7C7B;&#x578B;&#x90FD;&#x5FC5;&#x987B;&#x660E;&#x786E;&#x5B9A;&#x4E49;&#xFF0C;&#x800C;javaScript&#xFF0C;Python&#x7B49;&#x9AD8;&#x7EA7;&#x8BED;&#x8A00;&#x5C5E;&#x4E8E;&#x5F31;&#x7C7B;&#x578B;&#x8BED;&#x8A00;&#x3002;</p>
+<p>&#x4F18;&#x7F3A;&#x70B9;&#x6BD4;&#x8F83;&#xFF1A;&#x5B89;&#x5168;&#x6027;&#xFF0C;&#x8FD0;&#x884C;&#x901F;&#x5EA6;&#x3001;&#x53CB;&#x597D;&#x3001;&#x4FBF;&#x5229;&#x6027;&#xFF0C;&#x5F00;&#x53D1;&#x901F;&#x5EA6;&#x3002;</p>
+<p>&#x4F20;&#x7EDF;&#x4E0A;&#xFF1A;<code>auto</code>&#x3001;<code>register</code>&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x53D8;&#x91CF;&#x7684;&#x5B58;&#x50A8;&#x7C7B;&#x578B;&#x4FEE;&#x9970;&#x4E0D;&#x80FD;&#x88AB;&#x5355;&#x72EC;&#x4F7F;&#x7528;&#xFF0C;&#x5426;&#x5219;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x7ED9;&#x51FA;&#x8B66;&#x544A;&#x3002;</p>
+<p>&#x5728;C++11&#x6807;&#x51C6;&#x4E2D;&#xFF0C;&#x5F15;&#x5165;&#x5173;&#x952E;&#x5B57;<code>auto</code>&#xFF0C;<code>decltype</code>&#xFF0C;&#x4EE5;&#x5B9E;&#x73B0;&#x7C7B;&#x578B;&#x63A8;&#x5BFC;&#x7279;&#x6027;&#x3002;</p>
 <span id="more"></span>
 
-<p><code>auto</code>新用法：使用<code>auto</code>定义变量，不再使用其它类型修饰符修饰，该变量的类型由编译器根据初始化数据或变量自动推导确定。</p>
-<pre><code class="c++">//根据赋值推断
-auto i = 0;   // i被推导为整数类型
-i++;             // 整数加法
-cout &lt;&lt; i &lt;&lt; endl;    // 输出1
-cout &lt;&lt; typeid(i).name() &lt;&lt; endl;  // 输出 int
+<p><code>auto</code>&#x65B0;&#x7528;&#x6CD5;&#xFF1A;&#x4F7F;&#x7528;<code>auto</code>&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#xFF0C;&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#x5176;&#x5B83;&#x7C7B;&#x578B;&#x4FEE;&#x9970;&#x7B26;&#x4FEE;&#x9970;&#xFF0C;&#x8BE5;&#x53D8;&#x91CF;&#x7684;&#x7C7B;&#x578B;&#x7531;&#x7F16;&#x8BD1;&#x5668;&#x6839;&#x636E;&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x6216;&#x53D8;&#x91CF;&#x81EA;&#x52A8;&#x63A8;&#x5BFC;&#x786E;&#x5B9A;&#x3002;</p>
+<pre><code class="c++">//&#x6839;&#x636E;&#x8D4B;&#x503C;&#x63A8;&#x65AD;
+auto i = 0;   // i&#x88AB;&#x63A8;&#x5BFC;&#x4E3A;&#x6574;&#x6570;&#x7C7B;&#x578B;
+i++;             // &#x6574;&#x6570;&#x52A0;&#x6CD5;
+cout &lt;&lt; i &lt;&lt; endl;    // &#x8F93;&#x51FA;1
+cout &lt;&lt; typeid(i).name() &lt;&lt; endl;  // &#x8F93;&#x51FA; int
 
-auto  j = &quot;abcde&quot;;  //  j被推导为const char *
-j++;     //执行指针的位移运算
-cout &lt;&lt; j &lt;&lt; endl;  //输出bcde
-cout &lt;&lt; typeid(j).name() &lt;&lt; endl; // 输出const char *
+auto  j = &quot;abcde&quot;;  //  j&#x88AB;&#x63A8;&#x5BFC;&#x4E3A;const char *
+j++;     //&#x6267;&#x884C;&#x6307;&#x9488;&#x7684;&#x4F4D;&#x79FB;&#x8FD0;&#x7B97;
+cout &lt;&lt; j &lt;&lt; endl;  //&#x8F93;&#x51FA;bcde
+cout &lt;&lt; typeid(j).name() &lt;&lt; endl; // &#x8F93;&#x51FA;const char *
 
-int arr[3] &#123; 1, 2, 3 &#125;; // 数组名即指针，且地址已经分配
-int *pp = arr;   //  pp 即起始地址，pp[1],pp[2] 等均已分配
-auto pi = arr;   // pi 是int*
-cout &lt;&lt; typeid(pi).name() &lt;&lt; endl; // 输出int*
+int arr[3] { 1, 2, 3 }; // &#x6570;&#x7EC4;&#x540D;&#x5373;&#x6307;&#x9488;&#xFF0C;&#x4E14;&#x5730;&#x5740;&#x5DF2;&#x7ECF;&#x5206;&#x914D;
+int *pp = arr;   //  pp &#x5373;&#x8D77;&#x59CB;&#x5730;&#x5740;&#xFF0C;pp[1],pp[2] &#x7B49;&#x5747;&#x5DF2;&#x5206;&#x914D;
+auto pi = arr;   // pi &#x662F;int*
+cout &lt;&lt; typeid(pi).name() &lt;&lt; endl; // &#x8F93;&#x51FA;int*
 
-//注意推导是在编译期完成的，并不影响性能。
-//指定可能发生的异常。
+//&#x6CE8;&#x610F;&#x63A8;&#x5BFC;&#x662F;&#x5728;&#x7F16;&#x8BD1;&#x671F;&#x5B8C;&#x6210;&#x7684;&#xFF0C;&#x5E76;&#x4E0D;&#x5F71;&#x54CD;&#x6027;&#x80FD;&#x3002;
+//&#x6307;&#x5B9A;&#x53EF;&#x80FD;&#x53D1;&#x751F;&#x7684;&#x5F02;&#x5E38;&#x3002;
 </code></pre>
-<pre><code class="c++">//根据其他变量推断
+<pre><code class="c++">//&#x6839;&#x636E;&#x5176;&#x4ED6;&#x53D8;&#x91CF;&#x63A8;&#x65AD;
 auto a = 1;
-auto pa = new auto(3); // pa 为 int *
-auto i = a;   // i 为int
-auto *pi = &amp;i; // pi 为 int *
-auto &amp;ri = i;  // ri 为 int &amp;
-auto j&#123;2&#125;;   // j为int
-auto k&#123;3&#125;, &amp; r = k;  // k 为int
-auto m&#123;4&#125;, n = 5;   // m,n 均为int
-auto s&#123;5&#125;, t&#123;0.6&#125;; // 前后类型不一致
-auto u;                   // 无法推导出类型
-auto *v;                 // 无法推导出类型
-auto arr[] &#123;7, 8, 9&#125;;     // 不能用于推导数组类型
+auto pa = new auto(3); // pa &#x4E3A; int *
+auto i = a;   // i &#x4E3A;int
+auto *pi = &amp;i; // pi &#x4E3A; int *
+auto &amp;ri = i;  // ri &#x4E3A; int &amp;
+auto j{2};   // j&#x4E3A;int
+auto k{3}, &amp; r = k;  // k &#x4E3A;int
+auto m{4}, n = 5;   // m,n &#x5747;&#x4E3A;int
+auto s{5}, t{0.6}; // &#x524D;&#x540E;&#x7C7B;&#x578B;&#x4E0D;&#x4E00;&#x81F4;
+auto u;                   // &#x65E0;&#x6CD5;&#x63A8;&#x5BFC;&#x51FA;&#x7C7B;&#x578B;
+auto *v;                 // &#x65E0;&#x6CD5;&#x63A8;&#x5BFC;&#x51FA;&#x7C7B;&#x578B;
+auto arr[] {7, 8, 9};     // &#x4E0D;&#x80FD;&#x7528;&#x4E8E;&#x63A8;&#x5BFC;&#x6570;&#x7EC4;&#x7C7B;&#x578B;
 
-//auto 不能用于函数参数
+//auto &#x4E0D;&#x80FD;&#x7528;&#x4E8E;&#x51FD;&#x6570;&#x53C2;&#x6570;
 
-int add(auto x, auto y) &#123;
-&#125;
+int add(auto x, auto y) {
+}
 </code></pre>
-<h2 id="更有用的用法"><a href="#更有用的用法" class="headerlink" title="更有用的用法"></a>更有用的用法</h2><p>常规用法：</p>
-<pre><code class="c++">vector&lt;int&gt; ivec(10, 1); // ivec内为10个1
+<h2 id="&#x66F4;&#x6709;&#x7528;&#x7684;&#x7528;&#x6CD5;"><a href="#&#x66F4;&#x6709;&#x7528;&#x7684;&#x7528;&#x6CD5;" class="headerlink" title="&#x66F4;&#x6709;&#x7528;&#x7684;&#x7528;&#x6CD5;"></a>&#x66F4;&#x6709;&#x7528;&#x7684;&#x7528;&#x6CD5;</h2><p>&#x5E38;&#x89C4;&#x7528;&#x6CD5;&#xFF1A;</p>
+<pre><code class="c++">vector&lt;int&gt; ivec(10, 1); // ivec&#x5185;&#x4E3A;10&#x4E2A;1
 
-for (vector&lt;int&gt;::iterator it = ivec.begin(); it != ivec.end(); it++) &#123;
+for (vector&lt;int&gt;::iterator it = ivec.begin(); it != ivec.end(); it++) {
     cout &lt;&lt; *it &lt;&lt; endl;
-&#125;
+}
 </code></pre>
-<p>更好的用法：</p>
+<p>&#x66F4;&#x597D;&#x7684;&#x7528;&#x6CD5;&#xFF1A;</p>
 <pre><code class="c++">vector&lt;int&gt; ivec(10, 1);
 
-for (auto it = ivec.begin(); it != ivec.end(); it++) &#123; // 遍历
+for (auto it = ivec.begin(); it != ivec.end(); it++) { // &#x904D;&#x5386;
     cout &lt;&lt; *it &lt;&lt; endl;
-&#125;
+}
 </code></pre>
-<h1 id="Decltype"><a href="#Decltype" class="headerlink" title="Decltype"></a>Decltype</h1><p><code>auto</code>关键字只能对变量进行类型推导，<code>decltype</code>则可对表达式进行推导，用法和<code>sizeof</code>很相似。</p>
+<h1 id="Decltype"><a href="#Decltype" class="headerlink" title="Decltype"></a>Decltype</h1><p><code>auto</code>&#x5173;&#x952E;&#x5B57;&#x53EA;&#x80FD;&#x5BF9;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x7C7B;&#x578B;&#x63A8;&#x5BFC;&#xFF0C;<code>decltype</code>&#x5219;&#x53EF;&#x5BF9;&#x8868;&#x8FBE;&#x5F0F;&#x8FDB;&#x884C;&#x63A8;&#x5BFC;&#xFF0C;&#x7528;&#x6CD5;&#x548C;<code>sizeof</code>&#x5F88;&#x76F8;&#x4F3C;&#x3002;</p>
 <pre><code class="c++">auto x = 1;
 auto y = 2;
-decltype(x + y) z; // z 是int 类型
+decltype(x + y) z; // z &#x662F;int &#x7C7B;&#x578B;
 </code></pre>
-<h2 id="尾返回类型"><a href="#尾返回类型" class="headerlink" title="尾返回类型"></a>尾返回类型</h2><p>考虑模板函数：</p>
+<h2 id="&#x5C3E;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;"><a href="#&#x5C3E;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;" class="headerlink" title="&#x5C3E;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;"></a>&#x5C3E;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;</h2><p>&#x8003;&#x8651;&#x6A21;&#x677F;&#x51FD;&#x6570;&#xFF1A;</p>
 <pre><code class="c++">template&lt;typename R, typename T, typename U&gt;
 
-R add(T x, U y) &#123;
+R add(T x, U y) {
     return x + y;
-&#125;
+}
 </code></pre>
-<p>在使用该模板函数的时候，必须明确指出返回类型。但事实上程序员并不知道<code>add()</code>这个函数会做什么样的操作，获得一个什么样的返回类型。</p>
-<p>但是也不能这样定义：</p>
+<p>&#x5728;&#x4F7F;&#x7528;&#x8BE5;&#x6A21;&#x677F;&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5FC5;&#x987B;&#x660E;&#x786E;&#x6307;&#x51FA;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x3002;&#x4F46;&#x4E8B;&#x5B9E;&#x4E0A;&#x7A0B;&#x5E8F;&#x5458;&#x5E76;&#x4E0D;&#x77E5;&#x9053;<code>add()</code>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4F1A;&#x505A;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x4E5F;&#x4E0D;&#x80FD;&#x8FD9;&#x6837;&#x5B9A;&#x4E49;&#xFF1A;</p>
 <pre><code class="c++">decltype(x + y) add(T x, U y);
 </code></pre>
-<p>因为编译器读到<code>x+y</code>时，<code>x</code>和<code>y</code>还未定义。</p>
-<p>C++11的解决方案是使用尾返回类型：</p>
+<p>&#x56E0;&#x4E3A;&#x7F16;&#x8BD1;&#x5668;&#x8BFB;&#x5230;<code>x+y</code>&#x65F6;&#xFF0C;<code>x</code>&#x548C;<code>y</code>&#x8FD8;&#x672A;&#x5B9A;&#x4E49;&#x3002;</p>
+<p>C++11&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x662F;&#x4F7F;&#x7528;&#x5C3E;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#xFF1A;</p>
 <pre><code class="c++">template&lt;typename T, typename U&gt;
 
-auto add(T x, U y) -&gt; decltype(x + y) &#123;
+auto add(T x, U y) -&gt; decltype(x + y) {
     return x + y;
-&#125;
+}
 </code></pre>
-<p>这样就可以使用该模板函数了：</p>
+<p>&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8BE5;&#x6A21;&#x677F;&#x51FD;&#x6570;&#x4E86;&#xFF1A;</p>
 <pre><code class="c++">int res = add&lt;int, int&gt;(3, 5);
 </code></pre>
-<p>在C++14中，则支持更直观的语法：</p>
-<pre><code class="c++">auto add(T x, U y) &#123;
+<p>&#x5728;C++14&#x4E2D;&#xFF0C;&#x5219;&#x652F;&#x6301;&#x66F4;&#x76F4;&#x89C2;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre><code class="c++">auto add(T x, U y) {
     return x + y;
-&#125;
+}
 </code></pre>
-<h1 id="区间迭代"><a href="#区间迭代" class="headerlink" title="区间迭代"></a>区间迭代</h1><p>visual Basic、C#、Python等语言中<code>foreach</code>语法的使用。</p>
+<h1 id="&#x533A;&#x95F4;&#x8FED;&#x4EE3;"><a href="#&#x533A;&#x95F4;&#x8FED;&#x4EE3;" class="headerlink" title="&#x533A;&#x95F4;&#x8FED;&#x4EE3;"></a>&#x533A;&#x95F4;&#x8FED;&#x4EE3;</h1><p>visual Basic&#x3001;C#&#x3001;Python&#x7B49;&#x8BED;&#x8A00;&#x4E2D;<code>foreach</code>&#x8BED;&#x6CD5;&#x7684;&#x4F7F;&#x7528;&#x3002;</p>
 <ol>
-<li>遍历数组</li>
+<li>&#x904D;&#x5386;&#x6570;&#x7EC4;</li>
 </ol>
-<pre><code class="c++">int arr[] = &#123;1, 2, 3, 4&#125;;   // 数组
+<pre><code class="c++">int arr[] = {1, 2, 3, 4};   // &#x6570;&#x7EC4;
 
-for (auto i : arr) &#123;
+for (auto i : arr) {
     std::cout &lt;&lt; i &lt;&lt; std::endl;
-&#125;
+}
 </code></pre>
 <ol start="2">
-<li>遍历字符串</li>
+<li>&#x904D;&#x5386;&#x5B57;&#x7B26;&#x4E32;</li>
 </ol>
-<pre><code class="c++">std::string str = &quot;hello, world&quot;;  // 字符串
+<pre><code class="c++">std::string str = &quot;hello, world&quot;;  // &#x5B57;&#x7B26;&#x4E32;
 
-for (auto ch : str) &#123;
+for (auto ch : str) {
     cout &lt;&lt; ch &lt;&lt; endl ;
-&#125;
+}
 </code></pre>
 <ol start="3">
-<li>遍历容器</li>
+<li>&#x904D;&#x5386;&#x5BB9;&#x5668;</li>
 </ol>
-<pre><code class="c++">vector&lt;std::string&gt; str_vec = &#123; &quot;i&quot;, &quot;like&quot;,  &quot;google&quot;&#125;;   // 容器
+<pre><code class="c++">vector&lt;std::string&gt; str_vec = { &quot;i&quot;, &quot;like&quot;,  &quot;google&quot;};   // &#x5BB9;&#x5668;
 
-for (auto it : str_vec) &#123;
+for (auto it : str_vec) {
     cout &lt;&lt; it &lt;&lt; endl;
-&#125;
+}
 </code></pre>
-<p>迭代变量的赋值方式： 引用或拷贝，语法大为简化。</p>
-<pre><code class="c++">int arr[] = &#123; 1, 2, 3, 4 &#125;;   // 遍历数组
-int brr[] = &#123; 1, 2, 3, 4 &#125;;   // 遍历数组
-for (auto &amp;i : arr)     // 可读可写
+<p>&#x8FED;&#x4EE3;&#x53D8;&#x91CF;&#x7684;&#x8D4B;&#x503C;&#x65B9;&#x5F0F;&#xFF1A; &#x5F15;&#x7528;&#x6216;&#x62F7;&#x8D1D;&#xFF0C;&#x8BED;&#x6CD5;&#x5927;&#x4E3A;&#x7B80;&#x5316;&#x3002;</p>
+<pre><code class="c++">int arr[] = { 1, 2, 3, 4 };   // &#x904D;&#x5386;&#x6570;&#x7EC4;
+int brr[] = { 1, 2, 3, 4 };   // &#x904D;&#x5386;&#x6570;&#x7EC4;
+for (auto &amp;i : arr)     // &#x53EF;&#x8BFB;&#x53EF;&#x5199;
     i *= 2;
-for (auto i : brr)    // 可读不可写
+for (auto i : brr)    // &#x53EF;&#x8BFB;&#x4E0D;&#x53EF;&#x5199;
     i *= 2;
 for (auto j : arr)
     cout &lt;&lt; j &lt;&lt; endl;
 for (auto j : brr)
     cout &lt;&lt; j &lt;&lt; endl;
-//输出结果：24681234
+//&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF1A;24681234
 </code></pre>
-<h1 id="Default"><a href="#Default" class="headerlink" title="Default"></a>Default</h1><p>在传统C++中，如果程序员没有提供，编译器会默认为对象生成默认构造函数、复制构造、赋值算符以及析构函数。</p>
-<p>另外，C++也为所有类定义了诸如<code>new</code>，<code>delete</code>这样的运算符。当程序员有需要时，可以重载这部分函数，但可能无法精确控制默认函数的生成行为。</p>
-<p><code>default</code>函数作用于类的特殊成员函数，为其自动生成默认的函数定义体，提高代码的执行效率。</p>
+<h1 id="Default"><a href="#Default" class="headerlink" title="Default"></a>Default</h1><p>&#x5728;&#x4F20;&#x7EDF;C++&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x7A0B;&#x5E8F;&#x5458;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x9ED8;&#x8BA4;&#x4E3A;&#x5BF9;&#x8C61;&#x751F;&#x6210;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3001;&#x590D;&#x5236;&#x6784;&#x9020;&#x3001;&#x8D4B;&#x503C;&#x7B97;&#x7B26;&#x4EE5;&#x53CA;&#x6790;&#x6784;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#xFF0C;C++&#x4E5F;&#x4E3A;&#x6240;&#x6709;&#x7C7B;&#x5B9A;&#x4E49;&#x4E86;&#x8BF8;&#x5982;<code>new</code>&#xFF0C;<code>delete</code>&#x8FD9;&#x6837;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x3002;&#x5F53;&#x7A0B;&#x5E8F;&#x5458;&#x6709;&#x9700;&#x8981;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x91CD;&#x8F7D;&#x8FD9;&#x90E8;&#x5206;&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x53EF;&#x80FD;&#x65E0;&#x6CD5;&#x7CBE;&#x786E;&#x63A7;&#x5236;&#x9ED8;&#x8BA4;&#x51FD;&#x6570;&#x7684;&#x751F;&#x6210;&#x884C;&#x4E3A;&#x3002;</p>
+<p><code>default</code>&#x51FD;&#x6570;&#x4F5C;&#x7528;&#x4E8E;&#x7C7B;&#x7684;&#x7279;&#x6B8A;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x4E3A;&#x5176;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x9ED8;&#x8BA4;&#x7684;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x4F53;&#xFF0C;&#x63D0;&#x9AD8;&#x4EE3;&#x7801;&#x7684;&#x6267;&#x884C;&#x6548;&#x7387;&#x3002;</p>
 <pre><code class="c++">#include &lt;iostream&gt;
 using namespace std;
 
-class A &#123;    // 未定义构造函数，编译器生成一个默认的构造函数
+class A {    // &#x672A;&#x5B9A;&#x4E49;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;
     public:
-        int get() &#123;
+        int get() {
             return a;
-        &#125;
+        }
     private:
         int a;
-&#125;;
+};
 
-int main() &#123;
-    A A1;  //可以实例化对象，类有默认构造函数
+int main() {
+    A A1;  //&#x53EF;&#x4EE5;&#x5B9E;&#x4F8B;&#x5316;&#x5BF9;&#x8C61;&#xFF0C;&#x7C7B;&#x6709;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;
     cout &lt;&lt; A1.get() &lt;&lt; endl;
     return 0;
-&#125;
-//输出：0
+}
+//&#x8F93;&#x51FA;&#xFF1A;0
 </code></pre>
-<p>但当类中含有构造函数时，类不会为其生成默认构造函数：</p>
+<p>&#x4F46;&#x5F53;&#x7C7B;&#x4E2D;&#x542B;&#x6709;&#x6784;&#x9020;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x7C7B;&#x4E0D;&#x4F1A;&#x4E3A;&#x5176;&#x751F;&#x6210;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF1A;</p>
 <pre><code class="c++">#include &lt;iostream&gt;
 using namespace std;
 
-class A &#123;
+class A {
     public:
-        A(int pa) &#123;
-            a = pa;    // 定义了一个特定的构造函数，则不生成默认构造函数
-        &#125;
-        int get() &#123;
+        A(int pa) {
+            a = pa;    // &#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x4E0D;&#x751F;&#x6210;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;
+        }
+        int get() {
             return a;
-        &#125;
+        }
     private:
         int a;
-&#125;;
+};
 
-int main() &#123;
-    A A1;  //类没有默认构造函数  编译失败
-    A A2(10);  // 使用特定的构造函数
+int main() {
+    A A1;  //&#x7C7B;&#x6CA1;&#x6709;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;  &#x7F16;&#x8BD1;&#x5931;&#x8D25;
+    A A2(10);  // &#x4F7F;&#x7528;&#x7279;&#x5B9A;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;
     cout &lt;&lt; A2.get() &lt;&lt; endl;
     return 0;
-&#125;
+}
 </code></pre>
-<p>可以让编译器自动生成特殊函数来代替手动编写的特殊成员函数。</p>
-<pre><code class="c++">class A &#123;
+<p>&#x53EF;&#x4EE5;&#x8BA9;&#x7F16;&#x8BD1;&#x5668;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7279;&#x6B8A;&#x51FD;&#x6570;&#x6765;&#x4EE3;&#x66FF;&#x624B;&#x52A8;&#x7F16;&#x5199;&#x7684;&#x7279;&#x6B8A;&#x6210;&#x5458;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="c++">class A {
     public:
-        A() &#123;&#125;; // 如果想要使用默认构造函数时，必须显示定义。
-        A(int pa) &#123;
+        A() {}; // &#x5982;&#x679C;&#x60F3;&#x8981;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x663E;&#x793A;&#x5B9A;&#x4E49;&#x3002;
+        A(int pa) {
             a = pa;
-        &#125;
-        int get() &#123;
+        }
+        int get() {
             return a;
-        &#125;
+        }
     private:
         int a;
-&#125;;
-//此时输出10
+};
+//&#x6B64;&#x65F6;&#x8F93;&#x51FA;10
 </code></pre>
-<p>C++11标准引入了一个新特性：<code>default</code>函数。只需在类的特殊成员函数声明后加上<code>=default;</code>，就可将该函数声明为<code>defaulted</code>函数，编译器将为显式声明的<code>default</code>函数自动生成函数体。</p>
-<pre><code class="c++">class A &#123;
+<p>C++11&#x6807;&#x51C6;&#x5F15;&#x5165;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7279;&#x6027;&#xFF1A;<code>default</code>&#x51FD;&#x6570;&#x3002;&#x53EA;&#x9700;&#x5728;&#x7C7B;&#x7684;&#x7279;&#x6B8A;&#x6210;&#x5458;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x540E;&#x52A0;&#x4E0A;<code>=default;</code>&#xFF0C;&#x5C31;&#x53EF;&#x5C06;&#x8BE5;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x4E3A;<code>defaulted</code>&#x51FD;&#x6570;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x5C06;&#x4E3A;&#x663E;&#x5F0F;&#x58F0;&#x660E;&#x7684;<code>default</code>&#x51FD;&#x6570;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x51FD;&#x6570;&#x4F53;&#x3002;</p>
+<pre><code class="c++">class A {
     public:
-        A() = default ; // 自动生成函数体。
-        A(int pa) &#123;
+        A() = default ; // &#x81EA;&#x52A8;&#x751F;&#x6210;&#x51FD;&#x6570;&#x4F53;&#x3002;
+        A(int pa) {
             a = pa;
-        &#125;
-        int get() &#123;
+        }
+        int get() {
             return a;
-        &#125;
+        }
     private:
         int a;
-&#125;;
+};
 </code></pre>
-<p><code>default</code>函数仅适用于类的特殊成员函数，且该特殊成员函数没有默认参数</p>
-<p><code>default</code>函数既可以在类内声明类外定义，也可以在类内直接定义。</p>
-<pre><code class="c++">class A &#123;
+<p><code>default</code>&#x51FD;&#x6570;&#x4EC5;&#x9002;&#x7528;&#x4E8E;&#x7C7B;&#x7684;&#x7279;&#x6B8A;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x4E14;&#x8BE5;&#x7279;&#x6B8A;&#x6210;&#x5458;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;</p>
+<p><code>default</code>&#x51FD;&#x6570;&#x65E2;&#x53EF;&#x4EE5;&#x5728;&#x7C7B;&#x5185;&#x58F0;&#x660E;&#x7C7B;&#x5916;&#x5B9A;&#x4E49;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x7C7B;&#x5185;&#x76F4;&#x63A5;&#x5B9A;&#x4E49;&#x3002;</p>
+<pre><code class="c++">class A {
     public:
-        A() = default;   //自动生成函数体，类内定义
-//A(double d) = default;  //错误：类型对于默认构造函数无效
-        A(int a) &#123;
+        A() = default;   //&#x81EA;&#x52A8;&#x751F;&#x6210;&#x51FD;&#x6570;&#x4F53;&#xFF0C;&#x7C7B;&#x5185;&#x5B9A;&#x4E49;
+//A(double d) = default;  //&#x9519;&#x8BEF;&#xFF1A;&#x7C7B;&#x578B;&#x5BF9;&#x4E8E;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x65E0;&#x6548;
+        A(int a) {
             this-&gt;a = a;
-        &#125;
+        }
         A(const A &amp;it);
-//int get() = default;  //错误：=default只能出现在默认构造函数、析构函数、复制构造函数、赋值运算符中
+//int get() = default;  //&#x9519;&#x8BEF;&#xFF1A;=default&#x53EA;&#x80FD;&#x51FA;&#x73B0;&#x5728;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3001;&#x6790;&#x6784;&#x51FD;&#x6570;&#x3001;&#x590D;&#x5236;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3001;&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#x4E2D;
     private:
         int a;
-&#125;;
+};
 
-A::A(const A &amp;it) = default;  //类内声明，类外定义
+A::A(const A &amp;it) = default;  //&#x7C7B;&#x5185;&#x58F0;&#x660E;&#xFF0C;&#x7C7B;&#x5916;&#x5B9A;&#x4E49;
 </code></pre>
-<h1 id="Delete"><a href="#Delete" class="headerlink" title="Delete"></a>Delete</h1><p>在C++11中，当我们定义一个类的成员函数时，如果后面使用<code>=delete</code>去修饰，那么就表示这个函数被定义为<code>deleted</code>，也就意味着这个成员函数不能再被调用，否则就会出错。</p>
-<pre><code class="c++">class TestClass &#123;
+<h1 id="Delete"><a href="#Delete" class="headerlink" title="Delete"></a>Delete</h1><p>&#x5728;C++11&#x4E2D;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x540E;&#x9762;&#x4F7F;&#x7528;<code>=delete</code>&#x53BB;&#x4FEE;&#x9970;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x8868;&#x793A;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;<code>deleted</code>&#xFF0C;&#x4E5F;&#x5C31;&#x610F;&#x5473;&#x7740;&#x8FD9;&#x4E2A;&#x6210;&#x5458;&#x51FD;&#x6570;&#x4E0D;&#x80FD;&#x518D;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x5426;&#x5219;&#x5C31;&#x4F1A;&#x51FA;&#x9519;&#x3002;</p>
+<pre><code class="c++">class TestClass {
     public:
         int func(int data) = delete;
-&#125;;
+};
 
-int main(void) &#123;
+int main(void) {
     TestClass obj;
-    obj.func(100);  // 编译出错
+    obj.func(100);  // &#x7F16;&#x8BD1;&#x51FA;&#x9519;
     return 0;
-&#125;
-//报错：[错误] use of deleted 函数 &#39;int TestClass::func(int)&#39;
+}
+//&#x62A5;&#x9519;&#xFF1A;[&#x9519;&#x8BEF;] use of deleted &#x51FD;&#x6570; &apos;int TestClass::func(int)&apos;
 </code></pre>
-<p>在C++11之前，当我们希望一个类不能被拷贝，就会把构造函数定义为<code>private</code>，但是在C++11里就不需要这样做了，只需要在构造函数后面加上<code>=delete</code>来修饰下就可以了。</p>
-<p>另一个应用：</p>
+<p>&#x5728;C++11&#x4E4B;&#x524D;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x4E00;&#x4E2A;&#x7C7B;&#x4E0D;&#x80FD;&#x88AB;&#x62F7;&#x8D1D;&#xFF0C;&#x5C31;&#x4F1A;&#x628A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x4E3A;<code>private</code>&#xFF0C;&#x4F46;&#x662F;&#x5728;C++11&#x91CC;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x8FD9;&#x6837;&#x505A;&#x4E86;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x540E;&#x9762;&#x52A0;&#x4E0A;<code>=delete</code>&#x6765;&#x4FEE;&#x9970;&#x4E0B;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+<p>&#x53E6;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#xFF1A;</p>
 <pre><code class="c++">#include &lt;cstdio&gt;
 
-class TestClass &#123;
+class TestClass {
     public:
-        void func(int data) &#123;
+        void func(int data) {
             printf(&quot;data: %d\n&quot;, data);
-        &#125;
-&#125;;
+        }
+};
 
-int main(void) &#123;
+int main(void) {
     TestClass obj;
     obj.func(100);
     obj.func(100.0);
     return 0;
-&#125;
-//输出：data: 100
+}
+//&#x8F93;&#x51FA;&#xFF1A;data: 100
 //data: 100
 </code></pre>
-<p>当我们把<code>100.0</code>传给<code>obj.func()</code>时，发生了隐式类型转换，由<code>double</code>转为了<code>int</code>，有时我们不希望发生这样的转换，我们就是希望传进来的参数和规定的类型一致，那么此时可以使用<code>=delete</code>来达到这个目的：</p>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x628A;<code>100.0</code>&#x4F20;&#x7ED9;<code>obj.func()</code>&#x65F6;&#xFF0C;&#x53D1;&#x751F;&#x4E86;&#x9690;&#x5F0F;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x7531;<code>double</code>&#x8F6C;&#x4E3A;&#x4E86;<code>int</code>&#xFF0C;&#x6709;&#x65F6;&#x6211;&#x4EEC;&#x4E0D;&#x5E0C;&#x671B;&#x53D1;&#x751F;&#x8FD9;&#x6837;&#x7684;&#x8F6C;&#x6362;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x662F;&#x5E0C;&#x671B;&#x4F20;&#x8FDB;&#x6765;&#x7684;&#x53C2;&#x6570;&#x548C;&#x89C4;&#x5B9A;&#x7684;&#x7C7B;&#x578B;&#x4E00;&#x81F4;&#xFF0C;&#x90A3;&#x4E48;&#x6B64;&#x65F6;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>=delete</code>&#x6765;&#x8FBE;&#x5230;&#x8FD9;&#x4E2A;&#x76EE;&#x7684;&#xFF1A;</p>
 <pre><code class="c++">#include &lt;cstdio&gt;
 
-class TestClass &#123;
+class TestClass {
     public:
-        void func(int data) &#123;
+        void func(int data) {
             printf(&quot;data: %d\n&quot;, data);
-        &#125;
+        }
         void func(double data) = delete;
-&#125;;
+};
 
-int main(void) &#123;
+int main(void) {
     TestClass obj;
     obj.func(100);
-    obj.func(100.0); // 编译出错
+    obj.func(100.0); // &#x7F16;&#x8BD1;&#x51FA;&#x9519;
     return 0;
-&#125;
-//报错：[错误] use of deleted 函数 &#39;void TestClass::func(double)&#39;
+}
+//&#x62A5;&#x9519;&#xFF1A;[&#x9519;&#x8BEF;] use of deleted &#x51FD;&#x6570; &apos;void TestClass::func(double)&apos;
 </code></pre>
-<h1 id="右值引用"><a href="#右值引用" class="headerlink" title="右值引用"></a>右值引用</h1><p>c++中引入了右值引用和移动语义，可以避免无谓的复制，提高程序性能。</p>
-<p>左值是可以放在赋值号左边可以被赋值的值，左值必须要在内存中有实体。</p>
-<p>右值是在赋值号右边取出，值赋给其他变量的值，右值可以在内存也可以在CPU寄存器。</p>
-<p>引用：变量的别名。</p>
-<p>引用的基本规则：声明引用的时候必须初始化，且一旦绑定，不可把引用绑定到其他对象；即引用必须初始化，不能对引用重定义；对引用的一切操作，就相当于对原对象的操作。</p>
-<p>C++03引用只能对左值，不能对右值。</p>
+<h1 id="&#x53F3;&#x503C;&#x5F15;&#x7528;"><a href="#&#x53F3;&#x503C;&#x5F15;&#x7528;" class="headerlink" title="&#x53F3;&#x503C;&#x5F15;&#x7528;"></a>&#x53F3;&#x503C;&#x5F15;&#x7528;</h1><p>c++&#x4E2D;&#x5F15;&#x5165;&#x4E86;&#x53F3;&#x503C;&#x5F15;&#x7528;&#x548C;&#x79FB;&#x52A8;&#x8BED;&#x4E49;&#xFF0C;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x65E0;&#x8C13;&#x7684;&#x590D;&#x5236;&#xFF0C;&#x63D0;&#x9AD8;&#x7A0B;&#x5E8F;&#x6027;&#x80FD;&#x3002;</p>
+<p>&#x5DE6;&#x503C;&#x662F;&#x53EF;&#x4EE5;&#x653E;&#x5728;&#x8D4B;&#x503C;&#x53F7;&#x5DE6;&#x8FB9;&#x53EF;&#x4EE5;&#x88AB;&#x8D4B;&#x503C;&#x7684;&#x503C;&#xFF0C;&#x5DE6;&#x503C;&#x5FC5;&#x987B;&#x8981;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x6709;&#x5B9E;&#x4F53;&#x3002;</p>
+<p>&#x53F3;&#x503C;&#x662F;&#x5728;&#x8D4B;&#x503C;&#x53F7;&#x53F3;&#x8FB9;&#x53D6;&#x51FA;&#xFF0C;&#x503C;&#x8D4B;&#x7ED9;&#x5176;&#x4ED6;&#x53D8;&#x91CF;&#x7684;&#x503C;&#xFF0C;&#x53F3;&#x503C;&#x53EF;&#x4EE5;&#x5728;&#x5185;&#x5B58;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;CPU&#x5BC4;&#x5B58;&#x5668;&#x3002;</p>
+<p>&#x5F15;&#x7528;&#xFF1A;&#x53D8;&#x91CF;&#x7684;&#x522B;&#x540D;&#x3002;</p>
+<p>&#x5F15;&#x7528;&#x7684;&#x57FA;&#x672C;&#x89C4;&#x5219;&#xFF1A;&#x58F0;&#x660E;&#x5F15;&#x7528;&#x7684;&#x65F6;&#x5019;&#x5FC5;&#x987B;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x4E14;&#x4E00;&#x65E6;&#x7ED1;&#x5B9A;&#xFF0C;&#x4E0D;&#x53EF;&#x628A;&#x5F15;&#x7528;&#x7ED1;&#x5B9A;&#x5230;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#xFF1B;&#x5373;&#x5F15;&#x7528;&#x5FC5;&#x987B;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x4E0D;&#x80FD;&#x5BF9;&#x5F15;&#x7528;&#x91CD;&#x5B9A;&#x4E49;&#xFF1B;&#x5BF9;&#x5F15;&#x7528;&#x7684;&#x4E00;&#x5207;&#x64CD;&#x4F5C;&#xFF0C;&#x5C31;&#x76F8;&#x5F53;&#x4E8E;&#x5BF9;&#x539F;&#x5BF9;&#x8C61;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>C++03&#x5F15;&#x7528;&#x53EA;&#x80FD;&#x5BF9;&#x5DE6;&#x503C;&#xFF0C;&#x4E0D;&#x80FD;&#x5BF9;&#x53F3;&#x503C;&#x3002;</p>
 <pre><code class="c++">int num = 10;
-int &amp;b = num; //正确
-int &amp;c = 10; //错误
-//报错：[错误] cannot bind non-const lvalue reference of type &#39;int&amp;&#39; 到 an rvalue of type &#39;int&#39;
+int &amp;b = num; //&#x6B63;&#x786E;
+int &amp;c = 10; //&#x9519;&#x8BEF;
+//&#x62A5;&#x9519;&#xFF1A;[&#x9519;&#x8BEF;] cannot bind non-const lvalue reference of type &apos;int&amp;&apos; &#x5230; an rvalue of type &apos;int&apos;
 </code></pre>
-<p>但是常量引用，对左值右值都可以。</p>
+<p>&#x4F46;&#x662F;&#x5E38;&#x91CF;&#x5F15;&#x7528;&#xFF0C;&#x5BF9;&#x5DE6;&#x503C;&#x53F3;&#x503C;&#x90FD;&#x53EF;&#x4EE5;&#x3002;</p>
 <pre><code class="c++">int num = 10;
 const int &amp;b = num;
 const int &amp;c = 10;
 </code></pre>
-<p>右值往往是没有名称的，因此要使用它只能借助引用的方式。</p>
-<p>C++11标准新引入了另一种引用方式，称为右值引用，用<code>&amp;&amp;</code>表示。</p>
-<p>和声明左值引用一样，右值引用也必须立即进行初始化操作，且只能使用右值进行初始化，比如：</p>
+<p>&#x53F3;&#x503C;&#x5F80;&#x5F80;&#x662F;&#x6CA1;&#x6709;&#x540D;&#x79F0;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x8981;&#x4F7F;&#x7528;&#x5B83;&#x53EA;&#x80FD;&#x501F;&#x52A9;&#x5F15;&#x7528;&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>C++11&#x6807;&#x51C6;&#x65B0;&#x5F15;&#x5165;&#x4E86;&#x53E6;&#x4E00;&#x79CD;&#x5F15;&#x7528;&#x65B9;&#x5F0F;&#xFF0C;&#x79F0;&#x4E3A;&#x53F3;&#x503C;&#x5F15;&#x7528;&#xFF0C;&#x7528;<code>&amp;&amp;</code>&#x8868;&#x793A;&#x3002;</p>
+<p>&#x548C;&#x58F0;&#x660E;&#x5DE6;&#x503C;&#x5F15;&#x7528;&#x4E00;&#x6837;&#xFF0C;&#x53F3;&#x503C;&#x5F15;&#x7528;&#x4E5F;&#x5FC5;&#x987B;&#x7ACB;&#x5373;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x64CD;&#x4F5C;&#xFF0C;&#x4E14;&#x53EA;&#x80FD;&#x4F7F;&#x7528;&#x53F3;&#x503C;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
 <pre><code class="c++">int num = 10;
-int &amp;&amp;a = num;   //右值引用不能初始化为左值
+int &amp;&amp;a = num;   //&#x53F3;&#x503C;&#x5F15;&#x7528;&#x4E0D;&#x80FD;&#x521D;&#x59CB;&#x5316;&#x4E3A;&#x5DE6;&#x503C;
 int &amp;&amp;a = 10;
-a = 20; // 可以修改
+a = 20; // &#x53EF;&#x4EE5;&#x4FEE;&#x6539;
 const int &amp;&amp;b = 10;
-b = 20; // 不可以修改
+b = 20; // &#x4E0D;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;
 </code></pre>
-<h1 id="深拷贝与浅拷贝"><a href="#深拷贝与浅拷贝" class="headerlink" title="深拷贝与浅拷贝"></a>深拷贝与浅拷贝</h1><h2 id="浅拷贝"><a href="#浅拷贝" class="headerlink" title="浅拷贝"></a>浅拷贝</h2><pre><code class="c++">#include &lt;iostream&gt;
+<h1 id="&#x6DF1;&#x62F7;&#x8D1D;&#x4E0E;&#x6D45;&#x62F7;&#x8D1D;"><a href="#&#x6DF1;&#x62F7;&#x8D1D;&#x4E0E;&#x6D45;&#x62F7;&#x8D1D;" class="headerlink" title="&#x6DF1;&#x62F7;&#x8D1D;&#x4E0E;&#x6D45;&#x62F7;&#x8D1D;"></a>&#x6DF1;&#x62F7;&#x8D1D;&#x4E0E;&#x6D45;&#x62F7;&#x8D1D;</h1><h2 id="&#x6D45;&#x62F7;&#x8D1D;"><a href="#&#x6D45;&#x62F7;&#x8D1D;" class="headerlink" title="&#x6D45;&#x62F7;&#x8D1D;"></a>&#x6D45;&#x62F7;&#x8D1D;</h2><pre><code class="c++">#include &lt;iostream&gt;
 using namespace std;
 
-class Test &#123;
+class Test {
     public:
         int i;
-        Test(int pi) &#123;
+        Test(int pi) {
             i = pi;
-        &#125;
-&#125;;
+        }
+};
 
-int main() &#123;
+int main() {
     Test a(10);
-    Test b = a;  // 默认的拷贝构造
+    Test b = a;  // &#x9ED8;&#x8BA4;&#x7684;&#x62F7;&#x8D1D;&#x6784;&#x9020;
     cout &lt;&lt; b.i &lt;&lt; endl;     // 10
-    a.i = 11;   // a 更新，
-    cout &lt;&lt; b.i &lt;&lt; endl;     // 10    b未更新，符合直观
-&#125;
+    a.i = 11;   // a &#x66F4;&#x65B0;&#xFF0C;
+    cout &lt;&lt; b.i &lt;&lt; endl;     // 10    b&#x672A;&#x66F4;&#x65B0;&#xFF0C;&#x7B26;&#x5408;&#x76F4;&#x89C2;
+}
 </code></pre>
-<p>浅拷贝有时不能反映意图：</p>
+<p>&#x6D45;&#x62F7;&#x8D1D;&#x6709;&#x65F6;&#x4E0D;&#x80FD;&#x53CD;&#x6620;&#x610F;&#x56FE;&#xFF1A;</p>
 <pre><code class="c++">#include &lt;iostream&gt;
 using namespace std;
 
-class Test &#123;
+class Test {
     public:
         int i;
         int *ptr;
-        Test(int pi) &#123;
+        Test(int pi) {
             i = pi;
             ptr = new int(pi * 2);
-        &#125;
-&#125;;
+        }
+};
 
-int main() &#123;
+int main() {
     Test a(10);
-    Test b = a;	  // 默认的拷贝构造
-    cout &lt;&lt; *b.ptr &lt;&lt; endl;  // 20，看起来没问题，但实际上是拷贝了地址
-    // 即：b.ptr==a.ptr. 这可能非本意
-    *a.ptr = 22;   // a更新
-    cout &lt;&lt; *b.ptr &lt;&lt; endl;    // 22. b也跟着跟新！
-&#125;
+    Test b = a;	  // &#x9ED8;&#x8BA4;&#x7684;&#x62F7;&#x8D1D;&#x6784;&#x9020;
+    cout &lt;&lt; *b.ptr &lt;&lt; endl;  // 20&#xFF0C;&#x770B;&#x8D77;&#x6765;&#x6CA1;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x62F7;&#x8D1D;&#x4E86;&#x5730;&#x5740;
+    // &#x5373;&#xFF1A;b.ptr==a.ptr. &#x8FD9;&#x53EF;&#x80FD;&#x975E;&#x672C;&#x610F;
+    *a.ptr = 22;   // a&#x66F4;&#x65B0;
+    cout &lt;&lt; *b.ptr &lt;&lt; endl;    // 22. b&#x4E5F;&#x8DDF;&#x7740;&#x8DDF;&#x65B0;&#xFF01;
+}
 </code></pre>
-<h2 id="深拷贝"><a href="#深拷贝" class="headerlink" title="深拷贝"></a>深拷贝</h2><pre><code class="c++">#include &lt;iostream&gt;
+<h2 id="&#x6DF1;&#x62F7;&#x8D1D;"><a href="#&#x6DF1;&#x62F7;&#x8D1D;" class="headerlink" title="&#x6DF1;&#x62F7;&#x8D1D;"></a>&#x6DF1;&#x62F7;&#x8D1D;</h2><pre><code class="c++">#include &lt;iostream&gt;
 using namespace std;
 
-class Test &#123;
+class Test {
     public:
         int i;
         int *ptr;
-        Test(int pi) &#123;
+        Test(int pi) {
             i = pi;
             ptr = new int(pi * 2);
-        &#125;
-        Test(const Test &amp;t) &#123;
+        }
+        Test(const Test &amp;t) {
             i = t.i;
             ptr = new int(*t.ptr);
-        &#125;
-&#125;;
+        }
+};
 
-int main() &#123;
+int main() {
     Test a(10);
-    Test b = a;	// 自定义的拷贝构造（深拷贝）
-    cout &lt;&lt; *b.ptr &lt;&lt; endl;   // 20.但只是*b.ptr=*a.ptr而b.ptr！=a.ptr
-    *a.ptr = 22;    // a更新了
-    cout &lt;&lt; *b.ptr &lt;&lt; endl;    //  20.b是独立于a的
-&#125;
+    Test b = a;	// &#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x62F7;&#x8D1D;&#x6784;&#x9020;&#xFF08;&#x6DF1;&#x62F7;&#x8D1D;&#xFF09;
+    cout &lt;&lt; *b.ptr &lt;&lt; endl;   // 20.&#x4F46;&#x53EA;&#x662F;*b.ptr=*a.ptr&#x800C;b.ptr&#xFF01;=a.ptr
+    *a.ptr = 22;    // a&#x66F4;&#x65B0;&#x4E86;
+    cout &lt;&lt; *b.ptr &lt;&lt; endl;    //  20.b&#x662F;&#x72EC;&#x7ACB;&#x4E8E;a&#x7684;
+}
 </code></pre>
-<p>如果成员有指针则往往需要深拷贝。</p>
-<h2 id="移动拷贝"><a href="#移动拷贝" class="headerlink" title="移动拷贝"></a>移动拷贝</h2><pre><code class="c++">#include &lt;iostream&gt;
+<p>&#x5982;&#x679C;&#x6210;&#x5458;&#x6709;&#x6307;&#x9488;&#x5219;&#x5F80;&#x5F80;&#x9700;&#x8981;&#x6DF1;&#x62F7;&#x8D1D;&#x3002;</p>
+<h2 id="&#x79FB;&#x52A8;&#x62F7;&#x8D1D;"><a href="#&#x79FB;&#x52A8;&#x62F7;&#x8D1D;" class="headerlink" title="&#x79FB;&#x52A8;&#x62F7;&#x8D1D;"></a>&#x79FB;&#x52A8;&#x62F7;&#x8D1D;</h2><pre><code class="c++">#include &lt;iostream&gt;
 using namespace std;
 
-class demo &#123;
+class demo {
     public:
-        demo() : num(new int(0)) &#123;
+        demo() : num(new int(0)) {
             cout &lt;&lt; &quot;construct!&quot; &lt;&lt; endl;
-        &#125;
-        //拷贝构造函数
-        demo(const demo &amp;d) : num(new int(*d.num)) &#123;
+        }
+        //&#x62F7;&#x8D1D;&#x6784;&#x9020;&#x51FD;&#x6570;
+        demo(const demo &amp;d) : num(new int(*d.num)) {
             cout &lt;&lt; &quot;copy construct!&quot; &lt;&lt; endl;
-        &#125;
-        ~demo() &#123;
+        }
+        ~demo() {
             cout &lt;&lt; &quot;class destruct!&quot; &lt;&lt; endl;
-        &#125;
+        }
     private:
         int *num;
-&#125;;
+};
 
-demo get_demo() &#123;
+demo get_demo() {
     return demo();
-&#125;
+}
 
-int main() &#123;
+int main() {
     demo a = get_demo();
     return 0;
-&#125;
+}
 
-//完整的输出：
-//construct!              &lt;-- 执行 demo()
-//copy construct!         &lt;-- 执行 return demo()
-//class destruct!         &lt;-- 销毁 demo() 产生的匿名对象
-//copy construct!         &lt;-- 执行 a = get_demo()
-//class destruct!         &lt;-- 销毁 get_demo() 返回的临时对象
-//class destruct!         &lt;-- 销毁 a
+//&#x5B8C;&#x6574;&#x7684;&#x8F93;&#x51FA;&#xFF1A;
+//construct!&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &lt;-- &#x6267;&#x884C; demo()
+//copy construct!&#xA0; &#xA0; &#xA0; &#xA0;  &lt;-- &#x6267;&#x884C; return demo()
+//class destruct!&#xA0; &#xA0; &#xA0; &#xA0; &#xA0;&lt;-- &#x9500;&#x6BC1; demo() &#x4EA7;&#x751F;&#x7684;&#x533F;&#x540D;&#x5BF9;&#x8C61;
+//copy construct!&#xA0; &#xA0; &#xA0; &#xA0;  &lt;-- &#x6267;&#x884C; a = get_demo()
+//class destruct!&#xA0; &#xA0; &#xA0; &#xA0; &#xA0;&lt;-- &#x9500;&#x6BC1; get_demo() &#x8FD4;&#x56DE;&#x7684;&#x4E34;&#x65F6;&#x5BF9;&#x8C61;
+//class destruct!&#xA0; &#xA0; &#xA0; &#xA0; &#xA0;&lt;-- &#x9500;&#x6BC1; a
 
-//编译器优化后：
+//&#x7F16;&#x8BD1;&#x5668;&#x4F18;&#x5316;&#x540E;&#xFF1A;
 //construct!
 //class destruct!
 </code></pre>
-<p>利用拷贝构造函数实现对<code>a</code>对象的初始化，底层实际上进行了2次拷贝（而且是深拷贝）操作。</p>
-<p>对于仅申请少量堆空间的临时对象来说，深拷贝的执行效率依旧可以接受。</p>
-<p>如果临时对象中的指针成员申请了大量的堆空间，2次深拷贝操作会影响<code>a</code>对象初始化的执行效率。</p>
-<p>当类中包含指针类型的成员变量，使用其它对象来初始化同类对象时，怎样才能避免深拷贝导致的效率问题？</p>
-<p>C++11标准引入了解决方案，该标准中引入了右值引用的语法，借助它可以实现移动语义。</p>
-<h2 id="移动构造函数"><a href="#移动构造函数" class="headerlink" title="移动构造函数"></a>移动构造函数</h2><p>移动语义：以移动而非深拷贝的方式初始化含有指针成员的类对象，将其他对象（通常是临时对象）拥有的内存资源“移为已用”。</p>
+<p>&#x5229;&#x7528;&#x62F7;&#x8D1D;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x5BF9;<code>a</code>&#x5BF9;&#x8C61;&#x7684;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x5E95;&#x5C42;&#x5B9E;&#x9645;&#x4E0A;&#x8FDB;&#x884C;&#x4E86;2&#x6B21;&#x62F7;&#x8D1D;&#xFF08;&#x800C;&#x4E14;&#x662F;&#x6DF1;&#x62F7;&#x8D1D;&#xFF09;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x4EC5;&#x7533;&#x8BF7;&#x5C11;&#x91CF;&#x5806;&#x7A7A;&#x95F4;&#x7684;&#x4E34;&#x65F6;&#x5BF9;&#x8C61;&#x6765;&#x8BF4;&#xFF0C;&#x6DF1;&#x62F7;&#x8D1D;&#x7684;&#x6267;&#x884C;&#x6548;&#x7387;&#x4F9D;&#x65E7;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E34;&#x65F6;&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x6307;&#x9488;&#x6210;&#x5458;&#x7533;&#x8BF7;&#x4E86;&#x5927;&#x91CF;&#x7684;&#x5806;&#x7A7A;&#x95F4;&#xFF0C;2&#x6B21;&#x6DF1;&#x62F7;&#x8D1D;&#x64CD;&#x4F5C;&#x4F1A;&#x5F71;&#x54CD;<code>a</code>&#x5BF9;&#x8C61;&#x521D;&#x59CB;&#x5316;&#x7684;&#x6267;&#x884C;&#x6548;&#x7387;&#x3002;</p>
+<p>&#x5F53;&#x7C7B;&#x4E2D;&#x5305;&#x542B;&#x6307;&#x9488;&#x7C7B;&#x578B;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#xFF0C;&#x4F7F;&#x7528;&#x5176;&#x5B83;&#x5BF9;&#x8C61;&#x6765;&#x521D;&#x59CB;&#x5316;&#x540C;&#x7C7B;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x600E;&#x6837;&#x624D;&#x80FD;&#x907F;&#x514D;&#x6DF1;&#x62F7;&#x8D1D;&#x5BFC;&#x81F4;&#x7684;&#x6548;&#x7387;&#x95EE;&#x9898;&#xFF1F;</p>
+<p>C++11&#x6807;&#x51C6;&#x5F15;&#x5165;&#x4E86;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x8BE5;&#x6807;&#x51C6;&#x4E2D;&#x5F15;&#x5165;&#x4E86;&#x53F3;&#x503C;&#x5F15;&#x7528;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x501F;&#x52A9;&#x5B83;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x79FB;&#x52A8;&#x8BED;&#x4E49;&#x3002;</p>
+<h2 id="&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;"><a href="#&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;" class="headerlink" title="&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;"></a>&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;</h2><p>&#x79FB;&#x52A8;&#x8BED;&#x4E49;&#xFF1A;&#x4EE5;&#x79FB;&#x52A8;&#x800C;&#x975E;&#x6DF1;&#x62F7;&#x8D1D;&#x7684;&#x65B9;&#x5F0F;&#x521D;&#x59CB;&#x5316;&#x542B;&#x6709;&#x6307;&#x9488;&#x6210;&#x5458;&#x7684;&#x7C7B;&#x5BF9;&#x8C61;&#xFF0C;&#x5C06;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#xFF08;&#x901A;&#x5E38;&#x662F;&#x4E34;&#x65F6;&#x5BF9;&#x8C61;&#xFF09;&#x62E5;&#x6709;&#x7684;&#x5185;&#x5B58;&#x8D44;&#x6E90;&#x201C;&#x79FB;&#x4E3A;&#x5DF2;&#x7528;&#x201D;&#x3002;</p>
 <pre><code class="c++">#include &lt;iostream&gt;
 using namespace std;
 
-class demo &#123;
+class demo {
     public:
-        demo(): num(new int(0)) &#123;
+        demo(): num(new int(0)) {
             cout &lt;&lt; &quot;construct!&quot; &lt;&lt; endl;
-        &#125;
-        demo(const demo &amp;d): num(new int(*d.num)) &#123;
+        }
+        demo(const demo &amp;d): num(new int(*d.num)) {
             cout &lt;&lt; &quot;copy construct!&quot; &lt;&lt; endl;
-        &#125;
-        //添加移动构造函数
-        demo(demo &amp;&amp;d): num(d.num) &#123;
+        }
+        //&#x6DFB;&#x52A0;&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;
+        demo(demo &amp;&amp;d): num(d.num) {
             d.num = NULL;
             cout &lt;&lt; &quot;move construct!&quot; &lt;&lt; endl;
-        &#125;
-        ~demo() &#123;
+        }
+        ~demo() {
             cout &lt;&lt; &quot;class destruct!&quot; &lt;&lt; endl;
-        &#125;
+        }
     private:
         int *num;
-&#125;;
+};
 
-demo get_demo() &#123;
+demo get_demo() {
     return demo();
-&#125;
+}
 
-int main() &#123;
+int main() {
     demo a = get_demo();
     return 0;
-&#125;
-//执行过程：
+}
+//&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#xFF1A;
 //construct!
 //move construct!
 //class destruct!
@@ -657,51 +657,51 @@ int main() &#123;
 //class destruct!
 //class destruct!
 
-//输出：
+//&#x8F93;&#x51FA;&#xFF1A;
 //construct!
 //class destruct!
 </code></pre>
-<p>函数使用右值引用形式的参数，又称为移动构造函数。</p>
-<p>在此构造函数中，<code>num</code>指针变量采用的是浅拷贝的复制方式，同时在函数内部重置了<code>d.num</code>，有效避免了“同一块对空间被释放多次”情况的发生。</p>
-<p>使用临时对象初始化<code>a</code>对象过程中产生的2次拷贝操作，都转由移动构造函数完成。</p>
-<p>非<code>const</code>右值引用只能操作右值，程序执行结果中产生的临时对象（例如函数返回值、<code>lambda</code>表达式等）既无名称也无法获取其存储地址，所以属于右值。</p>
-<p>当类中同时包含拷贝构造函数和移动构造函数时，如果使用临时对象初始化当前类的对象，编译器会优先调用移动构造函数来完成此操作。只有当类中没有合适的移动构造函数时，编译器才会退而求其次，调用拷贝构造函数。</p>
-<p>在实际开发中，通常在类中自定义移动构造函数的同时，会再为其自定义一个适当的拷贝构造函数：当利用右值初始化类对象时，会调用移动构造函数；使用左值（非右值）初始化类对象时，会调用拷贝构造函数。</p>
-<p>如果使用左值初始化同类对象，但也想调用移动构造函数完成，如何实现？</p>
-<p>默认情况下，左值初始化同类对象只能通过拷贝构造函数完成，如果想调用移动构造函数，则必须使用右值进行初始化。C++11标准中为了满足用户使用左值初始化同类对象时也通过移动构造函数完成的需求，新引入了 <code>std::move()</code>函数，它可以将左值强制转换成对应的右值，由此便可以使用移动构造函数。</p>
-<h2 id="move-arg"><a href="#move-arg" class="headerlink" title="move(arg)"></a>move(arg)</h2><p>其中，<code>arg</code>表示指定的左值对象。该函数会返回<code>arg</code>对象的右值形式。</p>
+<p>&#x51FD;&#x6570;&#x4F7F;&#x7528;&#x53F3;&#x503C;&#x5F15;&#x7528;&#x5F62;&#x5F0F;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x53C8;&#x79F0;&#x4E3A;&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x5728;&#x6B64;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;<code>num</code>&#x6307;&#x9488;&#x53D8;&#x91CF;&#x91C7;&#x7528;&#x7684;&#x662F;&#x6D45;&#x62F7;&#x8D1D;&#x7684;&#x590D;&#x5236;&#x65B9;&#x5F0F;&#xFF0C;&#x540C;&#x65F6;&#x5728;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x91CD;&#x7F6E;&#x4E86;<code>d.num</code>&#xFF0C;&#x6709;&#x6548;&#x907F;&#x514D;&#x4E86;&#x201C;&#x540C;&#x4E00;&#x5757;&#x5BF9;&#x7A7A;&#x95F4;&#x88AB;&#x91CA;&#x653E;&#x591A;&#x6B21;&#x201D;&#x60C5;&#x51B5;&#x7684;&#x53D1;&#x751F;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x4E34;&#x65F6;&#x5BF9;&#x8C61;&#x521D;&#x59CB;&#x5316;<code>a</code>&#x5BF9;&#x8C61;&#x8FC7;&#x7A0B;&#x4E2D;&#x4EA7;&#x751F;&#x7684;2&#x6B21;&#x62F7;&#x8D1D;&#x64CD;&#x4F5C;&#xFF0C;&#x90FD;&#x8F6C;&#x7531;&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5B8C;&#x6210;&#x3002;</p>
+<p>&#x975E;<code>const</code>&#x53F3;&#x503C;&#x5F15;&#x7528;&#x53EA;&#x80FD;&#x64CD;&#x4F5C;&#x53F3;&#x503C;&#xFF0C;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x4E2D;&#x4EA7;&#x751F;&#x7684;&#x4E34;&#x65F6;&#x5BF9;&#x8C61;&#xFF08;&#x4F8B;&#x5982;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x503C;&#x3001;<code>lambda</code>&#x8868;&#x8FBE;&#x5F0F;&#x7B49;&#xFF09;&#x65E2;&#x65E0;&#x540D;&#x79F0;&#x4E5F;&#x65E0;&#x6CD5;&#x83B7;&#x53D6;&#x5176;&#x5B58;&#x50A8;&#x5730;&#x5740;&#xFF0C;&#x6240;&#x4EE5;&#x5C5E;&#x4E8E;&#x53F3;&#x503C;&#x3002;</p>
+<p>&#x5F53;&#x7C7B;&#x4E2D;&#x540C;&#x65F6;&#x5305;&#x542B;&#x62F7;&#x8D1D;&#x6784;&#x9020;&#x51FD;&#x6570;&#x548C;&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x4E34;&#x65F6;&#x5BF9;&#x8C61;&#x521D;&#x59CB;&#x5316;&#x5F53;&#x524D;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x4F18;&#x5148;&#x8C03;&#x7528;&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6765;&#x5B8C;&#x6210;&#x6B64;&#x64CD;&#x4F5C;&#x3002;&#x53EA;&#x6709;&#x5F53;&#x7C7B;&#x4E2D;&#x6CA1;&#x6709;&#x5408;&#x9002;&#x7684;&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x624D;&#x4F1A;&#x9000;&#x800C;&#x6C42;&#x5176;&#x6B21;&#xFF0C;&#x8C03;&#x7528;&#x62F7;&#x8D1D;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x5728;&#x5B9E;&#x9645;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x901A;&#x5E38;&#x5728;&#x7C7B;&#x4E2D;&#x81EA;&#x5B9A;&#x4E49;&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x4F1A;&#x518D;&#x4E3A;&#x5176;&#x81EA;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x9002;&#x5F53;&#x7684;&#x62F7;&#x8D1D;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF1A;&#x5F53;&#x5229;&#x7528;&#x53F3;&#x503C;&#x521D;&#x59CB;&#x5316;&#x7C7B;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF1B;&#x4F7F;&#x7528;&#x5DE6;&#x503C;&#xFF08;&#x975E;&#x53F3;&#x503C;&#xFF09;&#x521D;&#x59CB;&#x5316;&#x7C7B;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;&#x62F7;&#x8D1D;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F7F;&#x7528;&#x5DE6;&#x503C;&#x521D;&#x59CB;&#x5316;&#x540C;&#x7C7B;&#x5BF9;&#x8C61;&#xFF0C;&#x4F46;&#x4E5F;&#x60F3;&#x8C03;&#x7528;&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5B8C;&#x6210;&#xFF0C;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#xFF1F;</p>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5DE6;&#x503C;&#x521D;&#x59CB;&#x5316;&#x540C;&#x7C7B;&#x5BF9;&#x8C61;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x62F7;&#x8D1D;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5B8C;&#x6210;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x8C03;&#x7528;&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x53F3;&#x503C;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x3002;C++11&#x6807;&#x51C6;&#x4E2D;&#x4E3A;&#x4E86;&#x6EE1;&#x8DB3;&#x7528;&#x6237;&#x4F7F;&#x7528;&#x5DE6;&#x503C;&#x521D;&#x59CB;&#x5316;&#x540C;&#x7C7B;&#x5BF9;&#x8C61;&#x65F6;&#x4E5F;&#x901A;&#x8FC7;&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5B8C;&#x6210;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x65B0;&#x5F15;&#x5165;&#x4E86; <code>std::move()</code>&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x5C06;&#x5DE6;&#x503C;&#x5F3A;&#x5236;&#x8F6C;&#x6362;&#x6210;&#x5BF9;&#x5E94;&#x7684;&#x53F3;&#x503C;&#xFF0C;&#x7531;&#x6B64;&#x4FBF;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<h2 id="move-arg"><a href="#move-arg" class="headerlink" title="move(arg)"></a>move(arg)</h2><p>&#x5176;&#x4E2D;&#xFF0C;<code>arg</code>&#x8868;&#x793A;&#x6307;&#x5B9A;&#x7684;&#x5DE6;&#x503C;&#x5BF9;&#x8C61;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x4F1A;&#x8FD4;&#x56DE;<code>arg</code>&#x5BF9;&#x8C61;&#x7684;&#x53F3;&#x503C;&#x5F62;&#x5F0F;&#x3002;</p>
 <pre><code class="c++">#include &lt;iostream&gt;
 using namespace std;
 
-class movedemo &#123;
+class movedemo {
     public:
-        movedemo() : num(new int(0)) &#123;
+        movedemo() : num(new int(0)) {
             cout &lt;&lt; &quot;construct!&quot; &lt;&lt; endl;
-        &#125;
-        //拷贝构造函数
-        movedemo(const movedemo &amp;d) : num(new int(*d.num)) &#123;
+        }
+        //&#x62F7;&#x8D1D;&#x6784;&#x9020;&#x51FD;&#x6570;
+        movedemo(const movedemo &amp;d) : num(new int(*d.num)) {
             cout &lt;&lt; &quot;copy construct!&quot; &lt;&lt; endl;
-        &#125;
-        //移动构造函数
-        movedemo(movedemo &amp;&amp;d) : num(d.num) &#123;
+        }
+        //&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;
+        movedemo(movedemo &amp;&amp;d) : num(d.num) {
             d.num = NULL;
             cout &lt;&lt; &quot;move construct!&quot; &lt;&lt; endl;
-        &#125;
+        }
         int *num;
-&#125;;
+};
 
-int main() &#123;
+int main() {
     movedemo demo;
     cout &lt;&lt; &quot;demo2:\n&quot;;
     movedemo demo2 = demo;
-    cout &lt;&lt; *demo2.num &lt;&lt; endl;   //可以执行
+    cout &lt;&lt; *demo2.num &lt;&lt; endl;   //&#x53EF;&#x4EE5;&#x6267;&#x884C;
     cout &lt;&lt; &quot;demo3:\n&quot;;
     movedemo demo3 = std::move(demo);
-    //此时 demo.num = NULL，因此下面代码会报运行时错误
+    //&#x6B64;&#x65F6; demo.num = NULL&#xFF0C;&#x56E0;&#x6B64;&#x4E0B;&#x9762;&#x4EE3;&#x7801;&#x4F1A;&#x62A5;&#x8FD0;&#x884C;&#x65F6;&#x9519;&#x8BEF;
     //cout &lt;&lt; *demo.num &lt;&lt; endl;
     return 0;
-&#125;
-//输出：
+}
+//&#x8F93;&#x51FA;&#xFF1A;
 //construct!
 //demo2:
 //copy construct!
@@ -709,9 +709,9 @@ int main() &#123;
 //demo3:
 //move construct!
 </code></pre>
-<p>通过观察程序的输出结果，以及对比<code>demo2</code>和<code>demo3</code>初始化操作不难得知，<code>demo</code>对象作为左值，直接用于初始化<code> demo2</code>对象，其底层调用的是拷贝构造函数；而通过调用<code>move()</code>函数可以得到<code>demo</code>对象的右值形式，用其初始化<code>demo3</code>对象，编译器会优先调用移动构造函数。</p>
-<p>注意，调用拷贝构造函数，并不影响<code>demo</code>对象，但如果调用移动构造函数，由于函数内部会重置<code>demo.num</code>指针的指向为<code>NULL</code>，所以程序中后面代码会导致程序运行时发生错误。</p>
-<h2 id="完美转发（Perfect-Forward）"><a href="#完美转发（Perfect-Forward）" class="headerlink" title="完美转发（Perfect Forward）"></a>完美转发（Perfect Forward）</h2><p>完美转发指的是函数模板可以将自己的参数“完美”地转发给内部调用的其它函数。所谓完美，即不仅能准确地转发参数的值，还能保证被转发参数的左、右值属性不变。</p>
+<p>&#x901A;&#x8FC7;&#x89C2;&#x5BDF;&#x7A0B;&#x5E8F;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF0C;&#x4EE5;&#x53CA;&#x5BF9;&#x6BD4;<code>demo2</code>&#x548C;<code>demo3</code>&#x521D;&#x59CB;&#x5316;&#x64CD;&#x4F5C;&#x4E0D;&#x96BE;&#x5F97;&#x77E5;&#xFF0C;<code>demo</code>&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;&#x5DE6;&#x503C;&#xFF0C;&#x76F4;&#x63A5;&#x7528;&#x4E8E;&#x521D;&#x59CB;&#x5316;<code> demo2</code>&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x5E95;&#x5C42;&#x8C03;&#x7528;&#x7684;&#x662F;&#x62F7;&#x8D1D;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF1B;&#x800C;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>move()</code>&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x5F97;&#x5230;<code>demo</code>&#x5BF9;&#x8C61;&#x7684;&#x53F3;&#x503C;&#x5F62;&#x5F0F;&#xFF0C;&#x7528;&#x5176;&#x521D;&#x59CB;&#x5316;<code>demo3</code>&#x5BF9;&#x8C61;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x4F18;&#x5148;&#x8C03;&#x7528;&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x8C03;&#x7528;&#x62F7;&#x8D1D;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x4E0D;&#x5F71;&#x54CD;<code>demo</code>&#x5BF9;&#x8C61;&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x8C03;&#x7528;&#x79FB;&#x52A8;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x7531;&#x4E8E;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x4F1A;&#x91CD;&#x7F6E;<code>demo.num</code>&#x6307;&#x9488;&#x7684;&#x6307;&#x5411;&#x4E3A;<code>NULL</code>&#xFF0C;&#x6240;&#x4EE5;&#x7A0B;&#x5E8F;&#x4E2D;&#x540E;&#x9762;&#x4EE3;&#x7801;&#x4F1A;&#x5BFC;&#x81F4;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x65F6;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x3002;</p>
+<h2 id="&#x5B8C;&#x7F8E;&#x8F6C;&#x53D1;&#xFF08;Perfect-Forward&#xFF09;"><a href="#&#x5B8C;&#x7F8E;&#x8F6C;&#x53D1;&#xFF08;Perfect-Forward&#xFF09;" class="headerlink" title="&#x5B8C;&#x7F8E;&#x8F6C;&#x53D1;&#xFF08;Perfect Forward&#xFF09;"></a>&#x5B8C;&#x7F8E;&#x8F6C;&#x53D1;&#xFF08;Perfect Forward&#xFF09;</h2><p>&#x5B8C;&#x7F8E;&#x8F6C;&#x53D1;&#x6307;&#x7684;&#x662F;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x53EF;&#x4EE5;&#x5C06;&#x81EA;&#x5DF1;&#x7684;&#x53C2;&#x6570;&#x201C;&#x5B8C;&#x7F8E;&#x201D;&#x5730;&#x8F6C;&#x53D1;&#x7ED9;&#x5185;&#x90E8;&#x8C03;&#x7528;&#x7684;&#x5176;&#x5B83;&#x51FD;&#x6570;&#x3002;&#x6240;&#x8C13;&#x5B8C;&#x7F8E;&#xFF0C;&#x5373;&#x4E0D;&#x4EC5;&#x80FD;&#x51C6;&#x786E;&#x5730;&#x8F6C;&#x53D1;&#x53C2;&#x6570;&#x7684;&#x503C;&#xFF0C;&#x8FD8;&#x80FD;&#x4FDD;&#x8BC1;&#x88AB;&#x8F6C;&#x53D1;&#x53C2;&#x6570;&#x7684;&#x5DE6;&#x3001;&#x53F3;&#x503C;&#x5C5E;&#x6027;&#x4E0D;&#x53D8;&#x3002;</p>
 
         </div>
 

@@ -8,9 +8,9 @@
     
     <title>#4 继承与多态 | Function&#39;s Blog</title>
 
-    <meta name="description" content="&lt;h1 id=&#34;继承&#34;&gt;&lt;a href=&#34;#继承&#34; class=&#34;headerlink&#34; title=&#34;继承&#34;&gt;&lt;/a&gt;继承&lt;/h1&gt;&lt;p&gt;面向对象编程的关键思想是多态性（polymorphism），使用继承可以实现多态性。&lt;/p&gt;
-&lt;p&gt;通过继承我们能够定义这样的类，它们对类型之间的关系建模，共享公共的东西，仅仅特化本质上不同的东西。&lt;/p&gt;
-&lt;p&gt;派生类（derived class）能够：继承基类（base class）定义的成员，无须改变而使用那些与派生类型具体特性不相关的操作，重定义那些与派生类型相关的成员函数，将函数特化，考虑派生类型的特性。最后，除了从基类继承的成员之外，派生类还可以定义更多的成员。&lt;/p&gt;">
+    <meta name="description" content="&lt;h1 id=&#34;&amp;#x7EE7;&amp;#x627F;&#34;&gt;&lt;a href=&#34;#&amp;#x7EE7;&amp;#x627F;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x7EE7;&amp;#x627F;&#34;&gt;&lt;/a&gt;&amp;#x7EE7;&amp;#x627F;&lt;/h1&gt;&lt;p&gt;&amp;#x9762;&amp;#x5411;&amp;#x5BF9;&amp;#x8C61;&amp;#x7F16;&amp;#x7A0B;&amp;#x7684;&amp;#x5173;&amp;#x952E;&amp;#x601D;&amp;#x60F3;&amp;#x662F;&amp;#x591A;&amp;#x6001;&amp;#x6027;&amp;#xFF08;polymorphism&amp;#xFF09;&amp;#xFF0C;&amp;#x4F7F;&amp;#x7528;&amp;#x7EE7;&amp;#x627F;&amp;#x53EF;&amp;#x4EE5;&amp;#x5B9E;&amp;#x73B0;&amp;#x591A;&amp;#x6001;&amp;#x6027;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x901A;&amp;#x8FC7;&amp;#x7EE7;&amp;#x627F;&amp;#x6211;&amp;#x4EEC;&amp;#x80FD;&amp;#x591F;&amp;#x5B9A;&amp;#x4E49;&amp;#x8FD9;&amp;#x6837;&amp;#x7684;&amp;#x7C7B;&amp;#xFF0C;&amp;#x5B83;&amp;#x4EEC;&amp;#x5BF9;&amp;#x7C7B;&amp;#x578B;&amp;#x4E4B;&amp;#x95F4;&amp;#x7684;&amp;#x5173;&amp;#x7CFB;&amp;#x5EFA;&amp;#x6A21;&amp;#xFF0C;&amp;#x5171;&amp;#x4EAB;&amp;#x516C;&amp;#x5171;&amp;#x7684;&amp;#x4E1C;&amp;#x897F;&amp;#xFF0C;&amp;#x4EC5;&amp;#x4EC5;&amp;#x7279;&amp;#x5316;&amp;#x672C;&amp;#x8D28;&amp;#x4E0A;&amp;#x4E0D;&amp;#x540C;&amp;#x7684;&amp;#x4E1C;&amp;#x897F;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#xFF08;derived class&amp;#xFF09;&amp;#x80FD;&amp;#x591F;&amp;#xFF1A;&amp;#x7EE7;&amp;#x627F;&amp;#x57FA;&amp;#x7C7B;&amp;#xFF08;base class&amp;#xFF09;&amp;#x5B9A;&amp;#x4E49;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#xFF0C;&amp;#x65E0;&amp;#x987B;&amp;#x6539;&amp;#x53D8;&amp;#x800C;&amp;#x4F7F;&amp;#x7528;&amp;#x90A3;&amp;#x4E9B;&amp;#x4E0E;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x578B;&amp;#x5177;&amp;#x4F53;&amp;#x7279;&amp;#x6027;&amp;#x4E0D;&amp;#x76F8;&amp;#x5173;&amp;#x7684;&amp;#x64CD;&amp;#x4F5C;&amp;#xFF0C;&amp;#x91CD;&amp;#x5B9A;&amp;#x4E49;&amp;#x90A3;&amp;#x4E9B;&amp;#x4E0E;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x578B;&amp;#x76F8;&amp;#x5173;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#x51FD;&amp;#x6570;&amp;#xFF0C;&amp;#x5C06;&amp;#x51FD;&amp;#x6570;&amp;#x7279;&amp;#x5316;&amp;#xFF0C;&amp;#x8003;&amp;#x8651;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x578B;&amp;#x7684;&amp;#x7279;&amp;#x6027;&amp;#x3002;&amp;#x6700;&amp;#x540E;&amp;#xFF0C;&amp;#x9664;&amp;#x4E86;&amp;#x4ECE;&amp;#x57FA;&amp;#x7C7B;&amp;#x7EE7;&amp;#x627F;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#x4E4B;&amp;#x5916;&amp;#xFF0C;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x8FD8;&amp;#x53EF;&amp;#x4EE5;&amp;#x5B9A;&amp;#x4E49;&amp;#x66F4;&amp;#x591A;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#x3002;&lt;/p&gt;">
     <meta name="keywords" content="">
 
     
@@ -18,25 +18,25 @@
     <meta property="og:locale" content="zh-CN" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content= "#4 继承与多态 | Function&#39;s Blog"  />
-    <meta property="og:description" content= "&lt;h1 id=&#34;继承&#34;&gt;&lt;a href=&#34;#继承&#34; class=&#34;headerlink&#34; title=&#34;继承&#34;&gt;&lt;/a&gt;继承&lt;/h1&gt;&lt;p&gt;面向对象编程的关键思想是多态性（polymorphism），使用继承可以实现多态性。&lt;/p&gt;
-&lt;p&gt;通过继承我们能够定义这样的类，它们对类型之间的关系建模，共享公共的东西，仅仅特化本质上不同的东西。&lt;/p&gt;
-&lt;p&gt;派生类（derived class）能够：继承基类（base class）定义的成员，无须改变而使用那些与派生类型具体特性不相关的操作，重定义那些与派生类型相关的成员函数，将函数特化，考虑派生类型的特性。最后，除了从基类继承的成员之外，派生类还可以定义更多的成员。&lt;/p&gt;" />
+    <meta property="og:description" content= "&lt;h1 id=&#34;&amp;#x7EE7;&amp;#x627F;&#34;&gt;&lt;a href=&#34;#&amp;#x7EE7;&amp;#x627F;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x7EE7;&amp;#x627F;&#34;&gt;&lt;/a&gt;&amp;#x7EE7;&amp;#x627F;&lt;/h1&gt;&lt;p&gt;&amp;#x9762;&amp;#x5411;&amp;#x5BF9;&amp;#x8C61;&amp;#x7F16;&amp;#x7A0B;&amp;#x7684;&amp;#x5173;&amp;#x952E;&amp;#x601D;&amp;#x60F3;&amp;#x662F;&amp;#x591A;&amp;#x6001;&amp;#x6027;&amp;#xFF08;polymorphism&amp;#xFF09;&amp;#xFF0C;&amp;#x4F7F;&amp;#x7528;&amp;#x7EE7;&amp;#x627F;&amp;#x53EF;&amp;#x4EE5;&amp;#x5B9E;&amp;#x73B0;&amp;#x591A;&amp;#x6001;&amp;#x6027;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x901A;&amp;#x8FC7;&amp;#x7EE7;&amp;#x627F;&amp;#x6211;&amp;#x4EEC;&amp;#x80FD;&amp;#x591F;&amp;#x5B9A;&amp;#x4E49;&amp;#x8FD9;&amp;#x6837;&amp;#x7684;&amp;#x7C7B;&amp;#xFF0C;&amp;#x5B83;&amp;#x4EEC;&amp;#x5BF9;&amp;#x7C7B;&amp;#x578B;&amp;#x4E4B;&amp;#x95F4;&amp;#x7684;&amp;#x5173;&amp;#x7CFB;&amp;#x5EFA;&amp;#x6A21;&amp;#xFF0C;&amp;#x5171;&amp;#x4EAB;&amp;#x516C;&amp;#x5171;&amp;#x7684;&amp;#x4E1C;&amp;#x897F;&amp;#xFF0C;&amp;#x4EC5;&amp;#x4EC5;&amp;#x7279;&amp;#x5316;&amp;#x672C;&amp;#x8D28;&amp;#x4E0A;&amp;#x4E0D;&amp;#x540C;&amp;#x7684;&amp;#x4E1C;&amp;#x897F;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#xFF08;derived class&amp;#xFF09;&amp;#x80FD;&amp;#x591F;&amp;#xFF1A;&amp;#x7EE7;&amp;#x627F;&amp;#x57FA;&amp;#x7C7B;&amp;#xFF08;base class&amp;#xFF09;&amp;#x5B9A;&amp;#x4E49;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#xFF0C;&amp;#x65E0;&amp;#x987B;&amp;#x6539;&amp;#x53D8;&amp;#x800C;&amp;#x4F7F;&amp;#x7528;&amp;#x90A3;&amp;#x4E9B;&amp;#x4E0E;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x578B;&amp;#x5177;&amp;#x4F53;&amp;#x7279;&amp;#x6027;&amp;#x4E0D;&amp;#x76F8;&amp;#x5173;&amp;#x7684;&amp;#x64CD;&amp;#x4F5C;&amp;#xFF0C;&amp;#x91CD;&amp;#x5B9A;&amp;#x4E49;&amp;#x90A3;&amp;#x4E9B;&amp;#x4E0E;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x578B;&amp;#x76F8;&amp;#x5173;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#x51FD;&amp;#x6570;&amp;#xFF0C;&amp;#x5C06;&amp;#x51FD;&amp;#x6570;&amp;#x7279;&amp;#x5316;&amp;#xFF0C;&amp;#x8003;&amp;#x8651;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x578B;&amp;#x7684;&amp;#x7279;&amp;#x6027;&amp;#x3002;&amp;#x6700;&amp;#x540E;&amp;#xFF0C;&amp;#x9664;&amp;#x4E86;&amp;#x4ECE;&amp;#x57FA;&amp;#x7C7B;&amp;#x7EE7;&amp;#x627F;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#x4E4B;&amp;#x5916;&amp;#xFF0C;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x8FD8;&amp;#x53EF;&amp;#x4EE5;&amp;#x5B9A;&amp;#x4E49;&amp;#x66F4;&amp;#x591A;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#x3002;&lt;/p&gt;" />
     <meta property="og:url" content="http://blog.functioneurus.com/2022/05/20/4_Inheritance_and_Polymorphism/index.html" />
     <meta property="og:site_name" content="" />
     <meta property="article:author" content="Function" />
     <meta property="article:publisher" content="" />
-    <meta property="og:description" content="&lt;h1 id=&#34;继承&#34;&gt;&lt;a href=&#34;#继承&#34; class=&#34;headerlink&#34; title=&#34;继承&#34;&gt;&lt;/a&gt;继承&lt;/h1&gt;&lt;p&gt;面向对象编程的关键思想是多态性（polymorphism），使用继承可以实现多态性。&lt;/p&gt;
-&lt;p&gt;通过继承我们能够定义这样的类，它们对类型之间的关系建模，共享公共的东西，仅仅特化本质上不同的东西。&lt;/p&gt;
-&lt;p&gt;派生类（derived class）能够：继承基类（base class）定义的成员，无须改变而使用那些与派生类型具体特性不相关的操作，重定义那些与派生类型相关的成员函数，将函数特化，考虑派生类型的特性。最后，除了从基类继承的成员之外，派生类还可以定义更多的成员。&lt;/p&gt;" />
+    <meta property="og:description" content="&lt;h1 id=&#34;&amp;#x7EE7;&amp;#x627F;&#34;&gt;&lt;a href=&#34;#&amp;#x7EE7;&amp;#x627F;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x7EE7;&amp;#x627F;&#34;&gt;&lt;/a&gt;&amp;#x7EE7;&amp;#x627F;&lt;/h1&gt;&lt;p&gt;&amp;#x9762;&amp;#x5411;&amp;#x5BF9;&amp;#x8C61;&amp;#x7F16;&amp;#x7A0B;&amp;#x7684;&amp;#x5173;&amp;#x952E;&amp;#x601D;&amp;#x60F3;&amp;#x662F;&amp;#x591A;&amp;#x6001;&amp;#x6027;&amp;#xFF08;polymorphism&amp;#xFF09;&amp;#xFF0C;&amp;#x4F7F;&amp;#x7528;&amp;#x7EE7;&amp;#x627F;&amp;#x53EF;&amp;#x4EE5;&amp;#x5B9E;&amp;#x73B0;&amp;#x591A;&amp;#x6001;&amp;#x6027;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x901A;&amp;#x8FC7;&amp;#x7EE7;&amp;#x627F;&amp;#x6211;&amp;#x4EEC;&amp;#x80FD;&amp;#x591F;&amp;#x5B9A;&amp;#x4E49;&amp;#x8FD9;&amp;#x6837;&amp;#x7684;&amp;#x7C7B;&amp;#xFF0C;&amp;#x5B83;&amp;#x4EEC;&amp;#x5BF9;&amp;#x7C7B;&amp;#x578B;&amp;#x4E4B;&amp;#x95F4;&amp;#x7684;&amp;#x5173;&amp;#x7CFB;&amp;#x5EFA;&amp;#x6A21;&amp;#xFF0C;&amp;#x5171;&amp;#x4EAB;&amp;#x516C;&amp;#x5171;&amp;#x7684;&amp;#x4E1C;&amp;#x897F;&amp;#xFF0C;&amp;#x4EC5;&amp;#x4EC5;&amp;#x7279;&amp;#x5316;&amp;#x672C;&amp;#x8D28;&amp;#x4E0A;&amp;#x4E0D;&amp;#x540C;&amp;#x7684;&amp;#x4E1C;&amp;#x897F;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#xFF08;derived class&amp;#xFF09;&amp;#x80FD;&amp;#x591F;&amp;#xFF1A;&amp;#x7EE7;&amp;#x627F;&amp;#x57FA;&amp;#x7C7B;&amp;#xFF08;base class&amp;#xFF09;&amp;#x5B9A;&amp;#x4E49;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#xFF0C;&amp;#x65E0;&amp;#x987B;&amp;#x6539;&amp;#x53D8;&amp;#x800C;&amp;#x4F7F;&amp;#x7528;&amp;#x90A3;&amp;#x4E9B;&amp;#x4E0E;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x578B;&amp;#x5177;&amp;#x4F53;&amp;#x7279;&amp;#x6027;&amp;#x4E0D;&amp;#x76F8;&amp;#x5173;&amp;#x7684;&amp;#x64CD;&amp;#x4F5C;&amp;#xFF0C;&amp;#x91CD;&amp;#x5B9A;&amp;#x4E49;&amp;#x90A3;&amp;#x4E9B;&amp;#x4E0E;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x578B;&amp;#x76F8;&amp;#x5173;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#x51FD;&amp;#x6570;&amp;#xFF0C;&amp;#x5C06;&amp;#x51FD;&amp;#x6570;&amp;#x7279;&amp;#x5316;&amp;#xFF0C;&amp;#x8003;&amp;#x8651;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x578B;&amp;#x7684;&amp;#x7279;&amp;#x6027;&amp;#x3002;&amp;#x6700;&amp;#x540E;&amp;#xFF0C;&amp;#x9664;&amp;#x4E86;&amp;#x4ECE;&amp;#x57FA;&amp;#x7C7B;&amp;#x7EE7;&amp;#x627F;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#x4E4B;&amp;#x5916;&amp;#xFF0C;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x8FD8;&amp;#x53EF;&amp;#x4EE5;&amp;#x5B9A;&amp;#x4E49;&amp;#x66F4;&amp;#x591A;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#x3002;&lt;/p&gt;" />
     <meta name="twitter:title" content="#4 继承与多态 | Function&#39;s Blog"/>
-    <meta name="twitter:description" content="&lt;h1 id=&#34;继承&#34;&gt;&lt;a href=&#34;#继承&#34; class=&#34;headerlink&#34; title=&#34;继承&#34;&gt;&lt;/a&gt;继承&lt;/h1&gt;&lt;p&gt;面向对象编程的关键思想是多态性（polymorphism），使用继承可以实现多态性。&lt;/p&gt;
-&lt;p&gt;通过继承我们能够定义这样的类，它们对类型之间的关系建模，共享公共的东西，仅仅特化本质上不同的东西。&lt;/p&gt;
-&lt;p&gt;派生类（derived class）能够：继承基类（base class）定义的成员，无须改变而使用那些与派生类型具体特性不相关的操作，重定义那些与派生类型相关的成员函数，将函数特化，考虑派生类型的特性。最后，除了从基类继承的成员之外，派生类还可以定义更多的成员。&lt;/p&gt;"/>
+    <meta name="twitter:description" content="&lt;h1 id=&#34;&amp;#x7EE7;&amp;#x627F;&#34;&gt;&lt;a href=&#34;#&amp;#x7EE7;&amp;#x627F;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x7EE7;&amp;#x627F;&#34;&gt;&lt;/a&gt;&amp;#x7EE7;&amp;#x627F;&lt;/h1&gt;&lt;p&gt;&amp;#x9762;&amp;#x5411;&amp;#x5BF9;&amp;#x8C61;&amp;#x7F16;&amp;#x7A0B;&amp;#x7684;&amp;#x5173;&amp;#x952E;&amp;#x601D;&amp;#x60F3;&amp;#x662F;&amp;#x591A;&amp;#x6001;&amp;#x6027;&amp;#xFF08;polymorphism&amp;#xFF09;&amp;#xFF0C;&amp;#x4F7F;&amp;#x7528;&amp;#x7EE7;&amp;#x627F;&amp;#x53EF;&amp;#x4EE5;&amp;#x5B9E;&amp;#x73B0;&amp;#x591A;&amp;#x6001;&amp;#x6027;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x901A;&amp;#x8FC7;&amp;#x7EE7;&amp;#x627F;&amp;#x6211;&amp;#x4EEC;&amp;#x80FD;&amp;#x591F;&amp;#x5B9A;&amp;#x4E49;&amp;#x8FD9;&amp;#x6837;&amp;#x7684;&amp;#x7C7B;&amp;#xFF0C;&amp;#x5B83;&amp;#x4EEC;&amp;#x5BF9;&amp;#x7C7B;&amp;#x578B;&amp;#x4E4B;&amp;#x95F4;&amp;#x7684;&amp;#x5173;&amp;#x7CFB;&amp;#x5EFA;&amp;#x6A21;&amp;#xFF0C;&amp;#x5171;&amp;#x4EAB;&amp;#x516C;&amp;#x5171;&amp;#x7684;&amp;#x4E1C;&amp;#x897F;&amp;#xFF0C;&amp;#x4EC5;&amp;#x4EC5;&amp;#x7279;&amp;#x5316;&amp;#x672C;&amp;#x8D28;&amp;#x4E0A;&amp;#x4E0D;&amp;#x540C;&amp;#x7684;&amp;#x4E1C;&amp;#x897F;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#xFF08;derived class&amp;#xFF09;&amp;#x80FD;&amp;#x591F;&amp;#xFF1A;&amp;#x7EE7;&amp;#x627F;&amp;#x57FA;&amp;#x7C7B;&amp;#xFF08;base class&amp;#xFF09;&amp;#x5B9A;&amp;#x4E49;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#xFF0C;&amp;#x65E0;&amp;#x987B;&amp;#x6539;&amp;#x53D8;&amp;#x800C;&amp;#x4F7F;&amp;#x7528;&amp;#x90A3;&amp;#x4E9B;&amp;#x4E0E;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x578B;&amp;#x5177;&amp;#x4F53;&amp;#x7279;&amp;#x6027;&amp;#x4E0D;&amp;#x76F8;&amp;#x5173;&amp;#x7684;&amp;#x64CD;&amp;#x4F5C;&amp;#xFF0C;&amp;#x91CD;&amp;#x5B9A;&amp;#x4E49;&amp;#x90A3;&amp;#x4E9B;&amp;#x4E0E;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x578B;&amp;#x76F8;&amp;#x5173;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#x51FD;&amp;#x6570;&amp;#xFF0C;&amp;#x5C06;&amp;#x51FD;&amp;#x6570;&amp;#x7279;&amp;#x5316;&amp;#xFF0C;&amp;#x8003;&amp;#x8651;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x578B;&amp;#x7684;&amp;#x7279;&amp;#x6027;&amp;#x3002;&amp;#x6700;&amp;#x540E;&amp;#xFF0C;&amp;#x9664;&amp;#x4E86;&amp;#x4ECE;&amp;#x57FA;&amp;#x7C7B;&amp;#x7EE7;&amp;#x627F;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#x4E4B;&amp;#x5916;&amp;#xFF0C;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x8FD8;&amp;#x53EF;&amp;#x4EE5;&amp;#x5B9A;&amp;#x4E49;&amp;#x66F4;&amp;#x591A;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#x3002;&lt;/p&gt;"/>
     <script type="application/ld+json">
         {
-            "description": "&lt;h1 id=&#34;继承&#34;&gt;&lt;a href=&#34;#继承&#34; class=&#34;headerlink&#34; title=&#34;继承&#34;&gt;&lt;/a&gt;继承&lt;/h1&gt;&lt;p&gt;面向对象编程的关键思想是多态性（polymorphism），使用继承可以实现多态性。&lt;/p&gt;
-&lt;p&gt;通过继承我们能够定义这样的类，它们对类型之间的关系建模，共享公共的东西，仅仅特化本质上不同的东西。&lt;/p&gt;
-&lt;p&gt;派生类（derived class）能够：继承基类（base class）定义的成员，无须改变而使用那些与派生类型具体特性不相关的操作，重定义那些与派生类型相关的成员函数，将函数特化，考虑派生类型的特性。最后，除了从基类继承的成员之外，派生类还可以定义更多的成员。&lt;/p&gt;",
+            "description": "&lt;h1 id=&#34;&amp;#x7EE7;&amp;#x627F;&#34;&gt;&lt;a href=&#34;#&amp;#x7EE7;&amp;#x627F;&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x7EE7;&amp;#x627F;&#34;&gt;&lt;/a&gt;&amp;#x7EE7;&amp;#x627F;&lt;/h1&gt;&lt;p&gt;&amp;#x9762;&amp;#x5411;&amp;#x5BF9;&amp;#x8C61;&amp;#x7F16;&amp;#x7A0B;&amp;#x7684;&amp;#x5173;&amp;#x952E;&amp;#x601D;&amp;#x60F3;&amp;#x662F;&amp;#x591A;&amp;#x6001;&amp;#x6027;&amp;#xFF08;polymorphism&amp;#xFF09;&amp;#xFF0C;&amp;#x4F7F;&amp;#x7528;&amp;#x7EE7;&amp;#x627F;&amp;#x53EF;&amp;#x4EE5;&amp;#x5B9E;&amp;#x73B0;&amp;#x591A;&amp;#x6001;&amp;#x6027;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x901A;&amp;#x8FC7;&amp;#x7EE7;&amp;#x627F;&amp;#x6211;&amp;#x4EEC;&amp;#x80FD;&amp;#x591F;&amp;#x5B9A;&amp;#x4E49;&amp;#x8FD9;&amp;#x6837;&amp;#x7684;&amp;#x7C7B;&amp;#xFF0C;&amp;#x5B83;&amp;#x4EEC;&amp;#x5BF9;&amp;#x7C7B;&amp;#x578B;&amp;#x4E4B;&amp;#x95F4;&amp;#x7684;&amp;#x5173;&amp;#x7CFB;&amp;#x5EFA;&amp;#x6A21;&amp;#xFF0C;&amp;#x5171;&amp;#x4EAB;&amp;#x516C;&amp;#x5171;&amp;#x7684;&amp;#x4E1C;&amp;#x897F;&amp;#xFF0C;&amp;#x4EC5;&amp;#x4EC5;&amp;#x7279;&amp;#x5316;&amp;#x672C;&amp;#x8D28;&amp;#x4E0A;&amp;#x4E0D;&amp;#x540C;&amp;#x7684;&amp;#x4E1C;&amp;#x897F;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#xFF08;derived class&amp;#xFF09;&amp;#x80FD;&amp;#x591F;&amp;#xFF1A;&amp;#x7EE7;&amp;#x627F;&amp;#x57FA;&amp;#x7C7B;&amp;#xFF08;base class&amp;#xFF09;&amp;#x5B9A;&amp;#x4E49;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#xFF0C;&amp;#x65E0;&amp;#x987B;&amp;#x6539;&amp;#x53D8;&amp;#x800C;&amp;#x4F7F;&amp;#x7528;&amp;#x90A3;&amp;#x4E9B;&amp;#x4E0E;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x578B;&amp;#x5177;&amp;#x4F53;&amp;#x7279;&amp;#x6027;&amp;#x4E0D;&amp;#x76F8;&amp;#x5173;&amp;#x7684;&amp;#x64CD;&amp;#x4F5C;&amp;#xFF0C;&amp;#x91CD;&amp;#x5B9A;&amp;#x4E49;&amp;#x90A3;&amp;#x4E9B;&amp;#x4E0E;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x578B;&amp;#x76F8;&amp;#x5173;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#x51FD;&amp;#x6570;&amp;#xFF0C;&amp;#x5C06;&amp;#x51FD;&amp;#x6570;&amp;#x7279;&amp;#x5316;&amp;#xFF0C;&amp;#x8003;&amp;#x8651;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x578B;&amp;#x7684;&amp;#x7279;&amp;#x6027;&amp;#x3002;&amp;#x6700;&amp;#x540E;&amp;#xFF0C;&amp;#x9664;&amp;#x4E86;&amp;#x4ECE;&amp;#x57FA;&amp;#x7C7B;&amp;#x7EE7;&amp;#x627F;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#x4E4B;&amp;#x5916;&amp;#xFF0C;&amp;#x6D3E;&amp;#x751F;&amp;#x7C7B;&amp;#x8FD8;&amp;#x53EF;&amp;#x4EE5;&amp;#x5B9A;&amp;#x4E49;&amp;#x66F4;&amp;#x591A;&amp;#x7684;&amp;#x6210;&amp;#x5458;&amp;#x3002;&lt;/p&gt;",
             "author": { "@type": "Person", "name": "Function" },
             "@type": "BlogPosting",
             "url": "http://blog.functioneurus.com/2022/05/20/4_Inheritance_and_Polymorphism/index.html",
@@ -156,7 +156,7 @@
             <section class="inner">
                 <section class="inner-main">
                     <div class="post">
-    <article id="post-cljba4hxz000ma4co0ropeo7c" class="article article-type-post" itemscope
+    <article id="post-cljbah39w000kgocod9v12f99" class="article article-type-post" itemscope
     itemprop="blogPost">
 
     <div class="article-inner">
@@ -198,133 +198,133 @@
         </div>
 
         <div class="article-entry post-inner-html hairline" itemprop="articleBody">
-            <h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><p>面向对象编程的关键思想是多态性（polymorphism），使用继承可以实现多态性。</p>
-<p>通过继承我们能够定义这样的类，它们对类型之间的关系建模，共享公共的东西，仅仅特化本质上不同的东西。</p>
-<p>派生类（derived class）能够：继承基类（base class）定义的成员，无须改变而使用那些与派生类型具体特性不相关的操作，重定义那些与派生类型相关的成员函数，将函数特化，考虑派生类型的特性。最后，除了从基类继承的成员之外，派生类还可以定义更多的成员。</p>
+            <h1 id="&#x7EE7;&#x627F;"><a href="#&#x7EE7;&#x627F;" class="headerlink" title="&#x7EE7;&#x627F;"></a>&#x7EE7;&#x627F;</h1><p>&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x7684;&#x5173;&#x952E;&#x601D;&#x60F3;&#x662F;&#x591A;&#x6001;&#x6027;&#xFF08;polymorphism&#xFF09;&#xFF0C;&#x4F7F;&#x7528;&#x7EE7;&#x627F;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x591A;&#x6001;&#x6027;&#x3002;</p>
+<p>&#x901A;&#x8FC7;&#x7EE7;&#x627F;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x5B9A;&#x4E49;&#x8FD9;&#x6837;&#x7684;&#x7C7B;&#xFF0C;&#x5B83;&#x4EEC;&#x5BF9;&#x7C7B;&#x578B;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x5EFA;&#x6A21;&#xFF0C;&#x5171;&#x4EAB;&#x516C;&#x5171;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x4EC5;&#x4EC5;&#x7279;&#x5316;&#x672C;&#x8D28;&#x4E0A;&#x4E0D;&#x540C;&#x7684;&#x4E1C;&#x897F;&#x3002;</p>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#xFF08;derived class&#xFF09;&#x80FD;&#x591F;&#xFF1A;&#x7EE7;&#x627F;&#x57FA;&#x7C7B;&#xFF08;base class&#xFF09;&#x5B9A;&#x4E49;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x65E0;&#x987B;&#x6539;&#x53D8;&#x800C;&#x4F7F;&#x7528;&#x90A3;&#x4E9B;&#x4E0E;&#x6D3E;&#x751F;&#x7C7B;&#x578B;&#x5177;&#x4F53;&#x7279;&#x6027;&#x4E0D;&#x76F8;&#x5173;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x91CD;&#x5B9A;&#x4E49;&#x90A3;&#x4E9B;&#x4E0E;&#x6D3E;&#x751F;&#x7C7B;&#x578B;&#x76F8;&#x5173;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x5C06;&#x51FD;&#x6570;&#x7279;&#x5316;&#xFF0C;&#x8003;&#x8651;&#x6D3E;&#x751F;&#x7C7B;&#x578B;&#x7684;&#x7279;&#x6027;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x9664;&#x4E86;&#x4ECE;&#x57FA;&#x7C7B;&#x7EE7;&#x627F;&#x7684;&#x6210;&#x5458;&#x4E4B;&#x5916;&#xFF0C;&#x6D3E;&#x751F;&#x7C7B;&#x8FD8;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x66F4;&#x591A;&#x7684;&#x6210;&#x5458;&#x3002;</p>
 <span id="more"></span>
 
-<pre><code class="c++">//继承的语义：
+<pre><code class="c++">//&#x7EE7;&#x627F;&#x7684;&#x8BED;&#x4E49;&#xFF1A;
 is a 
 </code></pre>
-<h1 id="定义基类"><a href="#定义基类" class="headerlink" title="定义基类"></a>定义基类</h1><p>我们经常称因继承而相关联的类为构成了一个继承层次。其中有一个类称为根，所以其他类直接或间接继承根类。</p>
-<pre><code class="c++">class EE &#123; //电子设备
+<h1 id="&#x5B9A;&#x4E49;&#x57FA;&#x7C7B;"><a href="#&#x5B9A;&#x4E49;&#x57FA;&#x7C7B;" class="headerlink" title="&#x5B9A;&#x4E49;&#x57FA;&#x7C7B;"></a>&#x5B9A;&#x4E49;&#x57FA;&#x7C7B;</h1><p>&#x6211;&#x4EEC;&#x7ECF;&#x5E38;&#x79F0;&#x56E0;&#x7EE7;&#x627F;&#x800C;&#x76F8;&#x5173;&#x8054;&#x7684;&#x7C7B;&#x4E3A;&#x6784;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x7EE7;&#x627F;&#x5C42;&#x6B21;&#x3002;&#x5176;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x7C7B;&#x79F0;&#x4E3A;&#x6839;&#xFF0C;&#x6240;&#x4EE5;&#x5176;&#x4ED6;&#x7C7B;&#x76F4;&#x63A5;&#x6216;&#x95F4;&#x63A5;&#x7EE7;&#x627F;&#x6839;&#x7C7B;&#x3002;</p>
+<pre><code class="c++">class EE { //&#x7535;&#x5B50;&#x8BBE;&#x5907;
     protected:
-        int price; //保护的数据成员可以被派生类的成员函数访问
+        int price; //&#x4FDD;&#x62A4;&#x7684;&#x6570;&#x636E;&#x6210;&#x5458;&#x53EF;&#x4EE5;&#x88AB;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#x8BBF;&#x95EE;
     public:
         void Work();
         void SetPrice(int initp);
         void GetPrice(int *oldp);
-        void NVWhoAmI()   &#123;
+        void NVWhoAmI()   {
             cout &lt;&lt; &quot;I am a EE&quot; &lt;&lt; endl;
-        &#125;;
-        //我是谁? 前缀NV表示非虚的意思.
+        };
+        //&#x6211;&#x662F;&#x8C01;? &#x524D;&#x7F00;NV&#x8868;&#x793A;&#x975E;&#x865A;&#x7684;&#x610F;&#x601D;.
         EE(void);
         ~EE(void);
-&#125;;
+};
 </code></pre>
-<h2 id="Protected成员"><a href="#Protected成员" class="headerlink" title="Protected成员"></a>Protected成员</h2><p>可以认为<code>protected</code>访问标号是<code>private</code>和<code>public</code>的混合：像<code>private</code>成员一样，<code>protected</code>成员不能被类的用户访问；同时也像<code>public</code>成员一样，<code>protected</code>成员可被该类的派生类访问。</p>
-<p>派生类只能通过派生类对象访问其基类的<code>protected</code>成员。</p>
-<h1 id="派生类"><a href="#派生类" class="headerlink" title="派生类"></a>派生类</h1><p>为了定义派生类，使用类派生列表指定基类。类派生列表指定了一个或多个基类，具有如下形式：</p>
-<pre><code class="c++">class classname: access-label base-class &#123;&#125;;
+<h2 id="Protected&#x6210;&#x5458;"><a href="#Protected&#x6210;&#x5458;" class="headerlink" title="Protected&#x6210;&#x5458;"></a>Protected&#x6210;&#x5458;</h2><p>&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;<code>protected</code>&#x8BBF;&#x95EE;&#x6807;&#x53F7;&#x662F;<code>private</code>&#x548C;<code>public</code>&#x7684;&#x6DF7;&#x5408;&#xFF1A;&#x50CF;<code>private</code>&#x6210;&#x5458;&#x4E00;&#x6837;&#xFF0C;<code>protected</code>&#x6210;&#x5458;&#x4E0D;&#x80FD;&#x88AB;&#x7C7B;&#x7684;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#xFF1B;&#x540C;&#x65F6;&#x4E5F;&#x50CF;<code>public</code>&#x6210;&#x5458;&#x4E00;&#x6837;&#xFF0C;<code>protected</code>&#x6210;&#x5458;&#x53EF;&#x88AB;&#x8BE5;&#x7C7B;&#x7684;&#x6D3E;&#x751F;&#x7C7B;&#x8BBF;&#x95EE;&#x3002;</p>
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;&#x8BBF;&#x95EE;&#x5176;&#x57FA;&#x7C7B;&#x7684;<code>protected</code>&#x6210;&#x5458;&#x3002;</p>
+<h1 id="&#x6D3E;&#x751F;&#x7C7B;"><a href="#&#x6D3E;&#x751F;&#x7C7B;" class="headerlink" title="&#x6D3E;&#x751F;&#x7C7B;"></a>&#x6D3E;&#x751F;&#x7C7B;</h1><p>&#x4E3A;&#x4E86;&#x5B9A;&#x4E49;&#x6D3E;&#x751F;&#x7C7B;&#xFF0C;&#x4F7F;&#x7528;&#x7C7B;&#x6D3E;&#x751F;&#x5217;&#x8868;&#x6307;&#x5B9A;&#x57FA;&#x7C7B;&#x3002;&#x7C7B;&#x6D3E;&#x751F;&#x5217;&#x8868;&#x6307;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x57FA;&#x7C7B;&#xFF0C;&#x5177;&#x6709;&#x5982;&#x4E0B;&#x5F62;&#x5F0F;&#xFF1A;</p>
+<pre><code class="c++">class classname: access-label base-class {};
 </code></pre>
-<p>派生类对象包含基类对象作为子对象，基类更单纯，子类更复杂。</p>
-<pre><code class="c++">class MT :  public EE &#123;
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;&#x5305;&#x542B;&#x57FA;&#x7C7B;&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;&#x5B50;&#x5BF9;&#x8C61;&#xFF0C;&#x57FA;&#x7C7B;&#x66F4;&#x5355;&#x7EAF;&#xFF0C;&#x5B50;&#x7C7B;&#x66F4;&#x590D;&#x6742;&#x3002;</p>
+<pre><code class="c++">class MT :  public EE {
     protected:
-        int rent; //月租费。派生类可以有自己的数据成员和方法。price无需再进行声明.
+        int rent; //&#x6708;&#x79DF;&#x8D39;&#x3002;&#x6D3E;&#x751F;&#x7C7B;&#x53EF;&#x4EE5;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x6570;&#x636E;&#x6210;&#x5458;&#x548C;&#x65B9;&#x6CD5;&#x3002;price&#x65E0;&#x9700;&#x518D;&#x8FDB;&#x884C;&#x58F0;&#x660E;.
     public:
         void Call();
         void MTSetPrice(int price);
         void MTGetPrice(int *oldp);
-        //派生类成员函数可以访问基类的保护成员，这里故意加上前缀“MT”，已示区别，其实没有必要。
+        //&#x6D3E;&#x751F;&#x7C7B;&#x6210;&#x5458;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x57FA;&#x7C7B;&#x7684;&#x4FDD;&#x62A4;&#x6210;&#x5458;&#xFF0C;&#x8FD9;&#x91CC;&#x6545;&#x610F;&#x52A0;&#x4E0A;&#x524D;&#x7F00;&#x201C;MT&#x201D;&#xFF0C;&#x5DF2;&#x793A;&#x533A;&#x522B;&#xFF0C;&#x5176;&#x5B9E;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x3002;
         MT(void);
         ~MT(void);
-&#125;;
+};
 </code></pre>
-<p>基类的公有的方法和数据可以通过派生类直接访问。</p>
+<p>&#x57FA;&#x7C7B;&#x7684;&#x516C;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#x548C;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6D3E;&#x751F;&#x7C7B;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x3002;</p>
 <pre><code class="c++">MT *pmt = new MT;
-pmt-&gt;NVWhoAmI ();    //结果为：I am a EE
-pmt-&gt;pbvar = ……; //也可以直接访问基类的公有的数据成员：假设pbvar是EE的公共数据成员
+pmt-&gt;NVWhoAmI ();    //&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;I am a EE
+pmt-&gt;pbvar = &#x2026;&#x2026;; //&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x57FA;&#x7C7B;&#x7684;&#x516C;&#x6709;&#x7684;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF1A;&#x5047;&#x8BBE;pbvar&#x662F;EE&#x7684;&#x516C;&#x5171;&#x6570;&#x636E;&#x6210;&#x5458;
 </code></pre>
-<p>类保护成员只能在派生类的成员内部访问，比如：</p>
-<pre><code class="c++">void MT::MTSetPrice (int price) &#123;
-    EE::price = price;   //派生类成员函数访问基类的保护数据成员
-&#125;
-//客户使用方法：
+<p>&#x7C7B;&#x4FDD;&#x62A4;&#x6210;&#x5458;&#x53EA;&#x80FD;&#x5728;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x5185;&#x90E8;&#x8BBF;&#x95EE;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="c++">void MT::MTSetPrice (int price) {
+    EE::price = price;   //&#x6D3E;&#x751F;&#x7C7B;&#x6210;&#x5458;&#x51FD;&#x6570;&#x8BBF;&#x95EE;&#x57FA;&#x7C7B;&#x7684;&#x4FDD;&#x62A4;&#x6570;&#x636E;&#x6210;&#x5458;
+}
+//&#x5BA2;&#x6237;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF1A;
 MT *pmt = new MT;
-pmt-&gt;MTSetPrice(5); //客户调用派生类的成员函数,函数内部访问基类的保护数据成员
-pmt-&gt;price = 5; //出错.不能直接访问
+pmt-&gt;MTSetPrice(5); //&#x5BA2;&#x6237;&#x8C03;&#x7528;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;,&#x51FD;&#x6570;&#x5185;&#x90E8;&#x8BBF;&#x95EE;&#x57FA;&#x7C7B;&#x7684;&#x4FDD;&#x62A4;&#x6570;&#x636E;&#x6210;&#x5458;
+pmt-&gt;price = 5; //&#x51FA;&#x9519;.&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;
 </code></pre>
-<p>可以定义更多派生类：</p>
-<pre><code class="c++">class CA :  public EE &#123; //照相机
+<p>&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x66F4;&#x591A;&#x6D3E;&#x751F;&#x7C7B;&#xFF1A;</p>
+<pre><code class="c++">class CA :  public EE { //&#x7167;&#x76F8;&#x673A;
     protected:
-        int pixel;  //像素
+        int pixel;  //&#x50CF;&#x7D20;
     public:
         void  TakePhoto(int *pix);
         CA(void);
         ~CA(void);
-&#125;;
+};
 </code></pre>
-<pre><code class="c++">//对于以下代码:
+<pre><code class="c++">//&#x5BF9;&#x4E8E;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;:
 MT *pmt = new MT;
 CA *pca = new CA;
-pmt-&gt;NVWhoAmI (); //派生类访问基类的公有的方法。
-pca-&gt;NVWhoAmI (); //另一个派生类访问基类的公有的方法
-//结果为：I am a EE和I am a EE
-//结果当然是一样的.但是我们期望能得到更精细的信息
+pmt-&gt;NVWhoAmI (); //&#x6D3E;&#x751F;&#x7C7B;&#x8BBF;&#x95EE;&#x57FA;&#x7C7B;&#x7684;&#x516C;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#x3002;
+pca-&gt;NVWhoAmI (); //&#x53E6;&#x4E00;&#x4E2A;&#x6D3E;&#x751F;&#x7C7B;&#x8BBF;&#x95EE;&#x57FA;&#x7C7B;&#x7684;&#x516C;&#x6709;&#x7684;&#x65B9;&#x6CD5;
+//&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;I am a EE&#x548C;I am a EE
+//&#x7ED3;&#x679C;&#x5F53;&#x7136;&#x662F;&#x4E00;&#x6837;&#x7684;.&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x671F;&#x671B;&#x80FD;&#x5F97;&#x5230;&#x66F4;&#x7CBE;&#x7EC6;&#x7684;&#x4FE1;&#x606F;
 </code></pre>
-<h1 id="隐藏"><a href="#隐藏" class="headerlink" title="隐藏"></a>隐藏</h1><p>为此在派生类中增加一个新函数：</p>
-<pre><code class="c++">class MT :	public EE &#123;
+<h1 id="&#x9690;&#x85CF;"><a href="#&#x9690;&#x85CF;" class="headerlink" title="&#x9690;&#x85CF;"></a>&#x9690;&#x85CF;</h1><p>&#x4E3A;&#x6B64;&#x5728;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="c++">class MT :	public EE {
     protected:
         int rent;
     public:
         void Call();
         void NVWhoAmI();  
-        //签名虽然完全相同，但它是派生类定义的成员, 或者理解成为碰巧完全相同。当然可以再加上一个前缀MT, 但是会显得太罗嗦, C++支持如上做法. 虽然这种方式不好,但是是合法的.
+        //&#x7B7E;&#x540D;&#x867D;&#x7136;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#xFF0C;&#x4F46;&#x5B83;&#x662F;&#x6D3E;&#x751F;&#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#x6210;&#x5458;, &#x6216;&#x8005;&#x7406;&#x89E3;&#x6210;&#x4E3A;&#x78B0;&#x5DE7;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x3002;&#x5F53;&#x7136;&#x53EF;&#x4EE5;&#x518D;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;&#x524D;&#x7F00;MT, &#x4F46;&#x662F;&#x4F1A;&#x663E;&#x5F97;&#x592A;&#x7F57;&#x55E6;, C++&#x652F;&#x6301;&#x5982;&#x4E0A;&#x505A;&#x6CD5;. &#x867D;&#x7136;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x4E0D;&#x597D;,&#x4F46;&#x662F;&#x662F;&#x5408;&#x6CD5;&#x7684;.
         void MTSetPrice(int price);
         void MTGetPrice(int *oldp);
         MT(void);
         ~MT(void);
-&#125;;
+};
 </code></pre>
-<p>而其实现为：</p>
-<pre><code class="c++">void MT::NVWhoAmI () &#123;
+<p>&#x800C;&#x5176;&#x5B9E;&#x73B0;&#x4E3A;&#xFF1A;</p>
+<pre><code class="c++">void MT::NVWhoAmI () {
     cout &lt;&lt; &quot;I am a MT&quot; &lt;&lt; endl;
-&#125;;
+};
 </code></pre>
-<p>类似地对另一个类如法炮制：</p>
-<pre><code class="c++">void CA::NVWhoAmI () &#123;
+<p>&#x7C7B;&#x4F3C;&#x5730;&#x5BF9;&#x53E6;&#x4E00;&#x4E2A;&#x7C7B;&#x5982;&#x6CD5;&#x70AE;&#x5236;&#xFF1A;</p>
+<pre><code class="c++">void CA::NVWhoAmI () {
     cout &lt;&lt; &quot;I am a CA&quot; &lt;&lt; endl;
-&#125;;
+};
 </code></pre>
-<p>于是我们可以分别出不同的类对象：</p>
+<p>&#x4E8E;&#x662F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5206;&#x522B;&#x51FA;&#x4E0D;&#x540C;&#x7684;&#x7C7B;&#x5BF9;&#x8C61;&#xFF1A;</p>
 <pre><code class="c++">MT *pmt = new MT;
 CA *pca = new CA;
 pmt-&gt;NVWhoAmI ();   // I am a MT
-pca-&gt;NVWhoAmI ();   // I am a CA  比刚才有进步
+pca-&gt;NVWhoAmI ();   // I am a CA  &#x6BD4;&#x521A;&#x624D;&#x6709;&#x8FDB;&#x6B65;
 </code></pre>
-<p>这种方法称为隐藏。</p>
-<p>面对层出不穷的各种各样的电子设备，我们必须定义这些设备的对象，并分别调用<code>NVWhoAmI</code>。</p>
+<p>&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x79F0;&#x4E3A;&#x9690;&#x85CF;&#x3002;</p>
+<p>&#x9762;&#x5BF9;&#x5C42;&#x51FA;&#x4E0D;&#x7A77;&#x7684;&#x5404;&#x79CD;&#x5404;&#x6837;&#x7684;&#x7535;&#x5B50;&#x8BBE;&#x5907;&#xFF0C;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x5B9A;&#x4E49;&#x8FD9;&#x4E9B;&#x8BBE;&#x5907;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x5206;&#x522B;&#x8C03;&#x7528;<code>NVWhoAmI</code>&#x3002;</p>
 <pre><code class="c++">ptv-&gt;NVWhoAmI ();   // I am a Television
 ppc-&gt;NVWhoAmI ();   // I am a Personal Computer.
 prd-&gt;NVWhoAmI ();   // I am a Radio
-//...维护困难
+//...&#x7EF4;&#x62A4;&#x56F0;&#x96BE;
 </code></pre>
-<h1 id="一致性处理"><a href="#一致性处理" class="headerlink" title="一致性处理"></a>一致性处理</h1><p>因此，为了高效率地处理不同的子类对象，我们往往把基类指针指向子类（派生类）的对象，在直观上当然是合理的（android手机也是手机）。</p>
-<p>子类对象比基类对象更“大”, 子类对象中含有一个基类的子对象 “subobject”，基类的指针将指向这个子对象。</p>
-<img src="image-20220520155159946.png" alt="image-20220520155159946" style="zoom: 67%;" />
+<h1 id="&#x4E00;&#x81F4;&#x6027;&#x5904;&#x7406;"><a href="#&#x4E00;&#x81F4;&#x6027;&#x5904;&#x7406;" class="headerlink" title="&#x4E00;&#x81F4;&#x6027;&#x5904;&#x7406;"></a>&#x4E00;&#x81F4;&#x6027;&#x5904;&#x7406;</h1><p>&#x56E0;&#x6B64;&#xFF0C;&#x4E3A;&#x4E86;&#x9AD8;&#x6548;&#x7387;&#x5730;&#x5904;&#x7406;&#x4E0D;&#x540C;&#x7684;&#x5B50;&#x7C7B;&#x5BF9;&#x8C61;&#xFF0C;&#x6211;&#x4EEC;&#x5F80;&#x5F80;&#x628A;&#x57FA;&#x7C7B;&#x6307;&#x9488;&#x6307;&#x5411;&#x5B50;&#x7C7B;&#xFF08;&#x6D3E;&#x751F;&#x7C7B;&#xFF09;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5728;&#x76F4;&#x89C2;&#x4E0A;&#x5F53;&#x7136;&#x662F;&#x5408;&#x7406;&#x7684;&#xFF08;android&#x624B;&#x673A;&#x4E5F;&#x662F;&#x624B;&#x673A;&#xFF09;&#x3002;</p>
+<p>&#x5B50;&#x7C7B;&#x5BF9;&#x8C61;&#x6BD4;&#x57FA;&#x7C7B;&#x5BF9;&#x8C61;&#x66F4;&#x201C;&#x5927;&#x201D;, &#x5B50;&#x7C7B;&#x5BF9;&#x8C61;&#x4E2D;&#x542B;&#x6709;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;&#x7684;&#x5B50;&#x5BF9;&#x8C61; &#x201C;subobject&#x201D;&#xFF0C;&#x57FA;&#x7C7B;&#x7684;&#x6307;&#x9488;&#x5C06;&#x6307;&#x5411;&#x8FD9;&#x4E2A;&#x5B50;&#x5BF9;&#x8C61;&#x3002;</p>
+<img src="/2022/05/20/4_Inheritance_and_Polymorphism/image-20220520155159946.png" alt="image-20220520155159946" style="zoom: 67%;">
 
 <pre><code class="c++">EE *pee[2];
-pee[0] = new MT; //基类指针指向子类的对象 MT当然是一个EE
-pee[1] = new CA; // CA也是一个EE
+pee[0] = new MT; //&#x57FA;&#x7C7B;&#x6307;&#x9488;&#x6307;&#x5411;&#x5B50;&#x7C7B;&#x7684;&#x5BF9;&#x8C61; MT&#x5F53;&#x7136;&#x662F;&#x4E00;&#x4E2A;EE
+pee[1] = new CA; // CA&#x4E5F;&#x662F;&#x4E00;&#x4E2A;EE
 for (int i = 0; i &lt; 2; i++)
-    pee[i]-&gt;NVWhoAmI (); //基类指针只能调用基类定义的成员
-//这段代码解决了代码的冗余性，但是执行结果为：I am a EE和I am a EE
+    pee[i]-&gt;NVWhoAmI (); //&#x57FA;&#x7C7B;&#x6307;&#x9488;&#x53EA;&#x80FD;&#x8C03;&#x7528;&#x57FA;&#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#x6210;&#x5458;
+//&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x89E3;&#x51B3;&#x4E86;&#x4EE3;&#x7801;&#x7684;&#x5197;&#x4F59;&#x6027;&#xFF0C;&#x4F46;&#x662F;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;I am a EE&#x548C;I am a EE
 </code></pre>
-<p>选择：要么睁大眼睛，分别使用不同的派生类指针来询问其身份（如果有10个不同的派生类，我们要写10句雷同的<code>p*-&gt;NVWhoAmI()</code> ）；要么虽然很优雅，使用基类指针通过一个循环来调用，但只能得到一个笼统的回答。</p>
-<h1 id="虚函数"><a href="#虚函数" class="headerlink" title="虚函数"></a>虚函数</h1><p>我们对于效率、美观、功能的需求导致我们需要多态。虚函数是实现多态的一种方式，当然，还有别的方式。</p>
-<p>我们付出了代价：相对于普通函数而言，虚表及虚表指针是额外的开销，处理不当，可能会达到不能忍受的地步，而且我们还要付出脑力的代价:-)</p>
-<pre><code class="c++">//对基类作出如下改进
-class EE &#123;
+<p>&#x9009;&#x62E9;&#xFF1A;&#x8981;&#x4E48;&#x7741;&#x5927;&#x773C;&#x775B;&#xFF0C;&#x5206;&#x522B;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x6D3E;&#x751F;&#x7C7B;&#x6307;&#x9488;&#x6765;&#x8BE2;&#x95EE;&#x5176;&#x8EAB;&#x4EFD;&#xFF08;&#x5982;&#x679C;&#x6709;10&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x6D3E;&#x751F;&#x7C7B;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x5199;10&#x53E5;&#x96F7;&#x540C;&#x7684;<code>p*-&gt;NVWhoAmI()</code> &#xFF09;&#xFF1B;&#x8981;&#x4E48;&#x867D;&#x7136;&#x5F88;&#x4F18;&#x96C5;&#xFF0C;&#x4F7F;&#x7528;&#x57FA;&#x7C7B;&#x6307;&#x9488;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x5FAA;&#x73AF;&#x6765;&#x8C03;&#x7528;&#xFF0C;&#x4F46;&#x53EA;&#x80FD;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x7B3C;&#x7EDF;&#x7684;&#x56DE;&#x7B54;&#x3002;</p>
+<h1 id="&#x865A;&#x51FD;&#x6570;"><a href="#&#x865A;&#x51FD;&#x6570;" class="headerlink" title="&#x865A;&#x51FD;&#x6570;"></a>&#x865A;&#x51FD;&#x6570;</h1><p>&#x6211;&#x4EEC;&#x5BF9;&#x4E8E;&#x6548;&#x7387;&#x3001;&#x7F8E;&#x89C2;&#x3001;&#x529F;&#x80FD;&#x7684;&#x9700;&#x6C42;&#x5BFC;&#x81F4;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x591A;&#x6001;&#x3002;&#x865A;&#x51FD;&#x6570;&#x662F;&#x5B9E;&#x73B0;&#x591A;&#x6001;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x5F53;&#x7136;&#xFF0C;&#x8FD8;&#x6709;&#x522B;&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x4ED8;&#x51FA;&#x4E86;&#x4EE3;&#x4EF7;&#xFF1A;&#x76F8;&#x5BF9;&#x4E8E;&#x666E;&#x901A;&#x51FD;&#x6570;&#x800C;&#x8A00;&#xFF0C;&#x865A;&#x8868;&#x53CA;&#x865A;&#x8868;&#x6307;&#x9488;&#x662F;&#x989D;&#x5916;&#x7684;&#x5F00;&#x9500;&#xFF0C;&#x5904;&#x7406;&#x4E0D;&#x5F53;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x8FBE;&#x5230;&#x4E0D;&#x80FD;&#x5FCD;&#x53D7;&#x7684;&#x5730;&#x6B65;&#xFF0C;&#x800C;&#x4E14;&#x6211;&#x4EEC;&#x8FD8;&#x8981;&#x4ED8;&#x51FA;&#x8111;&#x529B;&#x7684;&#x4EE3;&#x4EF7;:-)</p>
+<pre><code class="c++">//&#x5BF9;&#x57FA;&#x7C7B;&#x4F5C;&#x51FA;&#x5982;&#x4E0B;&#x6539;&#x8FDB;
+class EE {
     protected:
         int price;
     public:
@@ -332,182 +332,182 @@ class EE &#123;
         void  SetPrice(int initp);
         void  GetPrice(int *oldp);
         void  NVWhoAmI();
-        virtual void WhoAmI() &#123;
+        virtual void WhoAmI() {
             cout &lt;&lt; &quot;I am a EE&quot; &lt;&lt; endl;
-        &#125;;
-        //虚函数关键字virtual，目的是启用动态绑定，指明成员函数为虚函数
-        //成员函数默认非虚，除了构造函数之外，任意非static成员函数都可以是虚函数
+        };
+        //&#x865A;&#x51FD;&#x6570;&#x5173;&#x952E;&#x5B57;virtual&#xFF0C;&#x76EE;&#x7684;&#x662F;&#x542F;&#x7528;&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#xFF0C;&#x6307;&#x660E;&#x6210;&#x5458;&#x51FD;&#x6570;&#x4E3A;&#x865A;&#x51FD;&#x6570;
+        //&#x6210;&#x5458;&#x51FD;&#x6570;&#x9ED8;&#x8BA4;&#x975E;&#x865A;&#xFF0C;&#x9664;&#x4E86;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E4B;&#x5916;&#xFF0C;&#x4EFB;&#x610F;&#x975E;static&#x6210;&#x5458;&#x51FD;&#x6570;&#x90FD;&#x53EF;&#x4EE5;&#x662F;&#x865A;&#x51FD;&#x6570;
         EE(void);
         ~EE(void);
-&#125;;
+};
 </code></pre>
-<p>派生类如下：</p>
-<pre><code class="c++">class MT :	public EE &#123;
+<p>&#x6D3E;&#x751F;&#x7C7B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="c++">class MT :	public EE {
     protected:
         int rent;
     public:
         void Call();
         void NVWhoAmI();
-        void WhoAmI();     //虽然没有加(也可以加.) virtual , 也是虚函数。
+        void WhoAmI();     //&#x867D;&#x7136;&#x6CA1;&#x6709;&#x52A0;(&#x4E5F;&#x53EF;&#x4EE5;&#x52A0;.) virtual , &#x4E5F;&#x662F;&#x865A;&#x51FD;&#x6570;&#x3002;
         MT(void);
         ~MT(void);
-&#125;;
+};
 
-void MT::WhoAmI () &#123;
-    cout &lt;&lt; &quot;I am a MT&quot; &lt;&lt; endl;   //改写(override)此虚函数
-&#125;;
+void MT::WhoAmI () {
+    cout &lt;&lt; &quot;I am a MT&quot; &lt;&lt; endl;   //&#x6539;&#x5199;(override)&#x6B64;&#x865A;&#x51FD;&#x6570;
+};
 </code></pre>
-<p>对另一个类<code>CA</code>我们也作类似处理：</p>
-<pre><code class="c++">void CA::WhoAmI () &#123;
+<p>&#x5BF9;&#x53E6;&#x4E00;&#x4E2A;&#x7C7B;<code>CA</code>&#x6211;&#x4EEC;&#x4E5F;&#x4F5C;&#x7C7B;&#x4F3C;&#x5904;&#x7406;&#xFF1A;</p>
+<pre><code class="c++">void CA::WhoAmI () {
     cout &lt;&lt; &quot; I am a CA&quot; &lt;&lt; endl;
-&#125;;
+};
 
-//此时对于以下代码：
+//&#x6B64;&#x65F6;&#x5BF9;&#x4E8E;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;
 EE *pee[2];
 pee[0] = new MT;
 pee[1] = new CA;
 for (int i = 0; i &lt; 2; i++)
-    pee[i]-&gt;WhoAmI ();           //1.一致,优雅
-//结果为：
-//I am a MT和I am a CA           //2.信息准确,丰富
+    pee[i]-&gt;WhoAmI ();           //1.&#x4E00;&#x81F4;,&#x4F18;&#x96C5;
+//&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;
+//I am a MT&#x548C;I am a CA           //2.&#x4FE1;&#x606F;&#x51C6;&#x786E;,&#x4E30;&#x5BCC;
 </code></pre>
-<h2 id="虚函数实现机制"><a href="#虚函数实现机制" class="headerlink" title="虚函数实现机制"></a>虚函数实现机制</h2><p>编译器为每个包含虚函数的类产生一个静态函数指针数组，即虚函数表<code>vtbl</code>，在这个类或它的基类中定义的每一个虚函数都有一个相应的函数指针，该指针指向它的实现。该类的每个实例包含一个不可见的数据成员，即虚函数指针<code>vptr</code>，这个指针被构造函数自动初始化，指向类的虚表。当客户调用虚函数的时候，编译器产生代码指向<code>vptr</code>,索引到虚表中，找到函数指针发出调用。</p>
-<p>此虚表在类有了定义以后就由编译器分配了，它是与类（而不是对象）相关的静态的指针数组。类实例化为对象后，对象的虚表指针将指向此虚表。对象的虚表指针往往放在其他数据成员的前面，对象的<code>this</code>指针将指向此虚表指针。</p>
-<p>虚函数的额外开销: （32位系统中）</p>
-<p>类: 包含此虚函数的类（定义的或继承来的）虚表（一个函数一个表项——4字节）</p>
-<p>对象: 每生成一个对象，就产生一个虚表指针（4字节）。</p>
-<h2 id="纯虚函数"><a href="#纯虚函数" class="headerlink" title="纯虚函数"></a>纯虚函数</h2><p>没有实现的虚函数成为纯虚函数。包含有纯虚函数的类称为抽象类。抽象类的虚表中纯虚函数的表项为空指针。由此，一个包含纯虚函数的类是不能实例化的。否则，它的实例调用此函数该怎么办？</p>
-<p>纯虚函数的意义在于规定一个方法的签名，而由其派生类去实现它。</p>
-<h2 id="使用虚函数实现多态"><a href="#使用虚函数实现多态" class="headerlink" title="使用虚函数实现多态"></a>使用虚函数实现多态</h2><pre><code class="c++">EE *pee[2];
+<h2 id="&#x865A;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x673A;&#x5236;"><a href="#&#x865A;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x673A;&#x5236;" class="headerlink" title="&#x865A;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x673A;&#x5236;"></a>&#x865A;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x673A;&#x5236;</h2><p>&#x7F16;&#x8BD1;&#x5668;&#x4E3A;&#x6BCF;&#x4E2A;&#x5305;&#x542B;&#x865A;&#x51FD;&#x6570;&#x7684;&#x7C7B;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x51FD;&#x6570;&#x6307;&#x9488;&#x6570;&#x7EC4;&#xFF0C;&#x5373;&#x865A;&#x51FD;&#x6570;&#x8868;<code>vtbl</code>&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x7C7B;&#x6216;&#x5B83;&#x7684;&#x57FA;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x865A;&#x51FD;&#x6570;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x76F8;&#x5E94;&#x7684;&#x51FD;&#x6570;&#x6307;&#x9488;&#xFF0C;&#x8BE5;&#x6307;&#x9488;&#x6307;&#x5411;&#x5B83;&#x7684;&#x5B9E;&#x73B0;&#x3002;&#x8BE5;&#x7C7B;&#x7684;&#x6BCF;&#x4E2A;&#x5B9E;&#x4F8B;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x4E0D;&#x53EF;&#x89C1;&#x7684;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF0C;&#x5373;&#x865A;&#x51FD;&#x6570;&#x6307;&#x9488;<code>vptr</code>&#xFF0C;&#x8FD9;&#x4E2A;&#x6307;&#x9488;&#x88AB;&#x6784;&#x9020;&#x51FD;&#x6570;&#x81EA;&#x52A8;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x6307;&#x5411;&#x7C7B;&#x7684;&#x865A;&#x8868;&#x3002;&#x5F53;&#x5BA2;&#x6237;&#x8C03;&#x7528;&#x865A;&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4EA7;&#x751F;&#x4EE3;&#x7801;&#x6307;&#x5411;<code>vptr</code>,&#x7D22;&#x5F15;&#x5230;&#x865A;&#x8868;&#x4E2D;&#xFF0C;&#x627E;&#x5230;&#x51FD;&#x6570;&#x6307;&#x9488;&#x53D1;&#x51FA;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x6B64;&#x865A;&#x8868;&#x5728;&#x7C7B;&#x6709;&#x4E86;&#x5B9A;&#x4E49;&#x4EE5;&#x540E;&#x5C31;&#x7531;&#x7F16;&#x8BD1;&#x5668;&#x5206;&#x914D;&#x4E86;&#xFF0C;&#x5B83;&#x662F;&#x4E0E;&#x7C7B;&#xFF08;&#x800C;&#x4E0D;&#x662F;&#x5BF9;&#x8C61;&#xFF09;&#x76F8;&#x5173;&#x7684;&#x9759;&#x6001;&#x7684;&#x6307;&#x9488;&#x6570;&#x7EC4;&#x3002;&#x7C7B;&#x5B9E;&#x4F8B;&#x5316;&#x4E3A;&#x5BF9;&#x8C61;&#x540E;&#xFF0C;&#x5BF9;&#x8C61;&#x7684;&#x865A;&#x8868;&#x6307;&#x9488;&#x5C06;&#x6307;&#x5411;&#x6B64;&#x865A;&#x8868;&#x3002;&#x5BF9;&#x8C61;&#x7684;&#x865A;&#x8868;&#x6307;&#x9488;&#x5F80;&#x5F80;&#x653E;&#x5728;&#x5176;&#x4ED6;&#x6570;&#x636E;&#x6210;&#x5458;&#x7684;&#x524D;&#x9762;&#xFF0C;&#x5BF9;&#x8C61;&#x7684;<code>this</code>&#x6307;&#x9488;&#x5C06;&#x6307;&#x5411;&#x6B64;&#x865A;&#x8868;&#x6307;&#x9488;&#x3002;</p>
+<p>&#x865A;&#x51FD;&#x6570;&#x7684;&#x989D;&#x5916;&#x5F00;&#x9500;: &#xFF08;32&#x4F4D;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF09;</p>
+<p>&#x7C7B;: &#x5305;&#x542B;&#x6B64;&#x865A;&#x51FD;&#x6570;&#x7684;&#x7C7B;&#xFF08;&#x5B9A;&#x4E49;&#x7684;&#x6216;&#x7EE7;&#x627F;&#x6765;&#x7684;&#xFF09;&#x865A;&#x8868;&#xFF08;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4E00;&#x4E2A;&#x8868;&#x9879;&#x2014;&#x2014;4&#x5B57;&#x8282;&#xFF09;</p>
+<p>&#x5BF9;&#x8C61;: &#x6BCF;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5C31;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x865A;&#x8868;&#x6307;&#x9488;&#xFF08;4&#x5B57;&#x8282;&#xFF09;&#x3002;</p>
+<h2 id="&#x7EAF;&#x865A;&#x51FD;&#x6570;"><a href="#&#x7EAF;&#x865A;&#x51FD;&#x6570;" class="headerlink" title="&#x7EAF;&#x865A;&#x51FD;&#x6570;"></a>&#x7EAF;&#x865A;&#x51FD;&#x6570;</h2><p>&#x6CA1;&#x6709;&#x5B9E;&#x73B0;&#x7684;&#x865A;&#x51FD;&#x6570;&#x6210;&#x4E3A;&#x7EAF;&#x865A;&#x51FD;&#x6570;&#x3002;&#x5305;&#x542B;&#x6709;&#x7EAF;&#x865A;&#x51FD;&#x6570;&#x7684;&#x7C7B;&#x79F0;&#x4E3A;&#x62BD;&#x8C61;&#x7C7B;&#x3002;&#x62BD;&#x8C61;&#x7C7B;&#x7684;&#x865A;&#x8868;&#x4E2D;&#x7EAF;&#x865A;&#x51FD;&#x6570;&#x7684;&#x8868;&#x9879;&#x4E3A;&#x7A7A;&#x6307;&#x9488;&#x3002;&#x7531;&#x6B64;&#xFF0C;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x7EAF;&#x865A;&#x51FD;&#x6570;&#x7684;&#x7C7B;&#x662F;&#x4E0D;&#x80FD;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x5B83;&#x7684;&#x5B9E;&#x4F8B;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x8BE5;&#x600E;&#x4E48;&#x529E;&#xFF1F;</p>
+<p>&#x7EAF;&#x865A;&#x51FD;&#x6570;&#x7684;&#x610F;&#x4E49;&#x5728;&#x4E8E;&#x89C4;&#x5B9A;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x7B7E;&#x540D;&#xFF0C;&#x800C;&#x7531;&#x5176;&#x6D3E;&#x751F;&#x7C7B;&#x53BB;&#x5B9E;&#x73B0;&#x5B83;&#x3002;</p>
+<h2 id="&#x4F7F;&#x7528;&#x865A;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x591A;&#x6001;"><a href="#&#x4F7F;&#x7528;&#x865A;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x591A;&#x6001;" class="headerlink" title="&#x4F7F;&#x7528;&#x865A;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x591A;&#x6001;"></a>&#x4F7F;&#x7528;&#x865A;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x591A;&#x6001;</h2><pre><code class="c++">EE *pee[2];
 pee[0] = new MT;
 pee[1] = new CA;
 for (int i = 0; i &lt; 2; i++)
     pee[i]-&gt;WhoAmI ();
 </code></pre>
-<p>基类的指针指向不同的子类对象，这些子类对基类所定义的虚函数有不同的实现。当通过基类指针调用这些函数的时候，调用的是子类的带有个性的实现。</p>
-<h2 id="对象切割（Object-slice）"><a href="#对象切割（Object-slice）" class="headerlink" title="对象切割（Object slice）"></a>对象切割（Object slice）</h2><p>当基类指针指向派生类对象时，通过基类指针调用虚函数时，编译器会找到其所指向的实际对象对虚函数的实现。</p>
-<p>通过基类指针或引用间接指向派生类的对象时，多态性才起作用，使用基类对象并不能保留住派生类的类型身份。</p>
+<p>&#x57FA;&#x7C7B;&#x7684;&#x6307;&#x9488;&#x6307;&#x5411;&#x4E0D;&#x540C;&#x7684;&#x5B50;&#x7C7B;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x4E9B;&#x5B50;&#x7C7B;&#x5BF9;&#x57FA;&#x7C7B;&#x6240;&#x5B9A;&#x4E49;&#x7684;&#x865A;&#x51FD;&#x6570;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5B9E;&#x73B0;&#x3002;&#x5F53;&#x901A;&#x8FC7;&#x57FA;&#x7C7B;&#x6307;&#x9488;&#x8C03;&#x7528;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8C03;&#x7528;&#x7684;&#x662F;&#x5B50;&#x7C7B;&#x7684;&#x5E26;&#x6709;&#x4E2A;&#x6027;&#x7684;&#x5B9E;&#x73B0;&#x3002;</p>
+<h2 id="&#x5BF9;&#x8C61;&#x5207;&#x5272;&#xFF08;Object-slice&#xFF09;"><a href="#&#x5BF9;&#x8C61;&#x5207;&#x5272;&#xFF08;Object-slice&#xFF09;" class="headerlink" title="&#x5BF9;&#x8C61;&#x5207;&#x5272;&#xFF08;Object slice&#xFF09;"></a>&#x5BF9;&#x8C61;&#x5207;&#x5272;&#xFF08;Object slice&#xFF09;</h2><p>&#x5F53;&#x57FA;&#x7C7B;&#x6307;&#x9488;&#x6307;&#x5411;&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x901A;&#x8FC7;&#x57FA;&#x7C7B;&#x6307;&#x9488;&#x8C03;&#x7528;&#x865A;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x627E;&#x5230;&#x5176;&#x6240;&#x6307;&#x5411;&#x7684;&#x5B9E;&#x9645;&#x5BF9;&#x8C61;&#x5BF9;&#x865A;&#x51FD;&#x6570;&#x7684;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x901A;&#x8FC7;&#x57FA;&#x7C7B;&#x6307;&#x9488;&#x6216;&#x5F15;&#x7528;&#x95F4;&#x63A5;&#x6307;&#x5411;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x591A;&#x6001;&#x6027;&#x624D;&#x8D77;&#x4F5C;&#x7528;&#xFF0C;&#x4F7F;&#x7528;&#x57FA;&#x7C7B;&#x5BF9;&#x8C61;&#x5E76;&#x4E0D;&#x80FD;&#x4FDD;&#x7559;&#x4F4F;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x7C7B;&#x578B;&#x8EAB;&#x4EFD;&#x3002;</p>
 <pre><code class="c++">MT mt;
 EE ee;
-ee = mt; //object slice 非正常
-EE *pee = &amp;mt; //正常
-EE &amp;ree = mt;  //正常
+ee = mt; //object slice &#x975E;&#x6B63;&#x5E38;
+EE *pee = &amp;mt; //&#x6B63;&#x5E38;
+EE &amp;ree = mt;  //&#x6B63;&#x5E38;
 ee.WhoAmI();	    //I am a EE
 pee-&gt;WhoAmI ();     // I am a MT
 ree.WhoAmI ();      // I am a MT
-//ee=mt;进行了一次object slice，Mt被slice只剩下一半，而且WhoAmI函数还要使用mt的this指针,情况会如何?
-//实际上编译器自动为EE生成了一个拷贝构造函数，这时ee是一个完全的EE对象，它调用WhoAmI时将使用自己的实现。
+//ee=mt;&#x8FDB;&#x884C;&#x4E86;&#x4E00;&#x6B21;object slice&#xFF0C;Mt&#x88AB;slice&#x53EA;&#x5269;&#x4E0B;&#x4E00;&#x534A;&#xFF0C;&#x800C;&#x4E14;WhoAmI&#x51FD;&#x6570;&#x8FD8;&#x8981;&#x4F7F;&#x7528;mt&#x7684;this&#x6307;&#x9488;,&#x60C5;&#x51B5;&#x4F1A;&#x5982;&#x4F55;?
+//&#x5B9E;&#x9645;&#x4E0A;&#x7F16;&#x8BD1;&#x5668;&#x81EA;&#x52A8;&#x4E3A;EE&#x751F;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x62F7;&#x8D1D;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x65F6;ee&#x662F;&#x4E00;&#x4E2A;&#x5B8C;&#x5168;&#x7684;EE&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x8C03;&#x7528;WhoAmI&#x65F6;&#x5C06;&#x4F7F;&#x7528;&#x81EA;&#x5DF1;&#x7684;&#x5B9E;&#x73B0;&#x3002;
 </code></pre>
-<p>应避免使用对象切割。</p>
-<h2 id="动态绑定（Late-bind）"><a href="#动态绑定（Late-bind）" class="headerlink" title="动态绑定（Late bind）"></a>动态绑定（Late bind）</h2><p>非虚函数：早绑定（编译时刻）；虚函数：晚绑定（运行时刻）。</p>
+<p>&#x5E94;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x5BF9;&#x8C61;&#x5207;&#x5272;&#x3002;</p>
+<h2 id="&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#xFF08;Late-bind&#xFF09;"><a href="#&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#xFF08;Late-bind&#xFF09;" class="headerlink" title="&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#xFF08;Late bind&#xFF09;"></a>&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#xFF08;Late bind&#xFF09;</h2><p>&#x975E;&#x865A;&#x51FD;&#x6570;&#xFF1A;&#x65E9;&#x7ED1;&#x5B9A;&#xFF08;&#x7F16;&#x8BD1;&#x65F6;&#x523B;&#xFF09;&#xFF1B;&#x865A;&#x51FD;&#x6570;&#xFF1A;&#x665A;&#x7ED1;&#x5B9A;&#xFF08;&#x8FD0;&#x884C;&#x65F6;&#x523B;&#xFF09;&#x3002;</p>
 <pre><code class="c++">EE *pee;
 if (Sunshine)
     pee = new CA;
 else
     pee = new MT;
-pee-&gt;WhoAmI();//超 我也不知道会输出啥了救命
+pee-&gt;WhoAmI();//&#x8D85; &#x6211;&#x4E5F;&#x4E0D;&#x77E5;&#x9053;&#x4F1A;&#x8F93;&#x51FA;&#x5565;&#x4E86;&#x6551;&#x547D;
 </code></pre>
-<h1 id="多重继承的虚表"><a href="#多重继承的虚表" class="headerlink" title="多重继承的虚表"></a>多重继承的虚表</h1><pre><code class="c++">// 1. 电器
-class EE &#123;
+<h1 id="&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x7684;&#x865A;&#x8868;"><a href="#&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x7684;&#x865A;&#x8868;" class="headerlink" title="&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x7684;&#x865A;&#x8868;"></a>&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x7684;&#x865A;&#x8868;</h1><pre><code class="c++">// 1. &#x7535;&#x5668;
+class EE {
     protected:
         int  price;
     public:
-        virtual void Work() &#123;
+        virtual void Work() {
             cout &lt;&lt; &quot;EE is working&quot; &lt;&lt; endl;
-        &#125;;
-        virtual void WhoAmI()  &#123;
+        };
+        virtual void WhoAmI()  {
             cout &lt;&lt; &quot; I am a EE&quot; &lt;&lt; endl;
-        &#125;;
+        };
         EE(void);
         ~EE(void);
-&#125;;
+};
 
-//2 手机
-class MT :  public EE &#123;
+//2 &#x624B;&#x673A;
+class MT :  public EE {
     protected:
         int rent;
     public:
-        void WhoAmI() &#123;
-            cout &lt;&lt; “I am a MT” &lt;&lt; endl;
-        &#125;; //改写
-        virtual void Call() &#123;
-            cout &lt;&lt; “MT is calling” &lt;&lt; endl;
-        &#125;;//打电话
+        void WhoAmI() {
+            cout &lt;&lt; &#x201C;I am a MT&#x201D; &lt;&lt; endl;
+        }; //&#x6539;&#x5199;
+        virtual void Call() {
+            cout &lt;&lt; &#x201C;MT is calling&#x201D; &lt;&lt; endl;
+        };//&#x6253;&#x7535;&#x8BDD;
         MT(void);
         ~MT(void);
-&#125;;
+};
 
-//3. 照相机
-class CA :	public EE &#123;
+//3. &#x7167;&#x76F8;&#x673A;
+class CA :	public EE {
     protected:
         int pixel;
     public:
-        void Work() &#123;
-            cout &lt;&lt; “CA is working” &lt;&lt; endl;
-        &#125;;//这里Work也改写了,作为对比,MT没有改写它.
-        void WhoAmI() &#123;
-            cout &lt;&lt; “I am a CA” &lt;&lt; endl;
-        &#125;;  //改写
-        virtual void  TakePhoto() &#123;
-            cout &lt;&lt; “CA is takephoto” &lt;&lt; endl;
-        &#125;;   //照像
+        void Work() {
+            cout &lt;&lt; &#x201C;CA is working&#x201D; &lt;&lt; endl;
+        };//&#x8FD9;&#x91CC;Work&#x4E5F;&#x6539;&#x5199;&#x4E86;,&#x4F5C;&#x4E3A;&#x5BF9;&#x6BD4;,MT&#x6CA1;&#x6709;&#x6539;&#x5199;&#x5B83;.
+        void WhoAmI() {
+            cout &lt;&lt; &#x201C;I am a CA&#x201D; &lt;&lt; endl;
+        };  //&#x6539;&#x5199;
+        virtual void  TakePhoto() {
+            cout &lt;&lt; &#x201C;CA is takephoto&#x201D; &lt;&lt; endl;
+        };   //&#x7167;&#x50CF;
         CA(void);
         ~CA(void);
-&#125;;
+};
 
-//假设现在有一款能拍照的手机
-class MTCA :	public MT, public CA &#123; // 4. 能拍照的手机
+//&#x5047;&#x8BBE;&#x73B0;&#x5728;&#x6709;&#x4E00;&#x6B3E;&#x80FD;&#x62CD;&#x7167;&#x7684;&#x624B;&#x673A;
+class MTCA :	public MT, public CA { // 4. &#x80FD;&#x62CD;&#x7167;&#x7684;&#x624B;&#x673A;
     public:
-        virtual void WhoAmI() &#123;
+        virtual void WhoAmI() {
             cout &lt;&lt; &quot;I am a MTCA&quot; &lt;&lt; endl;
-        &#125;;
-        //继承自EE. 改写.
-        virtual void Call() &#123;
+        };
+        //&#x7EE7;&#x627F;&#x81EA;EE. &#x6539;&#x5199;.
+        virtual void Call() {
             cout &lt;&lt; &quot; MTCA is calling&quot; &lt;&lt; endl;
-        &#125;;
-        //继承自MT 改写
-        virtual void TakePhoto() &#123;
+        };
+        //&#x7EE7;&#x627F;&#x81EA;MT &#x6539;&#x5199;
+        virtual void TakePhoto() {
             cout &lt;&lt; &quot;MTCA is Taking Photo&quot; &lt;&lt; endl;
-        &#125;;
-        //继承自CA 改写
+        };
+        //&#x7EE7;&#x627F;&#x81EA;CA &#x6539;&#x5199;
         MTCA(void);
         ~MTCA(void);
-&#125;;
-//虚表和虚表指针的示意图...自己画！（不是
+};
+//&#x865A;&#x8868;&#x548C;&#x865A;&#x8868;&#x6307;&#x9488;&#x7684;&#x793A;&#x610F;&#x56FE;...&#x81EA;&#x5DF1;&#x753B;&#xFF01;&#xFF08;&#x4E0D;&#x662F;
 </code></pre>
-<h1 id="二义性"><a href="#二义性" class="headerlink" title="二义性"></a>二义性</h1><p><code>MTCA</code>对象中含有一个<code>MT</code>子对象和一个<code>CA</code>子对象，这两个子对象分别含有一个<code>EE</code>子对象，这两个子对象是不一样的：数据成员不一样。可能分别在它们的子类<code>MT</code>和<code>CA</code>中被赋为不同的值；函数成员不一样（非虚的和静态的都是一样的）它们的子类可能对它们的虚函数进行了不同的改写。这是两个名字相同但内容可能不同的两个对象。</p>
-<h2 id="成员二义性（变量及函数）"><a href="#成员二义性（变量及函数）" class="headerlink" title="成员二义性（变量及函数）"></a>成员二义性（变量及函数）</h2><pre><code class="c++">MTCA *pmtca = new MTCA;
+<h1 id="&#x4E8C;&#x4E49;&#x6027;"><a href="#&#x4E8C;&#x4E49;&#x6027;" class="headerlink" title="&#x4E8C;&#x4E49;&#x6027;"></a>&#x4E8C;&#x4E49;&#x6027;</h1><p><code>MTCA</code>&#x5BF9;&#x8C61;&#x4E2D;&#x542B;&#x6709;&#x4E00;&#x4E2A;<code>MT</code>&#x5B50;&#x5BF9;&#x8C61;&#x548C;&#x4E00;&#x4E2A;<code>CA</code>&#x5B50;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x5B50;&#x5BF9;&#x8C61;&#x5206;&#x522B;&#x542B;&#x6709;&#x4E00;&#x4E2A;<code>EE</code>&#x5B50;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x5B50;&#x5BF9;&#x8C61;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#xFF1A;&#x6570;&#x636E;&#x6210;&#x5458;&#x4E0D;&#x4E00;&#x6837;&#x3002;&#x53EF;&#x80FD;&#x5206;&#x522B;&#x5728;&#x5B83;&#x4EEC;&#x7684;&#x5B50;&#x7C7B;<code>MT</code>&#x548C;<code>CA</code>&#x4E2D;&#x88AB;&#x8D4B;&#x4E3A;&#x4E0D;&#x540C;&#x7684;&#x503C;&#xFF1B;&#x51FD;&#x6570;&#x6210;&#x5458;&#x4E0D;&#x4E00;&#x6837;&#xFF08;&#x975E;&#x865A;&#x7684;&#x548C;&#x9759;&#x6001;&#x7684;&#x90FD;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF09;&#x5B83;&#x4EEC;&#x7684;&#x5B50;&#x7C7B;&#x53EF;&#x80FD;&#x5BF9;&#x5B83;&#x4EEC;&#x7684;&#x865A;&#x51FD;&#x6570;&#x8FDB;&#x884C;&#x4E86;&#x4E0D;&#x540C;&#x7684;&#x6539;&#x5199;&#x3002;&#x8FD9;&#x662F;&#x4E24;&#x4E2A;&#x540D;&#x5B57;&#x76F8;&#x540C;&#x4F46;&#x5185;&#x5BB9;&#x53EF;&#x80FD;&#x4E0D;&#x540C;&#x7684;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;</p>
+<h2 id="&#x6210;&#x5458;&#x4E8C;&#x4E49;&#x6027;&#xFF08;&#x53D8;&#x91CF;&#x53CA;&#x51FD;&#x6570;&#xFF09;"><a href="#&#x6210;&#x5458;&#x4E8C;&#x4E49;&#x6027;&#xFF08;&#x53D8;&#x91CF;&#x53CA;&#x51FD;&#x6570;&#xFF09;" class="headerlink" title="&#x6210;&#x5458;&#x4E8C;&#x4E49;&#x6027;&#xFF08;&#x53D8;&#x91CF;&#x53CA;&#x51FD;&#x6570;&#xFF09;"></a>&#x6210;&#x5458;&#x4E8C;&#x4E49;&#x6027;&#xFF08;&#x53D8;&#x91CF;&#x53CA;&#x51FD;&#x6570;&#xFF09;</h2><pre><code class="c++">MTCA *pmtca = new MTCA;
 pmtca-&gt;WhoAmI ();  // I am a MTCA
-//没有二义性。因为MTCA对其进行了改写，消除了MT和CA带来的差异性。通过MTCA指针调用WhoAmI将指向自己的实现
-pmtca-&gt;Work();   // MTCA 有两个Work, 二义性, 调用不明确,编译出错  MTCA没有对Work进行覆盖,其虚表中有两项Work,分别指向MT和CA对其的实现.无法通过编译. 编译器不知道要调用哪一个.
+//&#x6CA1;&#x6709;&#x4E8C;&#x4E49;&#x6027;&#x3002;&#x56E0;&#x4E3A;MTCA&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x4E86;&#x6539;&#x5199;&#xFF0C;&#x6D88;&#x9664;&#x4E86;MT&#x548C;CA&#x5E26;&#x6765;&#x7684;&#x5DEE;&#x5F02;&#x6027;&#x3002;&#x901A;&#x8FC7;MTCA&#x6307;&#x9488;&#x8C03;&#x7528;WhoAmI&#x5C06;&#x6307;&#x5411;&#x81EA;&#x5DF1;&#x7684;&#x5B9E;&#x73B0;
+pmtca-&gt;Work();   // MTCA &#x6709;&#x4E24;&#x4E2A;Work, &#x4E8C;&#x4E49;&#x6027;, &#x8C03;&#x7528;&#x4E0D;&#x660E;&#x786E;,&#x7F16;&#x8BD1;&#x51FA;&#x9519;  MTCA&#x6CA1;&#x6709;&#x5BF9;Work&#x8FDB;&#x884C;&#x8986;&#x76D6;,&#x5176;&#x865A;&#x8868;&#x4E2D;&#x6709;&#x4E24;&#x9879;Work,&#x5206;&#x522B;&#x6307;&#x5411;MT&#x548C;CA&#x5BF9;&#x5176;&#x7684;&#x5B9E;&#x73B0;.&#x65E0;&#x6CD5;&#x901A;&#x8FC7;&#x7F16;&#x8BD1;. &#x7F16;&#x8BD1;&#x5668;&#x4E0D;&#x77E5;&#x9053;&#x8981;&#x8C03;&#x7528;&#x54EA;&#x4E00;&#x4E2A;.
 pmtca-&gt;CA::Work(); // CA is working
-//将调用CA的实现,而CA覆盖了它;
+//&#x5C06;&#x8C03;&#x7528;CA&#x7684;&#x5B9E;&#x73B0;,&#x800C;CA&#x8986;&#x76D6;&#x4E86;&#x5B83;;
 pmtca-&gt;MT::Work(); // EE is working
-//将调用MT的实现,而MT没有覆盖它,直接使用EE的实现
-//(类似地， pmtca-&gt;price,也有二义性。必须像pmtca-&gt;CA::price   pmtca-&gt;MT::price来使用）
+//&#x5C06;&#x8C03;&#x7528;MT&#x7684;&#x5B9E;&#x73B0;,&#x800C;MT&#x6CA1;&#x6709;&#x8986;&#x76D6;&#x5B83;,&#x76F4;&#x63A5;&#x4F7F;&#x7528;EE&#x7684;&#x5B9E;&#x73B0;
+//(&#x7C7B;&#x4F3C;&#x5730;&#xFF0C; pmtca-&gt;price,&#x4E5F;&#x6709;&#x4E8C;&#x4E49;&#x6027;&#x3002;&#x5FC5;&#x987B;&#x50CF;pmtca-&gt;CA::price   pmtca-&gt;MT::price&#x6765;&#x4F7F;&#x7528;&#xFF09;
 </code></pre>
-<h2 id="转换二义性"><a href="#转换二义性" class="headerlink" title="转换二义性"></a>转换二义性</h2><pre><code class="c++">EE *pee[3];
-pee[0] = (EE *) pmtca; //存在二义性, 转换不明确,编译出错
-pee[1] = (EE *)(MT *)pmtca; //转换途径1
-pee[2] = (EE *)(CA *)pmtca; //转换途径2
-//这种二义性正是多重遭到诸多非议的原因
+<h2 id="&#x8F6C;&#x6362;&#x4E8C;&#x4E49;&#x6027;"><a href="#&#x8F6C;&#x6362;&#x4E8C;&#x4E49;&#x6027;" class="headerlink" title="&#x8F6C;&#x6362;&#x4E8C;&#x4E49;&#x6027;"></a>&#x8F6C;&#x6362;&#x4E8C;&#x4E49;&#x6027;</h2><pre><code class="c++">EE *pee[3];
+pee[0] = (EE *) pmtca; //&#x5B58;&#x5728;&#x4E8C;&#x4E49;&#x6027;, &#x8F6C;&#x6362;&#x4E0D;&#x660E;&#x786E;,&#x7F16;&#x8BD1;&#x51FA;&#x9519;
+pee[1] = (EE *)(MT *)pmtca; //&#x8F6C;&#x6362;&#x9014;&#x5F84;1
+pee[2] = (EE *)(CA *)pmtca; //&#x8F6C;&#x6362;&#x9014;&#x5F84;2
+//&#x8FD9;&#x79CD;&#x4E8C;&#x4E49;&#x6027;&#x6B63;&#x662F;&#x591A;&#x91CD;&#x906D;&#x5230;&#x8BF8;&#x591A;&#x975E;&#x8BAE;&#x7684;&#x539F;&#x56E0;
 </code></pre>
-<h1 id="RTTI"><a href="#RTTI" class="headerlink" title="RTTI"></a>RTTI</h1><p>为了一致性，往往用基类指针指向子类对象。这样做总是安全的。甚至可以通过此指针调用到子类所改写的虚函数。即多态调用。</p>
-<p>但除此之外，通过这个指针并不能做更多的工作。基类指针对子类其他独特的个性一无所知。 </p>
-<p>面对一个基类指针，它可以指向各种子类对象，在行动之前,（什么行动？即下文的类型转换）需要准确地探明它指向的是什么，即<code>RTTI</code>（Run Time Type Identification）</p>
-<p>如同虚函数的晚绑定，<code>RTTI</code>在编译的时刻不能进行，须在运行时进行:</p>
+<h1 id="RTTI"><a href="#RTTI" class="headerlink" title="RTTI"></a>RTTI</h1><p>&#x4E3A;&#x4E86;&#x4E00;&#x81F4;&#x6027;&#xFF0C;&#x5F80;&#x5F80;&#x7528;&#x57FA;&#x7C7B;&#x6307;&#x9488;&#x6307;&#x5411;&#x5B50;&#x7C7B;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x603B;&#x662F;&#x5B89;&#x5168;&#x7684;&#x3002;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6B64;&#x6307;&#x9488;&#x8C03;&#x7528;&#x5230;&#x5B50;&#x7C7B;&#x6240;&#x6539;&#x5199;&#x7684;&#x865A;&#x51FD;&#x6570;&#x3002;&#x5373;&#x591A;&#x6001;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x4F46;&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x6307;&#x9488;&#x5E76;&#x4E0D;&#x80FD;&#x505A;&#x66F4;&#x591A;&#x7684;&#x5DE5;&#x4F5C;&#x3002;&#x57FA;&#x7C7B;&#x6307;&#x9488;&#x5BF9;&#x5B50;&#x7C7B;&#x5176;&#x4ED6;&#x72EC;&#x7279;&#x7684;&#x4E2A;&#x6027;&#x4E00;&#x65E0;&#x6240;&#x77E5;&#x3002; </p>
+<p>&#x9762;&#x5BF9;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;&#x6307;&#x9488;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x6307;&#x5411;&#x5404;&#x79CD;&#x5B50;&#x7C7B;&#x5BF9;&#x8C61;&#xFF0C;&#x5728;&#x884C;&#x52A8;&#x4E4B;&#x524D;,&#xFF08;&#x4EC0;&#x4E48;&#x884C;&#x52A8;&#xFF1F;&#x5373;&#x4E0B;&#x6587;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF09;&#x9700;&#x8981;&#x51C6;&#x786E;&#x5730;&#x63A2;&#x660E;&#x5B83;&#x6307;&#x5411;&#x7684;&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x5373;<code>RTTI</code>&#xFF08;Run Time Type Identification&#xFF09;</p>
+<p>&#x5982;&#x540C;&#x865A;&#x51FD;&#x6570;&#x7684;&#x665A;&#x7ED1;&#x5B9A;&#xFF0C;<code>RTTI</code>&#x5728;&#x7F16;&#x8BD1;&#x7684;&#x65F6;&#x523B;&#x4E0D;&#x80FD;&#x8FDB;&#x884C;&#xFF0C;&#x987B;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x8FDB;&#x884C;:</p>
 <pre><code class="c++">EE *pee;
 if ( Sunshine)
     pee = new CA;
 else
     pee = new MT;
-pee-&gt;WhoAmI();      //运行时刻进行晚绑定。
+pee-&gt;WhoAmI();      //&#x8FD0;&#x884C;&#x65F6;&#x523B;&#x8FDB;&#x884C;&#x665A;&#x7ED1;&#x5B9A;&#x3002;
 </code></pre>
-<p>我们之前定义的<code>WhoAmI</code>就是一个简单的<code>RTTI</code>。</p>
-<p><code>MFC</code>中使用类型识别网的方法来实现<code>RTTI</code>。</p>
-<p>标准C++提供了两个操作符来支持<code>RTTI</code>：<code>typeid</code>和<code>dynamic_cast</code></p>
-<p><code>type_info</code>类定义如下:</p>
-<pre><code class="c++">class type_info &#123;
+<p>&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x5B9A;&#x4E49;&#x7684;<code>WhoAmI</code>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;<code>RTTI</code>&#x3002;</p>
+<p><code>MFC</code>&#x4E2D;&#x4F7F;&#x7528;&#x7C7B;&#x578B;&#x8BC6;&#x522B;&#x7F51;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;<code>RTTI</code>&#x3002;</p>
+<p>&#x6807;&#x51C6;C++&#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x4E2A;&#x64CD;&#x4F5C;&#x7B26;&#x6765;&#x652F;&#x6301;<code>RTTI</code>&#xFF1A;<code>typeid</code>&#x548C;<code>dynamic_cast</code></p>
+<p><code>type_info</code>&#x7C7B;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;:</p>
+<pre><code class="c++">class type_info {
     public:
         virtual ~type_info();
         int operator==(const type_info &amp;rhs) const;
@@ -517,392 +517,392 @@ pee-&gt;WhoAmI();      //运行时刻进行晚绑定。
         const char *raw_name() const;
     private:
         ...
-&#125;;
+};
 
-//重载了== 和!= 以对两个类型进行比较操作
-//成员函数name输出类型的字符串型的名字.
+//&#x91CD;&#x8F7D;&#x4E86;== &#x548C;!= &#x4EE5;&#x5BF9;&#x4E24;&#x4E2A;&#x7C7B;&#x578B;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x64CD;&#x4F5C;
+//&#x6210;&#x5458;&#x51FD;&#x6570;name&#x8F93;&#x51FA;&#x7C7B;&#x578B;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x578B;&#x7684;&#x540D;&#x5B57;.
 </code></pre>
-<p><code>typeid</code>的典型用法：</p>
+<p><code>typeid</code>&#x7684;&#x5178;&#x578B;&#x7528;&#x6CD5;&#xFF1A;</p>
 <pre><code class="c++">MT *pm = new MT;
 EE *pe = pm;
-cout &lt;&lt; typeid( pe ).name() &lt;&lt; endl;    //class EE*     变量是EE*类型
-cout &lt;&lt; typeid( *pe ).name() &lt;&lt; endl;  //class MT     指向的是MT对象
+cout &lt;&lt; typeid( pe ).name() &lt;&lt; endl;    //class EE*     &#x53D8;&#x91CF;&#x662F;EE*&#x7C7B;&#x578B;
+cout &lt;&lt; typeid( *pe ).name() &lt;&lt; endl;  //class MT     &#x6307;&#x5411;&#x7684;&#x662F;MT&#x5BF9;&#x8C61;
 cout &lt;&lt; typeid( pm ).name() &lt;&lt; endl;   // class MT *
 cout &lt;&lt; typeid( *pm ).name() &lt;&lt; endl;  // class MT
-//用法1
+//&#x7528;&#x6CD5;1
 </code></pre>
-<pre><code class="c++">void DoYourWork(EE *pe) &#123;
+<pre><code class="c++">void DoYourWork(EE *pe) {
     if (typeid(MT) == typeid(*pe))
         ((MT *)pe)-&gt;Call();
     if (typeid(CA) == typeid(*pe))
         ((CA *)pe)-&gt;TakePhoto();
-&#125;
-//用法2
-//不能直接使用 pe-&gt;Call();  编译期出错。
-//也不能直接使用 ((MT*)pe)-&gt;Call(); 存在潜在的运行期错误
-//可以使用我们定义的WhoAmI来代替typeid完成其功能
-//if(pe-&gt;WhoAmI()…….)    ((MT*)pe)-&gt;Call();
-//在准确地了解了对象的类型后,就可以正确地转换,从而进行正确的调用.这样可以安全地使用基类指针来操作子类对象了：
+}
+//&#x7528;&#x6CD5;2
+//&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x4F7F;&#x7528; pe-&gt;Call();  &#x7F16;&#x8BD1;&#x671F;&#x51FA;&#x9519;&#x3002;
+//&#x4E5F;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x4F7F;&#x7528; ((MT*)pe)-&gt;Call(); &#x5B58;&#x5728;&#x6F5C;&#x5728;&#x7684;&#x8FD0;&#x884C;&#x671F;&#x9519;&#x8BEF;
+//&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x7684;WhoAmI&#x6765;&#x4EE3;&#x66FF;typeid&#x5B8C;&#x6210;&#x5176;&#x529F;&#x80FD;
+//if(pe-&gt;WhoAmI()&#x2026;&#x2026;.)    ((MT*)pe)-&gt;Call();
+//&#x5728;&#x51C6;&#x786E;&#x5730;&#x4E86;&#x89E3;&#x4E86;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x540E;,&#x5C31;&#x53EF;&#x4EE5;&#x6B63;&#x786E;&#x5730;&#x8F6C;&#x6362;,&#x4ECE;&#x800C;&#x8FDB;&#x884C;&#x6B63;&#x786E;&#x7684;&#x8C03;&#x7528;.&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x5B89;&#x5168;&#x5730;&#x4F7F;&#x7528;&#x57FA;&#x7C7B;&#x6307;&#x9488;&#x6765;&#x64CD;&#x4F5C;&#x5B50;&#x7C7B;&#x5BF9;&#x8C61;&#x4E86;&#xFF1A;
 EE *pe;
 if (SUNSHINE)
     pe = new MT;
 else
     pe = new CA;
-DoYourWork(pe);    // 在运行期识别对象的身份，并进行合适的操作。
+DoYourWork(pe);    // &#x5728;&#x8FD0;&#x884C;&#x671F;&#x8BC6;&#x522B;&#x5BF9;&#x8C61;&#x7684;&#x8EAB;&#x4EFD;&#xFF0C;&#x5E76;&#x8FDB;&#x884C;&#x5408;&#x9002;&#x7684;&#x64CD;&#x4F5C;&#x3002;
 </code></pre>
-<h1 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h1><pre><code class="c++">EE *pe1 = new MT;
+<h1 id="&#x7C7B;&#x578B;&#x8F6C;&#x6362;"><a href="#&#x7C7B;&#x578B;&#x8F6C;&#x6362;" class="headerlink" title="&#x7C7B;&#x578B;&#x8F6C;&#x6362;"></a>&#x7C7B;&#x578B;&#x8F6C;&#x6362;</h1><pre><code class="c++">EE *pe1 = new MT;
 </code></pre>
-<p>使用基类指针指向子类对象，实际上是一个类型转换。称为向上转换，<code>upcast</code>，向上转换是为了统一性。</p>
+<p>&#x4F7F;&#x7528;&#x57FA;&#x7C7B;&#x6307;&#x9488;&#x6307;&#x5411;&#x5B50;&#x7C7B;&#x5BF9;&#x8C61;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x3002;&#x79F0;&#x4E3A;&#x5411;&#x4E0A;&#x8F6C;&#x6362;&#xFF0C;<code>upcast</code>&#xFF0C;&#x5411;&#x4E0A;&#x8F6C;&#x6362;&#x662F;&#x4E3A;&#x4E86;&#x7EDF;&#x4E00;&#x6027;&#x3002;</p>
 <pre><code class="c++">if (typeid(MT) == typeid(*pe))
     ((MT *)pe)-&gt;Call();
 </code></pre>
-<p>把基类指针再转换为子类指针，称为向下转换。<code>downcast</code>，向下转换是为了差异性。</p>
-<p>在C++中有多种转换方法：隐式转换，显示转换，静态转换，动态转换。</p>
-<h2 id="隐式转换"><a href="#隐式转换" class="headerlink" title="隐式转换"></a>隐式转换</h2><p>语法上直接使用<code>＝</code>操作符，比如<code>EE * pe1＝pmt；</code></p>
-<p>只能用于向上转换，而且总是能成功。其他的非向上的隐式转换，编译出错。</p>
-<h2 id="显示转换（强行转换）"><a href="#显示转换（强行转换）" class="headerlink" title="显示转换（强行转换）"></a>显示转换（强行转换）</h2><p>建议画图理清类和实例对象之间什么指向什么的关系，本笔记暂未摸清图床功能，遂省略。</p>
-<h3 id="Upcast"><a href="#Upcast" class="headerlink" title="Upcast"></a>Upcast</h3><p>向上显式转换总可以成功（等价于隐示转换）。</p>
+<p>&#x628A;&#x57FA;&#x7C7B;&#x6307;&#x9488;&#x518D;&#x8F6C;&#x6362;&#x4E3A;&#x5B50;&#x7C7B;&#x6307;&#x9488;&#xFF0C;&#x79F0;&#x4E3A;&#x5411;&#x4E0B;&#x8F6C;&#x6362;&#x3002;<code>downcast</code>&#xFF0C;&#x5411;&#x4E0B;&#x8F6C;&#x6362;&#x662F;&#x4E3A;&#x4E86;&#x5DEE;&#x5F02;&#x6027;&#x3002;</p>
+<p>&#x5728;C++&#x4E2D;&#x6709;&#x591A;&#x79CD;&#x8F6C;&#x6362;&#x65B9;&#x6CD5;&#xFF1A;&#x9690;&#x5F0F;&#x8F6C;&#x6362;&#xFF0C;&#x663E;&#x793A;&#x8F6C;&#x6362;&#xFF0C;&#x9759;&#x6001;&#x8F6C;&#x6362;&#xFF0C;&#x52A8;&#x6001;&#x8F6C;&#x6362;&#x3002;</p>
+<h2 id="&#x9690;&#x5F0F;&#x8F6C;&#x6362;"><a href="#&#x9690;&#x5F0F;&#x8F6C;&#x6362;" class="headerlink" title="&#x9690;&#x5F0F;&#x8F6C;&#x6362;"></a>&#x9690;&#x5F0F;&#x8F6C;&#x6362;</h2><p>&#x8BED;&#x6CD5;&#x4E0A;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<code>&#xFF1D;</code>&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x6BD4;&#x5982;<code>EE * pe1&#xFF1D;pmt&#xFF1B;</code></p>
+<p>&#x53EA;&#x80FD;&#x7528;&#x4E8E;&#x5411;&#x4E0A;&#x8F6C;&#x6362;&#xFF0C;&#x800C;&#x4E14;&#x603B;&#x662F;&#x80FD;&#x6210;&#x529F;&#x3002;&#x5176;&#x4ED6;&#x7684;&#x975E;&#x5411;&#x4E0A;&#x7684;&#x9690;&#x5F0F;&#x8F6C;&#x6362;&#xFF0C;&#x7F16;&#x8BD1;&#x51FA;&#x9519;&#x3002;</p>
+<h2 id="&#x663E;&#x793A;&#x8F6C;&#x6362;&#xFF08;&#x5F3A;&#x884C;&#x8F6C;&#x6362;&#xFF09;"><a href="#&#x663E;&#x793A;&#x8F6C;&#x6362;&#xFF08;&#x5F3A;&#x884C;&#x8F6C;&#x6362;&#xFF09;" class="headerlink" title="&#x663E;&#x793A;&#x8F6C;&#x6362;&#xFF08;&#x5F3A;&#x884C;&#x8F6C;&#x6362;&#xFF09;"></a>&#x663E;&#x793A;&#x8F6C;&#x6362;&#xFF08;&#x5F3A;&#x884C;&#x8F6C;&#x6362;&#xFF09;</h2><p>&#x5EFA;&#x8BAE;&#x753B;&#x56FE;&#x7406;&#x6E05;&#x7C7B;&#x548C;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x4EC0;&#x4E48;&#x6307;&#x5411;&#x4EC0;&#x4E48;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x672C;&#x7B14;&#x8BB0;&#x6682;&#x672A;&#x6478;&#x6E05;&#x56FE;&#x5E8A;&#x529F;&#x80FD;&#xFF0C;&#x9042;&#x7701;&#x7565;&#x3002;</p>
+<h3 id="Upcast"><a href="#Upcast" class="headerlink" title="Upcast"></a>Upcast</h3><p>&#x5411;&#x4E0A;&#x663E;&#x5F0F;&#x8F6C;&#x6362;&#x603B;&#x53EF;&#x4EE5;&#x6210;&#x529F;&#xFF08;&#x7B49;&#x4EF7;&#x4E8E;&#x9690;&#x793A;&#x8F6C;&#x6362;&#xFF09;&#x3002;</p>
 <pre><code class="c++">MTCA *pmtca = new MTCA;
-MT *pmt = (MT *) pmtca; //等价于MT *pmt=pmtca;
+MT *pmt = (MT *) pmtca; //&#x7B49;&#x4EF7;&#x4E8E;MT *pmt=pmtca;
 </code></pre>
-<h3 id="Downcast"><a href="#Downcast" class="headerlink" title="Downcast"></a>Downcast</h3><p>向下的隐式转换无法通过编译。</p>
-<p>向下的显示转换总可以通过编译，但是无法得到转换的信息。</p>
-<p>表面上总是可以成功，哪怕根本不相关的转换。有可能是假象，因此有可能发生运行时错误:：</p>
+<h3 id="Downcast"><a href="#Downcast" class="headerlink" title="Downcast"></a>Downcast</h3><p>&#x5411;&#x4E0B;&#x7684;&#x9690;&#x5F0F;&#x8F6C;&#x6362;&#x65E0;&#x6CD5;&#x901A;&#x8FC7;&#x7F16;&#x8BD1;&#x3002;</p>
+<p>&#x5411;&#x4E0B;&#x7684;&#x663E;&#x793A;&#x8F6C;&#x6362;&#x603B;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7F16;&#x8BD1;&#xFF0C;&#x4F46;&#x662F;&#x65E0;&#x6CD5;&#x5F97;&#x5230;&#x8F6C;&#x6362;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x8868;&#x9762;&#x4E0A;&#x603B;&#x662F;&#x53EF;&#x4EE5;&#x6210;&#x529F;&#xFF0C;&#x54EA;&#x6015;&#x6839;&#x672C;&#x4E0D;&#x76F8;&#x5173;&#x7684;&#x8F6C;&#x6362;&#x3002;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x5047;&#x8C61;&#xFF0C;&#x56E0;&#x6B64;&#x6709;&#x53EF;&#x80FD;&#x53D1;&#x751F;&#x8FD0;&#x884C;&#x65F6;&#x9519;&#x8BEF;:&#xFF1A;</p>
 <pre><code class="c++">MT *pmt1 = new MT;
 MT *pmt2 = new MTCA;
-//两个基类指针分别指向基类和子类对象.
-MTCA *pmatca0 = pmt1; //向下的隐式转换，编译出错
+//&#x4E24;&#x4E2A;&#x57FA;&#x7C7B;&#x6307;&#x9488;&#x5206;&#x522B;&#x6307;&#x5411;&#x57FA;&#x7C7B;&#x548C;&#x5B50;&#x7C7B;&#x5BF9;&#x8C61;.
+MTCA *pmatca0 = pmt1; //&#x5411;&#x4E0B;&#x7684;&#x9690;&#x5F0F;&#x8F6C;&#x6362;&#xFF0C;&#x7F16;&#x8BD1;&#x51FA;&#x9519;
 MTCA *pmtca1, *pmtca2;
-pmtca1 = (MTCA *)pmt1;  //pmt1指向的是一个MT          假成功
-pmtca2 = (MTCA *)pmt2; // pmt2指向的是一个MTCA.    真成功
-pmtca1-&gt;TakePhoto ();   // 虽然能通过编译,但将引发运行时错误! 因为pmtca1根本就指向的是MT,没有TakePhoto方法!
-pmtca2-&gt;TakePhoto ();  //这次,碰巧成功了.但用户无法控制.  只有通过“RTTI”才能分清, 比如WhoAmI.
+pmtca1 = (MTCA *)pmt1;  //pmt1&#x6307;&#x5411;&#x7684;&#x662F;&#x4E00;&#x4E2A;MT          &#x5047;&#x6210;&#x529F;
+pmtca2 = (MTCA *)pmt2; // pmt2&#x6307;&#x5411;&#x7684;&#x662F;&#x4E00;&#x4E2A;MTCA.    &#x771F;&#x6210;&#x529F;
+pmtca1-&gt;TakePhoto ();   // &#x867D;&#x7136;&#x80FD;&#x901A;&#x8FC7;&#x7F16;&#x8BD1;,&#x4F46;&#x5C06;&#x5F15;&#x53D1;&#x8FD0;&#x884C;&#x65F6;&#x9519;&#x8BEF;! &#x56E0;&#x4E3A;pmtca1&#x6839;&#x672C;&#x5C31;&#x6307;&#x5411;&#x7684;&#x662F;MT,&#x6CA1;&#x6709;TakePhoto&#x65B9;&#x6CD5;!
+pmtca2-&gt;TakePhoto ();  //&#x8FD9;&#x6B21;,&#x78B0;&#x5DE7;&#x6210;&#x529F;&#x4E86;.&#x4F46;&#x7528;&#x6237;&#x65E0;&#x6CD5;&#x63A7;&#x5236;.  &#x53EA;&#x6709;&#x901A;&#x8FC7;&#x201C;RTTI&#x201D;&#x624D;&#x80FD;&#x5206;&#x6E05;, &#x6BD4;&#x5982;WhoAmI.
 </code></pre>
-<p>向下的显示的转换，从<code>pmt-&gt;pmtca</code>，即<code>pmtca=(MTCA*)pmt;</code></p>
-<p>用户无法从转换结果中判断<code>pmt</code>最初指向的是一个完整的子类对象（白色加蓝色），还是一个基类对象（纯蓝色）。</p>
-<p>1.当<code>pmt</code>是一个完整的对象时（蓝色+白色），转换真正成功。</p>
-<p>2.当<code>pmt</code>是纯蓝时，是一个假象。使用<code>pmtca</code>调用白色区域产生运行期错误。</p>
-<p>无论哪种情况，都将得到一个指针<code>pmtca</code>。除非使用<code>RTTI</code>，莫辨真伪。</p>
-<h3 id="Crosscast"><a href="#Crosscast" class="headerlink" title="Crosscast"></a>Crosscast</h3><p>交叉转换是为了执行目标类对象所能执行的功能（等价于一次向上转换和一次向下转换的综合）</p>
+<p>&#x5411;&#x4E0B;&#x7684;&#x663E;&#x793A;&#x7684;&#x8F6C;&#x6362;&#xFF0C;&#x4ECE;<code>pmt-&gt;pmtca</code>&#xFF0C;&#x5373;<code>pmtca=(MTCA*)pmt;</code></p>
+<p>&#x7528;&#x6237;&#x65E0;&#x6CD5;&#x4ECE;&#x8F6C;&#x6362;&#x7ED3;&#x679C;&#x4E2D;&#x5224;&#x65AD;<code>pmt</code>&#x6700;&#x521D;&#x6307;&#x5411;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x5B50;&#x7C7B;&#x5BF9;&#x8C61;&#xFF08;&#x767D;&#x8272;&#x52A0;&#x84DD;&#x8272;&#xFF09;&#xFF0C;&#x8FD8;&#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;&#x5BF9;&#x8C61;&#xFF08;&#x7EAF;&#x84DD;&#x8272;&#xFF09;&#x3002;</p>
+<p>1.&#x5F53;<code>pmt</code>&#x662F;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x5BF9;&#x8C61;&#x65F6;&#xFF08;&#x84DD;&#x8272;+&#x767D;&#x8272;&#xFF09;&#xFF0C;&#x8F6C;&#x6362;&#x771F;&#x6B63;&#x6210;&#x529F;&#x3002;</p>
+<p>2.&#x5F53;<code>pmt</code>&#x662F;&#x7EAF;&#x84DD;&#x65F6;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x5047;&#x8C61;&#x3002;&#x4F7F;&#x7528;<code>pmtca</code>&#x8C03;&#x7528;&#x767D;&#x8272;&#x533A;&#x57DF;&#x4EA7;&#x751F;&#x8FD0;&#x884C;&#x671F;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x65E0;&#x8BBA;&#x54EA;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x90FD;&#x5C06;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x6307;&#x9488;<code>pmtca</code>&#x3002;&#x9664;&#x975E;&#x4F7F;&#x7528;<code>RTTI</code>&#xFF0C;&#x83AB;&#x8FA8;&#x771F;&#x4F2A;&#x3002;</p>
+<h3 id="Crosscast"><a href="#Crosscast" class="headerlink" title="Crosscast"></a>Crosscast</h3><p>&#x4EA4;&#x53C9;&#x8F6C;&#x6362;&#x662F;&#x4E3A;&#x4E86;&#x6267;&#x884C;&#x76EE;&#x6807;&#x7C7B;&#x5BF9;&#x8C61;&#x6240;&#x80FD;&#x6267;&#x884C;&#x7684;&#x529F;&#x80FD;&#xFF08;&#x7B49;&#x4EF7;&#x4E8E;&#x4E00;&#x6B21;&#x5411;&#x4E0A;&#x8F6C;&#x6362;&#x548C;&#x4E00;&#x6B21;&#x5411;&#x4E0B;&#x8F6C;&#x6362;&#x7684;&#x7EFC;&#x5408;&#xFF09;</p>
 <pre><code class="c++">MT *pmt = new MTCA;
-CA *pca = pmt;              //交叉隐式转换出错
-CA *pca = (CA *)pmt;        //交叉显式转换可以编译甚至运行,但是......
+CA *pca = pmt;              //&#x4EA4;&#x53C9;&#x9690;&#x5F0F;&#x8F6C;&#x6362;&#x51FA;&#x9519;
+CA *pca = (CA *)pmt;        //&#x4EA4;&#x53C9;&#x663E;&#x5F0F;&#x8F6C;&#x6362;&#x53EF;&#x4EE5;&#x7F16;&#x8BD1;&#x751A;&#x81F3;&#x8FD0;&#x884C;,&#x4F46;&#x662F;......
 pca-&gt;WhoAmI ();             // I am a MTCA
 pca-&gt;TakePhoto ();          // MTCA is calling  !!!!
-                            //不是MTCA is takephoto!!!!
-//而且进一步, pca-&gt;pixel实际上仍然是MT所定义的rent的值! 
-//(如果,比如在MT的构造函数内对rent赋值为50, 在CA的构造函数对pixel赋值为300万. 我们看到pca-&gt;pixel=50.)
-//而实际上显示的cross cast的结果,见棕色部分.尤其注意TakePhoto 函数和Pixel变量,在它们的内存位置实际上保存的是Call的函数指针和rent变量.
+                            //&#x4E0D;&#x662F;MTCA is takephoto!!!!
+//&#x800C;&#x4E14;&#x8FDB;&#x4E00;&#x6B65;, pca-&gt;pixel&#x5B9E;&#x9645;&#x4E0A;&#x4ECD;&#x7136;&#x662F;MT&#x6240;&#x5B9A;&#x4E49;&#x7684;rent&#x7684;&#x503C;! 
+//(&#x5982;&#x679C;,&#x6BD4;&#x5982;&#x5728;MT&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5185;&#x5BF9;rent&#x8D4B;&#x503C;&#x4E3A;50, &#x5728;CA&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5BF9;pixel&#x8D4B;&#x503C;&#x4E3A;300&#x4E07;. &#x6211;&#x4EEC;&#x770B;&#x5230;pca-&gt;pixel=50.)
+//&#x800C;&#x5B9E;&#x9645;&#x4E0A;&#x663E;&#x793A;&#x7684;cross cast&#x7684;&#x7ED3;&#x679C;,&#x89C1;&#x68D5;&#x8272;&#x90E8;&#x5206;.&#x5C24;&#x5176;&#x6CE8;&#x610F;TakePhoto &#x51FD;&#x6570;&#x548C;Pixel&#x53D8;&#x91CF;,&#x5728;&#x5B83;&#x4EEC;&#x7684;&#x5185;&#x5B58;&#x4F4D;&#x7F6E;&#x5B9E;&#x9645;&#x4E0A;&#x4FDD;&#x5B58;&#x7684;&#x662F;Call&#x7684;&#x51FD;&#x6570;&#x6307;&#x9488;&#x548C;rent&#x53D8;&#x91CF;.
 </code></pre>
-<p>使用显式的交叉转换并不安全。</p>
-<p>虚表中的可见部分不能被改变。<code>Pca</code>所指向的对象的虚表仍然是原来的虚表（即<code>MT</code>类的）编译器根据名字<code>TakePhoto</code>在虚表中找到第三项，但是其中的指针指向的是<code>MT</code>类的<code>Call</code>，其实现是<code>MTCA</code>类的对它的实现<code>MTCA is takephoto</code>。</p>
-<p>所以声明虚函数成员的时候，有时其次序也很重要！</p>
-<p>如果在<code>MT</code>中再声明一个虚函数</p>
-<pre><code class="c++">virtual void dd() &#123;	cout &lt;&lt; &quot;dfdfdfdfd&quot; &lt;&lt; endl;&#125;;
+<p>&#x4F7F;&#x7528;&#x663E;&#x5F0F;&#x7684;&#x4EA4;&#x53C9;&#x8F6C;&#x6362;&#x5E76;&#x4E0D;&#x5B89;&#x5168;&#x3002;</p>
+<p>&#x865A;&#x8868;&#x4E2D;&#x7684;&#x53EF;&#x89C1;&#x90E8;&#x5206;&#x4E0D;&#x80FD;&#x88AB;&#x6539;&#x53D8;&#x3002;<code>Pca</code>&#x6240;&#x6307;&#x5411;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x865A;&#x8868;&#x4ECD;&#x7136;&#x662F;&#x539F;&#x6765;&#x7684;&#x865A;&#x8868;&#xFF08;&#x5373;<code>MT</code>&#x7C7B;&#x7684;&#xFF09;&#x7F16;&#x8BD1;&#x5668;&#x6839;&#x636E;&#x540D;&#x5B57;<code>TakePhoto</code>&#x5728;&#x865A;&#x8868;&#x4E2D;&#x627E;&#x5230;&#x7B2C;&#x4E09;&#x9879;&#xFF0C;&#x4F46;&#x662F;&#x5176;&#x4E2D;&#x7684;&#x6307;&#x9488;&#x6307;&#x5411;&#x7684;&#x662F;<code>MT</code>&#x7C7B;&#x7684;<code>Call</code>&#xFF0C;&#x5176;&#x5B9E;&#x73B0;&#x662F;<code>MTCA</code>&#x7C7B;&#x7684;&#x5BF9;&#x5B83;&#x7684;&#x5B9E;&#x73B0;<code>MTCA is takephoto</code>&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x58F0;&#x660E;&#x865A;&#x51FD;&#x6570;&#x6210;&#x5458;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6709;&#x65F6;&#x5176;&#x6B21;&#x5E8F;&#x4E5F;&#x5F88;&#x91CD;&#x8981;&#xFF01;</p>
+<p>&#x5982;&#x679C;&#x5728;<code>MT</code>&#x4E2D;&#x518D;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x865A;&#x51FD;&#x6570;</p>
+<pre><code class="c++">virtual void dd() {	cout &lt;&lt; &quot;dfdfdfdfd&quot; &lt;&lt; endl;};
 </code></pre>
-<p>并且排在Call函数之前，那么：</p>
-<p>以上<code>pca-&gt;TakePhoto ();</code>的结果将为：<code>dfdfdfdfd</code>。</p>
-<p>这种特性，有时也有其独特的用途。</p>
-<h2 id="动态转换"><a href="#动态转换" class="headerlink" title="动态转换"></a>动态转换</h2><p>运算符语法：</p>
+<p>&#x5E76;&#x4E14;&#x6392;&#x5728;Call&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x90A3;&#x4E48;&#xFF1A;</p>
+<p>&#x4EE5;&#x4E0A;<code>pca-&gt;TakePhoto ();</code>&#x7684;&#x7ED3;&#x679C;&#x5C06;&#x4E3A;&#xFF1A;<code>dfdfdfdfd</code>&#x3002;</p>
+<p>&#x8FD9;&#x79CD;&#x7279;&#x6027;&#xFF0C;&#x6709;&#x65F6;&#x4E5F;&#x6709;&#x5176;&#x72EC;&#x7279;&#x7684;&#x7528;&#x9014;&#x3002;</p>
+<h2 id="&#x52A8;&#x6001;&#x8F6C;&#x6362;"><a href="#&#x52A8;&#x6001;&#x8F6C;&#x6362;" class="headerlink" title="&#x52A8;&#x6001;&#x8F6C;&#x6362;"></a>&#x52A8;&#x6001;&#x8F6C;&#x6362;</h2><p>&#x8FD0;&#x7B97;&#x7B26;&#x8BED;&#x6CD5;&#xFF1A;</p>
 <pre><code class="c++">dynamic_cast &lt; type - id &gt; ( expression )
-//type-id是事先定义的类的指针或引用类型.
-//Expression是一个指针或一个左值.
+//type-id&#x662F;&#x4E8B;&#x5148;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x7684;&#x6307;&#x9488;&#x6216;&#x5F15;&#x7528;&#x7C7B;&#x578B;.
+//Expression&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#x6216;&#x4E00;&#x4E2A;&#x5DE6;&#x503C;.
 </code></pre>
-<h3 id="Upcast-1"><a href="#Upcast-1" class="headerlink" title="Upcast"></a>Upcast</h3><pre><code class="c++">void f(MTCA *pmc) &#123;
+<h3 id="Upcast-1"><a href="#Upcast-1" class="headerlink" title="Upcast"></a>Upcast</h3><pre><code class="c++">void f(MTCA *pmc) {
     MT *pm = dynamic_cast&lt;MT *&gt;(pmc);
-    // 转换到基类    pm指向pmc的MT型子对象
+    // &#x8F6C;&#x6362;&#x5230;&#x57FA;&#x7C7B;    pm&#x6307;&#x5411;pmc&#x7684;MT&#x578B;&#x5B50;&#x5BF9;&#x8C61;
     EE *pe = dynamic_cast&lt;EE *&gt;(pm);
-    //转换到基类    pe指向pm的EE型子对象
-&#125;
+    //&#x8F6C;&#x6362;&#x5230;&#x57FA;&#x7C7B;    pe&#x6307;&#x5411;pm&#x7684;EE&#x578B;&#x5B50;&#x5BF9;&#x8C61;
+}
 </code></pre>
-<p>实际上<code>upcast</code>不需要使用<code>dynamic_cast</code>，直接使用隐式转换即可。</p>
-<h3 id="Downcast-1"><a href="#Downcast-1" class="headerlink" title="Downcast"></a>Downcast</h3><pre><code class="c++">void f() &#123;
-    MT *pmt1 = new MTCA;   //基类指针指向一个派生类对象
-    MT *pmt2 = new MT; //基类指针指向一个基类对象
+<p>&#x5B9E;&#x9645;&#x4E0A;<code>upcast</code>&#x4E0D;&#x9700;&#x8981;&#x4F7F;&#x7528;<code>dynamic_cast</code>&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x9690;&#x5F0F;&#x8F6C;&#x6362;&#x5373;&#x53EF;&#x3002;</p>
+<h3 id="Downcast-1"><a href="#Downcast-1" class="headerlink" title="Downcast"></a>Downcast</h3><pre><code class="c++">void f() {
+    MT *pmt1 = new MTCA;   //&#x57FA;&#x7C7B;&#x6307;&#x9488;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;
+    MT *pmt2 = new MT; //&#x57FA;&#x7C7B;&#x6307;&#x9488;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;&#x5BF9;&#x8C61;
 
-    MTCA *pmtca1 = dynamic_cast&lt;MTCA *&gt;(pmt1);     // 成功！pmt1本来指的就是一个派生类对象
+    MTCA *pmtca1 = dynamic_cast&lt;MTCA *&gt;(pmt1);     // &#x6210;&#x529F;&#xFF01;pmt1&#x672C;&#x6765;&#x6307;&#x7684;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6D3E;&#x751F;&#x7C7B;&#x5BF9;&#x8C61;
     MTCA *pmtca2 = dynamic_cast&lt;MTCA *&gt;(pmt2);
-    // 失败！pmt2 指的是一个基类对象，无法转换为子类， pmtca2 == NULL
+    // &#x5931;&#x8D25;&#xFF01;pmt2 &#x6307;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;&#x5BF9;&#x8C61;&#xFF0C;&#x65E0;&#x6CD5;&#x8F6C;&#x6362;&#x4E3A;&#x5B50;&#x7C7B;&#xFF0C; pmtca2 == NULL
     ...
-&#125;
+}
 </code></pre>
-<p>用户可以根据返回值来决定下一步的走向。使用<code>dynamic_cast</code>可以安全地进行向下转换，避免使用显示的向下转换出现的问题（见前文显示的向下转换）。</p>
+<p>&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x8FD4;&#x56DE;&#x503C;&#x6765;&#x51B3;&#x5B9A;&#x4E0B;&#x4E00;&#x6B65;&#x7684;&#x8D70;&#x5411;&#x3002;&#x4F7F;&#x7528;<code>dynamic_cast</code>&#x53EF;&#x4EE5;&#x5B89;&#x5168;&#x5730;&#x8FDB;&#x884C;&#x5411;&#x4E0B;&#x8F6C;&#x6362;&#xFF0C;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x663E;&#x793A;&#x7684;&#x5411;&#x4E0B;&#x8F6C;&#x6362;&#x51FA;&#x73B0;&#x7684;&#x95EE;&#x9898;&#xFF08;&#x89C1;&#x524D;&#x6587;&#x663E;&#x793A;&#x7684;&#x5411;&#x4E0B;&#x8F6C;&#x6362;&#xFF09;&#x3002;</p>
 <h3 id="Crosscast-1"><a href="#Crosscast-1" class="headerlink" title="Crosscast"></a>Crosscast</h3><pre><code class="c++">MT *pmt = new MTCA;
-CA *pca = (CA *)pmt;   //交叉显示转换可以成功,但是......
+CA *pca = (CA *)pmt;   //&#x4EA4;&#x53C9;&#x663E;&#x793A;&#x8F6C;&#x6362;&#x53EF;&#x4EE5;&#x6210;&#x529F;,&#x4F46;&#x662F;......
 pca-&gt;WhoAmI ();         // I am a MTCA
 pca-&gt;TakePhoto ();      // MTCA is calling  !!!!
-//不是MTCA is takephoto!!!!
-//这里pca的虚表指针所指向的虚表的可见部分是MT的虚表
+//&#x4E0D;&#x662F;MTCA is takephoto!!!!
+//&#x8FD9;&#x91CC;pca&#x7684;&#x865A;&#x8868;&#x6307;&#x9488;&#x6240;&#x6307;&#x5411;&#x7684;&#x865A;&#x8868;&#x7684;&#x53EF;&#x89C1;&#x90E8;&#x5206;&#x662F;MT&#x7684;&#x865A;&#x8868;
 pca = dynamic_cast&lt;CA *&gt;(pmt);
 pca-&gt;WhoAmI ();         // I am a MTCA
-pca-&gt;TakePhoto ();      // MTCA is takephoto!!!!  转换成功
-// pca的虚表指针所指向的虚表的可见部分是CA的虚表!
-//见前图p34
-//实际上没图，在ppt里边:-(
+pca-&gt;TakePhoto ();      // MTCA is takephoto!!!!  &#x8F6C;&#x6362;&#x6210;&#x529F;
+// pca&#x7684;&#x865A;&#x8868;&#x6307;&#x9488;&#x6240;&#x6307;&#x5411;&#x7684;&#x865A;&#x8868;&#x7684;&#x53EF;&#x89C1;&#x90E8;&#x5206;&#x662F;CA&#x7684;&#x865A;&#x8868;!
+//&#x89C1;&#x524D;&#x56FE;p34
+//&#x5B9E;&#x9645;&#x4E0A;&#x6CA1;&#x56FE;&#xFF0C;&#x5728;ppt&#x91CC;&#x8FB9;:-(
 </code></pre>
-<h2 id="静态转换"><a href="#静态转换" class="headerlink" title="静态转换"></a>静态转换</h2><p>语法：</p>
+<h2 id="&#x9759;&#x6001;&#x8F6C;&#x6362;"><a href="#&#x9759;&#x6001;&#x8F6C;&#x6362;" class="headerlink" title="&#x9759;&#x6001;&#x8F6C;&#x6362;"></a>&#x9759;&#x6001;&#x8F6C;&#x6362;</h2><p>&#x8BED;&#x6CD5;&#xFF1A;</p>
 <pre><code class="c++">static_cast &lt; type - id &gt; ( expression )
 </code></pre>
-<p>静态转换功能类似于显示的类型转换，不能提供安全性。</p>
-<h3 id="Upcast-2"><a href="#Upcast-2" class="headerlink" title="Upcast"></a>Upcast</h3><p>总是成功，同显示转换。</p>
+<p>&#x9759;&#x6001;&#x8F6C;&#x6362;&#x529F;&#x80FD;&#x7C7B;&#x4F3C;&#x4E8E;&#x663E;&#x793A;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x4E0D;&#x80FD;&#x63D0;&#x4F9B;&#x5B89;&#x5168;&#x6027;&#x3002;</p>
+<h3 id="Upcast-2"><a href="#Upcast-2" class="headerlink" title="Upcast"></a>Upcast</h3><p>&#x603B;&#x662F;&#x6210;&#x529F;&#xFF0C;&#x540C;&#x663E;&#x793A;&#x8F6C;&#x6362;&#x3002;</p>
 <h3 id="Downcast-2"><a href="#Downcast-2" class="headerlink" title="Downcast"></a>Downcast</h3><pre><code class="c++">MT *pmt1 = new MT;
-MT *pmt2 = new MTCA pmtca; //向上隐式转换
-pmtca1 = dynamic_cast&lt;MTCA *&gt;(pmt1); //pmtca1==NULL,应用可借此判断pmt1不是指向的MTCA对象, 不应继续使用pmtca1.
-pmtca2 = dynamic_cast&lt;MTCA *&gt;(pmt2); //pmtca2!=NULL,pmtca2成功地指向一个MTCA对象,可以使用！
+MT *pmt2 = new MTCA pmtca; //&#x5411;&#x4E0A;&#x9690;&#x5F0F;&#x8F6C;&#x6362;
+pmtca1 = dynamic_cast&lt;MTCA *&gt;(pmt1); //pmtca1==NULL,&#x5E94;&#x7528;&#x53EF;&#x501F;&#x6B64;&#x5224;&#x65AD;pmt1&#x4E0D;&#x662F;&#x6307;&#x5411;&#x7684;MTCA&#x5BF9;&#x8C61;, &#x4E0D;&#x5E94;&#x7EE7;&#x7EED;&#x4F7F;&#x7528;pmtca1.
+pmtca2 = dynamic_cast&lt;MTCA *&gt;(pmt2); //pmtca2!=NULL,pmtca2&#x6210;&#x529F;&#x5730;&#x6307;&#x5411;&#x4E00;&#x4E2A;MTCA&#x5BF9;&#x8C61;,&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF01;
 pmtca1 = static_cast&lt;MTCA *&gt;(pmt1);
-pmtca1-&gt;TakePhoto (); //同显示转换,虽通过编译,但会引发运行时错误.
+pmtca1-&gt;TakePhoto (); //&#x540C;&#x663E;&#x793A;&#x8F6C;&#x6362;,&#x867D;&#x901A;&#x8FC7;&#x7F16;&#x8BD1;,&#x4F46;&#x4F1A;&#x5F15;&#x53D1;&#x8FD0;&#x884C;&#x65F6;&#x9519;&#x8BEF;.
 pmtca2 = static_cast&lt;MTCA *&gt;(pmt2);
-//在这种情况下与dynamic_cast，显示转换等价.
+//&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x4E0E;dynamic_cast&#xFF0C;&#x663E;&#x793A;&#x8F6C;&#x6362;&#x7B49;&#x4EF7;.
 pmtca2-&gt;TakePhoto ();
 </code></pre>
 <h3 id="Crosscast-2"><a href="#Crosscast-2" class="headerlink" title="Crosscast"></a>Crosscast</h3><pre><code class="c++">class a;
 class b;
-a *pa = new a;//欸我自己在编译的时候报错说使用不完整类型 应该代码补全了就没有这个问题了吧
-b *pb = (b *) pa; //编译可以通过,此处也可以运行
-//但是之后的调用会引起各种运行期问题.
-pb = static_cast&lt;b *&gt;(pa); //编译出错,
-//static_cast不支持交叉转换,避免了运行出错.
-// 在这种意义static_cast具有价高的安全性：
-//产生编译期的错误,
-//而不是运行期不可预见的错误
+a *pa = new a;//&#x6B38;&#x6211;&#x81EA;&#x5DF1;&#x5728;&#x7F16;&#x8BD1;&#x7684;&#x65F6;&#x5019;&#x62A5;&#x9519;&#x8BF4;&#x4F7F;&#x7528;&#x4E0D;&#x5B8C;&#x6574;&#x7C7B;&#x578B; &#x5E94;&#x8BE5;&#x4EE3;&#x7801;&#x8865;&#x5168;&#x4E86;&#x5C31;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x4E86;&#x5427;
+b *pb = (b *) pa; //&#x7F16;&#x8BD1;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;,&#x6B64;&#x5904;&#x4E5F;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;
+//&#x4F46;&#x662F;&#x4E4B;&#x540E;&#x7684;&#x8C03;&#x7528;&#x4F1A;&#x5F15;&#x8D77;&#x5404;&#x79CD;&#x8FD0;&#x884C;&#x671F;&#x95EE;&#x9898;.
+pb = static_cast&lt;b *&gt;(pa); //&#x7F16;&#x8BD1;&#x51FA;&#x9519;,
+//static_cast&#x4E0D;&#x652F;&#x6301;&#x4EA4;&#x53C9;&#x8F6C;&#x6362;,&#x907F;&#x514D;&#x4E86;&#x8FD0;&#x884C;&#x51FA;&#x9519;.
+// &#x5728;&#x8FD9;&#x79CD;&#x610F;&#x4E49;static_cast&#x5177;&#x6709;&#x4EF7;&#x9AD8;&#x7684;&#x5B89;&#x5168;&#x6027;&#xFF1A;
+//&#x4EA7;&#x751F;&#x7F16;&#x8BD1;&#x671F;&#x7684;&#x9519;&#x8BEF;,
+//&#x800C;&#x4E0D;&#x662F;&#x8FD0;&#x884C;&#x671F;&#x4E0D;&#x53EF;&#x9884;&#x89C1;&#x7684;&#x9519;&#x8BEF;
 </code></pre>
-<p><code>static_cast</code>的实现方式是在对象与子对象之间进行偏移计算而得出。而<code>dynamic_cast</code>有时会改变虚表指针所指向虚表的可见部分。</p>
-<h2 id="转换方式比较"><a href="#转换方式比较" class="headerlink" title="转换方式比较"></a>转换方式比较</h2><ul>
-<li><p>运行原理：</p>
-<p>隐式、显示、静态：在对象与子对象之间进行偏移量的计算，调整指针的指向。</p>
-<p>动态：对对象进行全面的类型分析，有时要进行复杂的操作，包括对类的虚表。</p>
+<p><code>static_cast</code>&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x662F;&#x5728;&#x5BF9;&#x8C61;&#x4E0E;&#x5B50;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x504F;&#x79FB;&#x8BA1;&#x7B97;&#x800C;&#x5F97;&#x51FA;&#x3002;&#x800C;<code>dynamic_cast</code>&#x6709;&#x65F6;&#x4F1A;&#x6539;&#x53D8;&#x865A;&#x8868;&#x6307;&#x9488;&#x6240;&#x6307;&#x5411;&#x865A;&#x8868;&#x7684;&#x53EF;&#x89C1;&#x90E8;&#x5206;&#x3002;</p>
+<h2 id="&#x8F6C;&#x6362;&#x65B9;&#x5F0F;&#x6BD4;&#x8F83;"><a href="#&#x8F6C;&#x6362;&#x65B9;&#x5F0F;&#x6BD4;&#x8F83;" class="headerlink" title="&#x8F6C;&#x6362;&#x65B9;&#x5F0F;&#x6BD4;&#x8F83;"></a>&#x8F6C;&#x6362;&#x65B9;&#x5F0F;&#x6BD4;&#x8F83;</h2><ul>
+<li><p>&#x8FD0;&#x884C;&#x539F;&#x7406;&#xFF1A;</p>
+<p>&#x9690;&#x5F0F;&#x3001;&#x663E;&#x793A;&#x3001;&#x9759;&#x6001;&#xFF1A;&#x5728;&#x5BF9;&#x8C61;&#x4E0E;&#x5B50;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x504F;&#x79FB;&#x91CF;&#x7684;&#x8BA1;&#x7B97;&#xFF0C;&#x8C03;&#x6574;&#x6307;&#x9488;&#x7684;&#x6307;&#x5411;&#x3002;</p>
+<p>&#x52A8;&#x6001;&#xFF1A;&#x5BF9;&#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x5168;&#x9762;&#x7684;&#x7C7B;&#x578B;&#x5206;&#x6790;&#xFF0C;&#x6709;&#x65F6;&#x8981;&#x8FDB;&#x884C;&#x590D;&#x6742;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x5305;&#x62EC;&#x5BF9;&#x7C7B;&#x7684;&#x865A;&#x8868;&#x3002;</p>
 </li>
-<li><p>运行速度：</p>
-<p>隐式、显示、静态：快。</p>
-<p>动态：相对慢。</p>
+<li><p>&#x8FD0;&#x884C;&#x901F;&#x5EA6;&#xFF1A;</p>
+<p>&#x9690;&#x5F0F;&#x3001;&#x663E;&#x793A;&#x3001;&#x9759;&#x6001;&#xFF1A;&#x5FEB;&#x3002;</p>
+<p>&#x52A8;&#x6001;&#xFF1A;&#x76F8;&#x5BF9;&#x6162;&#x3002;</p>
 </li>
-<li><p>安全性对比：</p>
-<p>显示、静态、动态：安全性递增。</p>
-<p>隐式转换总是安全的，但功能有限，只能进行向上转换。</p>
+<li><p>&#x5B89;&#x5168;&#x6027;&#x5BF9;&#x6BD4;&#xFF1A;</p>
+<p>&#x663E;&#x793A;&#x3001;&#x9759;&#x6001;&#x3001;&#x52A8;&#x6001;&#xFF1A;&#x5B89;&#x5168;&#x6027;&#x9012;&#x589E;&#x3002;</p>
+<p>&#x9690;&#x5F0F;&#x8F6C;&#x6362;&#x603B;&#x662F;&#x5B89;&#x5168;&#x7684;&#xFF0C;&#x4F46;&#x529F;&#x80FD;&#x6709;&#x9650;&#xFF0C;&#x53EA;&#x80FD;&#x8FDB;&#x884C;&#x5411;&#x4E0A;&#x8F6C;&#x6362;&#x3002;</p>
 </li>
-<li><p>使用策略：</p>
-<p>尽可能地使用隐式、静态、显示转换，只在迫不得已时使用动态转换。</p>
-<p>如使用动态转换，须设置编译器选项<code>enable RTTI</code>。</p>
-<p>动态转换的问题：速度以及编译器相关性。</p>
+<li><p>&#x4F7F;&#x7528;&#x7B56;&#x7565;&#xFF1A;</p>
+<p>&#x5C3D;&#x53EF;&#x80FD;&#x5730;&#x4F7F;&#x7528;&#x9690;&#x5F0F;&#x3001;&#x9759;&#x6001;&#x3001;&#x663E;&#x793A;&#x8F6C;&#x6362;&#xFF0C;&#x53EA;&#x5728;&#x8FEB;&#x4E0D;&#x5F97;&#x5DF2;&#x65F6;&#x4F7F;&#x7528;&#x52A8;&#x6001;&#x8F6C;&#x6362;&#x3002;</p>
+<p>&#x5982;&#x4F7F;&#x7528;&#x52A8;&#x6001;&#x8F6C;&#x6362;&#xFF0C;&#x987B;&#x8BBE;&#x7F6E;&#x7F16;&#x8BD1;&#x5668;&#x9009;&#x9879;<code>enable RTTI</code>&#x3002;</p>
+<p>&#x52A8;&#x6001;&#x8F6C;&#x6362;&#x7684;&#x95EE;&#x9898;&#xFF1A;&#x901F;&#x5EA6;&#x4EE5;&#x53CA;&#x7F16;&#x8BD1;&#x5668;&#x76F8;&#x5173;&#x6027;&#x3002;</p>
 </li>
 </ul>
-<h1 id="复合结构下的构造与析构函数"><a href="#复合结构下的构造与析构函数" class="headerlink" title="复合结构下的构造与析构函数"></a>复合结构下的构造与析构函数</h1><p>构造函数和析构函数都是成员函数。</p>
-<p>构造函数可以重载（多种参数类型），析构函数不能重载（无参数）。</p>
-<p>构造函数不能是虚函数（构造时必须指明类型），析构函数可以是（并且往往是）虚函数（用来释放子类的内存）。</p>
-<p>程序中不能直接调用构造函数和析构函数，只能在创建对象时系统自动调用。</p>
-<p>构造函数和析构函数的调用时间：全局变量：在进入<code>main()</code>函数之前会调用构造函数，在程序终止时会调用析构函数。自动变量的作用域是模块被激活时，自动变量调用构造函数，当退出此模块时，会调用析构函数。动态分配的对象：当使用<code>new</code>为对象分配内存时会调用构造函数；使用<code>delete</code>删除对象时会调用析构函数。</p>
-<p>继承时构造和析构函数的调用：在派生类构造函数调用之前先调用基类的构造函数，析构函数的调用之后调用基类的析构函数。</p>
-<p>嵌套时构造和析构函数的调用：调用对象的构造函数之前会调用嵌套对象的构造函数，调用对象的析构函数之后会调用嵌套对象的析构函数。</p>
-<pre><code class="c++">//例子
-class B &#123;
-&#125;;
+<h1 id="&#x590D;&#x5408;&#x7ED3;&#x6784;&#x4E0B;&#x7684;&#x6784;&#x9020;&#x4E0E;&#x6790;&#x6784;&#x51FD;&#x6570;"><a href="#&#x590D;&#x5408;&#x7ED3;&#x6784;&#x4E0B;&#x7684;&#x6784;&#x9020;&#x4E0E;&#x6790;&#x6784;&#x51FD;&#x6570;" class="headerlink" title="&#x590D;&#x5408;&#x7ED3;&#x6784;&#x4E0B;&#x7684;&#x6784;&#x9020;&#x4E0E;&#x6790;&#x6784;&#x51FD;&#x6570;"></a>&#x590D;&#x5408;&#x7ED3;&#x6784;&#x4E0B;&#x7684;&#x6784;&#x9020;&#x4E0E;&#x6790;&#x6784;&#x51FD;&#x6570;</h1><p>&#x6784;&#x9020;&#x51FD;&#x6570;&#x548C;&#x6790;&#x6784;&#x51FD;&#x6570;&#x90FD;&#x662F;&#x6210;&#x5458;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x91CD;&#x8F7D;&#xFF08;&#x591A;&#x79CD;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#xFF09;&#xFF0C;&#x6790;&#x6784;&#x51FD;&#x6570;&#x4E0D;&#x80FD;&#x91CD;&#x8F7D;&#xFF08;&#x65E0;&#x53C2;&#x6570;&#xFF09;&#x3002;</p>
+<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E0D;&#x80FD;&#x662F;&#x865A;&#x51FD;&#x6570;&#xFF08;&#x6784;&#x9020;&#x65F6;&#x5FC5;&#x987B;&#x6307;&#x660E;&#x7C7B;&#x578B;&#xFF09;&#xFF0C;&#x6790;&#x6784;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x662F;&#xFF08;&#x5E76;&#x4E14;&#x5F80;&#x5F80;&#x662F;&#xFF09;&#x865A;&#x51FD;&#x6570;&#xFF08;&#x7528;&#x6765;&#x91CA;&#x653E;&#x5B50;&#x7C7B;&#x7684;&#x5185;&#x5B58;&#xFF09;&#x3002;</p>
+<p>&#x7A0B;&#x5E8F;&#x4E2D;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;&#x548C;&#x6790;&#x6784;&#x51FD;&#x6570;&#xFF0C;&#x53EA;&#x80FD;&#x5728;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x65F6;&#x7CFB;&#x7EDF;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#x548C;&#x6790;&#x6784;&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;&#x65F6;&#x95F4;&#xFF1A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF1A;&#x5728;&#x8FDB;&#x5165;<code>main()</code>&#x51FD;&#x6570;&#x4E4B;&#x524D;&#x4F1A;&#x8C03;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5728;&#x7A0B;&#x5E8F;&#x7EC8;&#x6B62;&#x65F6;&#x4F1A;&#x8C03;&#x7528;&#x6790;&#x6784;&#x51FD;&#x6570;&#x3002;&#x81EA;&#x52A8;&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x6A21;&#x5757;&#x88AB;&#x6FC0;&#x6D3B;&#x65F6;&#xFF0C;&#x81EA;&#x52A8;&#x53D8;&#x91CF;&#x8C03;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5F53;&#x9000;&#x51FA;&#x6B64;&#x6A21;&#x5757;&#x65F6;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;&#x6790;&#x6784;&#x51FD;&#x6570;&#x3002;&#x52A8;&#x6001;&#x5206;&#x914D;&#x7684;&#x5BF9;&#x8C61;&#xFF1A;&#x5F53;&#x4F7F;&#x7528;<code>new</code>&#x4E3A;&#x5BF9;&#x8C61;&#x5206;&#x914D;&#x5185;&#x5B58;&#x65F6;&#x4F1A;&#x8C03;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF1B;&#x4F7F;&#x7528;<code>delete</code>&#x5220;&#x9664;&#x5BF9;&#x8C61;&#x65F6;&#x4F1A;&#x8C03;&#x7528;&#x6790;&#x6784;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x7EE7;&#x627F;&#x65F6;&#x6784;&#x9020;&#x548C;&#x6790;&#x6784;&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;&#xFF1A;&#x5728;&#x6D3E;&#x751F;&#x7C7B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x4E4B;&#x524D;&#x5148;&#x8C03;&#x7528;&#x57FA;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x6790;&#x6784;&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;&#x4E4B;&#x540E;&#x8C03;&#x7528;&#x57FA;&#x7C7B;&#x7684;&#x6790;&#x6784;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x5D4C;&#x5957;&#x65F6;&#x6784;&#x9020;&#x548C;&#x6790;&#x6784;&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;&#xFF1A;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#x4F1A;&#x8C03;&#x7528;&#x5D4C;&#x5957;&#x5BF9;&#x8C61;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684;&#x6790;&#x6784;&#x51FD;&#x6570;&#x4E4B;&#x540E;&#x4F1A;&#x8C03;&#x7528;&#x5D4C;&#x5957;&#x5BF9;&#x8C61;&#x7684;&#x6790;&#x6784;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="c++">//&#x4F8B;&#x5B50;
+class B {
+};
 
-int main() &#123;
-    B b;    // 警告：未引用的局部变量
-    B *pb = new B(); // 编译器自动分配一个默认的构造函数。
-&#125;
+int main() {
+    B b;    // &#x8B66;&#x544A;&#xFF1A;&#x672A;&#x5F15;&#x7528;&#x7684;&#x5C40;&#x90E8;&#x53D8;&#x91CF;
+    B *pb = new B(); // &#x7F16;&#x8BD1;&#x5668;&#x81EA;&#x52A8;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;
+}
 </code></pre>
-<p>未定义构造函数：</p>
+<p>&#x672A;&#x5B9A;&#x4E49;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF1A;</p>
 <pre><code class="c++">#include &lt;iostream&gt;
 
-class B &#123;
+class B {
     public:
         int ib;
-&#125;;
+};
 
-int main() &#123;
+int main() {
     B b;
     B *pb = new B();
-    std::cout &lt;&lt; b.ib &lt;&lt; std::endl; // 警告：使用未初始化的内存b
-    //  错误：使用未初始化的局部变量b
+    std::cout &lt;&lt; b.ib &lt;&lt; std::endl; // &#x8B66;&#x544A;&#xFF1A;&#x4F7F;&#x7528;&#x672A;&#x521D;&#x59CB;&#x5316;&#x7684;&#x5185;&#x5B58;b
+    //  &#x9519;&#x8BEF;&#xFF1A;&#x4F7F;&#x7528;&#x672A;&#x521D;&#x59CB;&#x5316;&#x7684;&#x5C40;&#x90E8;&#x53D8;&#x91CF;b
     std::cout &lt;&lt; pb-&gt;ib &lt;&lt; std::endl;
-&#125;//但是最后输出0和0欸
+}//&#x4F46;&#x662F;&#x6700;&#x540E;&#x8F93;&#x51FA;0&#x548C;0&#x6B38;
 </code></pre>
-<p>自行定义一个默认的构造，但未赋值：</p>
-<pre><code class="c++">class B &#123;
+<p>&#x81EA;&#x884C;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x6784;&#x9020;&#xFF0C;&#x4F46;&#x672A;&#x8D4B;&#x503C;&#xFF1A;</p>
+<pre><code class="c++">class B {
     public:
         int ib;
-        B() &#123;&#125;  // 警告： 未初始化ib
-&#125;;
+        B() {}  // &#x8B66;&#x544A;&#xFF1A; &#x672A;&#x521D;&#x59CB;&#x5316;ib
+};
 
-int main() &#123;
+int main() {
     B b;
     B *pb = new B();
-    cout &lt;&lt; b.ib &lt;&lt; endl;  // 随机数，-858993460
-    cout &lt;&lt; pb-&gt;ib &lt;&lt; endl; // 随机数，-842150451
-&#125;
+    cout &lt;&lt; b.ib &lt;&lt; endl;  // &#x968F;&#x673A;&#x6570;&#xFF0C;-858993460
+    cout &lt;&lt; pb-&gt;ib &lt;&lt; endl; // &#x968F;&#x673A;&#x6570;&#xFF0C;-842150451
+}
 </code></pre>
-<p>自行定义一个默认的构造：</p>
+<p>&#x81EA;&#x884C;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x6784;&#x9020;&#xFF1A;</p>
 <pre><code class="c++">#include &lt;iostream&gt;
 using namespace std;
 
-class B &#123;
+class B {
     public:
         int ib;
-        B() &#123;
+        B() {
             ib = 1;
-        &#125;
-&#125;;
+        }
+};
 
-int main() &#123;
+int main() {
     B b;
     B *pb = new B();
     cout &lt;&lt; b.ib &lt;&lt; endl; // 1
     cout &lt;&lt; pb-&gt;ib &lt;&lt; endl; // 1
-&#125;//输出1和1
+}//&#x8F93;&#x51FA;1&#x548C;1
 </code></pre>
-<p>构造函数的重载：</p>
-<pre><code class="c++">class B &#123;
+<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x91CD;&#x8F7D;&#xFF1A;</p>
+<pre><code class="c++">class B {
     public:
         int ib;
-        B() &#123;
+        B() {
             ib = 1;
-        &#125;
-        B(int pi) &#123;
+        }
+        B(int pi) {
             ib = pi;
-        &#125;
-&#125;;
+        }
+};
 
-int main() &#123;
+int main() {
     B b;
     B *pb = new B(2);
     cout &lt;&lt; b.ib &lt;&lt; endl;   // 1
     cout &lt;&lt; pb-&gt;ib &lt;&lt; endl; // 2
-&#125;
+}
 </code></pre>
-<p>继承关系：</p>
-<pre><code class="c++">class B &#123;
+<p>&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#xFF1A;</p>
+<pre><code class="c++">class B {
     public:
         int ib;
-        B() &#123;
+        B() {
             ib = 1;
-        &#125;
-        B(int pi) &#123;
+        }
+        B(int pi) {
             ib = pi;
-        &#125;
-&#125;;
+        }
+};
 
-class D: public B &#123;
+class D: public B {
     public:
         int id;
-&#125;;
+};
 
-int main() &#123;
+int main() {
     D d;
     D *pd = new D();;
     cout &lt;&lt; d.ib &lt;&lt; endl;      // 1
     cout &lt;&lt; pd-&gt;ib &lt;&lt; endl;  // 1
-&#125;
-//编译器自动为D分配一个默认的构造函数
+}
+//&#x7F16;&#x8BD1;&#x5668;&#x81EA;&#x52A8;&#x4E3A;D&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;
 </code></pre>
-<p>为子类自定义默认构造函数：</p>
-<pre><code class="c++">class B &#123;
+<p>&#x4E3A;&#x5B50;&#x7C7B;&#x81EA;&#x5B9A;&#x4E49;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="c++">class B {
     public:
         int ib;
-        B() &#123;
-            cout &lt;&lt; &quot;in B&quot; &lt;&lt; endl; // 输出执行痕迹
+        B() {
+            cout &lt;&lt; &quot;in B&quot; &lt;&lt; endl; // &#x8F93;&#x51FA;&#x6267;&#x884C;&#x75D5;&#x8FF9;
             ib = 1;
-        &#125;
-        B(int pi) &#123;
+        }
+        B(int pi) {
             ib = pi;
-        &#125;
-&#125;;
+        }
+};
 
-class D: public B &#123;
+class D: public B {
     public:
         int id;
-        D() &#123;
-            cout &lt;&lt; &quot;in D&quot; &lt;&lt; endl;  // 输出执行痕迹
+        D() {
+            cout &lt;&lt; &quot;in D&quot; &lt;&lt; endl;  // &#x8F93;&#x51FA;&#x6267;&#x884C;&#x75D5;&#x8FF9;
             id = 11;
-        &#125;
-&#125;;
+        }
+};
 
-int main() &#123;
+int main() {
     D *pd = new D();    // in B
     // in D
     cout &lt;&lt; pd-&gt;ib &lt;&lt; &quot; &quot; &lt;&lt; pd-&gt;id &lt;&lt; endl; //  1   11
     delete pd;
-&#125;
-//逆流而上，递归调用。
+}
+//&#x9006;&#x6D41;&#x800C;&#x4E0A;&#xFF0C;&#x9012;&#x5F52;&#x8C03;&#x7528;&#x3002;
 </code></pre>
-<p>构造函数重载：</p>
-<pre><code class="c++">class B &#123;
+<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#x91CD;&#x8F7D;&#xFF1A;</p>
+<pre><code class="c++">class B {
     public:
         int ib;
-        B() &#123;
+        B() {
             cout &lt;&lt; &quot;in B 1&quot; &lt;&lt; endl;
             ib = 1;
-        &#125;
-        B(int pi) &#123; // 基类的第二个构造
+        }
+        B(int pi) { // &#x57FA;&#x7C7B;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x6784;&#x9020;
             cout &lt;&lt; &quot;in B 2 &quot; &lt;&lt; endl;
             ib = pi;
-        &#125;
-&#125;;
+        }
+};
 
-class D: public B &#123;
+class D: public B {
     public:
         int id;
-        D() &#123;
+        D() {
             cout &lt;&lt; &quot;in D 1&quot; &lt;&lt; endl;
             id = 11;
-        &#125;
-        D(int pi) &#123; // 子类的第二个构造函数
+        }
+        D(int pi) { // &#x5B50;&#x7C7B;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;
             cout &lt;&lt; &quot;in D 2&quot; &lt;&lt; endl;
             id = pi;
-        &#125;
-&#125;;
+        }
+};
 
-int main() &#123;
+int main() {
     D *pd = new D();    // in B 1
     // in D 1
     cout &lt;&lt; pd-&gt;ib &lt;&lt; &quot; &quot; &lt;&lt; pd-&gt;id &lt;&lt; endl; //  1  11
     delete pd;
-&#125;
+}
 </code></pre>
-<p>根据参数，找到不同的重载：</p>
-<pre><code class="c++">int main() &#123;
-    D *pd = new D();      // 调用第一个构造
+<p>&#x6839;&#x636E;&#x53C2;&#x6570;&#xFF0C;&#x627E;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x91CD;&#x8F7D;&#xFF1A;</p>
+<pre><code class="c++">int main() {
+    D *pd = new D();      // &#x8C03;&#x7528;&#x7B2C;&#x4E00;&#x4E2A;&#x6784;&#x9020;
     cout &lt;&lt; pd-&gt;ib &lt;&lt; &quot; &quot; &lt;&lt; pd-&gt;id &lt;&lt; endl;
     delete pd;
-    D *pd2 = new D(12); // 调用第二个构造
+    D *pd2 = new D(12); // &#x8C03;&#x7528;&#x7B2C;&#x4E8C;&#x4E2A;&#x6784;&#x9020;
     cout &lt;&lt; pd2-&gt;ib &lt;&lt; &quot; &quot; &lt;&lt; pd2-&gt;id &lt;&lt; endl;
     delete pd2;
     return 0;
-&#125;
-//输出：
+}
+//&#x8F93;&#x51FA;&#xFF1A;
 //in B 1
 //in D 1
 //1 11
 //in B 1
 //in D 2
 //1 12
-//但是都是调用的B的第一个默认构造。
-//子类构造如未指定，均调用基类的默认构造
+//&#x4F46;&#x662F;&#x90FD;&#x662F;&#x8C03;&#x7528;&#x7684;B&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x3002;
+//&#x5B50;&#x7C7B;&#x6784;&#x9020;&#x5982;&#x672A;&#x6307;&#x5B9A;&#xFF0C;&#x5747;&#x8C03;&#x7528;&#x57FA;&#x7C7B;&#x7684;&#x9ED8;&#x8BA4;&#x6784;&#x9020;
 
-class D: public B &#123;
+class D: public B {
     public:
         int id;
-        D() &#123; // 调用B1
+        D() { // &#x8C03;&#x7528;B1
             cout &lt;&lt; &quot;in D 1&quot; &lt;&lt; endl;
             id = 11;
-        &#125;
-        D(int pi) &#123; // 调用B1
+        }
+        D(int pi) { // &#x8C03;&#x7528;B1
             cout &lt;&lt; &quot;in D 2&quot; &lt;&lt; endl;
             id = pi;
-        &#125;
-&#125;;
+        }
+};
 
-//也可以显示地指明调用基类的那个重载构造
-D(): B(5) &#123; // 在D1中显示调用B2：
+//&#x4E5F;&#x53EF;&#x4EE5;&#x663E;&#x793A;&#x5730;&#x6307;&#x660E;&#x8C03;&#x7528;&#x57FA;&#x7C7B;&#x7684;&#x90A3;&#x4E2A;&#x91CD;&#x8F7D;&#x6784;&#x9020;
+D(): B(5) { // &#x5728;D1&#x4E2D;&#x663E;&#x793A;&#x8C03;&#x7528;B2&#xFF1A;
     cout &lt;&lt; &quot;in D 1&quot; &lt;&lt; endl;
     id = 11;
-&#125;
+}
 
-D(int pi): B() &#123; // 在D2 中显示调用B1
+D(int pi): B() { // &#x5728;D2 &#x4E2D;&#x663E;&#x793A;&#x8C03;&#x7528;B1
     cout &lt;&lt; &quot;in D 2&quot; &lt;&lt; endl;
     id = pi;
-&#125;
-//此时输出：
+}
+//&#x6B64;&#x65F6;&#x8F93;&#x51FA;&#xFF1A;
 //in B 2
 //in D 1
 //5 11
@@ -910,21 +910,21 @@ D(int pi): B() &#123; // 在D2 中显示调用B1
 //in D 2
 //1 12 
 
-//或者：（一切根据程序员的意图行事）
+//&#x6216;&#x8005;&#xFF1A;&#xFF08;&#x4E00;&#x5207;&#x6839;&#x636E;&#x7A0B;&#x5E8F;&#x5458;&#x7684;&#x610F;&#x56FE;&#x884C;&#x4E8B;&#xFF09;
 
-class D: public B &#123;
+class D: public B {
     public:
         int id;
-        D() &#123; // 调用默认的B1
+        D() { // &#x8C03;&#x7528;&#x9ED8;&#x8BA4;&#x7684;B1
             cout &lt;&lt; &quot;in D 1&quot; &lt;&lt; endl;
             id = 11;
-        &#125;
-        D(int pi): B(pi + 1) &#123; // 调用B2
+        }
+        D(int pi): B(pi + 1) { // &#x8C03;&#x7528;B2
             cout &lt;&lt; &quot;in D 2&quot; &lt;&lt; endl;
             id = pi;
-        &#125;
-&#125;;
-//输出：
+        }
+};
+//&#x8F93;&#x51FA;&#xFF1A;
 //in B 1
 //in D 1
 //1 11
@@ -932,162 +932,162 @@ class D: public B &#123;
 //in D 2
 //13 12
 </code></pre>
-<p>注意：构造函数不能是虚拟的，且必须是<code>inline</code>。（无须指明）</p>
-<p>拷贝构造函数：</p>
-<pre><code class="c++">//给子类增加一个拷贝构造：（同时，可选地指定基类的构造）
-D(const D &amp;d): B(d.ib + 1) &#123;
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E0D;&#x80FD;&#x662F;&#x865A;&#x62DF;&#x7684;&#xFF0C;&#x4E14;&#x5FC5;&#x987B;&#x662F;<code>inline</code>&#x3002;&#xFF08;&#x65E0;&#x987B;&#x6307;&#x660E;&#xFF09;</p>
+<p>&#x62F7;&#x8D1D;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="c++">//&#x7ED9;&#x5B50;&#x7C7B;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x62F7;&#x8D1D;&#x6784;&#x9020;&#xFF1A;&#xFF08;&#x540C;&#x65F6;&#xFF0C;&#x53EF;&#x9009;&#x5730;&#x6307;&#x5B9A;&#x57FA;&#x7C7B;&#x7684;&#x6784;&#x9020;&#xFF09;
+D(const D &amp;d): B(d.ib + 1) {
     this-&gt;id = d.id;
-&#125;
+}
 
-//使用方法：
+//&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF1A;
 D *pd = new D();
 D *pd2 = new D(*pd);
 D pd3(*pd);
 </code></pre>
-<p>重载<code>=</code>运算符：</p>
-<pre><code class="c++">D &amp;operator=(const D &amp;d) &#123;
+<p>&#x91CD;&#x8F7D;<code>=</code>&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;</p>
+<pre><code class="c++">D &amp;operator=(const D &amp;d) {
     D *pd = new D(d);
     return *pd;
-&#125;
+}
 
-//使用方法：
+//&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF1A;
 
 D *pd = new D();
 D *pd2 = new D(*pd);
 D pd3(*pd);
 D pd4 = pd3;
 </code></pre>
-<p>析构函数举例：</p>
-<pre><code class="c++">class B &#123;
+<p>&#x6790;&#x6784;&#x51FD;&#x6570;&#x4E3E;&#x4F8B;&#xFF1A;</p>
+<pre><code class="c++">class B {
     public:
         int ib;
-        B() &#123;
+        B() {
             cout &lt;&lt; &quot;in B 1&quot; &lt;&lt; endl;
             ib = 1;
-        &#125;
-        B(int pi) &#123;
+        }
+        B(int pi) {
             cout &lt;&lt; &quot;in B 2 &quot; &lt;&lt; endl;
             ib = pi;
-        &#125;
-        ~B() &#123; // 基类析构
+        }
+        ~B() { // &#x57FA;&#x7C7B;&#x6790;&#x6784;
             cout &lt;&lt; &quot;in ~ B&quot; &lt;&lt; endl;
-        &#125;
-&#125;;
+        }
+};
 
-class D: public B &#123;
+class D: public B {
     public:
         int id;
-        D() &#123;
+        D() {
             cout &lt;&lt; &quot;in D 1&quot; &lt;&lt; endl;
             id = 11;
-        &#125;
-        D(int pi): B(pi - 1) &#123;
+        }
+        D(int pi): B(pi - 1) {
             cout &lt;&lt; &quot;in D 2&quot; &lt;&lt; endl;
             id = pi;
-        &#125;
-        ~D() &#123; // 子类析构
+        }
+        ~D() { // &#x5B50;&#x7C7B;&#x6790;&#x6784;
             cout &lt;&lt; &quot;in ~ D &quot; &lt;&lt; endl;
-        &#125;
-&#125;;
+        }
+};
 
-int main() &#123;
+int main() {
     D *pd = new D(5);
     cout &lt;&lt; pd-&gt;ib &lt;&lt; &quot; &quot; &lt;&lt; pd-&gt;id &lt;&lt; endl;
     delete pd;
-&#125;
-//输出：
+}
+//&#x8F93;&#x51FA;&#xFF1A;
 //in B 2
 //in D 2
 //4 5
 //in ~ D
 //in ~ B
-//注意执行的顺序！
+//&#x6CE8;&#x610F;&#x6267;&#x884C;&#x7684;&#x987A;&#x5E8F;&#xFF01;
 
-//不能重载。无参数。往往为虚.
+//&#x4E0D;&#x80FD;&#x91CD;&#x8F7D;&#x3002;&#x65E0;&#x53C2;&#x6570;&#x3002;&#x5F80;&#x5F80;&#x4E3A;&#x865A;.
 </code></pre>
-<p>内存的分配与释放：</p>
-<pre><code class="c++">class B &#123;
+<p>&#x5185;&#x5B58;&#x7684;&#x5206;&#x914D;&#x4E0E;&#x91CA;&#x653E;&#xFF1A;</p>
+<pre><code class="c++">class B {
     public:
         int *pib;
-        B() &#123;
+        B() {
             cout &lt;&lt; &quot;in B&quot; &lt;&lt; endl;
             pib = new int[1000 * 1000];
-        &#125;
-        ~B() &#123;
+        }
+        ~B() {
             cout &lt;&lt; &quot;in ~ B&quot; &lt;&lt; endl;
-            delete[]pib;  // 释放内存
-        &#125;
-&#125;;
+            delete[]pib;  // &#x91CA;&#x653E;&#x5185;&#x5B58;
+        }
+};
 
-class D : public B &#123;
+class D : public B {
     public:
         int *pid;
-        D() &#123;
+        D() {
             cout &lt;&lt; &quot;in D&quot; &lt;&lt; endl;
             pid = new int[1000 * 1000];
-        &#125;
-        ~D() &#123;
+        }
+        ~D() {
             cout &lt;&lt; &quot;in ~ D &quot; &lt;&lt; endl;
-            delete[]pid; // 释放内存
-        &#125;
-&#125;;
+            delete[]pid; // &#x91CA;&#x653E;&#x5185;&#x5B58;
+        }
+};
 
-int main() &#123;
+int main() {
     D *pd = new D();
     delete pd;
-&#125;
+}
 
-//输出：
+//&#x8F93;&#x51FA;&#xFF1A;
 //in B
 //in D
 //in ~ D
 //in ~ B
 
-//但是如果改为：
+//&#x4F46;&#x662F;&#x5982;&#x679C;&#x6539;&#x4E3A;&#xFF1A;
 
-int main() &#123;
+int main() {
     B *pb = new D();
     delete pb;
-&#125;
+}
 
-//输出：
+//&#x8F93;&#x51FA;&#xFF1A;
 //in B
 //in D
 //in ~ B
 
-//D的析构未被调用，发生了内存泄漏
+//D&#x7684;&#x6790;&#x6784;&#x672A;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x53D1;&#x751F;&#x4E86;&#x5185;&#x5B58;&#x6CC4;&#x6F0F;
 </code></pre>
-<h1 id="虚析构"><a href="#虚析构" class="headerlink" title="虚析构"></a>虚析构</h1><pre><code class="c++">class B &#123;
+<h1 id="&#x865A;&#x6790;&#x6784;"><a href="#&#x865A;&#x6790;&#x6784;" class="headerlink" title="&#x865A;&#x6790;&#x6784;"></a>&#x865A;&#x6790;&#x6784;</h1><pre><code class="c++">class B {
     public:
         int *pib;
-        B() &#123;
+        B() {
             cout &lt;&lt; &quot;in B&quot; &lt;&lt; endl;
             pib = new int[1000 * 1000];
-        &#125;
-        virtual  ~B() &#123;
+        }
+        virtual  ~B() {
             cout &lt;&lt; &quot;in ~ B&quot; &lt;&lt; endl;
             delete[]pib;
-        &#125;
-&#125;;
+        }
+};
 
-class D : public B &#123;
+class D : public B {
     public:
         int *pid;
-        D() &#123;
+        D() {
             cout &lt;&lt; &quot;in D&quot; &lt;&lt; endl;
             pid = new int[1000 * 1000];
-        &#125;
-        ~D() &#123;
+        }
+        ~D() {
             cout &lt;&lt; &quot;in ~ D &quot; &lt;&lt; endl;
             delete[]pid;
-        &#125;
-&#125;;
+        }
+};
 
-int main() &#123;
+int main() {
     B *pb = new D();
     delete pb;
-&#125;
-//输出：
+}
+//&#x8F93;&#x51FA;&#xFF1A;
 //in B
 //in D
 //in ~ D
